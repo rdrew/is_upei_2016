@@ -238,6 +238,30 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.l-region--navigation .menu {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  .l-region--navigation .menu::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .l-region--navigation .menu li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px; }
+    .l-region--navigation .menu li:first-child, .l-region--navigation .menu li.first {
+      padding-left: 0; }
+    .l-region--navigation .menu li:last-child {
+      padding-right: 0; }
+    .l-region--navigation .menu li.last {
+      padding-right: 0; }
+
 body {
   -webkit-font-smoothing: antialiased;
   /*background:blue;*/ }
