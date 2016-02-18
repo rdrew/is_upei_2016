@@ -17,4 +17,4 @@ regions[footer]         = Footer
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/is_01/is_01.layout.css
-stylesheets[all][] = css/layouts/is_01/is_01.layout.no-query.css
+; stylesheets[all][] = css/layouts/is_01/is_01.layout.no-query.css

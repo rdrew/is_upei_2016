@@ -1,0 +1,6 @@
+//$breakpoint-no-queries: true;
+@include breakpoint-set('no queries', true)
+//$breakpoint-no-query-fallbacks: true;
+@include breakpoint-set('no query fallbacks', true)
+// Re import everything from ohm-hero-layout.scss but without media queries.
+@import "is_01.layout";

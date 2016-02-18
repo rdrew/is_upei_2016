@@ -22,6 +22,7 @@ scripts[] = js/is-upei-2016.behaviors.js
 regions[branding] = Branding
 regions[header] = Header
 regions[navigation] = Navigation
+;regions[hero] = Hero
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
