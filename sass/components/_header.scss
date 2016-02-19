@@ -26,6 +26,9 @@ $visual-grid: true;
 }
 .site-branding__name {
     font-size: 2em;
+	font-family: $heading-font-family;
+	margin-top: 12px;
+	display: block;
     line-height: 1;
 }
 

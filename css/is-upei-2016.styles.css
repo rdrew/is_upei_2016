@@ -320,6 +320,9 @@ picture {
 
 .site-branding__name {
   font-size: 2em;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  margin-top: 12px;
+  display: block;
   line-height: 1; }
 
 .site-branding__slogan {
