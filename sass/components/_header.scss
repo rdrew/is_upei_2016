@@ -9,9 +9,8 @@
 	a {
 		color: #fff;
 	}
+	padding: 8px 0;
 }
-
-
 
 .site-branding {
 	@include outer-container;
@@ -20,17 +19,22 @@
 		@include span-columns(4);
 	}
 }
+
 .site-branding__name {
-    font-size: 2em;
+	font-size: 2em;
 	font-family: $heading-font-family;
-	margin-top: 12px;
+	margin-top: 18px;
 	display: block;
-    line-height: 1;
+	line-height: 1;
 }
 
 .site-branding__slogan {
-    margin: 0;
-    font-size: 1.5em;
-    display: inline-block;
-    line-height: 1;
+	margin: 0;
+	font-size: 1.5em;
+	display: inline-block;
+	line-height: 1;
+}
+
+header.l-header {
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }

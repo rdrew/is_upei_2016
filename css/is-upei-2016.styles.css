@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 // Turn on Neat's visual grid for development.
 $visual-grid:       false;
@@ -51,6 +52,25 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit; }
+
+/**
+ * $HLIST
+  */
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  .breadcrumb::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .breadcrumb li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left; }
 
 /*$heading-font-family: $base-font-family;*/
 button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -266,6 +286,25 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+/**
+ * $BREADCRUMB
+  */
+.breadcrumb {
+  margin-bottom: .6em;
+  /*font-family: $sans-serif-2;*/ }
+  .breadcrumb li {
+    padding-right: 0.4em; }
+    .breadcrumb li:after {
+      content: "»";
+      padding-left: 0.4em;
+      vertical-align: baseline; }
+    .breadcrumb li:last-child:after {
+      content: ""; }
+  .breadcrumb a {
+    text-decoration: none;
+    /*color: $light-green;*/
+    color: #5C8727; }
+
 .l-footer-wrapper {
   background: #333; }
 
@@ -276,7 +315,8 @@ picture {
   /*background:#ccc;*/
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  padding: 8px 0; }
   .l-region--navigation .menu::after {
     clear: both;
     content: "";
@@ -318,7 +358,7 @@ picture {
 .site-branding__name {
   font-size: 2em;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  margin-top: 12px;
+  margin-top: 18px;
   display: block;
   line-height: 1; }
 
@@ -328,10 +368,14 @@ picture {
   display: inline-block;
   line-height: 1; }
 
+header.l-header {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+
 .search-bar form {
   /*width: 100%;*/
   /*margin: 0px auto;*/
-  /*text-align: center;*/ }
+  /*text-align: center;*/
+  margin-top: 10px; }
 
 .search-bar input[type="text"] {
   padding: 12px 15px;
@@ -381,6 +425,9 @@ aside .block {
 
 aside .menu li {
   list-style-type: none; }
+
+.tabs {
+  border-bottom: 1px solid #ddd; }
 
 body {
   /*background:blue;*/ }
