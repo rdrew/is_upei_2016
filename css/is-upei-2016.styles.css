@@ -238,7 +238,11 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.nav-wrapper {
+  background: #333; }
+
 .l-region--navigation .menu {
+  /*background:#ccc;*/
   margin: 0;
   padding: 0;
   border: 0; }
@@ -261,6 +265,40 @@ picture {
       padding-right: 0; }
     .l-region--navigation .menu li.last {
       padding-right: 0; }
+  .l-region--navigation .menu a {
+    color: #fff; }
+
+.l-region--sidebar-first {
+  background: #ccc; }
+
+.site-branding {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .site-branding::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .site-branding .site-branding__logo {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%; }
+    .site-branding .site-branding__logo:last-child {
+      margin-right: 0; }
+
+.site-branding__name {
+  font-size: 2em;
+  line-height: 1; }
+
+.site-branding__slogan {
+  margin: 0;
+  font-size: 1.5em;
+  display: inline-block;
+  line-height: 1; }
+
+body {
+  /*background:blue;*/ }
 
 body {
   -webkit-font-smoothing: antialiased;

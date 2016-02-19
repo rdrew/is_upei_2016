@@ -1,3 +1,37 @@
+.nav-wrapper {
+	background: #333;
+}
+
 .l-region--navigation .menu {
-@include horizontal-list;
+	/*background:#ccc;*/
+	@include horizontal-list;
+
+	a {
+		color: #fff;
+	}
+}
+
+.l-region--sidebar-first {
+	background: #ccc;
+}
+
+$visual-grid: true;
+
+.site-branding {
+	@include outer-container;
+
+	.site-branding__logo {
+		@include span-columns(4);
+	}
+}
+.site-branding__name {
+    font-size: 2em;
+    line-height: 1;
+}
+
+.site-branding__slogan {
+    margin: 0;
+    font-size: 1.5em;
+    display: inline-block;
+    line-height: 1;
 }
