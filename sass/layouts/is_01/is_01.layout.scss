@@ -103,12 +103,12 @@ $gutters: 1 / 3;
 	.has-two-sidebars,
 	.has-one-sidebar {
 		.l-content {
-			@include grid-span(8, 1);
+			@include grid-span(9, 1);
 		}
 
 		.l-region--sidebar-first,
 		.l-region--sidebar-second {
-			@include grid-span(4, 9);
+			@include grid-span(3, 10);
 
 			clear: right;
 		}

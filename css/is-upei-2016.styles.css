@@ -95,7 +95,7 @@ fieldset {
 input,
 label,
 select {
-  display: block;
+  /*display: block;*/
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em; }
 
@@ -299,9 +299,6 @@ picture {
   .l-region--navigation .menu a {
     color: #fff; }
 
-.l-region--sidebar-first {
-  background: #ccc; }
-
 .site-branding {
   max-width: 1200px;
   margin-left: auto;
@@ -331,13 +328,59 @@ picture {
   display: inline-block;
   line-height: 1; }
 
-form#search-block-form {
-  width: 300px; }
+.search-bar form {
+  /*width: 100%;*/
+  /*margin: 0px auto;*/
+  /*text-align: center;*/ }
 
-input#edit-search-block-form--2 {
-  width: 176px;
-  float: left;
-  margin-right: .5em; }
+.search-bar input[type="text"] {
+  padding: 12px 15px;
+  background: rgba(50, 50, 50, 0.2);
+  border: 0px solid #dbdbdb;
+  border-radius: 4px 0 0 4px; }
+
+@media (min-width: 400px) {
+  .search-bar input[type="text"] {
+    width: 280px; } }
+
+.search-bar input[type="submit"] {
+  border-radius: 0;
+  position: relative;
+  padding: 12px 20px;
+  left: -5px;
+  /*border: 2px solid #8B1F03;*/
+  background: #8F270C;
+  color: #fafafa;
+  line-height: normal;
+  vertical-align: initial;
+  border-radius: 0 4px 4px 0;
+  /*text replace*/
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url("../images/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 18px;
+  /*end text replace*/ }
+
+.search-bar input[type="submit"]:hover {
+  color: #8B1F03;
+  background-color: #5b8c1f;
+  border-color: #5b8c1f; }
+
+.l-region--sidebar-first {
+  padding-left: 2em !important;
+  border-left: 1px solid #ddd; }
+
+aside .block {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+  margin-bottom: 1em; }
+
+aside .menu li {
+  list-style-type: none; }
 
 body {
   /*background:blue;*/ }
