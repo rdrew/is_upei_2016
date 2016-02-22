@@ -1,4 +1,32 @@
 @charset "UTF-8";
+/*@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body:before {
+  background-image: linear-gradient(to left, transparent 0, blue 0, blue 6.38298%, transparent 6.38298%, transparent 8.51064%, blue 8.51064%, blue 14.89362%, transparent 14.89362%, transparent 17.02128%, blue 17.02128%, blue 23.40426%, transparent 23.40426%, transparent 25.53191%, blue 25.53191%, blue 31.91489%, transparent 31.91489%, transparent 34.04255%, blue 34.04255%, blue 40.42553%, transparent 40.42553%, transparent 42.55319%, blue 42.55319%, blue 48.93617%, transparent 48.93617%, transparent 51.06383%, blue 51.06383%, blue 57.44681%, transparent 57.44681%, transparent 59.57447%, blue 59.57447%, blue 65.95745%, transparent 65.95745%, transparent 68.08511%, blue 68.08511%, blue 74.46809%, transparent 74.46809%, transparent 76.59574%, blue 76.59574%, blue 82.97872%, transparent 82.97872%, transparent 85.10638%, blue 85.10638%, blue 91.48936%, transparent 91.48936%, transparent 93.61702%, blue 93.61702%, blue 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+  @media screen and (min-width: 600px) {
+    body:before {
+      background-image: linear-gradient(to left, transparent 0, blue 0, blue 20%, transparent 20%, transparent 26.66667%, blue 26.66667%, blue 46.66667%, transparent 46.66667%, transparent 53.33333%, blue 53.33333%, blue 73.33333%, transparent 73.33333%, transparent 80%, blue 80%, blue 100%, transparent 100%); } }
+  @media screen and (min-width: 900px) {
+    body:before {
+      background-image: linear-gradient(to left, transparent 0, blue 0, blue 9.67742%, transparent 9.67742%, transparent 12.90323%, blue 12.90323%, blue 22.58065%, transparent 22.58065%, transparent 25.80645%, blue 25.80645%, blue 35.48387%, transparent 35.48387%, transparent 38.70968%, blue 38.70968%, blue 48.3871%, transparent 48.3871%, transparent 51.6129%, blue 51.6129%, blue 61.29032%, transparent 61.29032%, transparent 64.51613%, blue 64.51613%, blue 74.19355%, transparent 74.19355%, transparent 77.41935%, blue 77.41935%, blue 87.09677%, transparent 87.09677%, transparent 90.32258%, blue 90.32258%, blue 100%, transparent 100%); } }
+
 /*
 // Turn on Neat's visual grid for development.
 $visual-grid:       false;
@@ -20,39 +48,6 @@ $narrow:   new-breakpoint(min-width em(560px, $font-size) $grid-columns);
 $wide:     new-breakpoint(min-width em(851px, $font-size) $grid-columns);
 $horizontal-bar-mode: new-breakpoint(min-width em(950px, $font-size) $grid-columns);
 */
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
-/*
-// Turn on Neat's visual grid for development.
-$visual-grid:       false;
-$visual-grid-color: #EEEEEE;
-// Set to false if you'd like to remove the responsiveness.
-$responsive:    true;
-// Set total number of columns in the grid.
-$grid-columns:  12;
-// Set the max width of the page using the px to em function in Bourbon.
-// The first value is the pixel value of the width and the second is the base font size of your theme.
-$font-size:     16px;
-$max-width-px:  2000px;
-$max-width:     em($max-width-px, $font-size);
-// Define breakpoints.
-// The last argument is the number of columns the grid will have for that screen size.
-// We've kept them all equal here.
-$mobile:   new-breakpoint(min-width em(320px, $font-size) $grid-columns);
-$narrow:   new-breakpoint(min-width em(560px, $font-size) $grid-columns);
-$wide:     new-breakpoint(min-width em(851px, $font-size) $grid-columns);
-$horizontal-bar-mode: new-breakpoint(min-width em(950px, $font-size) $grid-columns);
-*/
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 /**
  * $HLIST
   */
@@ -79,7 +74,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
           appearance: none;
   background-color: #8B2004;
   border: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -131,7 +126,7 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
 select[multiple=multiple] {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -340,7 +335,7 @@ picture {
     color: #fff; }
 
 .site-branding {
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .site-branding::after {
@@ -370,6 +365,94 @@ picture {
 
 header.l-header {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+
+.l-content {
+  border: 1px solid #ddd;
+  padding: 1.5em; }
+
+.scholar {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .scholar::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .scholar .scholar-image {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 14.89362%; }
+    .scholar .scholar-image:last-child {
+      margin-right: 0; }
+    .scholar .scholar-image img {
+      width: 100%; }
+  .scholar .metadata {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 82.97872%;
+    margin-right: 0; }
+    .scholar .metadata:last-child {
+      margin-right: 0; }
+  .scholar .bio {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-top: 1px solid #ddd;
+    margin-top: 1.5em;
+    padding-top: 1.5em; }
+    .scholar .bio:last-child {
+      margin-right: 0; }
+  .scholar .activities {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em; }
+    .scholar .activities:last-child {
+      margin-right: 0; }
+  .scholar .citations {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em; }
+    .scholar .citations:last-child {
+      margin-right: 0; }
+  .scholar .other-scholars {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em; }
+    .scholar .other-scholars:last-child {
+      margin-right: 0; }
+  .scholar .rss {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%;
+    margin-right: 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em; }
+    .scholar .rss:last-child {
+      margin-right: 0; }
 
 .search-bar form {
   /*width: 100%;*/
@@ -426,8 +509,95 @@ aside .block {
 aside .menu li {
   list-style-type: none; }
 
-.tabs {
-  border-bottom: 1px solid #ddd; }
+/**
+ * @file
+  * Menu and navigational styles.
+   */
+/**
+ * @file
+  * Styles for a hierarchical menu as generated by theme_menu_tree().
+   */
+.menu {
+  border: none;
+  list-style: none;
+  text-align: left;
+  /* LTR */
+  /* Menu Item Hierarchy Modifiers */ }
+
+.menu .expanded {
+  list-style-image: url("../../../images/misc/menu-expanded.png?1382488163");
+  list-style-type: circle; }
+
+.menu .collapsed {
+  list-style-image: url("../../../images/misc/menu-collapsed.png?1382488163");
+  /* LTR */
+  list-style-type: disc; }
+
+.menu .leaf {
+  list-style-image: url("../../../images/misc/menu-leaf.png?1382488163");
+  list-style-type: square; }
+
+/* Menu State Modifiers */
+.active {
+  color: #000; }
+
+.menu-disabled {
+  background: #ccc; }
+
+/**
+   * @file
+    * Inline links as generated by theme_links().
+	 */
+.links--inline {
+  *zoom: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.links--inline:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.links--inline li {
+  float: left;
+  /* LTR */
+  margin-right: 1em;
+  /* LTR */ }
+
+.links--inline li > a {
+  display: block; }
+
+/**
+   * @file
+    * Theme styles for markup generated by theme_menu_local_tasks().
+	 */
+/* Tabs */
+.tabs a {
+  background-color: #eee;
+  text-decoration: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+.tabs a.active {
+  background-color: #fff; }
+
+.tabs a:hover, .tabs a:focus {
+  background-color: #bbb; }
+
+/* Primary Tabs */
+.tabs--primary a {
+  padding: 0.3em 0.8em;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin-bottom: -1px; }
+
+/* Secondary Tabs */
+.tabs--secondary a {
+  padding: 0.2em 0.5em;
+  margin: 0.4em 0;
+  font-size: 0.9em; }
 
 body {
   /*background:blue;*/ }
