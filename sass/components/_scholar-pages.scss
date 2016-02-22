@@ -1,0 +1,65 @@
+.l-content {
+border: $base-border;
+padding: $base-spacing;
+}
+.scholar {
+	@include outer-container;
+
+	//width: 100%;
+	//max-width: 100%;
+	.scholar-image {
+		@include span-columns(2);
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.metadata {
+		@include span-columns(10);
+
+		@include omega;
+	}
+
+	.bio {
+		@include span-columns(12);
+
+		@include omega;
+
+		@include border-bottom;
+
+		@include border-top;
+	}
+
+	.activities {
+		@include span-columns(12);
+
+		@include omega;
+
+		@include border-bottom;
+	}
+
+	.citations {
+		@include span-columns(12);
+
+		@include omega;
+
+		@include border-bottom;
+	}
+
+	.other-scholars {
+		@include span-columns(12);
+
+		@include omega;
+
+		@include border-bottom;
+	}
+
+	.rss {
+		@include span-columns(12);
+
+		@include omega;
+
+		@include border-bottom;
+	}
+}
