@@ -16,5 +16,5 @@ regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/is_01/is_01.layout.css
+; stylesheets[all][] = css/layouts/is_01/is_01.layout.css
 ; stylesheets[all][] = css/layouts/is_01/is_01.layout.no-query.css
