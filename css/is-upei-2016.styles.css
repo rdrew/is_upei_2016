@@ -1,31 +1,11 @@
 @charset "UTF-8";
 /*@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails*/
+/*$visual-grid: true !global;*/
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
-
-body:before {
-  background-image: linear-gradient(to left, transparent 0, blue 0, blue 6.38298%, transparent 6.38298%, transparent 8.51064%, blue 8.51064%, blue 14.89362%, transparent 14.89362%, transparent 17.02128%, blue 17.02128%, blue 23.40426%, transparent 23.40426%, transparent 25.53191%, blue 25.53191%, blue 31.91489%, transparent 31.91489%, transparent 34.04255%, blue 34.04255%, blue 40.42553%, transparent 40.42553%, transparent 42.55319%, blue 42.55319%, blue 48.93617%, transparent 48.93617%, transparent 51.06383%, blue 51.06383%, blue 57.44681%, transparent 57.44681%, transparent 59.57447%, blue 59.57447%, blue 65.95745%, transparent 65.95745%, transparent 68.08511%, blue 68.08511%, blue 74.46809%, transparent 74.46809%, transparent 76.59574%, blue 76.59574%, blue 82.97872%, transparent 82.97872%, transparent 85.10638%, blue 85.10638%, blue 91.48936%, transparent 91.48936%, transparent 93.61702%, blue 93.61702%, blue 100%, transparent 100%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-  @media screen and (min-width: 600px) {
-    body:before {
-      background-image: linear-gradient(to left, transparent 0, blue 0, blue 20%, transparent 20%, transparent 26.66667%, blue 26.66667%, blue 46.66667%, transparent 46.66667%, transparent 53.33333%, blue 53.33333%, blue 73.33333%, transparent 73.33333%, transparent 80%, blue 80%, blue 100%, transparent 100%); } }
-  @media screen and (min-width: 900px) {
-    body:before {
-      background-image: linear-gradient(to left, transparent 0, blue 0, blue 9.67742%, transparent 9.67742%, transparent 12.90323%, blue 12.90323%, blue 22.58065%, transparent 22.58065%, transparent 25.80645%, blue 25.80645%, blue 35.48387%, transparent 35.48387%, transparent 38.70968%, blue 38.70968%, blue 48.3871%, transparent 48.3871%, transparent 51.6129%, blue 51.6129%, blue 61.29032%, transparent 61.29032%, transparent 64.51613%, blue 64.51613%, blue 74.19355%, transparent 74.19355%, transparent 77.41935%, blue 77.41935%, blue 87.09677%, transparent 87.09677%, transparent 90.32258%, blue 90.32258%, blue 100%, transparent 100%); } }
 
 /*
 // Turn on Neat's visual grid for development.
@@ -365,6 +345,79 @@ picture {
 
 header.l-header {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+
+.landing-page .l-content {
+  border: 0;
+  padding: 0;
+  padding-top: 1.5em; }
+
+.lp {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .lp::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .lp .lp-menu {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    /*background: $light-gray;*/ }
+    .lp .lp-menu:last-child {
+      margin-right: 0; }
+  .lp .lp-slider {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+    background: #ddd; }
+    .lp .lp-slider:last-child {
+      margin-right: 0; }
+  .lp .lp-welcome {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-right: 0;
+    background: #ddd; }
+    .lp .lp-welcome:last-child {
+      margin-right: 0; }
+  .lp .lp-glance {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+    background: #ddd; }
+    .lp .lp-glance:last-child {
+      margin-right: 0; }
+  .lp .lp-collection {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+    margin-right: 0;
+    background: #ddd; }
+    .lp .lp-collection:last-child {
+      margin-right: 0; }
+
+.lp-menu .menu .leaf {
+  list-style-image: none;
+  list-style-type: none; }
+
+.lp-menu .menu a {
+  font-size: 1.5em;
+  display: block;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd; }
+
+.lp-menu .menu .first a {
+  border-top: 1px solid #ddd; }
+
+.lp-menu .menu i {
+  width: 20px;
+  margin-right: 1em; }
 
 .l-content {
   border: 1px solid #ddd;

@@ -5,7 +5,8 @@
  $gutter: 30px;
  $grid-columns: 12;
  $max-width: 100%;
- $visual-grid: true;
+ /*$visual-grid: true !global;*/
+$visual-grid-index: front !global;
  $visual-grid-color: blue;
 
 // Neat Breakpoints

@@ -1,0 +1,75 @@
+.landing-page .l-content {
+	border: 0;
+	padding: 0;
+	padding-top: $base-spacing;
+}
+.lp {
+	@include outer-container;
+
+	.lp-menu {
+		@include span-columns(3);
+
+		/*background: $light-gray;*/
+	}
+
+	.lp-slider {
+		@include span-columns(6);
+
+		background: $light-gray;
+	}
+
+	.lp-welcome {
+		@include span-columns(3);
+
+		@include omega;
+
+		background: $light-gray;
+	}
+
+	.lp-glance {
+		@include span-columns(6);
+
+		background: $light-gray;
+	}
+
+	.lp-collection {
+		@include span-columns(6);
+
+		@include omega;
+
+		background: $light-gray;
+	}
+}
+
+.lp-menu {
+	.menu {
+		.leaf {
+			list-style-image: none;
+			list-style-type: none;
+		}
+
+		a {
+			font-size: 1.5em;
+			display: block;
+			padding: 6px 0;
+			border-bottom: $base-border;
+		}
+		.first a {
+		
+		border-top: $base-border;
+	}
+
+		i {
+			width: 20px;
+			margin-right: 1em;
+		}
+	}
+}
+
+.lp-slider {}
+
+.lp-welcome {}
+
+.lp-glance {}
+
+.lp-collection {}
