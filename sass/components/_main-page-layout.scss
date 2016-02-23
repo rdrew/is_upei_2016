@@ -45,6 +45,9 @@
 	margin-bottom: $base-spacing;
 }
 
+.l-main {
+padding-top: $base-spacing;
+}
 
 
 
@@ -52,7 +55,7 @@
 .has-one-sidebar.has-sidebar-first {
 	.l-region--sidebar-first {
 		/*background: red;*/
-		
+
 		@include span-columns(3);
 	}
 	.l-content {
@@ -65,7 +68,7 @@
 .has-one-sidebar.has-sidebar-second {
 	.l-region--sidebar-second {
 		/*background: red;*/
-		
+
 		@include span-columns(3);
 		@include omega;
 	}
@@ -77,27 +80,27 @@
 
 
 /*.has-one-sidebar .has-sidebar-first {*/
-	/*.l-region--sidebar-first {*/
-		/*@include span-columns(2);*/
-	/*}*/
+/*.l-region--sidebar-first {*/
+/*@include span-columns(2);*/
+/*}*/
 
-	/*.l-content {*/
-		/*@include span-columns(10);*/
+/*.l-content {*/
+/*@include span-columns(10);*/
 
-		/*@include omega;*/
-	/*}*/
+/*@include omega;*/
+/*}*/
 /*}*/
 
 /*.has-one-sidebar .has-sidebar-second {*/
-	/*.l-content {*/
-		/*@include span-columns(10);*/
-	/*}*/
+/*.l-content {*/
+/*@include span-columns(10);*/
+/*}*/
 
-	/*.l-region--sidebar-second {*/
-		/*@include span-columns(2);*/
+/*.l-region--sidebar-second {*/
+/*@include span-columns(2);*/
 
-		/*@include omega;*/
-	/*}*/
+/*@include omega;*/
+/*}*/
 /*}*/
 
 .has-two-sidebars {

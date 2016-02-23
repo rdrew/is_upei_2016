@@ -4,7 +4,7 @@
 		  <?php print render($page['navigation']); ?>
 	  </div>
 
-	<div class="l-constrained">
+	<div class="l-constrained branding-container">
 	  <div class="l-branding site-branding">
 		<?php if ($logo): ?>
 		  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-branding__logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -45,6 +45,7 @@
 	<?php print $messages; ?>
 	<?php print render($page['help']); ?>
 
+	<?php print render($page['sidebar_first']); ?>
 	<div class="l-content" role="main">
 <!--	  <?php print render($title_prefix); ?>
 	  <?php if ($title): ?>
@@ -59,7 +60,6 @@
 	  <?php print $feed_icons; ?>
 	</div>
 
-	<?php print render($page['sidebar_first']); ?>
 	<?php print render($page['sidebar_second']); ?>
   </div>
 
