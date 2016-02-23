@@ -477,7 +477,7 @@ header.l-header {
   margin-bottom: 1.5em; }
 
 .has-one-sidebar.has-sidebar-first .l-region--sidebar-first {
-  background: red;
+  /*background: red;*/
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -486,7 +486,7 @@ header.l-header {
     margin-right: 0; }
 
 .has-one-sidebar.has-sidebar-first .l-content {
-  background: green;
+  /*background: green;*/
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -496,7 +496,7 @@ header.l-header {
     margin-right: 0; }
 
 .has-one-sidebar.has-sidebar-second .l-region--sidebar-second {
-  background: red;
+  /*background: red;*/
   float: left;
   display: block;
   margin-right: 2.12766%;
@@ -506,7 +506,7 @@ header.l-header {
     margin-right: 0; }
 
 .has-one-sidebar.has-sidebar-second .l-content {
-  background: green;
+  /*background: green;*/
   float: left;
   display: block;
   margin-right: 2.12766%;

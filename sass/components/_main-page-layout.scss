@@ -51,12 +51,12 @@
 
 .has-one-sidebar.has-sidebar-first {
 	.l-region--sidebar-first {
-		background: red;
+		/*background: red;*/
 		
 		@include span-columns(3);
 	}
 	.l-content {
-		background: green;
+		/*background: green;*/
 		@include span-columns(9);
 		@include omega;
 	}
@@ -64,13 +64,13 @@
 
 .has-one-sidebar.has-sidebar-second {
 	.l-region--sidebar-second {
-		background: red;
+		/*background: red;*/
 		
 		@include span-columns(3);
 		@include omega;
 	}
 	.l-content {
-		background: green;
+		/*background: green;*/
 		@include span-columns(9);
 	}
 }
