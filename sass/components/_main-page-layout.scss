@@ -48,8 +48,15 @@
 .l-region--help {
 	margin-bottom: $base-spacing;
 }
+<<<<<<< HEAD
 .l-main {
 padding-top: $base-spacing;}
+=======
+
+.l-main {
+padding-top: $base-spacing;
+}
+>>>>>>> beec9ae73bad465e168c728c9896c18a9f1831ab
 
 
 
@@ -57,7 +64,7 @@ padding-top: $base-spacing;}
 .has-one-sidebar.has-sidebar-first {
 	.l-region--sidebar-first {
 		/*background: red;*/
-		
+
 		@include span-columns(3);
 	}
 	.l-content {
@@ -70,7 +77,7 @@ padding-top: $base-spacing;}
 .has-one-sidebar.has-sidebar-second {
 	.l-region--sidebar-second {
 		/*background: red;*/
-		
+
 		@include span-columns(3);
 		@include omega;
 	}
@@ -82,27 +89,27 @@ padding-top: $base-spacing;}
 
 
 /*.has-one-sidebar .has-sidebar-first {*/
-	/*.l-region--sidebar-first {*/
-		/*@include span-columns(2);*/
-	/*}*/
+/*.l-region--sidebar-first {*/
+/*@include span-columns(2);*/
+/*}*/
 
-	/*.l-content {*/
-		/*@include span-columns(10);*/
+/*.l-content {*/
+/*@include span-columns(10);*/
 
-		/*@include omega;*/
-	/*}*/
+/*@include omega;*/
+/*}*/
 /*}*/
 
 /*.has-one-sidebar .has-sidebar-second {*/
-	/*.l-content {*/
-		/*@include span-columns(10);*/
-	/*}*/
+/*.l-content {*/
+/*@include span-columns(10);*/
+/*}*/
 
-	/*.l-region--sidebar-second {*/
-		/*@include span-columns(2);*/
+/*.l-region--sidebar-second {*/
+/*@include span-columns(2);*/
 
-		/*@include omega;*/
-	/*}*/
+/*@include omega;*/
+/*}*/
 /*}*/
 
 .has-two-sidebars {
