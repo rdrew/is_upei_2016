@@ -45,47 +45,80 @@
 	margin-bottom: $base-spacing;
 }
 
-.has-one-sidebar .has-sidebar-first {
-	.l-region--sidebar-first {
-		@include span-columns(2);
-	}
 
+
+
+
+.has-one-sidebar.has-sidebar-first {
+	.l-region--sidebar-first {
+		background: red;
+		
+		@include span-columns(3);
+	}
 	.l-content {
-		@include span-columns(10);
+		background: green;
+		@include span-columns(9);
 		@include omega;
 	}
-
 }
-.has-one-sidebar .has-sidebar-second {
 
-	.l-content {
-		@include span-columns(10);
-	}
+.has-one-sidebar.has-sidebar-second {
 	.l-region--sidebar-second {
-		@include span-columns(2);
+		background: red;
+		
+		@include span-columns(3);
 		@include omega;
 	}
-
+	.l-content {
+		background: green;
+		@include span-columns(9);
+	}
 }
-.has-two-sidebars{
+
+
+/*.has-one-sidebar .has-sidebar-first {*/
+	/*.l-region--sidebar-first {*/
+		/*@include span-columns(2);*/
+	/*}*/
+
+	/*.l-content {*/
+		/*@include span-columns(10);*/
+
+		/*@include omega;*/
+	/*}*/
+/*}*/
+
+/*.has-one-sidebar .has-sidebar-second {*/
+	/*.l-content {*/
+		/*@include span-columns(10);*/
+	/*}*/
+
+	/*.l-region--sidebar-second {*/
+		/*@include span-columns(2);*/
+
+		/*@include omega;*/
+	/*}*/
+/*}*/
+
+.has-two-sidebars {
 	.l-region--sidebar-first {
-		@include span-columns(2);
+		@include span-columns(3);
 	}
 
 	.l-content {
-		@include span-columns(8);
+		@include span-columns(6);
 	}
 
 	.l-region--sidebar-second {
-		@include span-columns(2);
+		@include span-columns(3);
 	}
 }
 
 /* Footer */
 .l-footer-wrapper {
 	padding: $base-spacing 0;
-}
 
-.l-region--footer {
-	@extend .l-constrained;
+	.l-region--footer {
+		@extend .l-constrained;
+	}
 }
