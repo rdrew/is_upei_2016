@@ -45,10 +45,15 @@
 		}
 
 		a {
-			font-size: 1.5em;
+			font-size: 1.2em;
+			color: $dark-gray;
 			display: block;
-			padding: 6px 0;
+			padding: 10px;
 			border-bottom: $base-border;
+			&:hover {
+			background: $light-gray;
+			@include transition();
+			}
 		}
 		.first a {
 		

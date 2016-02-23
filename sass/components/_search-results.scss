@@ -1,0 +1,11 @@
+//shrink the bookmark button
+.islandora-solr-search-result-inner {
+	input[type="submit"] {
+		padding: 8px;
+		font-size: .8em;
+	}
+	.form-item.form-type-select {
+	    margin-bottom: 0;
+	    padding-bottom: 0;
+	}
+}
