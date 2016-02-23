@@ -1,36 +1,60 @@
+//.search-bar form {
+//margin-top: 10px;
+//}
+
 .search-bar form {
-	/*width: 100%;*/
-	/*margin: 0px auto;*/
-	/*text-align: center;*/
+	position: relative;
 	margin-top: 10px;
 }
 
 .search-bar input[type="text"] {
-	padding: 12px 15px;
-	background: rgba(50, 50, 50, 0.2);
-	border: 0px solid #dbdbdb;
-	border-radius: 4px 0 0 4px;
+	@include appearance(none);
+
+	@include transition(border-color);
+
+	background-color: white;
+	border: 1px solid $base-border-color;
+	box-sizing: border-box;
+	display: block;
+	font-size: 1em;
+	font-style: italic;
+	margin: 0;
+	padding: ($base-spacing / 3) ($base-spacing / 3);
+	position: relative;
+	width: 100%;
+	border-radius:0;
 }
 
-@media (min-width: 400px) {
-	.search-bar input[type="text"] {
-		width: 280px;
-	}
-}
+
+//.search-bar input[type="text"] {
+//padding: 12px 15px;
+//background: rgba(50, 50, 50, 0.2);
+//border: 0px solid #dbdbdb;
+//border-radius: 4px 0 0 4px;
+//}
+
+//@media (min-width: 400px) {
+//.search-bar input[type="text"] {
+//width: 280px;
+//}
+//}
 
 .search-bar input[type="submit"] {
-	border-radius: 0;
-	position: relative;
-	padding: 12px 20px;
-	left: -5px;
-	/*border: 2px solid #8B1F03;*/
-	background: #8F270C;
-	color: #fafafa;
-	line-height: normal;
-	vertical-align: initial;
-	border-radius: 0 4px 4px 0;
+	@include position(absolute, 0em 0em 0em null);
+	outline: none;
+	border-radius:0;
+	padding: 5px 10px;
+	width :34px;
+	//border-radius: 0;
+	//position: relative;
+	//padding: 12px 20px;
+	//left: -5px;
+	//background: #8F270C;
+	//color: #fafafa;
+	//line-height: normal;
+	//vertical-align: initial;
+	//border-radius: 0 4px 4px 0;
 
-	/*text replace*/
 	text-indent: -119988px;
 	overflow: hidden;
 	text-align: left;
@@ -40,11 +64,33 @@
 	background-position: 50% 50%;
 	background-size: 18px;
 
-	/*end text replace*/
 }
+//.search-bar input[type="submit"] {
+//border-radius: 0;
+//position: relative;
+//padding: 12px 20px;
+//left: -5px;
+//background: #8F270C;
+//color: #fafafa;
+//line-height: normal;
+//vertical-align: initial;
+//border-radius: 0 4px 4px 0;
 
-.search-bar input[type="submit"]:hover {
-	color: #8B1F03;
-	background-color: #5b8c1f;
-	border-color: #5b8c1f;
-}
+//[>text replace<]
+//text-indent: -119988px;
+//overflow: hidden;
+//text-align: left;
+//text-transform: capitalize;
+//background-image: url("../images/search-icon.png");
+//background-repeat: no-repeat;
+//background-position: 50% 50%;
+//background-size: 18px;
+
+//[>end text replace<]
+//}
+
+//.search-bar input[type="submit"]:hover {
+//color: #8B1F03;
+//background-color: #5b8c1f;
+//border-color: #5b8c1f;
+//}

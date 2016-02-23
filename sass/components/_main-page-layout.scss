@@ -7,7 +7,9 @@
 .l-region--navigation {
 	@extend .l-constrained;
 }
+.l-header .l-constrained {
 
+}
 .site-branding {
 	@include span-columns(6);
 
@@ -24,10 +26,12 @@
 	}
 
 	@include clearfix;
+	padding: $base-spacing 0;
 }
 
 .l-region--header {
 	@include span-columns(6);
+
 
 	@include omega;
 }
@@ -44,7 +48,8 @@
 .l-region--help {
 	margin-bottom: $base-spacing;
 }
-
+.l-main {
+padding-top: $base-spacing;}
 
 
 

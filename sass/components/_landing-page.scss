@@ -15,7 +15,6 @@
 	.lp-slider {
 		@include span-columns(6);
 
-		background: $light-gray;
 	}
 
 	.lp-welcome {
@@ -23,13 +22,11 @@
 
 		@include omega;
 
-		background: $light-gray;
 	}
 
 	.lp-glance {
 		@include span-columns(6);
 
-		background: $light-gray;
 	}
 
 	.lp-collection {
@@ -37,7 +34,6 @@
 
 		@include omega;
 
-		background: $light-gray;
 	}
 }
 
