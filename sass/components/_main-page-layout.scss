@@ -7,31 +7,36 @@
 .l-region--navigation {
 	@extend .l-constrained;
 }
-.l-header .l-constrained {
 
-}
+.l-header .l-constrained {}
+
 .site-branding {
-	@include span-columns(6);
+	@include span-columns(9);
 
 	@include outer-container;
 
 	.site-branding__logo {
-		@include span-columns(4);
+		@include span-columns(3);
+		line-height:0;
 	}
 
 	.name_slogan {
 		@include span-columns(8);
 
+		border-left: $base-border;
+		padding-left: 10px;
 		@include omega;
 	}
 
 	@include clearfix;
-	padding: $base-spacing 0;
+}
+
+.branding-container {
+	padding: ($base-spacing / 2) 0;
 }
 
 .l-region--header {
-	@include span-columns(6);
-
+	@include span-columns(3);
 
 	@include omega;
 }
@@ -48,18 +53,10 @@
 .l-region--help {
 	margin-bottom: $base-spacing;
 }
-<<<<<<< HEAD
-.l-main {
-padding-top: $base-spacing;}
-=======
 
 .l-main {
-padding-top: $base-spacing;
+	padding-top: $base-spacing;
 }
->>>>>>> beec9ae73bad465e168c728c9896c18a9f1831ab
-
-
-
 
 .has-one-sidebar.has-sidebar-first {
 	.l-region--sidebar-first {
@@ -67,9 +64,11 @@ padding-top: $base-spacing;
 
 		@include span-columns(3);
 	}
+
 	.l-content {
 		/*background: green;*/
 		@include span-columns(9);
+
 		@include omega;
 	}
 }
@@ -79,14 +78,15 @@ padding-top: $base-spacing;
 		/*background: red;*/
 
 		@include span-columns(3);
+
 		@include omega;
 	}
+
 	.l-content {
 		/*background: green;*/
 		@include span-columns(9);
 	}
 }
-
 
 /*.has-one-sidebar .has-sidebar-first {*/
 /*.l-region--sidebar-first {*/

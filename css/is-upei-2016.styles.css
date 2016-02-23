@@ -314,26 +314,10 @@ picture {
   .l-region--navigation .menu a {
     color: #fff; }
 
-.site-branding {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .site-branding::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .site-branding .site-branding__logo {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%; }
-    .site-branding .site-branding__logo:last-child {
-      margin-right: 0; }
-
 .site-branding__name {
   font-size: 2em;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  margin-top: 18px;
+  margin-top: 8px;
   display: block;
   line-height: 1; }
 
@@ -429,11 +413,10 @@ header.l-header {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%;
+  width: 74.46809%;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em 0; }
+  margin-right: auto; }
   .site-branding:last-child {
     margin-right: 0; }
   .site-branding::after {
@@ -444,7 +427,8 @@ header.l-header {
     float: left;
     display: block;
     margin-right: 2.12766%;
-    width: 31.91489%; }
+    width: 23.40426%;
+    line-height: 0; }
     .site-branding .site-branding__logo:last-child {
       margin-right: 0; }
   .site-branding .name_slogan {
@@ -452,6 +436,8 @@ header.l-header {
     display: block;
     margin-right: 2.12766%;
     width: 65.95745%;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
     margin-right: 0; }
     .site-branding .name_slogan:last-child {
       margin-right: 0; }
@@ -460,11 +446,14 @@ header.l-header {
     content: "";
     display: table; }
 
+.branding-container {
+  padding: 0.75em 0; }
+
 .l-region--header {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%;
+  width: 23.40426%;
   margin-right: 0; }
   .l-region--header:last-child {
     margin-right: 0; }
@@ -650,7 +639,7 @@ header.l-header {
 
 .search-bar form {
   position: relative;
-  margin-top: 10px; }
+  margin-top: 20px; }
 
 .search-bar input[type="text"] {
   -webkit-appearance: none;

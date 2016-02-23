@@ -9,21 +9,15 @@
 	a {
 		color: #fff;
 	}
+
 	padding: 8px 0;
 }
 
-.site-branding {
-	@include outer-container;
-
-	.site-branding__logo {
-		@include span-columns(4);
-	}
-}
 
 .site-branding__name {
 	font-size: 2em;
 	font-family: $heading-font-family;
-	margin-top: 18px;
+	margin-top: 8px;
 	display: block;
 	line-height: 1;
 }
