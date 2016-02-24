@@ -4,15 +4,28 @@
 
 .l-region--navigation .menu {
 	/*background:#ccc;*/
-	@include horizontal-list;
+	@include horizontal-list(1em);
+
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	i {
+		padding-right: 5px;
+	}
+
+	li {
+		&:hover {
+			background: $green;
+		}
+	}
 
 	a {
 		color: #fff;
+		font-size: .9em;
 	}
 
-	padding: 8px 0;
+	/*padding: 8px 5px;*/
 }
-
 
 .site-branding__name {
 	font-size: 2em;

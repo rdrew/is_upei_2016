@@ -37,35 +37,6 @@
 	}
 }
 
-.scholar-menu, .lp-menu {
-	.menu {
-		.leaf {
-			list-style-image: none;
-			list-style-type: none;
-		}
-
-		a {
-			font-size: 1.2em;
-			color: $dark-gray;
-			display: block;
-			padding: 10px;
-			border-bottom: $base-border;
-			&:hover {
-			background: $light-gray;
-			@include transition();
-			}
-		}
-		.first a {
-		
-		border-top: $base-border;
-	}
-
-		i {
-			width: 20px;
-			margin-right: 1em;
-		}
-	}
-}
 
 .lp-slider {}
 
