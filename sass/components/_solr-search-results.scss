@@ -39,10 +39,11 @@ dl.solr-thumb {
 dl.solr-fields {
 	float: right;
 	width: 75%;
-	border-top: 3px solid #ddd;
+	//border-top: 3px solid #ddd;
 }
 
 .solr-fields dt,
+
 .solr-fields dd {
 	border-top: 1px solid #ddd;
 }
@@ -180,4 +181,20 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	border-radius: 10px 10px 10px 10px;
+}
+.roblib-bookmark-form .sbHolder {
+    margin-bottom: 10px;
+}
+.page-islandora-search {
+
+	.l-content {
+	border:0;
+	}
+
+}
+.islandora-solr-search-result {
+    border: 1px solid #ccc;
+    padding: 1em;
+	@include small-shadow;
+	background: white;
 }

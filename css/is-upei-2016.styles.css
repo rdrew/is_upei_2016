@@ -105,7 +105,7 @@ label {
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple=multiple] {
-  background-color: #fff;
+  background-color: #FBFBFB;
   border: 1px solid #ddd;
   border-radius: 2px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -126,7 +126,7 @@ select[multiple=multiple] {
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
-    background-color: #f2f2f2;
+    background-color: #eeeeee;
     cursor: not-allowed; }
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
     select[multiple=multiple]:disabled:hover {
@@ -362,7 +362,7 @@ header.l-header {
 @CHARSET "UTF-8";
 .sbHolder {
   /*background-color: #2d2d2d;*/
-  background-color: #fff;
+  background-color: #FBFBFB;
   border: 1px solid #ddd;
   font-size: 12px;
   font-weight: normal;
@@ -413,7 +413,7 @@ header.l-header {
   border: solid 1px #515151; }
 
 .sbOptions {
-  background-color: #fff;
+  background-color: #FBFBFB;
   border: 1px solid #ddd;
   list-style: none;
   left: -1px;
@@ -524,45 +524,39 @@ header.l-header {
     content: "";
     display: table; }
 
+.l-page {
+  background: #FBFBFB; }
+
+header.l-header {
+  background: white; }
+
 .site-branding {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 74.46809%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 74.46809%; }
   .site-branding:last-child {
     margin-right: 0; }
-  .site-branding::after {
-    clear: both;
-    content: "";
-    display: table; }
   .site-branding .site-branding__logo {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 23.40426%;
+    width: 165px;
+    margin-right: 10px;
     line-height: 0; }
-    .site-branding .site-branding__logo:last-child {
-      margin-right: 0; }
   .site-branding .name_slogan {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 65.95745%;
     border-left: 1px solid #ddd;
     padding-left: 10px;
-    margin-right: 0; }
-    .site-branding .name_slogan:last-child {
-      margin-right: 0; }
+    padding-top: 4px; }
+    .site-branding .name_slogan a {
+      margin: 0; }
   .site-branding::after {
     clear: both;
     content: "";
     display: table; }
 
 .branding-container {
-  padding: 0.75em 0; }
+  padding: 0.75em 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .l-region--header {
   float: left;
@@ -687,11 +681,12 @@ header.l-header {
 
 ul.pager li {
   background: #f9f7f9;
+  background: white;
   padding: 7px 12px;
   border: 1px solid #ddd;
   border-radius: 4px; }
   ul.pager li:hover {
-    background: #7E9B5B;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
     transition: all 0.15s ease-out 0s; }
   ul.pager li a {
     color: #333; }
@@ -797,7 +792,7 @@ ul.pager {
 
 .search-bar form {
   position: relative;
-  margin-top: 20px; }
+  margin-top: 1em; }
 
 .search-bar input[type="text"] {
   -webkit-appearance: none;
@@ -878,8 +873,7 @@ dl.solr-thumb {
 
 dl.solr-fields {
   float: right;
-  width: 75%;
-  border-top: 3px solid #ddd; }
+  width: 75%; }
 
 .solr-fields dt,
 .solr-fields dd {
@@ -995,6 +989,18 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px 10px 10px 10px; }
+
+.roblib-bookmark-form .sbHolder {
+  margin-bottom: 10px; }
+
+.page-islandora-search .l-content {
+  border: 0; }
+
+.islandora-solr-search-result {
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  background: white; }
 
 /**
  * @file
