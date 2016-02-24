@@ -534,11 +534,15 @@ header.l-header {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 74.46809%; }
+  width: 74.46809%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .site-branding:last-child {
     margin-right: 0; }
   .site-branding .site-branding__logo {
     width: 165px;
+    display: inline-block;
     margin-right: 10px;
     line-height: 0; }
   .site-branding .name_slogan {
@@ -554,9 +558,7 @@ header.l-header {
 
 .branding-container {
   padding: 0.75em 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  /*display: flex;*/ }
 
 .l-region--header {
   float: left;

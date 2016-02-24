@@ -22,10 +22,12 @@ header.l-header {
 	@include span-columns(9);
 
 	//@include outer-container;
+	display:flex;
 
 	.site-branding__logo {
 		//@include span-columns(2);
 		width: 165px;
+		display : inline-block;
 		margin-right: 10px;
 		line-height: 0;
 	}
@@ -50,7 +52,7 @@ header.l-header {
 
 .branding-container {
 	padding: ($base-spacing / 2) 0;
-	display: flex;
+	/*display: flex;*/
 }
 
 .l-region--header {
