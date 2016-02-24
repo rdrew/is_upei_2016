@@ -357,13 +357,15 @@ header.l-header {
 
 @CHARSET "UTF-8";
 .sbHolder {
-  background-color: #2d2d2d;
-  border: solid 1px #515151;
-  font-family: Arial, sans-serif;
+  /*background-color: #2d2d2d;*/
+  background-color: #fff;
+  border: 1px solid #ddd;
   font-size: 12px;
   font-weight: normal;
+  text-transform: uppercase;
   height: 30px;
   position: relative;
+  border-radius: 2px;
   width: 200px; }
 
 .sbSelector {
@@ -379,7 +381,7 @@ header.l-header {
   width: 170px; }
 
 .sbSelector:link, .sbSelector:visited, .sbSelector:hover {
-  color: #EBB52D;
+  color: #8B2004;
   outline: none;
   text-decoration: none; }
 
@@ -407,8 +409,8 @@ header.l-header {
   border: solid 1px #515151; }
 
 .sbOptions {
-  background-color: #212121;
-  border: solid 1px #515151;
+  background-color: #fff;
+  border: 1px solid #ddd;
   list-style: none;
   left: -1px;
   margin: 0;
@@ -429,7 +431,7 @@ header.l-header {
   padding: 7px 0 7px 3px; }
 
 .sbOptions a:link, .sbOptions a:visited {
-  color: #ddd;
+  color: #333;
   text-decoration: none; }
 
 .sbOptions a:hover,

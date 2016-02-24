@@ -1,12 +1,17 @@
 @CHARSET "UTF-8";
 .sbHolder{
-	background-color: #2d2d2d;
-	border: solid 1px #515151;
-	font-family: Arial, sans-serif;
+	/*background-color: #2d2d2d;*/
+  background-color: $base-background-color;
+	//border: solid 1px #515151;
+	border: $base-border;
+	//font-family: Arial, sans-serif;
 	font-size: 12px;
 	font-weight: normal;
+	text-transform: uppercase;
 	height: 30px;
 	position: relative;
+	border-radius: $base-border-radius;
+	//@include small-shadow;
 	width: 200px;
 }
 .sbHolder:focus .sbSelector{
@@ -25,7 +30,7 @@
 	width: 170px;
 }
 .sbSelector:link, .sbSelector:visited, .sbSelector:hover{
-	color: #EBB52D;
+	color: $red;
 	outline: none;
 	text-decoration: none;
 }
@@ -59,8 +64,9 @@
 	
 }
 .sbOptions{
-	background-color: #212121;
-	border: solid 1px #515151;
+	//background-color: #212121;
+  background-color: $base-background-color;
+	border: $base-border;
 	list-style: none;
 	left: -1px;
 	margin: 0;
@@ -81,7 +87,8 @@
 	padding: 7px 0 7px 3px;
 }
 .sbOptions a:link, .sbOptions a:visited{
-	color: #ddd;
+	//color: #ddd;
+	color:$dark-gray;
 	text-decoration: none;
 }
 .sbOptions a:hover,
