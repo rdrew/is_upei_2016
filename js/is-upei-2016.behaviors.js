@@ -38,6 +38,13 @@
    *   Drupal.settings directly you should use this because of potential
    *   modifications made by the Ajax callback that also produced 'context'.
    */
+  Drupal.behaviors.nicer_select_box = {
+    attach: function (context, settings) {
+
+		$('select').selectbox("attach");
+
+	}
+  };
   Drupal.behaviors.isUpei2016ExampleBehavior = {
     attach: function (context, settings) {
       // By using the 'context' variable we make sure that our code only runs on
