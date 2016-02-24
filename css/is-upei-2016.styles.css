@@ -54,7 +54,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
           appearance: none;
   background-color: #8B2004;
   border: 0;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -71,7 +71,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
-  white-space: nowrap; }
+  white-space: nowrap;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #6f1a03;
     color: #fff; }
@@ -106,7 +107,7 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
 select[multiple=multiple] {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 2px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -291,8 +292,8 @@ picture {
   margin: 0;
   padding: 0;
   border: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  /*padding-top: 8px;*/
+  /*padding-bottom: 8px;*/
   /*padding: 8px 5px;*/ }
   .l-region--navigation .menu::after {
     clear: both;
@@ -315,11 +316,28 @@ picture {
       padding-right: 0; }
   .l-region--navigation .menu i {
     padding-right: 5px; }
-  .l-region--navigation .menu li:hover {
-    background: #5C8727; }
+  .l-region--navigation .menu li {
+    border-bottom: 4px solid #333;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    .l-region--navigation .menu li:hover {
+      background: #424242;
+      border-bottom: 4px solid #5C8727;
+      transition: all 0.15s ease-out 0s; }
+      .l-region--navigation .menu li:hover i {
+        color: #5C8727;
+        transition: all 0.15s ease-out 0s; }
   .l-region--navigation .menu a {
     color: #fff;
     font-size: .9em; }
+
+.l-region--navigation .scholar-menu li.last {
+  /* display: none; */
+  padding-right: 1em; }
+
+.l-region--navigation .scholar-menu li.first {
+  /* display: none; */
+  padding-left: 1em; }
 
 .site-branding__name {
   font-size: 2em;
@@ -335,7 +353,7 @@ picture {
   line-height: 1; }
 
 header.l-header {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15); }
 
 .landing-page .l-content {
   border: 0;
@@ -790,8 +808,8 @@ aside .menu li {
 .tabs a {
   background-color: #eee;
   text-decoration: none;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px; }
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px; }
 
 .tabs a.active {
   background-color: #fff; }

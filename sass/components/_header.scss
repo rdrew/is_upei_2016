@@ -6,17 +6,31 @@
 	/*background:#ccc;*/
 	@include horizontal-list(1em);
 
-	padding-top: 8px;
-	padding-bottom: 8px;
+	/*padding-top: 8px;*/
+	/*padding-bottom: 8px;*/
 
 	i {
 		padding-right: 5px;
 	}
 
 	li {
+		border-bottom: 4px solid $dark-gray;
+
 		&:hover {
-			background: $green;
+			background: #424242;
+			border-bottom: 4px solid $green;
+
+			@include transition;
+
+			i {
+				color: $green;
+
+				@include transition;
+			}
 		}
+
+		padding-bottom: 10px;
+		padding-top: 10px;
 	}
 
 	a {
@@ -25,6 +39,16 @@
 	}
 
 	/*padding: 8px 5px;*/
+}
+
+.l-region--navigation .scholar-menu li.last {
+	/* display: none; */
+	padding-right: 1em;
+}
+
+.l-region--navigation .scholar-menu li.first {
+	/* display: none; */
+	padding-left: 1em;
 }
 
 .site-branding__name {
@@ -43,5 +67,5 @@
 }
 
 header.l-header {
-	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+	@include big-shadow;
 }

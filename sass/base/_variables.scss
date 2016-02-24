@@ -1,6 +1,7 @@
 // Typography
 $base-font-family: $helvetica;
 $heading-font-family: $georgia;
+
 /*$heading-font-family: $base-font-family;*/
 
 // Font Sizes
@@ -11,13 +12,13 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 5px;
+$base-border-radius: 2px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$off-white:##FBFBFB;
+$off-white: #FBFBFB;
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -46,18 +47,28 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 $base-duration: 150ms;
 $base-timing: ease;
 
-//My stuff
-@mixin border-bottom() {
+// Shadows
 
+@mixin small-shadow {
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@mixin big-shadow {
+	box-shadow: 0 1px 5px 2px rgba(0,0,0,.15);
+}
+
+
+//My stuff
+@mixin border-bottom {
 	border-bottom: $base-border;
 	margin-bottom: $base-spacing;
 	padding-bottom: $base-spacing;
-
 }
-@mixin border-top() {
 
+@mixin border-top {
 	border-top: $base-border;
 	margin-top: $base-spacing;
 	padding-top: $base-spacing;
-
 }

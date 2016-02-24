@@ -10,12 +10,13 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = css/is-upei-2016.reset.css
 stylesheets[all][] = css/is-upei-2016.styles.css
+stylesheets[all][] = js/jquery.selectbox/css/jquery.selectbox.css
 
 ; ========================================
 ; Scripts
 ; ========================================
 scripts[] = js/is-upei-2016.behaviors.js
-
+scripts[] = js/jquery.selectbox/js/jquery.selectbox-0.2.min.js 
 ; ========================================
 ; Regions
 ; ========================================
