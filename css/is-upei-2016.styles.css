@@ -324,14 +324,14 @@ picture {
     padding-right: 5px; }
   .l-region--navigation .menu li {
     border-bottom: 4px solid #333;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
     padding-top: 10px; }
     .l-region--navigation .menu li:hover {
       background: #424242;
-      border-bottom: 4px solid #5C8727;
+      border-bottom: 4px solid #90D33D;
       transition: all 0.15s ease-out 0s; }
       .l-region--navigation .menu li:hover i {
-        color: #5C8727;
+        color: #90D33D;
         transition: all 0.15s ease-out 0s; }
   .l-region--navigation .menu a {
     color: #fff;

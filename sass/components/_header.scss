@@ -18,18 +18,18 @@
 
 		&:hover {
 			background: #424242;
-			border-bottom: 4px solid $green;
+			border-bottom: 4px solid $light-green;
 
 			@include transition;
 
 			i {
-				color: $green;
+				color: $light-green;
 
 				@include transition;
 			}
 		}
 
-		padding-bottom: 10px;
+		padding-bottom: 6px;
 		padding-top: 10px;
 	}
 
