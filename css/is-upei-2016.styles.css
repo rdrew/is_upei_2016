@@ -84,6 +84,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
       background-color: #8B2004; }
 
+button.green, .views-exposed-widget.views-submit-button input[type="submit"], input[type="button"].green, input[type="reset"].green, input[type="submit"].green {
+  background-color: #5C8727; }
+  button.green:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, button.green:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input[type="submit"].green:focus {
+    background-color: #4a6c1f;
+    color: #fff; }
+  button.green:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    button.green:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover {
+      background-color: #5C8727; }
+
 fieldset {
   background-color: #f7f7f7;
   border: 1px solid #ddd;
@@ -287,6 +298,57 @@ picture {
     /*color: $light-green;*/
     color: #5C8727; }
 
+.page-browse-scholars .l-content {
+  border: 0;
+  padding: 0; }
+
+/*
+ *search widgets
+ */
+.page-browse-scholars .views-exposed-widgets {
+  background: white;
+  padding: 1.5em;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
+
+.views-exposed-form .views-exposed-widget {
+  float: left;
+  padding: .5em 1em 0 0;
+  width: 25%; }
+  .views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 0; }
+
+.views-exposed-widget.views-submit-button {
+  clear: both;
+  width: 86px; }
+
+/*
+ *Table stuff
+ */
+.page-browse-scholars table {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px; }
+  .page-browse-scholars table th {
+    background: #333;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif; }
+    .page-browse-scholars table th a {
+      color: #fff; }
+  .page-browse-scholars table td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5em 0; }
+  .page-browse-scholars table tr.odd {
+    background: white; }
+  .page-browse-scholars table tr.even {
+    background: white; }
+  .page-browse-scholars table td:first-child, .page-browse-scholars table th:first-child {
+    padding-left: 10px; }
+  .page-browse-scholars table th.views-field.views-field-MADS-organization-mt {
+    width: 25%; }
+  .page-browse-scholars table th.views-field.views-field-MADS-status-mt, .page-browse-scholars table th.views-field.views-field-MADS-given-s {
+    width: 8%; }
+  .page-browse-scholars table th.views-field.views-field-MADS-family-s {
+    width: 15%; }
+
 .l-footer-wrapper {
   background: #333; }
 
@@ -433,7 +495,7 @@ header.l-header {
   padding: 0 7px; }
 
 .sbOptions a {
-  border-bottom: dotted 1px #515151;
+  border-bottom: 1px solid #ddd;
   display: block;
   outline: none;
   padding: 7px 0 7px 3px; }
@@ -445,7 +507,7 @@ header.l-header {
 .sbOptions a:hover,
 .sbOptions a:focus,
 .sbOptions a.sbFocus {
-  color: #EBB52D; }
+  color: #8B2004; }
 
 .sbOptions li.last a {
   border-bottom: none; }
@@ -852,6 +914,16 @@ aside .block {
 aside .menu li {
   list-style-type: none; }
 
+.block ul.islandora-solr-facet {
+  padding: 0 0 0 0; }
+
+ul.islandora-solr-facet li > a {
+  display: inline-block;
+  width: 186px; }
+
+ul.islandora-solr-facet .count {
+  font-family: "Roboto Condensed", sans-serif; }
+
 .islandora-solr-facet-wrapper {
   margin-bottom: 1.5em; }
 
@@ -868,6 +940,17 @@ aside .menu li {
 /*}*/
 /* Theme style sheet for islandora solr */
 /* breadcrumbs */
+ul.islandora-solr-facet {
+  font-size: .9em; }
+  ul.islandora-solr-facet li {
+    /* background: white; */
+    border-bottom: 1px solid rgba(204, 204, 204, 0);
+    border-top: 1px solid rgba(204, 204, 204, 0); }
+  ul.islandora-solr-facet li:hover {
+    background: white;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc; }
+
 .strikethrough {
   text-decoration: line-through !important; }
 

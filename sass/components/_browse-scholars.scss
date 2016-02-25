@@ -1,0 +1,86 @@
+.page-browse-scholars .l-content {
+	border: 0;
+	padding: 0;
+}
+
+/*
+ *search widgets
+ */
+.page-browse-scholars .views-exposed-widgets {
+	background: white;
+	padding: $base-spacing;
+
+	@include small-shadow;
+}
+
+.views-exposed-form .views-exposed-widget {
+	float: left;
+	padding: .5em 1em 0 0;
+	width: 25%;
+
+	.form-submit {
+		margin-top: 0;
+	}
+}
+
+.views-exposed-widget.views-submit-button {
+	clear: both;
+	width: 86px;
+	input[type="submit"] {
+	@extend button.green;
+	}
+}
+
+/*
+ *Table stuff
+ */
+//.page-browse-scholars table * {
+//background: none !important;
+//}
+.page-browse-scholars table {
+	@include small-shadow;
+
+	th {
+		background: $dark-gray;
+		color: #fff;
+		font-family: $roboto_condensed;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	td {
+		border-bottom: 1px solid #ddd;
+		padding: 0.5em 0;
+	}
+
+	tr.odd {
+		background: white;
+	}
+
+	tr.even {
+		background: white;
+	}
+
+	//border: $base-border;
+	border-radius: $base-border-radius;
+
+	td:first-child, th:first-child {
+		padding-left: 10px;
+	}
+
+	th.views-field.views-field-MADS-organization-mt {
+		width: 25%;
+	}
+
+	th.views-field.views-field-MADS-status-mt, th.views-field.views-field-MADS-given-s {
+		width: 8%;
+	}
+
+	th.views-field.views-field-MADS-fullname-s {}
+
+	th.views-field.views-field-MADS-family-s {
+		width: 15%;
+	}
+}

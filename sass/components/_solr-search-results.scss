@@ -1,6 +1,23 @@
-.islandora-solr-facet-wrapper {
-    margin-bottom: $base-spacing;
+//Facets
+.block ul.islandora-solr-facet {
+	padding: 0 0 0 0;
 }
+
+ul.islandora-solr-facet li > a {
+	display: inline-block;
+
+	//background: black;
+	width: 186px;
+}
+
+ul.islandora-solr-facet .count {
+	font-family: $roboto_condensed;
+}
+
+.islandora-solr-facet-wrapper {
+	margin-bottom: $base-spacing;
+}
+
 .page-islandora-search .l-content {
 	padding: 0;
 }
@@ -18,6 +35,22 @@
 /* Theme style sheet for islandora solr */
 
 /* breadcrumbs */
+
+ul.islandora-solr-facet {
+	font-size: .9em;
+
+	li {
+		/* background: white; */
+		border-bottom: 1px solid rgba(204, 204, 204, 0);
+		border-top: 1px solid rgba(204, 204, 204, 0);
+	}
+
+	li:hover {
+		background: white;
+		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #ccc;
+	}
+}
 
 .strikethrough {
 	text-decoration: line-through !important;
@@ -205,8 +238,9 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 }
 
 .islandora-solr-facet a {
-font-family: $roboto_condensed;
+	font-family: $roboto_condensed;
 }
+
 .page-islandora-search {
 	.l-content {
 		border: 0;
