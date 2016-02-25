@@ -1,4 +1,5 @@
 //Facets
+
 .block ul.islandora-solr-facet {
 	padding: 0 0 0 0;
 }
@@ -263,3 +264,38 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 	background: white;
 }
+
+/*
+ *bookmarks
+ */
+div#block-islandora-bookmark-islandora-bookmark {
+	position: absolute;
+	top: 40px;
+	right: 28px;
+
+	/* width: 375px; */
+	/* background: white; */
+	/* padding: 10px; */
+	/* border-left: 1px solid #ccc; */
+	h3 {
+		display: none;
+	}
+
+	/* border-bottom: 1px solid #ccc; */
+	.form-item-add-bookmarks {
+		margin-bottom: 0  !important;
+	display:block;
+	float:left  !important;
+	margin-right:5px;
+	}
+	.form-submit {
+	display:block;
+	}
+}
+
+.l-content {
+	position: relative;
+}
+
+input#edit-add-button {}
+
