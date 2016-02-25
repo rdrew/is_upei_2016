@@ -1,5 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,300italic,400italic,500italic,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,400italic,300italic,700,300);
+
 // Typography
-$base-font-family: $helvetica;
+$roboto: 'Roboto', sans-serif;
+$roboto_condensed: 'Roboto Condensed', sans-serif;
+$base-font-family: $roboto;
 $heading-font-family: $georgia;
 
 /*$heading-font-family: $base-font-family;*/
@@ -37,6 +43,7 @@ $base-border: 1px solid $base-border-color;
 
 // Background Colors
 $base-background-color: $off-white;
+
 //$base-background-color: #fff;
 $secondary-background-color: tint($base-border-color, 75%);
 
@@ -54,12 +61,9 @@ $base-timing: ease;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-
-
 @mixin big-shadow {
-	box-shadow: 0 1px 5px 2px rgba(0,0,0,.15);
+	box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15);
 }
-
 
 //My stuff
 @mixin border-bottom {
