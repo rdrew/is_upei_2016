@@ -335,7 +335,8 @@ picture {
         transition: all 0.15s ease-out 0s; }
   .l-region--navigation .menu a {
     color: #fff;
-    font-size: .9em; }
+    font-size: .9em;
+    font-family: "Roboto Condensed", sans-serif; }
 
 .l-region--navigation .scholar-menu li.last {
   /* display: none; */
@@ -359,7 +360,8 @@ picture {
   line-height: 1; }
 
 header.l-header {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
+  /*@include small-shadow;*/
+  border-bottom: 2px solid #eeeeee; }
 
 @CHARSET "UTF-8";
 .sbHolder {
@@ -702,6 +704,9 @@ ul.pager {
   border: 1px solid #ddd;
   padding: 1.5em; }
 
+.scholar-page .l-content {
+  background: #fff  !important; }
+
 .scholar {
   max-width: 100%;
   margin-left: auto;
@@ -846,6 +851,9 @@ aside .block {
 
 aside .menu li {
   list-style-type: none; }
+
+.islandora-solr-facet-wrapper {
+  margin-bottom: 1.5em; }
 
 .page-islandora-search .l-content {
   padding: 0; }

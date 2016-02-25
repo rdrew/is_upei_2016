@@ -36,6 +36,7 @@
 	a {
 		color: #fff;
 		font-size: .9em;
+		font-family: $roboto_condensed;
 	}
 
 	/*padding: 8px 5px;*/
@@ -67,5 +68,6 @@
 }
 
 header.l-header {
-	@include small-shadow;
+	/*@include small-shadow;*/
+	    border-bottom: 2px solid #eeeeee;
 }

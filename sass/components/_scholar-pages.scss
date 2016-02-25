@@ -2,6 +2,11 @@
 border: $base-border;
 padding: $base-spacing;
 }
+.scholar-page .l-content {
+
+		background: #fff  !important;
+
+}
 .scholar {
 	@include outer-container;
 
