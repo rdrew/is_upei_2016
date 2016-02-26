@@ -62,10 +62,11 @@ div#block-islandora-bookmark-islandora-bookmark {
 	/* position: absolute;*/
 	/*top: 40px;*/
 	/*right: 28px;*/
-.messages.messages--error {
-    background-image: none;
-    padding: 5px;
-}
+	.messages.messages--error {
+		background-image: none;
+		padding: 5px;
+	}
+
 	h3 {
 		display: none;
 	}
@@ -96,14 +97,128 @@ div#block-islandora-bookmark-islandora-bookmark {
 input#edit-add-button {
 	display: block;
 	margin: 0 auto;
+
 	@extend button.green;
 }
 
 .form-item.form-type-select.form-item-add-bookmarks {
 	margin-right: 0 !important;
 }
-div#edit-lists a {
 
-	@extend input;
-@extend button.green;
+.scholar-page {
+	div#edit-lists {
+		text-align: center;
+	}
+}
+
+div#edit-lists a {
+	appearance: none;
+	background-color: $green;
+	border: 0;
+	border-radius: $base-border-radius;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+
+	//font-family: $base-font-family;
+	font-family: $roboto_condensed;
+	font-size: $base-font-size;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	line-height: 1;
+	padding: ($small-spacing / 2) ($base-spacing / 2);
+	text-decoration: none;
+	transition: background-color $base-duration $base-timing;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	@include small-shadow;
+
+	&:hover,
+	&:focus {
+		background-color: shade($green, 20%);
+		color: #fff;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: $green;
+		}
+	}
+
+	i {
+		margin-right: 4px;
+	}
+}
+
+/*
+ *my bookmarks page
+ */
+#islandora-bookmark-detailed-overview {
+	.operations input {
+	@extend button.gray;
+}
+	//change table styles
+	table {
+		@include small-shadow;
+
+		th {
+			background: $dark-gray;
+			color: #fff;
+			font-family: $roboto_condensed;
+
+			a {
+				color: #fff;
+			}
+		}
+		th:nth-child(2) {
+		width: 85%;
+		}
+
+		td {
+			border-bottom: 1px solid #ddd;
+			padding: 0.5em 0;
+		}
+
+		tr.odd {
+			background: white;
+		}
+
+		tr.even {
+			background: white;
+		}
+
+		//border: $base-border;
+		border-radius: $base-border-radius;
+
+		td:first-child, th:first-child {
+			padding-left: 10px;
+		}
+	}
+	fieldset#edit-bookmarks-fieldset{
+	padding:0px;
+	}
+	legend {
+	display: none;
+	}
+}
+div#islandora-bookmark-detailed-list legend {
+    display: none;
+}
+
+#islandora-bookmark-detailed-list .form-wrapper {
+    border: 0;
+    background: none;
+	padding:0px
+}
+
+.page-islandora-bookmark .l-content {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
