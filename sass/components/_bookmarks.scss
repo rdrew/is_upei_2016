@@ -93,6 +93,7 @@ div#block-islandora-bookmark-islandora-bookmark {
 input#edit-add-button {
 	display: block;
 	margin: 0 auto;
+	@extend button.green;
 }
 
 .form-item.form-type-select.form-item-add-bookmarks {
