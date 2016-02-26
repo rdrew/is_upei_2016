@@ -10,7 +10,7 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = css/is-upei-2016.reset.css
 stylesheets[all][] = css/is-upei-2016.styles.css
-stylesheets[all][] = js/jquery.selectbox/css/jquery.selectbox.css
+;stylesheets[all][] = js/jquery.selectbox/css/jquery.selectbox.css
 
 ; ========================================
 ; Scripts

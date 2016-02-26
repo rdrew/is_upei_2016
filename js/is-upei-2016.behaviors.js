@@ -54,6 +54,7 @@
     attach: function (context, settings) {
 
 		//$('#islandora-bookmark input').prepend('hi');
+		$('div#edit-lists a').replaceWith('<a href="/islandora-bookmark/listid/1"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
 		//$('.islandora-bookmark input#edit-add-button').prepend('<i class="fa fa-plus-square-o" aria-hidden="true"></i>');
 		//$('a.minus').append('<i class="fa fa-minus-square-o" aria-hidden="true"></i>');
 		//$( "a.plus" ).replaceWith( "<i class="fa fa-file" aria-hidden="true"></i>" );
