@@ -280,6 +280,87 @@ picture {
   max-width: 100%; }
 
 /**
+ * @file
+  * Styles for Islandora Bookmark.
+   */
+div.islandora-bookmark-users div.form-item {
+  width: 200px;
+  display: inline-block;
+  display: -moz-inline-block;
+  margin-right: 10px;
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: 2%; }
+
+div.islandora-bookmark-listname div.form-item {
+  display: inline-block;
+  display: -moz-inline-block;
+  margin-right: 10px;
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: 2%; }
+
+div.islandora-bookmark-adduser div.form-item {
+  display: inline-block;
+  display: -moz-inline-block;
+  margin-right: 10px;
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: 2%; }
+
+div.islandora-bookmark-error-message {
+  background-image: linear-gradient(#ee5f5b, #c43c35);
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+#islandora-bookmark .form-item-add-bookmarks {
+  margin-right: 10px; }
+
+#islandora-bookmark-detailed-form table .operations {
+  width: 100px; }
+
+#islandora-bookmark-rss-format {
+  float: right;
+  display: block;
+  clear: both; }
+
+#islandora-bookmark-detailed-list {
+  clear: both; }
+
+/*
+ *bookmarks
+ */
+div#block-islandora-bookmark-islandora-bookmark {
+  /* position: absolute;*/
+  /*top: 40px;*/
+  /*right: 28px;*/
+  /*.form-item-add-bookmarks {*/
+  /*margin-bottom: 0  !important;*/
+  /*display: block;*/
+  /*float: left  !important;*/
+  /*margin-right: 5px;*/
+  /*}*/
+  /*.form-submit {*/
+  /*display: block;*/
+  /*}*/ }
+  div#block-islandora-bookmark-islandora-bookmark h3 {
+    display: none; }
+  div#block-islandora-bookmark-islandora-bookmark .sbOptions, div#block-islandora-bookmark-islandora-bookmark .sbHolder {
+    width: 100%  !important; }
+  div#block-islandora-bookmark-islandora-bookmark .sbHolder {
+    font-size: 10px; }
+
+.l-content {
+  /*position: relative;*/ }
+
+input#edit-add-button {
+  display: block;
+  margin: 0 auto; }
+
+.form-item.form-type-select.form-item-add-bookmarks {
+  margin-right: 0 !important; }
+
+/**
  * $BREADCRUMB
   */
 .breadcrumb {
@@ -425,11 +506,89 @@ header.l-header {
   /*@include small-shadow;*/
   border-bottom: 2px solid #eeeeee; }
 
+/*
+Document   : islandora_basic_collection.base.css
+Created on : May 23, 2012, 11:22:04 AM
+Description:
+Purpose of the stylesheet follows.
+ */
+.islandora img {
+  max-width: 100%;
+  *width: 100%; }
+
+.islandora * {
+  box-sizing: border-box; }
+
+/*
+ * These rules will display DTs/DDs as columns.
+ * Constructs must follow a key/value pair pattern.
+ * The three last declarations are meant to kill white space between DTs/DDs
+ * (result of inline-block styling)
+ */
+dl.islandora-inline-metadata {
+  margin: 0 auto;
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  word-spacing: -0.43em; }
+
+.islandora-inline-metadata dt {
+  margin-right: -1px;
+  width: 15%;
+  /*font-weight: bold;*/
+  padding-right: 0;
+  word-wrap: normal; }
+
+.islandora-inline-metadata dd {
+  width: 85%;
+  padding-left: 40px; }
+
+dl.islandora-metadata-fields {
+  width: 100%; }
+
+.islandora-metadata dt,
+.islandora-metadata dd {
+  border-top: 1px solid #e5e5e5; }
+
+.islandora-metadata dt.first,
+.islandora-metadata dd.first {
+  border-top: 0; }
+
+/*
+ * In this rule, we reset the white-space (see hack above)
+ */
+.islandora-inline-metadata dt,
+.islandora-inline-metadata dd {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  margin: 0; }
+
+/*
+		  *scholar-page
+		  */
+.scholar-page legend {
+  display: none; }
+
+.scholar-page fieldset.islandora-metadata {
+  border: 0px;
+  padding: 0;
+  background-color: none;
+  background: none; }
+
+.scholar-page p {
+  margin: 0; }
+
 @CHARSET "UTF-8";
 .sbHolder {
   /*background-color: #2d2d2d;*/
   background-color: #FBFBFB;
   border: 1px solid #ddd;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
@@ -1115,31 +1274,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   padding: 1em;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
   background: white; }
-
-/*
- *bookmarks
- */
-div#block-islandora-bookmark-islandora-bookmark {
-  position: absolute;
-  top: 40px;
-  right: 28px;
-  /* width: 375px; */
-  /* background: white; */
-  /* padding: 10px; */
-  /* border-left: 1px solid #ccc; */
-  /* border-bottom: 1px solid #ccc; */ }
-  div#block-islandora-bookmark-islandora-bookmark h3 {
-    display: none; }
-  div#block-islandora-bookmark-islandora-bookmark .form-item-add-bookmarks {
-    margin-bottom: 0  !important;
-    display: block;
-    float: left  !important;
-    margin-right: 5px; }
-  div#block-islandora-bookmark-islandora-bookmark .form-submit {
-    display: block; }
-
-.l-content {
-  position: relative; }
 
 /**
  * @file
