@@ -68,3 +68,7 @@ padding: $base-spacing;
 		@include border-bottom;
 	}
 }
+.scholar-image img {
+    border: 1px solid #ccc;
+    padding: 4px;
+}

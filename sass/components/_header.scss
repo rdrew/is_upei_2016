@@ -11,11 +11,13 @@
 
 	i {
 		padding-right: 5px;
+		display:none;
 	}
 
 	li {
 		border-bottom: 4px solid $dark-gray;
 
+		border-right: $base-border;
 		&:hover {
 			background: #424242;
 			border-bottom: 4px solid $light-green;
@@ -29,8 +31,12 @@
 			}
 		}
 
-		padding-bottom: 6px;
-		padding-top: 10px;
+		padding-bottom: 4px;
+		padding-top: 8px;
+		&:first-child {
+		
+			border-left:$medium-gray;
+		}
 	}
 
 	a {

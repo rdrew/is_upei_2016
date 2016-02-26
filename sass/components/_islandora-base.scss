@@ -32,7 +32,7 @@ dl.islandora-inline-metadata {
 
 .islandora-inline-metadata dt {
 	margin-right: -1px;
-	width: 15%;
+	width: 20%;
 	font-family: $roboto_condensed;
 	/*font-weight: bold;*/
 	padding-right: 0;
@@ -40,7 +40,7 @@ dl.islandora-inline-metadata {
 }
 
 .islandora-inline-metadata dd {
-	width: 85%;
+	width: 80%;
 	padding-left: 40px;
 }
 
@@ -87,6 +87,7 @@ dl.islandora-metadata-fields {
 		padding:0;
 		background-color:none;
 		background:none;
+		margin-bottom:0px;
 	}
 	p {
 	margin: 0;
