@@ -38,6 +38,39 @@
    *   Drupal.settings directly you should use this because of potential
    *   modifications made by the Ajax callback that also produced 'context'.
    */
+  Drupal.behaviors.bookmarks = {
+    attach: function (context, settings) {
+
+		//$('#islandora-bookmark input').prepend('hi');
+		//$('.islandora-bookmark input#edit-add-button').prepend('<i class="fa fa-plus-square-o" aria-hidden="true"></i>');
+		//$('#block-islandora-bookmark-islandora-bookmark').hide();
+		$('.scholar-image').append($('#block-islandora-bookmark-islandora-bookmark'));
+		//$('a.minus').append('<i class="fa fa-minus-square-o" aria-hidden="true"></i>');
+		//$( "a.plus" ).replaceWith( "<i class="fa fa-file" aria-hidden="true"></i>" );
+
+	}
+  };
+  Drupal.behaviors.button_icons = {
+    attach: function (context, settings) {
+
+		//$('#islandora-bookmark input').prepend('hi');
+		//$('.islandora-bookmark input#edit-add-button').prepend('<i class="fa fa-plus-square-o" aria-hidden="true"></i>');
+		//$('a.minus').append('<i class="fa fa-minus-square-o" aria-hidden="true"></i>');
+		//$( "a.plus" ).replaceWith( "<i class="fa fa-file" aria-hidden="true"></i>" );
+
+	}
+  };
+  Drupal.behaviors.solr_plus_minus = {
+    attach: function (context, settings) {
+
+		$('a.plus').empty();
+		$('a.minus').empty();
+		$('a.plus').append('<i class="fa fa-plus-square-o" aria-hidden="true"></i>');
+		$('a.minus').append('<i class="fa fa-minus-square-o" aria-hidden="true"></i>');
+		//$( "a.plus" ).replaceWith( "<i class="fa fa-file" aria-hidden="true"></i>" );
+
+	}
+  };
   Drupal.behaviors.nicer_select_box = {
     attach: function (context, settings) {
 
