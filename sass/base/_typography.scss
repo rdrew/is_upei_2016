@@ -34,18 +34,19 @@ h2 {
 	font-size: 1.3em;
 	font-weight: 400;
 	line-height: 1.25em;
-	margin-bottom: .9em;
+	margin-bottom: .3em;
 
 	@include media($medium-screen) {
-		font-size: 1.5em;
+		font-size: 1.4em;
+		/*font-weight:bold;*/
 	}
 }
 
 h3 {
-	/*font-family: $serif;*/
-	font-size: 1.4em;
-	font-style: italic;
-	font-weight: 400;
+	font-family: $roboto_condensed;
+	font-size: 1.2em;
+	/*font-style: italic;*/
+	font-weight: 500;
 	line-height: 1.3em;
 	margin-bottom: 0.4em;
 }

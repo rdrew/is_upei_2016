@@ -62,7 +62,10 @@ div#block-islandora-bookmark-islandora-bookmark {
 	/* position: absolute;*/
 	/*top: 40px;*/
 	/*right: 28px;*/
-
+.messages.messages--error {
+    background-image: none;
+    padding: 5px;
+}
 	h3 {
 		display: none;
 	}
@@ -98,4 +101,9 @@ input#edit-add-button {
 
 .form-item.form-type-select.form-item-add-bookmarks {
 	margin-right: 0 !important;
+}
+div#edit-lists a {
+
+	@extend input;
+@extend button.green;
 }
