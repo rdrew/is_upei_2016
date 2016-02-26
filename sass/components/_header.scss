@@ -11,31 +11,36 @@
 
 	i {
 		padding-right: 5px;
-		display:none;
+
+		/*display:none;*/
 	}
 
 	li {
 		border-bottom: 4px solid $dark-gray;
+		border-right: 1px solid #151515;
 
-		border-right: $base-border;
 		&:hover {
 			background: #424242;
-			border-bottom: 4px solid $light-green;
+			border-bottom: 4px solid $green;
 
 			@include transition;
 
 			i {
-				color: $light-green;
+				color: $green;
 
 				@include transition;
+			}
+
+			.last.leaf {
+				float: right;
 			}
 		}
 
 		padding-bottom: 4px;
 		padding-top: 8px;
+
 		&:first-child {
-		
-			border-left:$medium-gray;
+			/*border-left:$medium-gray;*/
 		}
 	}
 
@@ -51,11 +56,14 @@
 .l-region--navigation .scholar-menu li.last {
 	/* display: none; */
 	padding-right: 1em;
+	float: right;
+	border-left: 1px solid #151515;
 }
 
 .l-region--navigation .scholar-menu li.first {
 	/* display: none; */
 	padding-left: 1em;
+	border-left: 1px solid #151515;
 }
 
 .site-branding__name {
@@ -75,5 +83,5 @@
 
 header.l-header {
 	/*@include small-shadow;*/
-	    border-bottom: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
