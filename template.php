@@ -14,3 +14,8 @@ function IS_UPEI_2016_form_alter(&$form, &$form_state, $form_id) {
 		$form['simple']['islandora_simple_search_query']['#attributes']['onfocus'] = "if (this.value == 'Search Island Scholar:') {this.value = '';}";
 	}
 }
+
+//function IS_UPEI_2016_preprocess_page(&$vars) {
+  //drupal_add_library('system','ui.button');
+  //drupal_add_js(path_to_theme().'/ls/is-upei-2016.behaviors.js','file');
+//}
