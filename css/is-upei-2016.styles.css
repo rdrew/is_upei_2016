@@ -284,6 +284,11 @@ a {
   a:active, a:focus, a:hover {
     color: #681803; }
 
+.csl-bib-body {
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 1.2em;
+  margin-bottom: 1.5em; }
+
 hr {
   border-bottom: 1px solid #ddd;
   border-left: 0;

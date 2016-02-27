@@ -38,6 +38,7 @@ h2 {
 
 	@include media($medium-screen) {
 		font-size: 1.4em;
+
 		/*font-weight:bold;*/
 	}
 }
@@ -45,6 +46,7 @@ h2 {
 h3 {
 	font-family: $roboto_condensed;
 	font-size: 1.2em;
+
 	/*font-style: italic;*/
 	font-weight: 500;
 	line-height: 1.3em;
@@ -65,6 +67,12 @@ a {
 	&:hover {
 		color: shade($action-color, 25%);
 	}
+}
+
+.csl-bib-body {
+	font-family: $georgia;
+	font-size: 1.2em;
+	margin-bottom: $base-spacing;
 }
 
 hr {
