@@ -65,7 +65,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
+  text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1;
@@ -283,11 +284,6 @@ a {
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
     color: #681803; }
-
-.csl-bib-body {
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 1.2em;
-  margin-bottom: 1.5em; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -538,6 +534,21 @@ div#islandora-bookmark-detailed-list legend {
   .page-browse-scholars table th.views-field.views-field-MADS-family-s {
     width: 15%; }
 
+.csl-bib-body {
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  padding-right: 0.75em; }
+
+.citation-page .csl-bib-body {
+  font-size: 1.2em;
+  background: #e7ede0;
+  margin-bottom: 1.5em;
+  padding: 0.75em;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
+
+fieldset#edit-bookmarks-fieldset td a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600; }
+
 .l-footer-wrapper {
   background: #333; }
 
@@ -558,16 +569,24 @@ div#islandora-bookmark-detailed-list legend {
   .islandora-metadata dt {
     width: 11%; }
 
-#edit-upload-document {
-  border: 0;
-  background: none;
-  padding: 0; }
-  #edit-upload-document legend {
-    display: none; }
-  #edit-upload-document p {
-    margin: 0; }
-  #edit-upload-document dt {
-    width: 11%; }
+tr:hover {
+  background-color: #e7ede0 !important; }
+
+th {
+  border-right: 1px solid black; }
+
+thead {
+  border: 1px solid #333;
+  border-bottom: 2px solid #333; }
+
+table th {
+  padding-left: .5em; }
+
+td {
+  padding: 1em; }
+
+#islandora-bookmark-detailed-overview table td {
+  padding: .5em; }
 
 .nav-wrapper {
   background: #333; }
@@ -628,6 +647,8 @@ div#islandora-bookmark-detailed-list legend {
   padding-right: 1em;
   float: right;
   border-left: 1px solid #151515; }
+  .l-region--navigation .scholar-menu li.last a {
+    color: #ffd29a; }
 
 .l-region--navigation .scholar-menu li.first {
   /* display: none; */
@@ -946,7 +967,7 @@ header.l-header {
   margin-bottom: 1.5em; }
 
 .l-main {
-  padding-top: 1.5em; }
+  padding: 1.5em 0; }
 
 .has-one-sidebar.has-sidebar-first .l-region--sidebar-first {
   /*background: red;*/
