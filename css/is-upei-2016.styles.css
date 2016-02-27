@@ -547,6 +547,28 @@ div#islandora-bookmark-detailed-list legend {
 .button + .button {
   margin-left: 1em; }
 
+.islandora-metadata {
+  border: 0;
+  background: none;
+  padding: 0; }
+  .islandora-metadata legend {
+    display: none; }
+  .islandora-metadata p {
+    margin: 0; }
+  .islandora-metadata dt {
+    width: 11%; }
+
+#edit-upload-document {
+  border: 0;
+  background: none;
+  padding: 0; }
+  #edit-upload-document legend {
+    display: none; }
+  #edit-upload-document p {
+    margin: 0; }
+  #edit-upload-document dt {
+    width: 11%; }
+
 .nav-wrapper {
   background: #333; }
 
