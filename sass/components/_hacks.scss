@@ -1,6 +1,44 @@
 .l-content {
-    background: white;
+	background: white;
 }
 .button + .button {
-    margin-left: 1em;
+	margin-left: 1em;
+}
+
+.islandora-metadata {
+	border: 0;
+	background: none;
+	padding: 0;
+	legend {
+		display: none;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	dt {
+		width: 11%;
+	}
+}
+
+@mixin remove_fieldset() {
+	border: 0;
+	background: none;
+	padding: 0;
+	legend {
+		display: none;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	dt {
+		width: 11%;
+	}
+
+}
+#edit-upload-document {
+@include remove_fieldset;
 }
