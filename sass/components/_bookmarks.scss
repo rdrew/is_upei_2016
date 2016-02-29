@@ -58,13 +58,17 @@ div.islandora-bookmark-error-message {
 /*
  *bookmarks
  */
-div#block-islandora-bookmark-islandora-bookmark {
+#block-islandora-bookmark-islandora-bookmark, .solr-thumb {
 	/* position: absolute;*/
 	/*top: 40px;*/
 	/*right: 28px;*/
 	.messages.messages--error {
 		background-image: none;
 		padding: 5px;
+	}
+
+	.upei-roblib-scholar-search-bookmark {
+		display: none;
 	}
 
 	h3 {
@@ -94,7 +98,8 @@ div#block-islandora-bookmark-islandora-bookmark {
 	/*position: relative;*/
 }
 
-input#edit-add-button {
+input#edit-add-button,
+.roblib-bookmark-form input.form-submit {
 	display: block;
 	margin: 0 auto;
 

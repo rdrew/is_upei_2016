@@ -78,8 +78,13 @@ ul.islandora-solr-facet {
 
 dl.solr-thumb {
 	float: left;
-	width: 15%;
+	width: 20%;
 	margin: 0;
+
+	img {
+		padding: 4px;
+		border: $base-border;
+	}
 }
 
 .solr-thumb dt,
@@ -89,7 +94,8 @@ dl.solr-thumb {
 
 dl.solr-fields {
 	float: right;
-	width: 75%;
+	width: 80%;
+	padding-left: $base-spacing;
 
 	//border-top: 3px solid #ddd;
 }
@@ -99,8 +105,7 @@ dl.solr-fields {
 	border-top: 1px solid #ddd;
 }
 
-.solr-fields dt.first,
-.solr-fields dd.first {
+.solr-fields .mods-titleinfo-title-s {
 	border-top: 0;
 }
 
@@ -245,6 +250,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 .page-islandora-search {
 	.l-content {
 		border: 0;
+		background: none;
 	}
 
 	#block-islandora-solr-basic-facets .fa {
@@ -260,8 +266,55 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	/*border: 1px solid #ccc;*/
 	padding: 1em;
 
-	@include small-shadow;
-
+	/*@include small-shadow;*/
+	border: $base-border;
 	background: white;
+
+	.islandora-inline-metadata dt,
+	.islandora-inline-metadata dd {
+		display: inline-block;
+		zoom: 1;
+		letter-spacing: normal;
+		word-spacing: normal;
+		vertical-align: top;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		margin: 0;
+	}
+
+	.islandora-inline-metadata dt {
+		margin-right: -1px;
+		width: 10%;
+		font-family: "Roboto Condensed", sans-serif;
+
+		/*font-weight: bold;*/
+		padding-right: 0;
+		word-wrap: normal;
+	}
+
+	.islandora-inline-metadata dd {
+		width: 90%;
+		font-size: .9em;
+		padding-left: $base-spacing;
+	}
 }
 
+//shrink the bookmark button
+.islandora-solr-search-result-inner {
+	input[type="submit"] {
+		/*     padding: 8px;*/
+		/*font-size: .8em;*/
+	}
+
+	.form-item.form-type-select {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
+
+.solr-thumb {
+	.solr-label.roblib-coins,
+	.solr-label.roblib-fulltext {
+		text-align: center;
+	}
+}
