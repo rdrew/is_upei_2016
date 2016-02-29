@@ -47,7 +47,7 @@ ul.islandora-solr-facet {
 	}
 
 	li:hover {
-		background: white;
+		background: $light-green;
 		border-bottom: 1px solid #ccc;
 		border-top: 1px solid #ccc;
 	}
@@ -317,4 +317,50 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	.solr-label.roblib-fulltext {
 		text-align: center;
 	}
+}
+.roblib-fulltext a {
+	appearance: none;
+	background-color: $green;
+	border: 0;
+	border-radius: $base-border-radius;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+
+	//font-family: $base-font-family;
+	font-family: $roboto_condensed;
+	font-size: .8em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	line-height: 1;
+	padding: ($small-spacing / 2) ($base-spacing / 2);
+	text-decoration: none;
+	transition: background-color $base-duration $base-timing;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	@include small-shadow;
+
+	&:hover,
+	&:focus {
+		background-color: shade($green, 20%);
+		color: #fff;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: $green;
+		}
+	}
+
+	i {
+		margin-right: 4px;
+	}
+	
 }
