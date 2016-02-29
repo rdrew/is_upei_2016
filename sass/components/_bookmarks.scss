@@ -58,13 +58,17 @@ div.islandora-bookmark-error-message {
 /*
  *bookmarks
  */
-div#block-islandora-bookmark-islandora-bookmark {
+#block-islandora-bookmark-islandora-bookmark, .solr-thumb {
 	/* position: absolute;*/
 	/*top: 40px;*/
 	/*right: 28px;*/
 	.messages.messages--error {
 		background-image: none;
 		padding: 5px;
+	}
+
+	.upei-roblib-scholar-search-bookmark {
+		display: none;
 	}
 
 	h3 {
@@ -94,7 +98,8 @@ div#block-islandora-bookmark-islandora-bookmark {
 	/*position: relative;*/
 }
 
-input#edit-add-button {
+input#edit-add-button,
+.roblib-bookmark-form input.form-submit {
 	display: block;
 	margin: 0 auto;
 
@@ -161,6 +166,10 @@ div#edit-lists a {
 /*
  *my bookmarks page
  */
+input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
+	float: right;
+}
+
 #islandora-bookmark-detailed-overview {
 	.operations input {
 		@extend button.gray;
@@ -185,9 +194,14 @@ div#edit-lists a {
 			width: 85%;
 		}
 
+		/*td:nth-child(2) {*/
+			/*padding-right: 20px;*/
+		/*}*/
+
+
 		td {
 			border-bottom: 1px solid #ddd;
-			padding: 0.5em 0;
+			padding: 0.9em 0;
 		}
 
 		tr.odd {

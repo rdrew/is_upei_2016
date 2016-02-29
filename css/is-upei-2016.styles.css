@@ -100,15 +100,20 @@ button.gray, #islandora-bookmark-detailed-overview .operations input, input[type
     button.gray:disabled:hover, #islandora-bookmark-detailed-overview .operations input:disabled:hover, input[type="button"].gray:disabled:hover, input[type="reset"].gray:disabled:hover, input[type="submit"].gray:disabled:hover {
       background-color: #5A5A5A; }
 
-button.green, input#edit-add-button, .views-exposed-widget.views-submit-button input[type="submit"], input[type="button"].green, input[type="reset"].green, input[type="submit"].green {
+button.green, input#edit-add-button,
+.roblib-bookmark-form input.form-submit, .views-exposed-widget.views-submit-button input[type="submit"], input[type="button"].green, input[type="reset"].green, input[type="submit"].green {
   background-color: #5C8727; }
-  button.green:hover, input#edit-add-button:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, button.green:focus, input#edit-add-button:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input[type="submit"].green:focus {
+  button.green:hover, input#edit-add-button:hover,
+  .roblib-bookmark-form input.form-submit:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, button.green:focus, input#edit-add-button:focus,
+  .roblib-bookmark-form input.form-submit:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input[type="submit"].green:focus {
     background-color: #4a6c1f;
     color: #fff; }
-  button.green:disabled, input#edit-add-button:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled {
+  button.green:disabled, input#edit-add-button:disabled,
+  .roblib-bookmark-form input.form-submit:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button.green:disabled:hover, input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover {
+    button.green:disabled:hover, input#edit-add-button:disabled:hover,
+    .roblib-bookmark-form input.form-submit:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover {
       background-color: #5C8727; }
 
 fieldset {
@@ -348,7 +353,7 @@ div.islandora-bookmark-error-message {
 /*
  *bookmarks
  */
-div#block-islandora-bookmark-islandora-bookmark {
+#block-islandora-bookmark-islandora-bookmark, .solr-thumb {
   /* position: absolute;*/
   /*top: 40px;*/
   /*right: 28px;*/
@@ -361,20 +366,23 @@ div#block-islandora-bookmark-islandora-bookmark {
   /*.form-submit {*/
   /*display: block;*/
   /*}*/ }
-  div#block-islandora-bookmark-islandora-bookmark .messages.messages--error {
+  #block-islandora-bookmark-islandora-bookmark .messages.messages--error, .solr-thumb .messages.messages--error {
     background-image: none;
     padding: 5px; }
-  div#block-islandora-bookmark-islandora-bookmark h3 {
+  #block-islandora-bookmark-islandora-bookmark .upei-roblib-scholar-search-bookmark, .solr-thumb .upei-roblib-scholar-search-bookmark {
     display: none; }
-  div#block-islandora-bookmark-islandora-bookmark .sbOptions, div#block-islandora-bookmark-islandora-bookmark .sbHolder {
+  #block-islandora-bookmark-islandora-bookmark h3, .solr-thumb h3 {
+    display: none; }
+  #block-islandora-bookmark-islandora-bookmark .sbOptions, #block-islandora-bookmark-islandora-bookmark .sbHolder, .solr-thumb .sbOptions, .solr-thumb .sbHolder {
     width: 100%  !important; }
-  div#block-islandora-bookmark-islandora-bookmark .sbHolder {
+  #block-islandora-bookmark-islandora-bookmark .sbHolder, .solr-thumb .sbHolder {
     font-size: 10px; }
 
 .l-content {
   /*position: relative;*/ }
 
-input#edit-add-button {
+input#edit-add-button,
+.roblib-bookmark-form input.form-submit {
   display: block;
   margin: 0 auto; }
 
@@ -424,6 +432,9 @@ div#edit-lists a {
 /*
  *my bookmarks page
  */
+input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
+  float: right; }
+
 #islandora-bookmark-detailed-overview table {
   border: 1px solid #ccc;
   border-radius: 2px; }
@@ -435,9 +446,11 @@ div#edit-lists a {
       color: #fff; }
   #islandora-bookmark-detailed-overview table th:nth-child(2) {
     width: 85%; }
+  #islandora-bookmark-detailed-overview table td:nth-child(2) {
+    padding-right: 20px; }
   #islandora-bookmark-detailed-overview table td {
     border-bottom: 1px solid #ddd;
-    padding: 0.5em 0; }
+    padding: 0.9em 0; }
   #islandora-bookmark-detailed-overview table tr.odd {
     background: white; }
   #islandora-bookmark-detailed-overview table tr.even {
@@ -594,6 +607,14 @@ td {
 
 #islandora-bookmark-detailed-overview table td {
   padding: .5em; }
+
+.csl-bib-body {
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 1.1em;
+  margin-right: 2em; }
+
+tr:hover {
+  background: #e5ebde !important; }
 
 .nav-wrapper {
   background: #333; }
@@ -1191,14 +1212,6 @@ ul.pager {
   border: 1px solid #ccc;
   padding: 4px; }
 
-.islandora-solr-search-result-inner input[type="submit"] {
-  padding: 8px;
-  font-size: .8em; }
-
-.islandora-solr-search-result-inner .form-item.form-type-select {
-  margin-bottom: 0;
-  padding-bottom: 0; }
-
 .search-bar form {
   position: relative;
   margin-top: 1em; }
@@ -1254,6 +1267,32 @@ aside .block {
 aside .menu li {
   list-style-type: none; }
 
+.flexslider {
+  border: 1px solid #ddd;
+  padding: 5px; }
+  .flexslider figure {
+    position: relative; }
+  .flexslider figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.76);
+    padding: 10px; }
+    .flexslider figcaption h3 {
+      FONT-SIZE: 1.5em;
+      margin: 0; }
+    .flexslider figcaption p {
+      margin: 0; }
+  .flexslider .view-works {
+    float: right;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: "Roboto Condensed", sans-serif; }
+
+.flex-direction-nav a {
+  height: 50px; }
+
 .block ul.islandora-solr-facet {
   padding: 0 0 0 0; }
 
@@ -1287,7 +1326,7 @@ ul.islandora-solr-facet {
     border-bottom: 1px solid rgba(204, 204, 204, 0);
     border-top: 1px solid rgba(204, 204, 204, 0); }
   ul.islandora-solr-facet li:hover {
-    background: white;
+    background: #e7ede0;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc; }
 
@@ -1310,8 +1349,11 @@ ul.islandora-solr-facet {
 
 dl.solr-thumb {
   float: left;
-  width: 15%;
+  width: 20%;
   margin: 0; }
+  dl.solr-thumb img {
+    padding: 4px;
+    border: 1px solid #ddd; }
 
 .solr-thumb dt,
 .solr-thumb dd {
@@ -1319,14 +1361,14 @@ dl.solr-thumb {
 
 dl.solr-fields {
   float: right;
-  width: 75%; }
+  width: 80%;
+  padding-left: 1.5em; }
 
 .solr-fields dt,
 .solr-fields dd {
   border-top: 1px solid #ddd; }
 
-.solr-fields dt.first,
-.solr-fields dd.first {
+.solr-fields .mods-titleinfo-title-s {
   border-top: 0; }
 
 /* Hightlight */
@@ -1443,7 +1485,8 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   font-family: "Roboto Condensed", sans-serif; }
 
 .page-islandora-search .l-content {
-  border: 0; }
+  border: 0;
+  background: none; }
 
 .page-islandora-search #block-islandora-solr-basic-facets .fa {
   color: #333; }
@@ -1453,8 +1496,80 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 .islandora-solr-search-result {
   /*border: 1px solid #ccc;*/
   padding: 1em;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  /*@include small-shadow;*/
+  border: 1px solid #ddd;
   background: white; }
+  .islandora-solr-search-result .islandora-inline-metadata dt,
+  .islandora-solr-search-result .islandora-inline-metadata dd {
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0; }
+  .islandora-solr-search-result .islandora-inline-metadata dt {
+    margin-right: -1px;
+    width: 10%;
+    font-family: "Roboto Condensed", sans-serif;
+    /*font-weight: bold;*/
+    padding-right: 0;
+    word-wrap: normal; }
+  .islandora-solr-search-result .islandora-inline-metadata dd {
+    width: 90%;
+    font-size: .9em;
+    padding-left: 1.5em; }
+
+.islandora-solr-search-result-inner input[type="submit"] {
+  /*     padding: 8px;*/
+  /*font-size: .8em;*/ }
+
+.islandora-solr-search-result-inner .form-item.form-type-select {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.solr-thumb .solr-label.roblib-coins,
+.solr-thumb .solr-label.roblib-fulltext {
+  text-align: center; }
+
+.roblib-fulltext a {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #5C8727;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.375em 0.75em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
+  .roblib-fulltext a:hover, .roblib-fulltext a:focus {
+    background-color: #4a6c1f;
+    color: #fff; }
+  .roblib-fulltext a:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    .roblib-fulltext a:disabled:hover {
+      background-color: #5C8727; }
+  .roblib-fulltext a i {
+    margin-right: 4px; }
 
 /**
  * @file
