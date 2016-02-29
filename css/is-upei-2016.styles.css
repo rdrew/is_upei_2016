@@ -112,8 +112,8 @@ button.green, input#edit-add-button, .views-exposed-widget.views-submit-button i
       background-color: #5C8727; }
 
 fieldset {
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
   margin: 0 0 0.75em;
   padding: 1.5em; }
 
@@ -136,7 +136,7 @@ label {
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple=multiple] {
   background-color: #FBFBFB;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 2px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -148,7 +148,7 @@ select[multiple=multiple] {
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
   select[multiple=multiple]:hover {
-    border-color: #b1b1b1; }
+    border-color: #a3a3a3; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus {
     border-color: #8B2004;
@@ -160,7 +160,7 @@ select[multiple=multiple] {
     cursor: not-allowed; }
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
     select[multiple=multiple]:disabled:hover {
-      border: 1px solid #ddd; }
+      border: 1px solid #ccc; }
 
 textarea {
   resize: vertical; }
@@ -214,13 +214,13 @@ table {
   width: 100%; }
 
 th {
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid #999999;
   font-weight: 600;
   padding: 0.75em 0;
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   padding: 0.75em 0; }
 
 tr,
@@ -268,10 +268,10 @@ h2 {
       /*font-weight:bold;*/ } }
 
 h3 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.2em;
-  /*font-style: italic;*/
-  font-weight: 500;
+  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: 600;
   line-height: 1.3em;
   margin-bottom: 0.4em; }
 
@@ -286,7 +286,7 @@ a {
     color: #681803; }
 
 hr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -394,8 +394,9 @@ div#edit-lists a {
   color: #fff;
   cursor: pointer;
   display: inline-block;
+  text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1;
@@ -424,7 +425,7 @@ div#edit-lists a {
  *my bookmarks page
  */
 #islandora-bookmark-detailed-overview table {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
   border-radius: 2px; }
   #islandora-bookmark-detailed-overview table th {
     background: #333;
@@ -463,6 +464,12 @@ div#islandora-bookmark-detailed-list legend {
   border: 0;
   padding: 0;
   margin: 0; }
+
+.page-islandora-bookmark a.list-links {
+  display: none; }
+
+.page-islandora-bookmark div#islandora-bookmark-rss-format {
+  display: none; }
 
 /**
  * $BREADCRUMB
@@ -755,7 +762,7 @@ dl.islandora-metadata-fields {
 .sbHolder {
   /*background-color: #2d2d2d;*/
   background-color: #FBFBFB;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -807,7 +814,7 @@ dl.islandora-metadata-fields {
 
 .sbOptions {
   background-color: #FBFBFB;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   list-style: none;
   left: -1px;
   margin: 0;
@@ -822,7 +829,7 @@ dl.islandora-metadata-fields {
   padding: 0 7px; }
 
 .sbOptions a {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   display: block;
   outline: none;
   padding: 7px 0 7px 3px; }
@@ -939,7 +946,7 @@ header.l-header {
     margin-right: 10px;
     line-height: 0; }
   .site-branding .name_slogan {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid #ccc;
     padding-left: 10px;
     padding-top: 4px; }
     .site-branding .name_slogan a {
@@ -1062,13 +1069,13 @@ header.l-header {
   color: #333;
   display: block;
   padding: 10px;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ccc; }
   .lp-menu .menu a:hover {
-    background: #ddd;
+    background: #e7ede0;
     transition: all 0.15s ease-out 0s; }
 
 .lp-menu .menu .first a {
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #ccc; }
 
 .lp-menu .menu i {
   width: 20px;
@@ -1078,7 +1085,7 @@ ul.pager li {
   background: #f9f7f9;
   background: white;
   padding: 7px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 4px; }
   ul.pager li:hover {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -1090,7 +1097,7 @@ ul.pager {
   padding-bottom: 10px; }
 
 .l-content {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   padding: 1.5em; }
 
 .scholar-page .l-content {
@@ -1127,10 +1134,10 @@ ul.pager {
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #ccc;
     margin-top: 1.5em;
     padding-top: 1.5em; }
     .scholar .bio:last-child {
@@ -1141,7 +1148,7 @@ ul.pager {
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
     .scholar .activities:last-child {
@@ -1152,7 +1159,7 @@ ul.pager {
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
     .scholar .citations:last-child {
@@ -1163,7 +1170,7 @@ ul.pager {
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
     .scholar .other-scholars:last-child {
@@ -1174,7 +1181,7 @@ ul.pager {
     margin-right: 2.12766%;
     width: 100%;
     margin-right: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
     .scholar .rss:last-child {
@@ -1204,7 +1211,7 @@ ul.pager {
   appearance: none;
   transition: border-color;
   background-color: white;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   box-sizing: border-box;
   display: block;
   font-size: 1em;
@@ -1237,10 +1244,10 @@ ul.pager {
 
 .l-region--sidebar-first {
   padding-left: 2em !important;
-  border-left: 1px solid #ddd; }
+  border-left: 1px solid #ccc; }
 
 aside .block {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 1em;
   margin-bottom: 1em; }
 
@@ -1530,9 +1537,9 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   padding: 0.1em 0.6em;
   text-transform: uppercase;
   font-size: .8em;
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   margin-bottom: -1px;
   font-family: "Roboto Condensed", sans-serif; }
 
