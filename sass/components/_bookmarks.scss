@@ -158,10 +158,15 @@ div#edit-lists a {
 /*
  *my bookmarks page
  */
+input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
+	float: right;
+}
+
 #islandora-bookmark-detailed-overview {
 	.operations input {
-	@extend button.gray;
-}
+		@extend button.gray;
+	}
+
 	//change table styles
 	table {
 		@include small-shadow;
@@ -175,13 +180,18 @@ div#edit-lists a {
 				color: #fff;
 			}
 		}
+
 		th:nth-child(2) {
-		width: 85%;
+			width: 85%;
+		}
+
+		td:nth-child(2) {
+			padding-right: 20px;
 		}
 
 		td {
 			border-bottom: 1px solid #ddd;
-			padding: 0.5em 0;
+			padding: 0.9em 0;
 		}
 
 		tr.odd {
@@ -199,26 +209,29 @@ div#edit-lists a {
 			padding-left: 10px;
 		}
 	}
-	fieldset#edit-bookmarks-fieldset{
-	padding:0px;
+
+	fieldset#edit-bookmarks-fieldset {
+		padding: 0px;
 	}
+
 	legend {
-	display: none;
+		display: none;
 	}
 }
+
 div#islandora-bookmark-detailed-list legend {
-    display: none;
+	display: none;
 }
 
 #islandora-bookmark-detailed-list .form-wrapper {
-    border: 0;
-    background: none;
-	padding:0px
+	border: 0;
+	background: none;
+	padding: 0px;
 }
 
 .page-islandora-bookmark .l-content {
-    background: none;
-    border: 0;
-    padding: 0;
-    margin: 0;
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
 }

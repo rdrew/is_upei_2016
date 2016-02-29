@@ -1,6 +1,19 @@
 .l-content {
-    background: white;
+	background: white;
 }
+
 .button + .button {
-    margin-left: 1em;
+	margin-left: 1em;
 }
+
+.csl-bib-body {
+	font-family: $georgia;
+	font-size: 1.1em;
+	margin-right:2em;
+}
+tr:hover {
+
+	background:rgb(229, 235, 222) !important;
+
+}
+
