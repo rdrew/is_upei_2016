@@ -6,6 +6,52 @@
 	margin-left: 1em;
 }
 
+@mixin remove_fieldset {
+	border: 0;
+	background: none;
+	padding: 0;
+
+	legend {
+		display: none;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	dt {
+		width: 11%;
+	}
+}
+
+.islandora-metadata {
+	@include remove_fieldset;
+}
+
+tr:hover {
+	background-color: $light-green  !important;
+}
+th {
+    border-right: 1px solid black;
+}
+
+thead {
+    border: 1px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+table th {
+    padding-left: .5em;
+}
+
+td {
+    padding: 1em;
+}
+
+#islandora-bookmark-detailed-overview table td {
+    padding: .5em;
+}
+
 .csl-bib-body {
 	font-family: $georgia;
 	font-size: 1.1em;

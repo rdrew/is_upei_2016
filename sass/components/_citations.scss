@@ -1,0 +1,19 @@
+	.csl-bib-body {
+		font-family: $georgia;
+		padding-right: $base-spacing / 2;
+	}
+.citation-page {
+	.csl-bib-body {
+		font-size: 1.2em;
+		background: $light-green;
+		margin-bottom: $base-spacing;
+		padding: $base-spacing / 2;
+
+		@include small-shadow;
+	}
+}
+fieldset#edit-bookmarks-fieldset td a {
+    font-family:$roboto_condensed;
+	font-weight:600;
+
+}

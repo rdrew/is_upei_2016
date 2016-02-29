@@ -7,11 +7,13 @@ $roboto: 'Roboto', sans-serif;
 $roboto_condensed: 'Roboto Condensed', sans-serif;
 $base-font-family: $roboto;
 $heading-font-family: $georgia;
-
+$button-font: $roboto_condensed;
 /*$heading-font-family: $base-font-family;*/
 
 // Font Sizes
 $base-font-size: 1em;
+$button-font-size: .8em;
+
 
 // Line height
 $base-line-height: 1.5;
@@ -32,8 +34,9 @@ $medium-gray: #5A5A5A;
 $light-gray: #ddd;
 $red: #8B2004;
 $green: #5C8727;
-$light-green: #90D33D;
+$light-green: rgb(231, 237, 224);
 $yellow: #FBB040;
+$light-yellow: rgb(255, 210, 154);
 
 // Font Colors
 $base-font-color: $dark-gray;
