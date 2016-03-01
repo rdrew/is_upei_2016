@@ -102,7 +102,9 @@ input#edit-add-button,
 .roblib-bookmark-form input.form-submit {
 	display: block;
 	margin: 0 auto;
+}
 
+input#edit-add-button {
 	@extend button.green;
 }
 
@@ -116,7 +118,8 @@ input#edit-add-button,
 	}
 }
 
-div#edit-lists a {
+div#edit-lists a,
+.roblib-bookmark-form .button--bookmark {
 	appearance: none;
 	background-color: $green;
 	border: 0;
@@ -128,6 +131,7 @@ div#edit-lists a {
 	//font-family: $base-font-family;
 	//font-family: $roboto_condensed;
 	text-transform: uppercase;
+
 	//font-size: $base-font-size;
 	font-family: $button-font;
 	font-size: $button-font-size;
@@ -161,6 +165,9 @@ div#edit-lists a {
 	i {
 		margin-right: 4px;
 	}
+
+	display: table;
+	margin: 0 auto;
 }
 
 /*
@@ -195,9 +202,8 @@ input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-field
 		}
 
 		/*td:nth-child(2) {*/
-			/*padding-right: 20px;*/
+		/*padding-right: 20px;*/
 		/*}*/
-
 
 		td {
 			border-bottom: 1px solid #ddd;
