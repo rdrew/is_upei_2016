@@ -1,8 +1,30 @@
+/*
+ *Page title
+ */
+.page-islandora-search {
+	h1 {
+		display: inline-block;
+	}
+
+	div#islandora-solr-result-count {
+		display: inline-block;
+		margin-left: 10px;
+		font-family: $roboto_condensed;
+	}
+
+	#islandora-solr-top {
+		display: none;
+	}
+}
+
 //Facets
 
+
 .islandora-solr-facet-wrapper {
-	
+
+	@include clearfix();
 }
+
 .block ul.islandora-solr-facet {
 	padding: 0 0 0 0;
 }
@@ -28,7 +50,12 @@ ul.islandora-solr-facet .count {
 .page-islandora-search .l-content {
 	padding: 0;
 }
+.islandora-solr-facet-wrapper .soft-limit {
+	@extend input[type="submit"];
+	display: table;
+	margin: 5px auto;
 
+}
 /*search filters*/
 
 /*.views-exposed-widgets {*/
@@ -45,7 +72,6 @@ ul.islandora-solr-facet .count {
 
 ul.islandora-solr-facet {
 	font-size: .9em;
-
 
 	li {
 		/* background: white; */
@@ -301,6 +327,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 	.islandora-inline-metadata dd {
 		width: 90%;
+
 		/*font-size: .9em;*/
 		padding-left: $base-spacing;
 	}
@@ -325,6 +352,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 		text-align: center;
 	}
 }
+
 .roblib-fulltext a {
 	appearance: none;
 	background-color: $green;
@@ -369,5 +397,5 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	i {
 		margin-right: 4px;
 	}
-	
 }
+

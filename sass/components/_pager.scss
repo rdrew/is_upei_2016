@@ -1,21 +1,36 @@
-ul.pager li {
-    background: #f9f7f9;
-    background: white;;
-    padding: 7px 12px;
-    border: $base-border;
-    border-radius: 4px;
-	&:hover {
-	
-		//background: #7E9B5B;
-		@include small-shadow;
-		@include transition()
-	
-	}
-	a {
-	color: $base-font-color;
-	}
+
+.pager {
+	//padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
-ul.pager {
-    padding-bottom: 10px;
+.pager__item {
+	background: #f9f7f9;
+	background: white;
+	padding: 5px 10px !important;
+	border: $base-border;
+	border-radius: 4px;
+}
+
+.pager__item:hover,
+.pager__item--current {
+
+		//@include small-shadow;
+		background: $light-green;
+
+		@include transition;
+}
+.pager__item--current {
+	//@extend .pager__item:hover;
+	//font-size: .9em;
+}
+.pager__item a {
+
+		color: $base-font-color;
+
+		font-family: $roboto_condensed;
+		text-transform: uppercase;
+		line-height:0;
+		font-size:.9em;
+	
 }
