@@ -134,7 +134,7 @@ table.display {
 	margin: 0 auto;
 	clear: both;
 	width: 100%;
-	
+	border: $base-border;
 	/* Note Firefox 3.5 and before have a bug with border-collapse
 	 * ( https://bugzilla.mozilla.org/show%5Fbug.cgi?id=155955 ) 
 	 * border-spacing: 0; is one possible option. Conditional-css.com is
@@ -150,11 +150,14 @@ table.display {
 }
 
 table.display thead th {
-	padding: 3px 18px 3px 10px;
+	padding: 8px 18px 6px 10px;
 	border-bottom: 1px solid black;
 	font-weight: bold;
 	cursor: pointer;
-	* cursor: hand;
+	background: $dark-gray;
+	font-family: $roboto_condensed;
+	color: white;
+	/** cursor: hand;*/
 }
 
 table.display tfoot th {
@@ -245,11 +248,12 @@ table.display tr.even.gradeU {
 
 
 tr.odd {
-	background-color: #E2E4FF;
+
+	background-color: white  !important;
 }
 
 tr.even {
-	background-color: white;
+	background-color: white  !important;
 }
 
 
@@ -365,7 +369,8 @@ table.display tr.odd.row_selected td {
  */
 /* For the standard odd/even */
 tr.odd td.sorting_1 {
-	background-color: #D3D6FF;
+	/*background-color: #D3D6FF;*/
+	/*background-color: $light-green;*/
 }
 
 tr.odd td.sorting_2 {
@@ -377,7 +382,7 @@ tr.odd td.sorting_3 {
 }
 
 tr.even td.sorting_1 {
-	background-color: #EAEBFF;
+	/*background-color: #EAEBFF;*/
 }
 
 tr.even td.sorting_2 {

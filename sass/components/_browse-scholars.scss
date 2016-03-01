@@ -1,12 +1,14 @@
-.page-browse-scholars .l-content {
+.page-browse-scholars .l-content,
+.page-browse-scholars-dt .l-content {
 	border: 0;
+	background: none;
 	padding: 0;
 }
 
 /*
  *search widgets
  */
-.page-browse-scholars .views-exposed-widgets {
+.page-browse-scholars .views-exposed-widgets,{
 	background: white;
 	padding: $base-spacing;
 
