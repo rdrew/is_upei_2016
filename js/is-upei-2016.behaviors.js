@@ -1,5 +1,4 @@
 (function ($) {
-
 	Drupal.behaviors.bookmarks = {
 		attach: function (context, settings) {
 
@@ -10,7 +9,8 @@
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
-			$('div#edit-lists a').replaceWith('<a href="/islandora-bookmark/listid/1"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
+			$('a[href="/islandora-bookmark/listid/1"]').replaceWith('<a href="/islandora-bookmark/listid/1" class="button--bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
+			$('.roblib-fulltext a').prepend('<i class="fa fa-file-text" aria-hidden="true"></i>');
 
 		}
 	};
