@@ -48,6 +48,17 @@
 		}
 	};
 
+	Drupal.behaviors.citation_page_blocks = {
+		//this moves the search results behind the page title 
+		attach: function (context, settings) {
+
+			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
+			$('.block--search-navigation').insertBefore($('form#islandora-scholar-citation-select-form'));
+
+		}
+	};
+
+
 	Drupal.behaviors.facet_buttons = {
 		//this moves the search results behind the page title 
 		attach: function (context, settings) {
