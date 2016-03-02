@@ -25,7 +25,7 @@ h1 {
 	margin-bottom: 0.3em;
 
 	@include media($medium-screen) {
-		font-size: 2.1em;
+		font-size: 2.2em;
 	}
 }
 
@@ -37,7 +37,7 @@ h2 {
 	margin-bottom: .3em;
 
 	@include media($medium-screen) {
-		font-size: 1.6em;
+		font-size: 1.8em;
 
 		/*font-weight:bold;*/
 	}
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
 	font-family: $roboto_condensed;
-	font-size: 1.3em;
+	font-size: 1.5em;
 
 	//font-style: italic;
 	font-weight: 500;
