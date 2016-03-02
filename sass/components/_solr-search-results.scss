@@ -54,6 +54,10 @@ ul.islandora-solr-facet .count {
 	@extend input[type="submit"];
 	display: table;
 	margin: 5px auto;
+	i {
+	color:white !important;
+	margin-right: 4px;
+	}
 
 }
 /*search filters*/

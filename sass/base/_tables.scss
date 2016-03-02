@@ -7,10 +7,14 @@ table {
 }
 
 th {
-  border-bottom: 1px solid shade($base-border-color, 25%);
+  /*border-bottom: 1px solid shade($base-border-color, 25%);*/
   font-weight: 600;
-  padding: $small-spacing 0;
-  text-align: left;
+  padding: $small-spacing;
+  font-family:$roboto_condensed;
+  color: #fff;
+	background: $dark-gray;
+	border-right: 1px solid black;
+	text-align: left;
 }
 
 td {
@@ -23,3 +27,11 @@ td,
 th {
   vertical-align: middle;
 }
+//tr.even,
+//tr.odd {
+	//background-color: #eee;
+//}
+
+//tr.odd {
+	//background-color: #ddd;
+//}
