@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 .sbHolder{
 	/*background-color: #2d2d2d;*/
-  background-color: $base-background-color;
+  background-color: white;
 	//border: solid 1px #515151;
 	border: $base-border;
 	font-family: $roboto_condensed;
@@ -65,7 +65,8 @@
 }
 .sbOptions{
 	//background-color: #212121;
-  background-color: $base-background-color;
+  //background-color: $base-background-color;
+  background-color: white;
 	border: $base-border;
 	list-style: none;
 	left: -1px;
