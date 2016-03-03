@@ -31,6 +31,23 @@
 
 		}
 	};
+
+	Drupal.behaviors.search_navigation = {
+		attach: function (context, settings) {
+
+			//$('a.plus').empty();
+			$('.block--search-navigation--prev a').empty();
+			$('.block--search-navigation--return a').empty();
+			$('.block--search-navigation--next a').empty();
+			$('.block--search-navigation--prev a').prepend('<i class="fa fa-arrow-left" aria-hidden="true"></i> Prev');
+			$('.block--search-navigation--return a').prepend('<i class="fa fa-search aria-hidden="true"></i> Search Results');
+			$('.block--search-navigation--next a').append('Next <i class="fa fa-arrow-right" aria-hidden="true"></i>');
+			//$('a.minus').empty();
+			//$('a.plus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
+			//$('a.minus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
+
+		}
+	};
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
 
