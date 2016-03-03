@@ -36,11 +36,19 @@
         <?php $row_field++; ?>
       <?php endforeach; ?>
       <?php if (!empty($coins_url)) :?>
-      <dt class="<?php print $row_field == 0 ? ' first' : ''; ?>">
+      <dt class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-coins">
           Check at UPEI
         </dt>
-        <dd class="<?php print $row_field == 0 ? ' first' : ''; ?>">
+        <dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-coins-value">
           <?php print $coins_url; ?>
+        </dd>
+      <?php endif; ?>
+      <?php if (!empty($upei_scholar_views)) :?>
+      <dt class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats">
+          Statistics
+        </dt>
+        <dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats-value">
+          <?php print 'views: ' . $upei_scholar_views . ', downloads: ' . $upei_scholar_downloads; ?>
         </dd>
       <?php endif; ?>
     </dl>
