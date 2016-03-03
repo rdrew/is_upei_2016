@@ -302,6 +302,62 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.button-group input {
+  display: none; }
+
+.button-group label {
+  margin-bottom: 0; }
+  @media screen and (min-width: 900px) {
+    .button-group label {
+      float: left; } }
+  .button-group label .button-group-item {
+    background: #FBFBFB;
+    border-left: 1px solid silver;
+    border-radius: 0;
+    border-right: 1px solid silver;
+    color: gray;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0.75em 1em;
+    width: 100%; }
+    @media screen and (min-width: 900px) {
+      .button-group label .button-group-item {
+        border-bottom: 1px solid silver;
+        border-left: 0;
+        border-right: 1px solid #eeeeee;
+        border-top: 1px solid silver;
+        width: auto; } }
+    .button-group label .button-group-item:focus, .button-group label .button-group-item:hover {
+      background-color: #f3f3f3; }
+  .button-group label:first-child .button-group-item {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top: 1px solid silver; }
+    @media screen and (min-width: 900px) {
+      .button-group label:first-child .button-group-item {
+        border-bottom-left-radius: 2px;
+        border-left: 1px solid silver;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 0; } }
+  .button-group label:last-child .button-group-item {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom: 1px solid silver; }
+    @media screen and (min-width: 900px) {
+      .button-group label:last-child .button-group-item {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 2px;
+        border-right: 1px solid silver;
+        border-top-right-radius: 2px; } }
+  .button-group label input:checked + .button-group-item {
+    background: #8B2004;
+    border: 1px solid #410f02;
+    box-shadow: inset 0 1px 2px #591503;
+    color: white; }
+
 /**
  * @file
   * Styles for Islandora Bookmark.
