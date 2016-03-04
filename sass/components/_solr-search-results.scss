@@ -19,10 +19,8 @@
 
 //Facets
 
-
 .islandora-solr-facet-wrapper {
-
-	@include clearfix();
+	@include clearfix;
 }
 
 .block ul.islandora-solr-facet {
@@ -50,16 +48,19 @@ ul.islandora-solr-facet .count {
 .page-islandora-search .l-content {
 	padding: 0;
 }
+
 .islandora-solr-facet-wrapper .soft-limit {
 	@extend input[type="submit"];
+
 	display: table;
 	margin: 5px auto;
-	i {
-	color:white !important;
-	margin-right: 4px;
-	}
 
+	i {
+		color: white !important;
+		margin-right: 4px;
+	}
 }
+
 /*search filters*/
 
 /*.views-exposed-widgets {*/
@@ -108,9 +109,43 @@ ul.islandora-solr-facet {
 }
 
 /* the base css for lists is set in islandora, just adding details */
-
+//this image has been replaced in js
 .solr-thumb img {
 	border: 1px solid #ccc;
+}
+
+/*
+ *icon replacements
+ */
+.icon-wrapper {
+	display: flex;
+	width: 100%;
+	border: 8px solid #fff;
+	outline: $base-border;
+
+	/* text-align: center; */
+	font-size: 5em;
+	margin-bottom: 10px;
+	height: 160px;
+
+	/* position: relative; */
+	align-items: center;
+	background: $light-green;
+	justify-content: center;
+}
+
+.icon-wrapper i {
+	color: #333;
+}
+
+.icon-wrapper:hover i {
+	color: $red;
+	@include transition;
+}
+
+.icon-wrapper a {
+	/* position: absolute; */
+	/* bottom: 0; */
 }
 
 dl.solr-thumb {
@@ -402,4 +437,3 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 		margin-right: 4px;
 	}
 }
-

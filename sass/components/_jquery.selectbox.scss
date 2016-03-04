@@ -108,7 +108,8 @@
 }
 .sbOptions .sbGroup{
 	border-bottom: dotted 1px #515151;
-	color: #EBB52D;
+	//color: #EBB52D;
+	background-color: $light-green;
 	display: block;
 	font-weight: bold;
 	padding: 7px 0 7px 3px;
