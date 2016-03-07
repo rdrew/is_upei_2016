@@ -14,6 +14,34 @@
 
 		}
 	};
+	Drupal.behaviors.islandora_thumbnails = {
+		attach: function (context, settings) {
+
+			//var journal_image = 'img.islandora-solr-default-image.scholar-Journal-Article';
+			//var journal_icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
+			//$( journal_image ).replaceWith( journal_icon );
+			var image = 'img.islandora-solr-default-image.scholar-Journal--Electronic';
+			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
+			$( image ).replaceWith( icon );
+
+			var image = 'img.islandora-solr-default-image.scholar-Journal-Article';
+			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
+			$( image ).replaceWith( icon );
+
+			var image = 'img.islandora-solr-default-image.scholar-Book--Whole';
+			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
+			$( image ).replaceWith( icon );
+
+			var image = 'img.islandora-solr-default-image.scholar-Book--Section';
+			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
+			$( image ).replaceWith( icon );
+
+			var image = 'img.islandora-solr-default-image.scholar-Book--Edited';
+			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
+			$( image ).replaceWith( icon );
+
+		}
+	};
 	Drupal.behaviors.open_metadata = {
 		attach: function (context, settings) {
 

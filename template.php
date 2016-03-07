@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * @file
  * Template overrides as well as (pre-)process and alter hooks for the
@@ -13,9 +14,17 @@ function IS_UPEI_2016_form_alter(&$form, &$form_state, $form_id) {
 		$form['simple']['islandora_simple_search_query']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search Island Scholar:';}";
 		$form['simple']['islandora_simple_search_query']['#attributes']['onfocus'] = "if (this.value == 'Search Island Scholar:') {this.value = '';}";
 	}
-}
 
+		//dpm($form_id);
+	// target a single form
+	//if($form_id == "upei_roblib_scholar_search_bookmark_form_ir-11822"){
+	if(strpos($form_id, "upei_roblib_scholar_search_bookmark_form_ir") !== false) {
+		//dpm( get_defined_vars() );
+	}
 //function IS_UPEI_2016_preprocess_page(&$vars) {
   //drupal_add_library('system','ui.button');
   //drupal_add_js(path_to_theme().'/ls/is-upei-2016.behaviors.js','file');
-//}
+}
+function IS_UPEI_2016_islandora_bookmark_object_markup() {
+		 dpm( get_defined_vars() );
+}
