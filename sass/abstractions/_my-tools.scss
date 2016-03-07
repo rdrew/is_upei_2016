@@ -1,7 +1,9 @@
 
-@mixin icon_before( $unicode ) {
-	&:before {
-		content: $unicode;
+@mixin icon( $content: f118, $position: before ) {
+	&:#{$position} {
+		//this un-fucks the unicode crap and lets you enter just 'e655' (no quotes) for the $content var.
+		content: unquote("\"")+unquote(str-insert($content,"\\", 1))+unquote("\"");
+		//***Fontawesome font stuff***
 		display: inline-block;
 		font: normal normal normal 14px/1 FontAwesome;
 		font-size: inherit;
@@ -12,3 +14,4 @@
 	}
 
 }
+
