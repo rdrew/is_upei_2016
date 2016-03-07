@@ -104,13 +104,13 @@
 	};
 
 
-	Drupal.behaviors.facet_buttons = {
-		//this moves the search results behind the page title 
-		attach: function (context, settings) {
+	//Drupal.behaviors.facet_buttons = {
+		////this moves the search results behind the page title 
+		//attach: function (context, settings) {
 
-			$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
+			//$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
 
-		}
-	};
+		//}
+	//};
 
 })(jQuery);
