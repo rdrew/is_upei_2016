@@ -54,6 +54,8 @@ ul.islandora-solr-facet .count {
 
 	display: table;
 	margin: 5px auto;
+	   //$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-     chevron-circle-down" aria-hidden="true"></i>');
+	@include icon();
 
 	i {
 		color: white !important;
