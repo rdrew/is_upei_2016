@@ -579,3 +579,11 @@ div.box {
 	border: 1px solid #8080FF;
 	background-color: #E5E5FF;
 }
+/*
+ *OVERRIDES BY ROB
+ */
+.dataTables_filter {
+    width: 200px;
+    float: none;
+    text-align: left;
+}

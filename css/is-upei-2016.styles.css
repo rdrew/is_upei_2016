@@ -2794,6 +2794,14 @@ div.box {
   border: 1px solid #8080FF;
   background-color: #E5E5FF; }
 
+/*
+ *OVERRIDES BY ROB
+ */
+.dataTables_filter {
+  width: 200px;
+  float: none;
+  text-align: left; }
+
 .l-footer-wrapper {
   background: #333; }
 
@@ -3684,7 +3692,8 @@ ul.islandora-solr-facet {
 
 /* the base css for lists is set in islandora, just adding details */
 .solr-thumb img {
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  width: 100%; }
 
 /*
  *icon replacements
