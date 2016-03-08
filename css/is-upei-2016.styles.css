@@ -3159,7 +3159,8 @@ dl.islandora-metadata-fields {
 .landing-page .l-content {
   border: 0;
   padding: 0;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  background: none; }
 
 .lp {
   max-width: 100%;
@@ -3355,12 +3356,14 @@ header.l-header {
   padding: 1.5em 0; }
 
 .lp-menu .menu {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
+  /*@include small-shadow();*/
+  border: 1px solid #ccc; }
   .lp-menu .menu .leaf {
     list-style-image: none;
     list-style-type: none; }
   .lp-menu .menu a {
     font-size: 1.4em;
+    background: white;
     /*font-family: $roboto_condensed;*/
     font-family: "Roboto Condensed", sans-serif;
     /*text-transform: uppercase;*/
@@ -3372,7 +3375,9 @@ header.l-header {
       background: #e7ede0;
       transition: all 0.15s ease-out 0s; }
   .lp-menu .menu .first a {
-    border-top: 1px solid #ccc; }
+    /*border-top: $base-border;*/ }
+  .lp-menu .menu .last a {
+    border-bottom: 0; }
   .lp-menu .menu i {
     width: 20px;
     margin-right: 1em; }
