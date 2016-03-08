@@ -1,4 +1,19 @@
 (function ($) {
+	Drupal.behaviors.selectlist_defaults = {
+		attach: function (context, settings) {
+
+		$('.roblib-bookmark-form option[value="default"]').remove();
+		$('.roblib-bookmark-form select').hide();
+
+		}
+	};
+	Drupal.behaviors.nicer_select_box = {
+		attach: function (context, settings) {
+
+			//$('select').selectbox("attach");
+
+		}
+	};
 	Drupal.behaviors.bookmarks = {
 		attach: function (context, settings) {
 
@@ -10,7 +25,6 @@
 		attach: function (context, settings) {
 
 			$('a[href="/islandora-bookmark/listid/1"]').replaceWith('<a href="/islandora-bookmark/listid/1" class="button--bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
-			$('.roblib-fulltext a').prepend('<i class="fa fa-file-text" aria-hidden="true"></i>');
 
 		}
 	};
@@ -73,13 +87,6 @@
 			//$('a.minus').empty();
 			//$('a.plus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
 			//$('a.minus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
-
-		}
-	};
-	Drupal.behaviors.nicer_select_box = {
-		attach: function (context, settings) {
-
-			$('select').selectbox("attach");
 
 		}
 	};
