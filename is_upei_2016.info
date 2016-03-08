@@ -14,6 +14,8 @@ stylesheets[all][] = css/is-upei-2016.styles.css
 ;stylesheets[all][] = js/jquery.mobile.custom/jquery.mobile.custom.theme.css
 ;stylesheets[all][] = js/jquery.mobile.custom/jquery.mobile.custom.structure.css 
 
+;scripts[] = libraries/okayNav/app/css/jquery.okayNav.css
+
 ; ========================================
 ; Scripts
 ; ========================================
@@ -23,7 +25,7 @@ stylesheets[all][] = css/is-upei-2016.styles.css
 scripts[] = js/is-upei-2016.behaviors.js
 scripts[] = js/jquery.selectbox/js/jquery.selectbox-0.2.min.js 
 ;scripts[] = libraries/okayNav/app/js/jquery.okayNav.js
-;scripts[] = js/jquery.okayNav.js
+scripts[] = js/jquery.okayNav.js
 
 
 ; ========================================
