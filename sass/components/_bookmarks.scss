@@ -134,6 +134,7 @@ div#edit-lists a,
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
+	@include icon( f02e );
 
 	//font-family: $base-font-family;
 	//font-family: $roboto_condensed;
