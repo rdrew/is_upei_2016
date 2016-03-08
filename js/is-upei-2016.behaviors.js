@@ -14,6 +14,7 @@
 			$('.roblib-bookmark-form option[value="default"]').remove();
 			$('.roblib-bookmark-form select').hide();
 
+
 		}
 	};
 
@@ -21,6 +22,7 @@
 		attach: function (context, settings) {
 
 			//$('select').selectbox("attach");
+
 
 		}
 	};
@@ -38,6 +40,10 @@
 		attach: function (context, settings) {
 
 			var bookmarks_button = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
+			$( bookmarks_button ).empty();
+			$( bookmarks_button ).append('My Bookmarks');
+
+			var bookmarks_button = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
 			$( bookmarks_button ).empty();
 			$( bookmarks_button ).append('My Bookmarks');
 
