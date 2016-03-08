@@ -1,4 +1,31 @@
 (function ($) {
+	Drupal.behaviors.selectlist_defaults_scholar_page = {
+		attach: function (context, settings) {
+
+			$('#islandora-bookmark option[value="default"]').remove();
+			$('.form-item-add-bookmarks select').hide();
+
+		}
+	};
+
+	Drupal.behaviors.selectlist_defaults = {
+		attach: function (context, settings) {
+
+			$('.roblib-bookmark-form option[value="default"]').remove();
+			$('.roblib-bookmark-form select').hide();
+
+		}
+	};
+
+	Drupal.behaviors.nicer_select_box = {
+		attach: function (context, settings) {
+
+			//$('select').selectbox("attach");
+
+		}
+	};
+	
+	//move the bookmarks block on the scholar page
 	Drupal.behaviors.bookmarks = {
 		attach: function (context, settings) {
 
@@ -6,11 +33,14 @@
 
 		}
 	};
+
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
-			$('a[href="/islandora-bookmark/listid/1"]').replaceWith('<a href="/islandora-bookmark/listid/1" class="button--bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
-			$('.roblib-fulltext a').prepend('<i class="fa fa-file-text" aria-hidden="true"></i>');
+			var bookmarks_button = 'a[href^="/islandora-bookmark/listid/"]';
+			$( bookmarks_button ).empty();
+			$( bookmarks_button ).append('My Bookmarks');
+
 
 		}
 	};
@@ -76,13 +106,6 @@
 
 		}
 	};
-	Drupal.behaviors.nicer_select_box = {
-		attach: function (context, settings) {
-
-			$('select').selectbox("attach");
-
-		}
-	};
 	Drupal.behaviors.solr_search_move_results = {
 		//this moves the search results behind the page title 
 		attach: function (context, settings) {
@@ -103,14 +126,5 @@
 		}
 	};
 
-
-	//Drupal.behaviors.facet_buttons = {
-		////this moves the search results behind the page title 
-		//attach: function (context, settings) {
-
-			//$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
-
-		//}
-	//};
 
 })(jQuery);
