@@ -22,6 +22,7 @@ stylesheets[all][] = css/is-upei-2016.styles.css
 ;scripts[] = js/jquery.ui.button.min.js
 scripts[] = js/is-upei-2016.behaviors.js
 scripts[] = js/jquery.selectbox/js/jquery.selectbox-0.2.min.js 
+scripts[] = libraries/ThreeDots/js/jquery.ThreeDots.js
 
 ; ========================================
 ; Regions

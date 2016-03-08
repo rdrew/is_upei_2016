@@ -1,9 +1,17 @@
 (function ($) {
+	Drupal.behaviors.selectlist_defaults_scholar_page = {
+		attach: function (context, settings) {
+
+			$('#islandora-bookmark option[value="default"]').remove();
+			$('.form-item-add-bookmarks select').hide();
+
+		}
+	};
 	Drupal.behaviors.selectlist_defaults = {
 		attach: function (context, settings) {
 
-		$('.roblib-bookmark-form option[value="default"]').remove();
-		$('.roblib-bookmark-form select').hide();
+			$('.roblib-bookmark-form option[value="default"]').remove();
+			$('.roblib-bookmark-form select').hide();
 
 		}
 	};
@@ -112,12 +120,12 @@
 
 
 	//Drupal.behaviors.facet_buttons = {
-		////this moves the search results behind the page title 
-		//attach: function (context, settings) {
+	////this moves the search results behind the page title 
+	//attach: function (context, settings) {
 
-			//$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
+	//$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
 
-		//}
+	//}
 	//};
 
 })(jQuery);
