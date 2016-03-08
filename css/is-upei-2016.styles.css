@@ -54,7 +54,7 @@ input + input {
   margin-left: 1.5em;
   margin-right: 1.5em; }
 
-button, .block--search-navigation--list-item a, input[type="button"], input[type="reset"], input[type="submit"], .block--islandora-solr-sort ul.islandora-solr-sort a, .islandora-solr-facet-wrapper .soft-limit {
+button, .block--search-navigation--list-item a, input[type="button"], input[type="reset"], input[type="submit"], input#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a, .islandora-solr-facet-wrapper .soft-limit {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -80,35 +80,35 @@ button, .block--search-navigation--list-item a, input[type="button"], input[type
   vertical-align: middle;
   white-space: nowrap;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
-  button:hover, .block--search-navigation--list-item a:hover, button:focus, .block--search-navigation--list-item a:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .islandora-solr-facet-wrapper .soft-limit:hover, input[type="submit"]:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .islandora-solr-facet-wrapper .soft-limit:focus {
+  button:hover, .block--search-navigation--list-item a:hover, button:focus, .block--search-navigation--list-item a:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .islandora-solr-facet-wrapper .soft-limit:hover, input[type="submit"]:focus, input#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .islandora-solr-facet-wrapper .soft-limit:focus {
     background-color: #6f1a03;
     color: #fff; }
-  button:disabled, .block--search-navigation--list-item a:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .islandora-solr-facet-wrapper .soft-limit:disabled {
+  button:disabled, .block--search-navigation--list-item a:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, input#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .islandora-solr-facet-wrapper .soft-limit:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button:disabled:hover, .block--search-navigation--list-item a:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .islandora-solr-facet-wrapper .soft-limit:disabled:hover {
+    button:disabled:hover, .block--search-navigation--list-item a:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, input#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .islandora-solr-facet-wrapper .soft-limit:disabled:hover {
       background-color: #8B2004; }
 
-button.gray, .block--search-navigation--list-item a.gray, #islandora-bookmark-detailed-overview .operations input, .block--islandora-solr-sort ul.islandora-solr-sort a, input[type="button"].gray, input[type="reset"].gray, input[type="submit"].gray, .block--islandora-solr-sort ul.islandora-solr-sort a.gray, .islandora-solr-facet-wrapper .gray.soft-limit {
+button.gray, .block--search-navigation--list-item a.gray, #islandora-bookmark-detailed-overview .operations input, .block--islandora-solr-sort ul.islandora-solr-sort a, input[type="button"].gray, input[type="reset"].gray, input[type="submit"].gray, input.gray#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a.gray, .islandora-solr-facet-wrapper .gray.soft-limit {
   background-color: #5A5A5A; }
-  button.gray:hover, .block--search-navigation--list-item a.gray:hover, #islandora-bookmark-detailed-overview .operations input:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, button.gray:focus, .block--search-navigation--list-item a.gray:focus, #islandora-bookmark-detailed-overview .operations input:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, input[type="button"].gray:hover, input[type="button"].gray:focus, input[type="reset"].gray:hover, input[type="reset"].gray:focus, input[type="submit"].gray:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:hover, .islandora-solr-facet-wrapper .gray.soft-limit:hover, input[type="submit"].gray:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:focus, .islandora-solr-facet-wrapper .gray.soft-limit:focus {
+  button.gray:hover, .block--search-navigation--list-item a.gray:hover, #islandora-bookmark-detailed-overview .operations input:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, button.gray:focus, .block--search-navigation--list-item a.gray:focus, #islandora-bookmark-detailed-overview .operations input:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, input[type="button"].gray:hover, input[type="button"].gray:focus, input[type="reset"].gray:hover, input[type="reset"].gray:focus, input[type="submit"].gray:hover, input.gray#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:hover, .islandora-solr-facet-wrapper .gray.soft-limit:hover, input[type="submit"].gray:focus, input.gray#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:focus, .islandora-solr-facet-wrapper .gray.soft-limit:focus {
     background-color: #484848;
     color: #fff; }
-  button.gray:disabled, .block--search-navigation--list-item a.gray:disabled, #islandora-bookmark-detailed-overview .operations input:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, input[type="button"].gray:disabled, input[type="reset"].gray:disabled, input[type="submit"].gray:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled, .islandora-solr-facet-wrapper .gray.soft-limit:disabled {
+  button.gray:disabled, .block--search-navigation--list-item a.gray:disabled, #islandora-bookmark-detailed-overview .operations input:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, input[type="button"].gray:disabled, input[type="reset"].gray:disabled, input[type="submit"].gray:disabled, input.gray#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled, .islandora-solr-facet-wrapper .gray.soft-limit:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button.gray:disabled:hover, .block--search-navigation--list-item a.gray:disabled:hover, #islandora-bookmark-detailed-overview .operations input:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, input[type="button"].gray:disabled:hover, input[type="reset"].gray:disabled:hover, input[type="submit"].gray:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled:hover, .islandora-solr-facet-wrapper .gray.soft-limit:disabled:hover {
+    button.gray:disabled:hover, .block--search-navigation--list-item a.gray:disabled:hover, #islandora-bookmark-detailed-overview .operations input:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, input[type="button"].gray:disabled:hover, input[type="reset"].gray:disabled:hover, input[type="submit"].gray:disabled:hover, input.gray#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled:hover, .islandora-solr-facet-wrapper .gray.soft-limit:disabled:hover {
       background-color: #5A5A5A; }
 
-button.green, .block--search-navigation--list-item a.green, input#edit-add-button, .views-exposed-widget.views-submit-button input[type="submit"], .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit, .block--islandora-solr-sort ul.islandora-solr-sort a.active, input[type="button"].green, input[type="reset"].green, input[type="submit"].green, .block--islandora-solr-sort ul.islandora-solr-sort a.green, .islandora-solr-facet-wrapper .green.soft-limit {
+button.green, .block--search-navigation--list-item a.green, .views-exposed-widget.views-submit-button input[type="submit"], .views-exposed-widget.views-submit-button input#edit-add-button, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit, .block--islandora-solr-sort ul.islandora-solr-sort a.active, input[type="button"].green, input[type="reset"].green, input[type="submit"].green, input.green#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a.green, .islandora-solr-facet-wrapper .green.soft-limit {
   background-color: #5C8727; }
-  button.green:hover, .block--search-navigation--list-item a.green:hover, input#edit-add-button:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:hover, button.green:focus, .block--search-navigation--list-item a.green:focus, input#edit-add-button:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:focus, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:focus, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.active:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:hover, .islandora-solr-facet-wrapper .green.soft-limit:hover, input[type="submit"].green:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.green:focus, .islandora-solr-facet-wrapper .green.soft-limit:focus {
+  button.green:hover, .block--search-navigation--list-item a.green:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, .views-exposed-widget.views-submit-button input#edit-add-button:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:hover, button.green:focus, .block--search-navigation--list-item a.green:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, .views-exposed-widget.views-submit-button input#edit-add-button:focus, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:focus, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:focus, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.active:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input.green#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:hover, .islandora-solr-facet-wrapper .green.soft-limit:hover, input[type="submit"].green:focus, input.green#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.green:focus, .islandora-solr-facet-wrapper .green.soft-limit:focus {
     background-color: #4a6c1f;
     color: #fff; }
-  button.green:disabled, .block--search-navigation--list-item a.green:disabled, input#edit-add-button:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled, .islandora-solr-facet-wrapper .green.soft-limit:disabled {
+  button.green:disabled, .block--search-navigation--list-item a.green:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, .views-exposed-widget.views-submit-button input#edit-add-button:disabled, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled, input.green#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled, .islandora-solr-facet-wrapper .green.soft-limit:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button.green:disabled:hover, .block--search-navigation--list-item a.green:disabled:hover, input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled:hover, .islandora-solr-facet-wrapper .green.soft-limit:disabled:hover {
+    button.green:disabled:hover, .block--search-navigation--list-item a.green:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, .views-exposed-widget.views-submit-button input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover, input.green#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled:hover, .islandora-solr-facet-wrapper .green.soft-limit:disabled:hover {
       background-color: #5C8727; }
 
 fieldset {
@@ -2065,7 +2065,8 @@ div.islandora-bookmark-error-message {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
 #islandora-bookmark .form-item-add-bookmarks {
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin: 0; }
 
 #islandora-bookmark-detailed-form table .operations {
   width: 100px; }
@@ -2117,6 +2118,9 @@ input#edit-add-button,
   display: block;
   margin: 0 auto; }
 
+input#edit-add-button {
+  width: 100%; }
+
 .form-item.form-type-select.form-item-add-bookmarks {
   margin-right: 0 !important; }
 
@@ -2124,7 +2128,8 @@ input#edit-add-button,
   text-align: center; }
 
 div#edit-lists a,
-.roblib-bookmark-form .button--bookmark {
+.roblib-bookmark-form .button--bookmark,
+.roblib-bookmark-form a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2154,18 +2159,23 @@ div#edit-lists a,
   margin: 0 auto; }
   div#edit-lists a:hover, div#edit-lists a:focus,
   .roblib-bookmark-form .button--bookmark:hover,
-  .roblib-bookmark-form .button--bookmark:focus {
+  .roblib-bookmark-form .button--bookmark:focus,
+  .roblib-bookmark-form a:hover,
+  .roblib-bookmark-form a:focus {
     background-color: #4a6c1f;
     color: #fff; }
   div#edit-lists a:disabled,
-  .roblib-bookmark-form .button--bookmark:disabled {
+  .roblib-bookmark-form .button--bookmark:disabled,
+  .roblib-bookmark-form a:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     div#edit-lists a:disabled:hover,
-    .roblib-bookmark-form .button--bookmark:disabled:hover {
+    .roblib-bookmark-form .button--bookmark:disabled:hover,
+    .roblib-bookmark-form a:disabled:hover {
       background-color: #5C8727; }
   div#edit-lists a i,
-  .roblib-bookmark-form .button--bookmark i {
+  .roblib-bookmark-form .button--bookmark i,
+  .roblib-bookmark-form a i {
     margin-right: 4px; }
 
 /*
@@ -2222,6 +2232,20 @@ div#islandora-bookmark-detailed-list legend {
   display: none; }
 
 .page-islandora-bookmark div#islandora-bookmark-rss-format {
+  display: none; }
+
+#edit-owned-bookmarks-fieldset {
+  padding: 0;
+  margin: 0; }
+
+#islandora-bookmark-overview-form table {
+  padding: 0;
+  margin: 0; }
+
+#islandora-bookmark-overview-form legend {
+  display: none; }
+
+#edit-shared-bookmarks-fieldset {
   display: none; }
 
 /**
@@ -3480,7 +3504,7 @@ header.l-header {
   width: 100%;
   border-radius: 0; }
 
-.search-bar input[type="submit"], .search-bar .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .search-bar a, .search-bar .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .search-bar .soft-limit {
+.search-bar input[type="submit"], .search-bar input#edit-add-button, .search-bar .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .search-bar a, .search-bar .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .search-bar .soft-limit {
   position: absolute;
   top: 0em;
   right: 0em;
@@ -3910,7 +3934,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
     /*font-size: .9em;*/
     padding-left: 1.5em; }
 
-.islandora-solr-search-result-inner input[type="submit"], .islandora-solr-search-result-inner .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .islandora-solr-search-result-inner .soft-limit {
+.islandora-solr-search-result-inner input[type="submit"], .islandora-solr-search-result-inner input#edit-add-button, .islandora-solr-search-result-inner .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .islandora-solr-search-result-inner .soft-limit {
   /*     padding: 8px;*/
   /*font-size: .8em;*/ }
 
