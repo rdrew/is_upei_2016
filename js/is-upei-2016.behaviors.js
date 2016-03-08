@@ -24,7 +24,7 @@
 
 		}
 	};
-	
+
 	//move the bookmarks block on the scholar page
 	Drupal.behaviors.bookmarks = {
 		attach: function (context, settings) {
@@ -37,7 +37,7 @@
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
-			var bookmarks_button = 'a[href^="/islandora-bookmark/listid/"]';
+			var bookmarks_button = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
 			$( bookmarks_button ).empty();
 			$( bookmarks_button ).append('My Bookmarks');
 
