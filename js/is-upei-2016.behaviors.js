@@ -7,6 +7,7 @@
 
 		}
 	};
+
 	Drupal.behaviors.selectlist_defaults = {
 		attach: function (context, settings) {
 
@@ -15,6 +16,7 @@
 
 		}
 	};
+
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
 
@@ -22,6 +24,8 @@
 
 		}
 	};
+	
+	//move the bookmarks block on the scholar page
 	Drupal.behaviors.bookmarks = {
 		attach: function (context, settings) {
 
@@ -29,10 +33,11 @@
 
 		}
 	};
+
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
-			$('a[href="/islandora-bookmark/listid/1"]').replaceWith('<a href="/islandora-bookmark/listid/1" class="button--bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
+			//$('a[href="/islandora-bookmark/listid/1"]').replaceWith('<a href="/islandora-bookmark/listid/1" class="button--bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
 
 		}
 	};
@@ -118,14 +123,5 @@
 		}
 	};
 
-
-	//Drupal.behaviors.facet_buttons = {
-	////this moves the search results behind the page title 
-	//attach: function (context, settings) {
-
-	//$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>');
-
-	//}
-	//};
 
 })(jQuery);
