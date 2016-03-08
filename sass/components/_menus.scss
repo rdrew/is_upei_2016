@@ -1,7 +1,8 @@
 
 .lp-menu {
 	.menu {
-		@include small-shadow();
+		/*@include small-shadow();*/
+		border: $base-border;
 		.leaf {
 			list-style-image: none;
 			list-style-type: none;
@@ -9,6 +10,7 @@
 
 		a {
 			font-size: 1.4em;
+			background: white;
 			/*font-family: $roboto_condensed;*/
 			font-family: $roboto_condensed;
 			/*text-transform: uppercase;*/
@@ -23,7 +25,11 @@
 		}
 		.first a {
 
-			border-top: $base-border;
+			/*border-top: $base-border;*/
+		}
+	   .last a {
+		   border-bottom:0;
+			
 		}
 
 		i {
