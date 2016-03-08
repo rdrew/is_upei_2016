@@ -1,18 +1,16 @@
 ul.islandora-solr-facet li a {
-
 	width: 150px;
-
-
-
 }
-//needs to be dealt with 
+
+//needs to be dealt with
 dl.solr-thumb input, .button--bookmark {
-    width: 100%;
+	width: 100%;
 }
 
 a.button--bookmark {
-    text-align: center;
-} 
+	text-align: center;
+}
+
 /*
  *Page title
  */
@@ -47,7 +45,7 @@ ul.islandora-solr-sort {
 	}
 
 	/*img {*/
-		/*display: none;*/
+	/*display: none;*/
 	/*}*/
 }
 
@@ -72,12 +70,13 @@ ul.islandora-solr-sort {
 		}
 	}
 
+
 	/*&.active[href$="asc"] {*/
-		/*@include icon(f13a, after);*/
+	/*@include icon(f13a, after);*/
 	/*}*/
 
 	/*&.active[href$="desc"] {*/
-		/*@include icon(f139, after);*/
+	/*@include icon(f139, after);*/
 	/*}*/
 }
 
@@ -196,7 +195,7 @@ ul.islandora-solr-facet {
 //this image has been replaced in js
 .solr-thumb img {
 	border: 1px solid #ccc;
-	width:100%;
+	width: 100%;
 }
 
 /*
@@ -480,8 +479,11 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 .roblib-fulltext a {
 	appearance: none;
-	@include icon( f1c1 );
+
+	@include icon(f1c1);
+
 	background-color: $green;
+	width: 100%;
 	border: 0;
 	border-radius: $base-border-radius;
 	color: #fff;

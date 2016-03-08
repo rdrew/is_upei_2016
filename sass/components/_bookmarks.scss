@@ -127,6 +127,8 @@ input#edit-add-button {
 div#edit-lists a,
 .roblib-bookmark-form .button--bookmark,
 .roblib-bookmark-form a {
+	width: 100%;
+	text-align: center;
 	appearance: none;
 	background-color: $green;
 	border: 0;
