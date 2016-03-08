@@ -19,6 +19,57 @@
 
 //Facets
 
+//sort by date/ title
+ul.islandora-solr-sort {
+	@include horizontal-list;
+
+	text-align: center;
+	margin: 0 auto;
+
+	li {
+		width: 50%;
+	}
+
+	img {
+		display: none;
+	}
+}
+
+.block--islandora-solr-sort ul.islandora-solr-sort a {
+	width: 100%;
+
+	&:before {
+		margin-left: 4px;
+		content: "Sort by ";
+	}
+
+	@extend input[type="submit"];
+
+	@extend button.gray;
+
+	&.active {
+		@extend button.green;
+
+		&:before {
+			margin-left: 4px;
+			content: "Sort by ";
+		}
+	}
+
+	&.active[href$="asc"] {
+		@include icon(f13a, after);
+	}
+
+	&.active[href$="desc"] {
+		@include icon(f139, after);
+	}
+}
+
+.block--islandora-solr-sort a[title="Date"] {}
+
+.block--islandora-solr-sort a[title="Title"] {}
+
+//***********************************************
 .islandora-solr-facet-wrapper {
 	@include clearfix;
 }
@@ -54,6 +105,23 @@ ul.islandora-solr-facet .count {
 
 	display: table;
 	margin: 5px auto;
+
+	//$('.islandora-solr-facet-wrapper .soft-limit').prepend('<i class="fa fa-     chevron-circle-down" aria-hidden="true"></i>');
+}
+
+//add icons to the 'more' dropdown button
+
+.islandora-solr-facet + a.soft-limit {
+	@include icon(f139);
+
+	&:before {
+		color: white !important;
+		margin-right: 4px;
+	}
+}
+
+.islandora-solr-facet.hidden + a.soft-limit {
+	@include icon(f13a);
 
 	i {
 		color: white !important;
@@ -112,6 +180,7 @@ ul.islandora-solr-facet {
 //this image has been replaced in js
 .solr-thumb img {
 	border: 1px solid #ccc;
+	width:100%;
 }
 
 /*
@@ -140,6 +209,7 @@ ul.islandora-solr-facet {
 
 .icon-wrapper:hover i {
 	color: $red;
+
 	@include transition;
 }
 
