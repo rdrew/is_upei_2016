@@ -54,7 +54,7 @@ input + input {
   margin-left: 1.5em;
   margin-right: 1.5em; }
 
-button, .block--search-navigation--list-item a, input[type="button"], input[type="reset"], input[type="submit"], input#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a, .islandora-solr-facet-wrapper .soft-limit {
+button, .block--search-navigation--list-item a, input[type="button"], input[type="reset"], input[type="submit"], input#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a, .islandora-solr-facet-wrapper .soft-limit, .roblib-coins a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -80,35 +80,35 @@ button, .block--search-navigation--list-item a, input[type="button"], input[type
   vertical-align: middle;
   white-space: nowrap;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
-  button:hover, .block--search-navigation--list-item a:hover, button:focus, .block--search-navigation--list-item a:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .islandora-solr-facet-wrapper .soft-limit:hover, input[type="submit"]:focus, input#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .islandora-solr-facet-wrapper .soft-limit:focus {
+  button:hover, .block--search-navigation--list-item a:hover, button:focus, .block--search-navigation--list-item a:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .islandora-solr-facet-wrapper .soft-limit:hover, .roblib-coins a:hover, input[type="submit"]:focus, input#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .islandora-solr-facet-wrapper .soft-limit:focus, .roblib-coins a:focus {
     background-color: #6f1a03;
     color: #fff; }
-  button:disabled, .block--search-navigation--list-item a:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, input#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .islandora-solr-facet-wrapper .soft-limit:disabled {
+  button:disabled, .block--search-navigation--list-item a:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, input#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .islandora-solr-facet-wrapper .soft-limit:disabled, .roblib-coins a:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button:disabled:hover, .block--search-navigation--list-item a:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, input#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .islandora-solr-facet-wrapper .soft-limit:disabled:hover {
+    button:disabled:hover, .block--search-navigation--list-item a:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, input#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .roblib-coins a:disabled:hover {
       background-color: #8B2004; }
 
-button.gray, .block--search-navigation--list-item a.gray, #islandora-bookmark-detailed-overview .operations input, .block--islandora-solr-sort ul.islandora-solr-sort a, input[type="button"].gray, input[type="reset"].gray, input[type="submit"].gray, input.gray#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a.gray, .islandora-solr-facet-wrapper .gray.soft-limit {
+button.gray, .block--search-navigation--list-item a.gray, #islandora-bookmark-detailed-overview .operations input, .block--islandora-solr-sort ul.islandora-solr-sort a, input[type="button"].gray, input[type="reset"].gray, input[type="submit"].gray, input.gray#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a.gray, .islandora-solr-facet-wrapper .gray.soft-limit, .roblib-coins a.gray {
   background-color: #5A5A5A; }
-  button.gray:hover, .block--search-navigation--list-item a.gray:hover, #islandora-bookmark-detailed-overview .operations input:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, button.gray:focus, .block--search-navigation--list-item a.gray:focus, #islandora-bookmark-detailed-overview .operations input:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, input[type="button"].gray:hover, input[type="button"].gray:focus, input[type="reset"].gray:hover, input[type="reset"].gray:focus, input[type="submit"].gray:hover, input.gray#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:hover, .islandora-solr-facet-wrapper .gray.soft-limit:hover, input[type="submit"].gray:focus, input.gray#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:focus, .islandora-solr-facet-wrapper .gray.soft-limit:focus {
+  button.gray:hover, .block--search-navigation--list-item a.gray:hover, #islandora-bookmark-detailed-overview .operations input:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:hover, button.gray:focus, .block--search-navigation--list-item a.gray:focus, #islandora-bookmark-detailed-overview .operations input:focus, .block--islandora-solr-sort ul.islandora-solr-sort a:focus, input[type="button"].gray:hover, input[type="button"].gray:focus, input[type="reset"].gray:hover, input[type="reset"].gray:focus, input[type="submit"].gray:hover, input.gray#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:hover, .islandora-solr-facet-wrapper .gray.soft-limit:hover, .roblib-coins a.gray:hover, input[type="submit"].gray:focus, input.gray#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:focus, .islandora-solr-facet-wrapper .gray.soft-limit:focus, .roblib-coins a.gray:focus {
     background-color: #484848;
     color: #fff; }
-  button.gray:disabled, .block--search-navigation--list-item a.gray:disabled, #islandora-bookmark-detailed-overview .operations input:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, input[type="button"].gray:disabled, input[type="reset"].gray:disabled, input[type="submit"].gray:disabled, input.gray#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled, .islandora-solr-facet-wrapper .gray.soft-limit:disabled {
+  button.gray:disabled, .block--search-navigation--list-item a.gray:disabled, #islandora-bookmark-detailed-overview .operations input:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, input[type="button"].gray:disabled, input[type="reset"].gray:disabled, input[type="submit"].gray:disabled, input.gray#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled, .islandora-solr-facet-wrapper .gray.soft-limit:disabled, .roblib-coins a.gray:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button.gray:disabled:hover, .block--search-navigation--list-item a.gray:disabled:hover, #islandora-bookmark-detailed-overview .operations input:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, input[type="button"].gray:disabled:hover, input[type="reset"].gray:disabled:hover, input[type="submit"].gray:disabled:hover, input.gray#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled:hover, .islandora-solr-facet-wrapper .gray.soft-limit:disabled:hover {
+    button.gray:disabled:hover, .block--search-navigation--list-item a.gray:disabled:hover, #islandora-bookmark-detailed-overview .operations input:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, input[type="button"].gray:disabled:hover, input[type="reset"].gray:disabled:hover, input[type="submit"].gray:disabled:hover, input.gray#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.gray:disabled:hover, .islandora-solr-facet-wrapper .gray.soft-limit:disabled:hover, .roblib-coins a.gray:disabled:hover {
       background-color: #5A5A5A; }
 
-button.green, .block--search-navigation--list-item a.green, .views-exposed-widget.views-submit-button input[type="submit"], .views-exposed-widget.views-submit-button input#edit-add-button, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit, .block--islandora-solr-sort ul.islandora-solr-sort a.active, input[type="button"].green, input[type="reset"].green, input[type="submit"].green, input.green#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a.green, .islandora-solr-facet-wrapper .green.soft-limit {
+button.green, .block--search-navigation--list-item a.green, .views-exposed-widget.views-submit-button input[type="submit"], .views-exposed-widget.views-submit-button input#edit-add-button, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit, .views-exposed-widget.views-submit-button .roblib-coins a, .roblib-coins .views-exposed-widget.views-submit-button a, .block--islandora-solr-sort ul.islandora-solr-sort a.active, .roblib-coins a, input[type="button"].green, input[type="reset"].green, input[type="submit"].green, input.green#edit-add-button, .block--islandora-solr-sort ul.islandora-solr-sort a.green, .islandora-solr-facet-wrapper .green.soft-limit, .roblib-coins a.green {
   background-color: #5C8727; }
-  button.green:hover, .block--search-navigation--list-item a.green:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, .views-exposed-widget.views-submit-button input#edit-add-button:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:hover, button.green:focus, .block--search-navigation--list-item a.green:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, .views-exposed-widget.views-submit-button input#edit-add-button:focus, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:focus, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:focus, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.active:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input.green#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:hover, .islandora-solr-facet-wrapper .green.soft-limit:hover, input[type="submit"].green:focus, input.green#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.green:focus, .islandora-solr-facet-wrapper .green.soft-limit:focus {
+  button.green:hover, .block--search-navigation--list-item a.green:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, .views-exposed-widget.views-submit-button input#edit-add-button:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:hover, .views-exposed-widget.views-submit-button .roblib-coins a:hover, .roblib-coins .views-exposed-widget.views-submit-button a:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:hover, .roblib-coins a:hover, button.green:focus, .block--search-navigation--list-item a.green:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, .views-exposed-widget.views-submit-button input#edit-add-button:focus, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:focus, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:focus, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:focus, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:focus, .views-exposed-widget.views-submit-button .roblib-coins a:focus, .roblib-coins .views-exposed-widget.views-submit-button a:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.active:focus, .roblib-coins a:focus, input[type="button"].green:hover, input[type="button"].green:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input.green#edit-add-button:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:hover, .islandora-solr-facet-wrapper .green.soft-limit:hover, .roblib-coins a.green:hover, input[type="submit"].green:focus, input.green#edit-add-button:focus, .block--islandora-solr-sort ul.islandora-solr-sort a.green:focus, .islandora-solr-facet-wrapper .green.soft-limit:focus, .roblib-coins a.green:focus {
     background-color: #4a6c1f;
     color: #fff; }
-  button.green:disabled, .block--search-navigation--list-item a.green:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, .views-exposed-widget.views-submit-button input#edit-add-button:disabled, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled, input.green#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled, .islandora-solr-facet-wrapper .green.soft-limit:disabled {
+  button.green:disabled, .block--search-navigation--list-item a.green:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, .views-exposed-widget.views-submit-button input#edit-add-button:disabled, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled, .views-exposed-widget.views-submit-button .roblib-coins a:disabled, .roblib-coins .views-exposed-widget.views-submit-button a:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled, .roblib-coins a:disabled, input[type="button"].green:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled, input.green#edit-add-button:disabled, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled, .islandora-solr-facet-wrapper .green.soft-limit:disabled, .roblib-coins a.green:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button.green:disabled:hover, .block--search-navigation--list-item a.green:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, .views-exposed-widget.views-submit-button input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover, input.green#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled:hover, .islandora-solr-facet-wrapper .green.soft-limit:disabled:hover {
+    button.green:disabled:hover, .block--search-navigation--list-item a.green:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, .views-exposed-widget.views-submit-button input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button .block--islandora-solr-sort ul.islandora-solr-sort a:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.active:disabled:hover, .roblib-coins a:disabled:hover, input[type="button"].green:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover, input.green#edit-add-button:disabled:hover, .block--islandora-solr-sort ul.islandora-solr-sort a.green:disabled:hover, .islandora-solr-facet-wrapper .green.soft-limit:disabled:hover, .roblib-coins a.green:disabled:hover {
       background-color: #5C8727; }
 
 fieldset {
@@ -2935,7 +2935,7 @@ tr:hover {
         color: #5C8727;
         transition: all 0.15s ease-out 0s; }
       .l-region--navigation .menu li:hover .last.leaf {
-        float: right; }
+        /*float: right;*/ }
     .l-region--navigation .menu li:first-child {
       /*border-left:$medium-gray;*/ }
   .l-region--navigation .menu a {
@@ -2946,7 +2946,7 @@ tr:hover {
 .l-region--navigation .scholar-menu li.last {
   /* display: none; */
   padding-right: 1em;
-  float: right;
+  /*float: right !important;*/
   border-left: 1px solid #151515; }
   .l-region--navigation .scholar-menu li.last a {
     color: #ffd29a; }
@@ -3517,7 +3517,7 @@ header.l-header {
   width: 100%;
   border-radius: 0; }
 
-.search-bar input[type="submit"], .search-bar input#edit-add-button, .search-bar .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .search-bar a, .search-bar .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .search-bar .soft-limit {
+.search-bar input[type="submit"], .search-bar input#edit-add-button, .search-bar .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .search-bar a, .search-bar .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .search-bar .soft-limit, .search-bar .roblib-coins a, .roblib-coins .search-bar a {
   position: absolute;
   top: 0em;
   right: 0em;
@@ -3576,7 +3576,7 @@ aside .menu li {
   height: 50px; }
 
 ul.islandora-solr-facet li a {
-  width: 150px; }
+  width: 180px; }
 
 dl.solr-thumb input, .button--bookmark {
   width: 100%; }
@@ -3947,7 +3947,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
     /*font-size: .9em;*/
     padding-left: 1.5em; }
 
-.islandora-solr-search-result-inner input[type="submit"], .islandora-solr-search-result-inner input#edit-add-button, .islandora-solr-search-result-inner .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .islandora-solr-search-result-inner .soft-limit {
+.islandora-solr-search-result-inner input[type="submit"], .islandora-solr-search-result-inner input#edit-add-button, .islandora-solr-search-result-inner .block--islandora-solr-sort ul.islandora-solr-sort a, .block--islandora-solr-sort ul.islandora-solr-sort .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .islandora-solr-search-result-inner .soft-limit, .islandora-solr-search-result-inner .roblib-coins a, .roblib-coins .islandora-solr-search-result-inner a {
   /*     padding: 8px;*/
   /*font-size: .8em;*/ }
 
@@ -4006,6 +4006,25 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
       background-color: #5C8727; }
   .roblib-fulltext a i {
     margin-right: 4px; }
+
+/*-------------------*/
+/*-  check at upei  -*/
+/*-------------------*/
+.roblib-coins a {
+  width: 100%;
+  margin-bottom: 4px; }
+  .roblib-coins a:before {
+    content: "\f002";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 4px; }
+
+.button--check-upei {
+  display: inline-block; }
 
 /**
  * @file
@@ -4295,6 +4314,129 @@ td.active {
 
 body {
   /*background:blue;*/ }
+
+/*
+
+ * We are hiding the invisible nav outside the screen
+ * so we need to avoid the horizontal scroll
+ */
+body.okayNav-loaded {
+  overflow-x: hidden; }
+
+.okayNav:not(.loaded) {
+  visibility: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.okayNav ul {
+  /* We want two navigations - one hidden and one visible */
+  float: left; }
+
+.okayNav a {
+  /* Links general styling */ }
+
+.okayNav__nav--visible {
+  overflow: hidden;
+  white-space: nowrap; }
+
+.okayNav__nav--visible li {
+  display: inline-block; }
+
+.okayNav__nav--visible a {
+  /* Link styling for the visible part of the nav */
+  display: block;
+  transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1); }
+
+/* Link styling for the off-screen part of the nav */
+.okayNav__nav--invisible {
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: #fff; }
+
+.okayNav__nav--invisible a {
+  background: #fff;
+  width: 240px;
+  display: block;
+  padding: 15px; }
+
+.okayNav__nav--invisible.nav-left {
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%); }
+
+.okayNav__nav--invisible.nav-right {
+  right: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); }
+
+.okayNav__nav--invisible.transition-enabled {
+  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1); }
+
+.okayNav__nav--invisible.nav-open {
+  -webkit-transform: translateX(0);
+  transform: translateX(0); }
+
+/* Kebab icon */
+.okayNav__menu-toggle {
+  position: relative;
+  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  float: left;
+  z-index: 1;
+  top: 15px; }
+
+.okayNav__menu-toggle.okay-invisible {
+  position: absolute;
+  opacity: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none; }
+
+.okayNav__menu-toggle span {
+  display: block;
+  position: absolute;
+  margin: auto;
+  height: 4px;
+  width: 4px;
+  background: #2e2e33;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  pointer-events: none; }
+
+.okayNav__menu-toggle span:nth-child(1) {
+  top: 0; }
+
+.okayNav__menu-toggle span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.okayNav__menu-toggle span:nth-child(3) {
+  bottom: 0; }
+
+.okayNav__menu-toggle.icon--active {
+  /* Kebab icon when off-screen nav is open */
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.okayNav__menu-toggle.icon--active span {
+  background: #546edb; }
 
 body {
   -webkit-font-smoothing: antialiased;

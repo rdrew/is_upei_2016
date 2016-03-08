@@ -1,5 +1,6 @@
 ul.islandora-solr-facet li a {
-	width: 150px;
+	width: 180px;
+
 }
 
 //needs to be dealt with
@@ -525,4 +526,24 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	i {
 		margin-right: 4px;
 	}
+}
+
+
+/*-------------------*/
+/*-  check at upei  -*/
+/*-------------------*/
+
+
+.roblib-coins a {
+
+	@include icon( f002 );
+	@extend input[type="submit"];
+	@extend button.green;
+	width:100%;
+	margin-bottom: 4px;
+
+}
+.button--check-upei {
+	display: inline-block;
+	
 }
