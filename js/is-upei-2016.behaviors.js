@@ -37,7 +37,10 @@
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
-			//$('a[href="/islandora-bookmark/listid/1"]').replaceWith('<a href="/islandora-bookmark/listid/1" class="button--bookmark"><i class="fa fa-bookmark" aria-hidden="true"></i>My Bookmarks</a>');
+			var bookmarks_button = 'a[href^="/islandora-bookmark/listid/"]';
+			$( bookmarks_button ).empty();
+			$( bookmarks_button ).append('My Bookmarks');
+
 
 		}
 	};
