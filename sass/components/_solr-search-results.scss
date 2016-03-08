@@ -1,3 +1,18 @@
+ul.islandora-solr-facet li a {
+
+	width: 150px;
+
+
+
+}
+//needs to be dealt with 
+dl.solr-thumb input, .button--bookmark {
+    width: 100%;
+}
+
+a.button--bookmark {
+    text-align: center;
+} 
 /*
  *Page title
  */
@@ -20,6 +35,7 @@
 //Facets
 
 //sort by date/ title
+
 ul.islandora-solr-sort {
 	@include horizontal-list;
 
@@ -30,9 +46,9 @@ ul.islandora-solr-sort {
 		width: 50%;
 	}
 
-	img {
-		display: none;
-	}
+	/*img {*/
+		/*display: none;*/
+	/*}*/
 }
 
 .block--islandora-solr-sort ul.islandora-solr-sort a {
@@ -56,13 +72,13 @@ ul.islandora-solr-sort {
 		}
 	}
 
-	&.active[href$="asc"] {
-		@include icon(f13a, after);
-	}
+	/*&.active[href$="asc"] {*/
+		/*@include icon(f13a, after);*/
+	/*}*/
 
-	&.active[href$="desc"] {
-		@include icon(f139, after);
-	}
+	/*&.active[href$="desc"] {*/
+		/*@include icon(f139, after);*/
+	/*}*/
 }
 
 .block--islandora-solr-sort a[title="Date"] {}
