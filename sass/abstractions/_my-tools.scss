@@ -11,6 +11,16 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 
+		@if $position == after {
+
+			margin-left: 4px;
+
+		} @else {
+
+			margin-right: 4px;
+
+		}
+
 	}
 
 }

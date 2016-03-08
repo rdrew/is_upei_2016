@@ -394,6 +394,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 .roblib-fulltext a {
 	appearance: none;
+	@include icon( f1c1 );
 	background-color: $green;
 	border: 0;
 	border-radius: $base-border-radius;
