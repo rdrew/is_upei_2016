@@ -2157,6 +2157,17 @@ div#edit-lists a,
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
   display: table;
   margin: 0 auto; }
+  div#edit-lists a:before,
+  .roblib-bookmark-form .button--bookmark:before,
+  .roblib-bookmark-form a:before {
+    content: "\f02e";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 4px; }
   div#edit-lists a:hover, div#edit-lists a:focus,
   .roblib-bookmark-form .button--bookmark:hover,
   .roblib-bookmark-form .button--bookmark:focus,
