@@ -53,9 +53,6 @@
 	Drupal.behaviors.islandora_thumbnails = {
 		attach: function (context, settings) {
 
-			//var journal_image = 'img.islandora-solr-default-image.scholar-Journal-Article';
-			//var journal_icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-			//$( journal_image ).replaceWith( journal_icon );
 			var image = 'img.islandora-solr-default-image.scholar-Journal--Electronic';
 			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
 			$( image ).replaceWith( icon );
@@ -78,23 +75,30 @@
 
 		}
 	};
+
 	Drupal.behaviors.open_metadata = {
 		attach: function (context, settings) {
-
 			$('.islandora-metadata').removeClass('collapsed');
-
 		}
 	};
+
 	Drupal.behaviors.solr_plus_minus = {
 		attach: function (context, settings) {
-
 			$('a.plus').empty();
 			$('a.minus').empty();
-			$('a.plus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
-			$('a.minus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
-
+			$('a.plus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
+			$('a.minus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
 		}
 	};
+
+
+	Drupal.behaviors.check_upei_button = {
+		attach: function (context, settings) {
+			$('.coins-img').replaceWith( '<div class="button--check-upei"><span>Check</span><span>@</span><span>UPEI</span></div>' );
+		}
+	};
+
+
 
 	Drupal.behaviors.search_navigation = {
 		attach: function (context, settings) {
@@ -131,12 +135,17 @@
 
 		}
 	};
-	
+
 
 	Drupal.behaviors.okNav = {
-	
-		
-	
+
+
+		attach: function (context, settings) {
+
+			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
+			$('nav#block-menu-menu-scholar').okayNav();
+		}
+
 	};
 
 
