@@ -31,14 +31,12 @@
 
 
 	<div class="view--citations">
+<h3>
+	Recent Citations
+</h3>
 <?php print views_embed_view('recent_citations', 'block', $identifier); ?>
 	</div>
 
-	<div class="citations">
-		<?php if (isset($variables['recent_citations'])): ?>
-		  <?php print $variables['recent_citations']; ?>
-		<?php endif; ?>
-	</div>
 
 	<div class="other-scholars islandora-object-scholars">
 	  <?php if (isset($variables['fellow_scholars'])): ?>
