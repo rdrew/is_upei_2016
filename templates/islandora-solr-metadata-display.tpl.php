@@ -48,7 +48,8 @@
           Statistics
         </dt>
         <dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats-value">
-          <?php print 'views: ' . $upei_scholar_views . ', downloads: ' . $upei_scholar_downloads; ?>
+          <?php print 'views: ' . $upei_scholar_views ; ?>
+          <?php if(!empty($upei_scholar_downloads)) print ', downloads: ' . $upei_scholar_downloads; ?>
         </dd>
       <?php endif; ?>
     </dl>

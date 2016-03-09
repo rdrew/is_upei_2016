@@ -148,5 +148,16 @@
 
 	};
 
+	Drupal.behaviors.placeholder_text = {
+//adds placeholder text in the search box for the jQuery DataTables
+
+		attach: function (context, settings) {
+
+			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
+			$(".dataTables_filter input").attr("placeholder", "Filter Results:").val("").focus().blur();
+		}
+
+	};
+
 
 })(jQuery);
