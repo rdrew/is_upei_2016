@@ -30,6 +30,10 @@
 	</div>
 
 
+	<div class="view--citations">
+<?php print views_embed_view('recent_citations', 'block', $identifier); ?>
+	</div>
+
 	<div class="citations">
 		<?php if (isset($variables['recent_citations'])): ?>
 		  <?php print $variables['recent_citations']; ?>
