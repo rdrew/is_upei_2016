@@ -143,18 +143,28 @@
 		attach: function (context, settings) {
 
 			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
-			$('nav#block-menu-menu-scholar').okayNav();
+			//$('nav#block-menu-menu-scholar').okayNav();
 		}
 
 	};
 
 	Drupal.behaviors.placeholder_text = {
-//adds placeholder text in the search box for the jQuery DataTables
+		//adds placeholder text in the search box for the jQuery DataTables
 
 		attach: function (context, settings) {
 
 			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
 			$(".dataTables_filter input").attr("placeholder", "Filter Results:").val("").focus().blur();
+		}
+
+	};
+	Drupal.behaviors.mobile_menu_stuff = {
+
+		attach: function (context, settings) {
+			//$('.l-region--navigation .menu a').contents().each(function () {
+				//if (this.nodeType == 3)
+				//$(this).remove();
+			//});
 		}
 
 	};
