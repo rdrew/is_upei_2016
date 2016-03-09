@@ -69,7 +69,9 @@
 }
 
 .dataTables_paginate {
-	float: right;
+	/*float: right;*/
+	margin: 0 auto;
+	margin-bottom: $base-spacing;
 	text-align: right;
 }
 
@@ -154,7 +156,7 @@ table.display thead th {
 	border-bottom: 1px solid black;
 	font-weight: bold;
 	cursor: pointer;
-	background: $dark-gray;
+	background-color: $dark-gray;
 	font-family: $roboto_condensed;
 	color: white;
 	/** cursor: hand;*/
@@ -332,27 +334,28 @@ td.details {
 
 .paging_full_numbers a.paginate_button,
  	.paging_full_numbers a.paginate_active {
-	border: 1px solid #aaa;
+	border: $base-border;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	padding: 2px 5px;
+	padding: 5px 10px;
 	margin: 0 3px;
+	font-family: $roboto_condensed;
 	cursor: pointer;
 	*cursor: hand;
 	color: #333 !important;
 }
 
 .paging_full_numbers a.paginate_button {
-	background-color: #ddd;
+	background-color: #fff;
 }
 
 .paging_full_numbers a.paginate_button:hover {
-	background-color: #ccc;
 	text-decoration: none !important;
+	background-color: $light-green;
 }
 
 .paging_full_numbers a.paginate_active {
-	background-color: #99B3FF;
+	background-color: $light-green;
 }
 
 table.display tr.even.row_selected td {
@@ -583,7 +586,27 @@ div.box {
  *OVERRIDES BY ROB
  */
 .dataTables_filter {
-    width: 200px;
+	label {
+		/*display: none;*/
+		/*display: inline-block;*/
+		
+	}
+    width: 300px;
     float: none;
     text-align: left;
+}
+/*
+ *Table spacing
+ */
+.views-field-MADS-family-s {
+	width: 125px;
+	
+}
+.views-field-MADS-given-s {
+	width: 150px;
+	
+}
+.views-field-MADS-status-mt {
+	width: 150px;
+	
 }

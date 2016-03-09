@@ -15,6 +15,10 @@
 
 	.lp-slider {
 		@include span-columns(6);
+		.flexslider {
+			border-radius: 0;
+			
+		}
 
 	}
 

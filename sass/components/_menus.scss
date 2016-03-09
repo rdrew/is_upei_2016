@@ -2,7 +2,10 @@
 .lp-menu {
 	.menu {
 		/*@include small-shadow();*/
-		border: $base-border;
+		//border: $base-border;
+		border: 5px solid #fff;
+		outline: 1px solid #ccc;
+			border-radius: $base-border-radius;
 		.leaf {
 			list-style-image: none;
 			list-style-type: none;
@@ -10,17 +13,24 @@
 
 		a {
 			font-size: 1.4em;
-			background: white;
+			background: $light-green;
 			/*font-family: $roboto_condensed;*/
 			font-family: $roboto_condensed;
 			/*text-transform: uppercase;*/
 			color: $dark-gray;
 			display: block;
-			padding: $base-spacing/5 $base-spacing/2;
+			//padding: $base-spacing/4 $base-spacing/2;
+			padding: 0.34em $base-spacing/2;
 			border-bottom: $base-border;
 			&:hover {
-				background: $light-green;
+				//background: $light-green;
+				background: white;
 				@include transition();
+				i {
+					color:$green;
+				@include transition();
+					
+				}
 			}
 		}
 		.first a {
@@ -34,7 +44,7 @@
 
 		i {
 			width: 20px;
-			margin-right: 1em;
+			margin-right: $base-spacing/2;
 		}
 	}
 }

@@ -2438,7 +2438,9 @@ fieldset#edit-bookmarks-fieldset td a {
   float: left; }
 
 .dataTables_paginate {
-  float: right;
+  /*float: right;*/
+  margin: 0 auto;
+  margin-bottom: 1.5em;
   text-align: right; }
 
 /* Pagination nested */
@@ -2513,7 +2515,7 @@ table.display thead th {
   border-bottom: 1px solid black;
   font-weight: bold;
   cursor: pointer;
-  background: #333;
+  background-color: #333;
   font-family: "Roboto Condensed", sans-serif;
   color: white;
   /** cursor: hand;*/ }
@@ -2643,24 +2645,25 @@ td.details {
 
 .paging_full_numbers a.paginate_button,
 .paging_full_numbers a.paginate_active {
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  padding: 2px 5px;
+  padding: 5px 10px;
   margin: 0 3px;
+  font-family: "Roboto Condensed", sans-serif;
   cursor: pointer;
   *cursor: hand;
   color: #333 !important; }
 
 .paging_full_numbers a.paginate_button {
-  background-color: #ddd; }
+  background-color: #fff; }
 
 .paging_full_numbers a.paginate_button:hover {
-  background-color: #ccc;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  background-color: #e7ede0; }
 
 .paging_full_numbers a.paginate_active {
-  background-color: #99B3FF; }
+  background-color: #e7ede0; }
 
 table.display tr.even.row_selected td {
   background-color: #B0BED9; }
@@ -2838,9 +2841,24 @@ div.box {
  *OVERRIDES BY ROB
  */
 .dataTables_filter {
-  width: 200px;
+  width: 300px;
   float: none;
   text-align: left; }
+  .dataTables_filter label {
+    /*display: none;*/
+    /*display: inline-block;*/ }
+
+/*
+ *Table spacing
+ */
+.views-field-MADS-family-s {
+  width: 125px; }
+
+.views-field-MADS-given-s {
+  width: 150px; }
+
+.views-field-MADS-status-mt {
+  width: 150px; }
 
 .l-footer-wrapper {
   background: #333; }
@@ -3185,6 +3203,8 @@ dl.islandora-metadata-fields {
     width: 48.93617%; }
     .lp .lp-slider:last-child {
       margin-right: 0; }
+    .lp .lp-slider .flexslider {
+      border-radius: 0; }
   .lp .lp-welcome {
     float: left;
     display: block;
@@ -3357,30 +3377,35 @@ header.l-header {
 
 .lp-menu .menu {
   /*@include small-shadow();*/
-  border: 1px solid #ccc; }
+  border: 5px solid #fff;
+  outline: 1px solid #ccc;
+  border-radius: 2px; }
   .lp-menu .menu .leaf {
     list-style-image: none;
     list-style-type: none; }
   .lp-menu .menu a {
     font-size: 1.4em;
-    background: white;
+    background: #e7ede0;
     /*font-family: $roboto_condensed;*/
     font-family: "Roboto Condensed", sans-serif;
     /*text-transform: uppercase;*/
     color: #333;
     display: block;
-    padding: 0.3em 0.75em;
+    padding: 0.34em 0.75em;
     border-bottom: 1px solid #ccc; }
     .lp-menu .menu a:hover {
-      background: #e7ede0;
+      background: white;
       transition: all 0.15s ease-out 0s; }
+      .lp-menu .menu a:hover i {
+        color: #5C8727;
+        transition: all 0.15s ease-out 0s; }
   .lp-menu .menu .first a {
     /*border-top: $base-border;*/ }
   .lp-menu .menu .last a {
     border-bottom: 0; }
   .lp-menu .menu i {
     width: 20px;
-    margin-right: 1em; }
+    margin-right: 0.75em; }
 
 .pager {
   margin-bottom: 10px; }
@@ -3450,6 +3475,10 @@ header.l-header {
     padding-top: 1.5em; }
     .scholar .bio:last-child {
       margin-right: 0; }
+    .scholar .bio br {
+      display: none; }
+    .scholar .bio p {
+      margin-bottom: 1.5em; }
   .scholar .activities {
     float: left;
     display: block;

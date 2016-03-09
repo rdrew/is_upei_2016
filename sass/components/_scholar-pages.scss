@@ -1,12 +1,12 @@
 .l-content {
-border: $base-border;
-padding: $base-spacing;
+	border: $base-border;
+	padding: $base-spacing;
 }
+
 .scholar-page .l-content {
-
-		background: #fff  !important;
-
+	background: #fff  !important;
 }
+
 .scholar {
 	@include outer-container;
 
@@ -34,6 +34,14 @@ padding: $base-spacing;
 		@include border-bottom;
 
 		@include border-top;
+
+		br {
+			display: none;
+		}
+		p {
+			margin-bottom: $base-spacing;
+			
+		}
 	}
 
 	.activities {
@@ -68,7 +76,8 @@ padding: $base-spacing;
 		@include border-bottom;
 	}
 }
+
 .scholar-image img {
-    border: 1px solid #ccc;
-    padding: 4px;
+	border: 1px solid #ccc;
+	padding: 4px;
 }
