@@ -1,50 +1,64 @@
-
 .lp-menu {
 	.menu {
+		margin-bottom: $base-spacing;
+
 		/*@include small-shadow();*/
 		//border: $base-border;
 		border: 5px solid #fff;
 		outline: 1px solid #ccc;
-			border-radius: $base-border-radius;
+		border-radius: $base-border-radius;
+
 		.leaf {
 			list-style-image: none;
 			list-style-type: none;
 		}
 
 		a {
-			font-size: 1.4em;
+			font-size: 1.2em;
+
+			@include media(1094px) {
+				font-size: 1.4em;
+			}
+
+
 			background: $light-green;
+
 			/*font-family: $roboto_condensed;*/
 			font-family: $roboto_condensed;
+
 			/*text-transform: uppercase;*/
 			color: $dark-gray;
 			display: block;
+
 			//padding: $base-spacing/4 $base-spacing/2;
-			padding: 0.34em $base-spacing/2;
+			padding: 0.34em ($base-spacing / 2);
 			border-bottom: $base-border;
+
 			&:hover {
 				//background: $light-green;
 				background: white;
-				@include transition();
+
+				@include transition;
+
 				i {
-					color:$green;
-				@include transition();
-					
+					color: $green;
+
+					@include transition;
 				}
 			}
 		}
-		.first a {
 
+		.first a {
 			/*border-top: $base-border;*/
 		}
-	   .last a {
-		   border-bottom:0;
-			
+
+		.last a {
+			border-bottom: 0;
 		}
 
 		i {
 			width: 20px;
-			margin-right: $base-spacing/2;
+			margin-right: $base-spacing / 2;
 		}
 	}
 }

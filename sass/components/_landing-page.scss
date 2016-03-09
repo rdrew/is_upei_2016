@@ -1,47 +1,81 @@
+.landing-page .tabs--primary {
+	display: none;
+}
+
 .landing-page .l-content {
 	border: 0;
 	padding: 0;
-	margin-top: $base-spacing;
+	@include media($medium-screen){
+		margin-top: $base-spacing;
+	}
 	background: none;
 }
+
 .lp {
 	@include outer-container;
 
-	.lp-menu {
-		@include span-columns(3);
-
-		/*background: $light-gray;*/
-	}
-
-	.lp-slider {
-		@include span-columns(6);
-		.flexslider {
-			border-radius: 0;
-			
+	@include media($medium-screen) {
+		.lp-menu {
+			@include span-columns(4);
 		}
 
+		.lp-slider {
+			@include span-columns(8);
+
+			@include omega;
+			.flexslider {
+				border-radius: 0;
+				margin-bottom: $base-spacing;
+			}
+		}
+
+		.lp-welcome {
+			@include span-columns(4);
+
+		}
+
+		.lp-glance {
+			@include span-columns(4);
+		}
+
+		.lp-collection {
+			@include span-columns(4);
+
+			@include omega;
+		}
 	}
 
-	.lp-welcome {
-		@include span-columns(3);
+	@include media($large-screen) {
+		.lp-menu {
+			@include span-columns(3);
+		}
 
-		@include omega;
+		.lp-slider {
+			@include span-columns(6);
 
-	}
+			.flexslider {
+				border-radius: 0;
+				margin-bottom: $base-spacing;
+			}
+		}
 
-	.lp-glance {
-		@include span-columns(6);
+		.lp-welcome {
+			@include span-columns(3);
 
-	}
+			@include omega;
+		}
 
-	.lp-collection {
-		@include span-columns(6);
+		.lp-glance {
+			@include span-columns(6);
+		}
 
-		@include omega;
+		.lp-collection {
+			@include span-columns(6);
 
+			@include omega;
+		}
 	}
 }
-
 
 .lp-slider {}
 

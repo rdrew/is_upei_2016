@@ -53,14 +53,24 @@
 	/*padding: 8px 5px;*/
 }
 
+.l-region--navigation .menu li span {
+
+	/*display:none;*/
+	/*@include media(480px){*/
+		/*display: inline;*/
+	/*}*/
+
+}
 .l-region--navigation .scholar-menu li.last {
 	/* display: none; */
 	padding-right: 1em;
+
 	/*float: right !important;*/
 	border-left: 1px solid #151515;
+
 	a {
-	color:rgb(255, 210, 154);
-}
+		color: rgb(255, 210, 154);
+	}
 }
 
 .l-region--navigation .scholar-menu li.first {
@@ -70,7 +80,13 @@
 }
 
 .site-branding__name {
-	font-size: 2em;
+	font-size: 1.5em;
+
+	@include media(700px) {
+		font-size: 2em;
+	}
+
+
 	font-family: $heading-font-family;
 	margin-top: 8px;
 	display: block;
@@ -79,7 +95,13 @@
 
 .site-branding__slogan {
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.1em;
+
+	@include media(700px) {
+		font-size: 1.5em;
+	}
+
+
 	display: inline-block;
 	line-height: 1;
 }

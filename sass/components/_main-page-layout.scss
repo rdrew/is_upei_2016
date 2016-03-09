@@ -1,7 +1,12 @@
 .l-constrained {
 	@include outer-container;
 
-	width: 1140px;
+	max-width: 1140px;
+	margin: 0 ($base-spacing / 2);
+
+	@include media(1140px) {
+		margin: 0 auto;
+	}
 }
 
 .l-page {
@@ -18,16 +23,40 @@ header.l-header {
 	background: white;
 }
 
-.site-branding {
-	@include span-columns(9);
 
+@include media(480px) {
+	.site-branding {
+		@include span-columns(7);
+	}
+
+	.l-region--header {
+		@include span-columns(5);
+
+		@include omega;
+	}
+}
+
+@include media(980px) {
+	.l-region--header {
+		@include span-columns(3);
+
+		@include omega;
+	}
+
+	.site-branding {
+		@include span-columns(9);
+	}
+}
+
+
+.site-branding {
 	//@include outer-container;
-	display:flex;
+	display: flex;
 
 	.site-branding__logo {
 		//@include span-columns(2);
 		width: 165px;
-		display : inline-block;
+		display: inline-block;
 		margin-right: 10px;
 		line-height: 0;
 	}
@@ -52,13 +81,8 @@ header.l-header {
 
 .branding-container {
 	padding: ($base-spacing / 2) 0;
+
 	/*display: flex;*/
-}
-
-.l-region--header {
-	@include span-columns(3);
-
-	@include omega;
 }
 
 .site-branding {}
