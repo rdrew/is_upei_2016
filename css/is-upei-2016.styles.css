@@ -3373,43 +3373,41 @@ header.l-header {
 .l-main {
   padding: 1.5em 0; }
 
-.has-one-sidebar.has-sidebar-first .l-region--sidebar-first {
-  /*background: red;*/
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%; }
-  .has-one-sidebar.has-sidebar-first .l-region--sidebar-first:last-child {
+@media screen and (min-width: 600px) {
+  .has-one-sidebar.has-sidebar-first .l-region--sidebar-first {
+    /*background: red;*/
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%; }
+    .has-one-sidebar.has-sidebar-first .l-region--sidebar-first:last-child {
+      margin-right: 0; }
+  .has-one-sidebar.has-sidebar-first .l-content {
+    /*background: green;*/
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%;
     margin-right: 0; }
-
-.has-one-sidebar.has-sidebar-first .l-content {
-  /*background: green;*/
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 74.46809%;
-  margin-right: 0; }
-  .has-one-sidebar.has-sidebar-first .l-content:last-child {
+    .has-one-sidebar.has-sidebar-first .l-content:last-child {
+      margin-right: 0; }
+  .has-one-sidebar.has-sidebar-second .l-region--sidebar-second {
+    /*background: red;*/
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
     margin-right: 0; }
-
-.has-one-sidebar.has-sidebar-second .l-region--sidebar-second {
-  /*background: red;*/
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 23.40426%;
-  margin-right: 0; }
-  .has-one-sidebar.has-sidebar-second .l-region--sidebar-second:last-child {
-    margin-right: 0; }
-
-.has-one-sidebar.has-sidebar-second .l-content {
-  /*background: green;*/
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 74.46809%; }
-  .has-one-sidebar.has-sidebar-second .l-content:last-child {
-    margin-right: 0; }
+    .has-one-sidebar.has-sidebar-second .l-region--sidebar-second:last-child {
+      margin-right: 0; }
+  .has-one-sidebar.has-sidebar-second .l-content {
+    /*background: green;*/
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%; }
+    .has-one-sidebar.has-sidebar-second .l-content:last-child {
+      margin-right: 0; } }
 
 /*.has-one-sidebar .has-sidebar-first {*/
 /*.l-region--sidebar-first {*/
@@ -3894,9 +3892,10 @@ ul.islandora-solr-facet {
   /* bottom: 0; */ }
 
 dl.solr-thumb {
-  float: left;
-  width: 20%;
-  margin: 0; }
+  /*float: left;*/
+  /*width: 20%;*/
+  /*margin: 0;*/
+  margin-right: 1.5em; }
   dl.solr-thumb img {
     padding: 4px;
     border: 1px solid #ccc; }
@@ -3905,10 +3904,15 @@ dl.solr-thumb {
 .solr-thumb dd {
   margin: 0; }
 
+.islandora-solr-search-result-inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 dl.solr-fields {
-  float: right;
-  width: 80%;
-  padding-left: 1.5em; }
+  /*float: right;*/
+  /*width: 80%;*/
+  /*padding-left: $base-spacing;*/ }
 
 .solr-fields dt,
 .solr-fields dd {

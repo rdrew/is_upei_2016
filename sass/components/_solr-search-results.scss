@@ -235,9 +235,10 @@ ul.islandora-solr-facet {
 }
 
 dl.solr-thumb {
-	float: left;
-	width: 20%;
-	margin: 0;
+	/*float: left;*/
+	/*width: 20%;*/
+	/*margin: 0;*/
+	margin-right: $base-spacing;
 
 	img {
 		padding: 4px;
@@ -249,11 +250,13 @@ dl.solr-thumb {
 .solr-thumb dd {
 	margin: 0;
 }
-
+.islandora-solr-search-result-inner {
+    display: flex;
+}
 dl.solr-fields {
-	float: right;
-	width: 80%;
-	padding-left: $base-spacing;
+	/*float: right;*/
+	/*width: 80%;*/
+	/*padding-left: $base-spacing;*/
 
 	//border-top: 3px solid #ddd;
 }

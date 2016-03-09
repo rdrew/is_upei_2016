@@ -102,33 +102,35 @@ header.l-header {
 	padding: $base-spacing 0;
 }
 
-.has-one-sidebar.has-sidebar-first {
-	.l-region--sidebar-first {
-		/*background: red;*/
+@include media($medium-screen) {
+	.has-one-sidebar.has-sidebar-first {
+		.l-region--sidebar-first {
+			/*background: red;*/
 
-		@include span-columns(3);
+			@include span-columns(3);
+		}
+
+		.l-content {
+			/*background: green;*/
+			@include span-columns(9);
+
+			@include omega;
+		}
 	}
 
-	.l-content {
-		/*background: green;*/
-		@include span-columns(9);
+	.has-one-sidebar.has-sidebar-second {
+		.l-region--sidebar-second {
+			/*background: red;*/
 
-		@include omega;
-	}
-}
+			@include span-columns(3);
 
-.has-one-sidebar.has-sidebar-second {
-	.l-region--sidebar-second {
-		/*background: red;*/
+			@include omega;
+		}
 
-		@include span-columns(3);
-
-		@include omega;
-	}
-
-	.l-content {
-		/*background: green;*/
-		@include span-columns(9);
+		.l-content {
+			/*background: green;*/
+			@include span-columns(9);
+		}
 	}
 }
 
