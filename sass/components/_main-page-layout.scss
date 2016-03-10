@@ -102,7 +102,7 @@ header.l-header {
 	padding: $base-spacing 0;
 }
 
-@include media($medium-screen) {
+@include media($large-screen) {
 	.has-one-sidebar.has-sidebar-first {
 		.l-region--sidebar-first {
 			/*background: red;*/
