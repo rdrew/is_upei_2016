@@ -2953,7 +2953,7 @@ tr:hover {
         color: #5C8727;
         transition: all 0.15s ease-out 0s; }
       .l-region--navigation .menu li:hover .last.leaf {
-        /*float: right;*/ }
+        float: right; }
     .l-region--navigation .menu li:first-child {
       /*border-left:$medium-gray;*/ }
   .l-region--navigation .menu a {
@@ -2970,7 +2970,7 @@ tr:hover {
 .l-region--navigation .scholar-menu li.last {
   /* display: none; */
   padding-right: 1em;
-  /*float: right !important;*/
+  float: right !important;
   border-left: 1px solid #151515; }
   .l-region--navigation .scholar-menu li.last a {
     color: #ffd29a; }
@@ -3002,6 +3002,29 @@ tr:hover {
 header.l-header {
   /*@include small-shadow;*/
   border-bottom: 2px solid #eeeeee; }
+
+.l-region--navigation .menu li {
+  padding-left: .6em;
+  padding-right: .6em; }
+  @media screen and (min-width: 994px) {
+    .l-region--navigation .menu li {
+      /*     padding-left: inherit;*/
+      /*padding-right: inherit;*/ } }
+
+.l-region--navigation .menu i {
+  display: block;
+  text-align: center;
+  font-size: 1.5em; }
+  @media screen and (min-width: 994px) {
+    .l-region--navigation .menu i {
+      display: inherit;
+      font-size: inherit; } }
+
+.l-region--navigation .menu .title {
+  font-size: .8em; }
+  @media screen and (min-width: 994px) {
+    .l-region--navigation .menu .title {
+      font-size: inherit; } }
 
 /*
 Document   : islandora_basic_collection.base.css
@@ -3201,6 +3224,8 @@ dl.islandora-metadata-fields {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
+  .lp .lp-menu {
+    display: none; }
   .lp::after {
     clear: both;
     content: "";
@@ -3747,14 +3772,12 @@ ul.islandora-solr-sort {
   ul.islandora-solr-sort li {
     width: 50%; }
 
+div#block-islandora-solr-sort {
+  border: 0;
+  margin: 0; }
+
 .block--islandora-solr-sort ul.islandora-solr-sort a {
-  width: 100%;
-  /*&.active[href$="asc"] {*/
-  /*@include icon(f13a, after);*/
-  /*}*/
-  /*&.active[href$="desc"] {*/
-  /*@include icon(f139, after);*/
-  /*}*/ }
+  width: 100%; }
   .block--islandora-solr-sort ul.islandora-solr-sort a:before {
     margin-left: 4px;
     content: "Sort by "; }
@@ -3771,8 +3794,7 @@ ul.islandora-solr-sort {
   padding: 0 0 0 0; }
 
 ul.islandora-solr-facet li > a {
-  display: inline-block;
-  /*width: 186px;*/ }
+  display: inline-block; }
 
 ul.islandora-solr-facet .count {
   font-family: "Roboto Condensed", sans-serif; }
@@ -3818,14 +3840,6 @@ ul.islandora-solr-facet .count {
   color: white !important;
   margin-right: 4px; }
 
-/*search filters*/
-/*.views-exposed-widgets {*/
-/*@include outer-container;*/
-/*.views-exposed-widget {*/
-/*@include span-columns(4);*/
-/*@include omega(3n);*/
-/*}*/
-/*}*/
 /* Theme style sheet for islandora solr */
 /* breadcrumbs */
 ul.islandora-solr-facet {
