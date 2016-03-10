@@ -129,7 +129,7 @@ div#block-islandora-solr-sort {
 
 		div#block-islandora-solr-sort {
 			display: none;
-			margin-top: $base-spacing/2;
+			margin-top: $base-spacing / 2;
 		}
 
 		.block__title {
@@ -138,11 +138,48 @@ div#block-islandora-solr-sort {
 			//text-align: center;
 			margin: 0 auto;
 
-			@extend input[type="submit"];
 
 			margin: 0 auto !important;
 			display: block !important;
 			width: 159px;
+			appearance: none;
+			background-color: $action-color;
+			border: 0;
+			border-radius: $base-border-radius;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+
+			//font-family: $base-font-family;
+			font-family: $button-font;
+			font-size: $button-font-size;
+			text-transform: uppercase;
+			-webkit-font-smoothing: antialiased;
+			font-weight: 400;
+			line-height: 1;
+			padding: ($small-spacing / 2) ($base-spacing / 2);
+			text-decoration: none;
+			transition: background-color $base-duration $base-timing;
+			user-select: none;
+			vertical-align: middle;
+			white-space: nowrap;
+
+			@include small-shadow;
+
+			&:hover,
+			&:focus {
+				background-color: shade($action-color, 20%);
+				color: #fff;
+			}
+
+			&:disabled {
+				cursor: not-allowed;
+				opacity: 0.5;
+
+				&:hover {
+					background-color: $action-color;
+				}
+			}
 		}
 
 		.block__content {
