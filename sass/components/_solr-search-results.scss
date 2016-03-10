@@ -89,6 +89,69 @@ div#block-islandora-solr-sort {
 	}
 }
 
+//--------------------------
+//-  mobile facet display  -
+//--------------------------
+@include media(max-width 900px) {
+	.page-islandora-search {
+		.l-main.l-constrained {
+			display: flex;
+			flex-direction: column;
+		}
+
+		h1 {
+			margin: 0;
+			text-align: center;
+		}
+
+		#islandora-solr-result-count {
+			text-align: center;
+		}
+
+		aside.l-region.l-region--sidebar-second {
+			/* order: 1; */
+		}
+
+		.l-content {
+			order: 2;
+		}
+
+		.has-one-sidebar.has-sidebar-second .l-content {
+			float: none;
+			margin-right: initial;
+			width: initial;
+		}
+
+		.has-one-sidebar.has-sidebar-second .l-region--sidebar-second {
+			float: none;
+			width: initial;
+		}
+
+		div#block-islandora-solr-sort {
+			display: none;
+			margin-top: $base-spacing/2;
+		}
+
+		.block__title {
+			@include icon(f085);
+
+			//text-align: center;
+			margin: 0 auto;
+
+			@extend input[type="submit"];
+
+			margin: 0 auto !important;
+			display: block !important;
+			width: 159px;
+		}
+
+		.block__content {
+			display: none;
+		}
+	}
+}
+
+
 .block--islandora-solr-sort a[title="Date"] {}
 
 .block--islandora-solr-sort a[title="Title"] {}
@@ -427,11 +490,10 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	dl {
 		font-size: .9em;
 		line-height: 1.3;
+
 		@include media($medium-screen) {
-				
 			font-size: inherit;
-		line-height: inherit;
-			
+			line-height: inherit;
 		}
 	}
 
