@@ -1,4 +1,5 @@
 (function ($) {
+
 	Drupal.behaviors.selectlist_defaults_scholar_page = {
 		attach: function (context, settings) {
 
@@ -165,6 +166,13 @@
 				//if (this.nodeType == 3)
 				//$(this).remove();
 			//});
+		}
+
+	};
+	Drupal.behaviors.move_the_sort = {
+
+		attach: function (context, settings) {
+			$('.block--islandora-facets .block__title').after($('#block-islandora-solr-sort'));
 		}
 
 	};
