@@ -2069,6 +2069,7 @@ div.islandora-bookmark-error-message {
   margin: 0; }
 
 #islandora-bookmark-detailed-form table .operations {
+  text-align: center;
   width: 100px; }
 
 #islandora-bookmark-rss-format {
@@ -2197,6 +2198,9 @@ div#edit-lists a,
 input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
   float: right; }
 
+#islandora-bookmark-detailed-overview .csl-bib-body {
+  margin-right: 0; }
+
 #islandora-bookmark-detailed-overview table {
   border: 1px solid #ccc;
   /*td:nth-child(2) {*/
@@ -2209,10 +2213,13 @@ input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-field
     font-family: "Roboto Condensed", sans-serif; }
     #islandora-bookmark-detailed-overview table th a {
       color: #fff; }
-  #islandora-bookmark-detailed-overview table th:nth-child(2) {
-    width: 85%; }
+  #islandora-bookmark-detailed-overview table th.select-all {
+    width: 46px; }
+  #islandora-bookmark-detailed-overview table th:nth-child(3) {
+    width: 85px; }
   #islandora-bookmark-detailed-overview table td {
     border-bottom: 1px solid #ddd;
+    line-height: 1.3;
     padding: 0.9em 0; }
   #islandora-bookmark-detailed-overview table tr.odd {
     background: white; }
@@ -2895,9 +2902,6 @@ table th {
 
 td {
   padding: 1em; }
-
-#islandora-bookmark-detailed-overview table td {
-  padding: .5em; }
 
 .csl-bib-body {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
@@ -3719,7 +3723,18 @@ aside .menu li {
   height: 50px; }
 
 ul.islandora-solr-facet li a {
-  width: 180px; }
+  width: 68%; }
+
+ul.islandora-solr-facet li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+ul.islandora-solr-facet li a {
+  /*width: 180px;*/ }
 
 dl.solr-thumb input, .button--bookmark {
   width: 100%; }

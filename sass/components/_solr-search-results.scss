@@ -1,5 +1,17 @@
+ul.islandora-solr-facet li a {width: 68%;}
+
+span.count {}
+
+span.plusminus {}
+
+ul.islandora-solr-facet li {
+
+    display: flex;
+    justify-content: space-between;
+}
+
 ul.islandora-solr-facet li a {
-	width: 180px;
+	/*width: 180px;*/
 
 }
 
@@ -49,10 +61,6 @@ ul.islandora-solr-sort {
 	/*display: none;*/
 	/*}*/
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 1ffb362cb114760d79bfe5085a794973f92d7733
 div#block-islandora-solr-sort {
     border: 0;
     margin: 0;
