@@ -7,7 +7,10 @@
 .pager__item {
 	background: #f9f7f9;
 	background: white;
-	padding: 5px 10px !important;
+	padding: 3px 8px !important;
+	@include media($medium-screen) {
+		padding: 5px 10px !important;
+	}
 	border: $base-border;
 	border-radius: 4px;
 }
@@ -31,6 +34,9 @@
 		font-family: $roboto_condensed;
 		text-transform: uppercase;
 		line-height:0;
-		font-size:.9em;
+		font-size:.8em;
+		@include media($medium-screen){
+			font-size:.9em;
+		}
 	
 }
