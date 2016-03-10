@@ -32,7 +32,7 @@
 			}
 
 			.last.leaf {
-				/*float: right;*/
+				float: right;
 			}
 		}
 
@@ -57,7 +57,7 @@
 
 	/*display:none;*/
 	/*@include media(480px){*/
-		/*display: inline;*/
+	/*display: inline;*/
 	/*}*/
 
 }
@@ -65,7 +65,7 @@
 	/* display: none; */
 	padding-right: 1em;
 
-	/*float: right !important;*/
+	float: right !important;
 	border-left: 1px solid #151515;
 
 	a {
@@ -109,4 +109,39 @@
 header.l-header {
 	/*@include small-shadow;*/
 	border-bottom: 2px solid #eeeeee;
+}
+//-------------------------------
+//-  responsive menu behaviors  -
+//-------------------------------
+
+
+.l-region--navigation .menu li {
+		padding-left: .6em;
+		padding-right: .6em;
+	@include media(994px) {
+   /*     padding-left: inherit;*/
+		/*padding-right: inherit;*/
+	}
+
+
+}
+.l-region--navigation .menu i {
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+	@include media(994px) {
+		display: inherit;
+		font-size: inherit;
+
+
+	}
+}
+
+.l-region--navigation .menu .title {
+	font-size: .8em;
+	@include media(994px) {
+
+		font-size: inherit;
+
+	}
 }

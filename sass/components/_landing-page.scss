@@ -12,6 +12,9 @@
 }
 
 .lp {
+	.lp-menu {
+		display: none;
+	}
 	@include outer-container;
 
 	@include media($medium-screen) {
