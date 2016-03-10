@@ -173,6 +173,13 @@
 
 		attach: function (context, settings) {
 			$('.block--islandora-facets .block__title').after($('#block-islandora-solr-sort'));
+			$("#block-islandora-solr-basic-facets .block__title").click(function() {
+				$("#block-islandora-solr-basic-facets .block__content").slideToggle();
+				$("#block-islandora-solr-sort").slideToggle();
+			
+				
+			
+			} );
 		}
 
 	};
