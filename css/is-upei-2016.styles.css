@@ -3812,6 +3812,8 @@ div#block-islandora-solr-sort {
     display: none; }
   .show_me {
     display: block !important; }
+  i {
+    font-size: 1.4em; }
   .page-islandora-search .l-main.l-constrained, .page-islandora-search .l-main.l-region--navigation, .page-islandora-search .l-main.l-region--highlighted, .page-islandora-search .l-footer-wrapper .l-main.l-region--footer, .l-footer-wrapper .page-islandora-search .l-main.l-region--footer {
     display: -webkit-flex;
     display: -ms-flexbox;
