@@ -10,8 +10,7 @@
 	}
 	background: none;
 }
-
-.lp {
+.lp-top-row {
 	.lp-menu {
 		display: none;
 	}
@@ -37,15 +36,6 @@
 
 		}
 
-		.lp-glance {
-			@include span-columns(4);
-		}
-
-		.lp-collection {
-			@include span-columns(4);
-
-			@include omega;
-		}
 	}
 
 	@include media($large-screen) {
@@ -67,6 +57,27 @@
 
 			@include omega;
 		}
+
+	}
+
+}
+
+.lp-second-row {
+	@include outer-container;
+
+	@include media($medium-screen) {
+		.lp-glance {
+			@include span-columns(4);
+		}
+
+		.lp-collection {
+			@include span-columns(4);
+
+			@include omega;
+		}
+	}
+
+	@include media($large-screen) {
 
 		.lp-glance {
 			@include span-columns(6);

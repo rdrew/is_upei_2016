@@ -3224,97 +3224,108 @@ dl.islandora-metadata-fields {
     .landing-page .l-content {
       margin-top: 1.5em; } }
 
-.lp {
+.lp-top-row {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
-  .lp .lp-menu {
+  .lp-top-row .lp-menu {
     display: none; }
-  .lp::after {
+  .lp-top-row::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (min-width: 600px) {
-    .lp .lp-menu {
+    .lp-top-row .lp-menu {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 31.91489%; }
-      .lp .lp-menu:last-child {
+      .lp-top-row .lp-menu:last-child {
         margin-right: 0; }
-    .lp .lp-slider {
+    .lp-top-row .lp-slider {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 65.95745%;
       margin-right: 0; }
-      .lp .lp-slider:last-child {
+      .lp-top-row .lp-slider:last-child {
         margin-right: 0; }
-      .lp .lp-slider .flexslider {
+      .lp-top-row .lp-slider .flexslider {
         border-radius: 0;
         margin-bottom: 1.5em; }
-    .lp .lp-welcome {
+    .lp-top-row .lp-welcome {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 31.91489%; }
-      .lp .lp-welcome:last-child {
-        margin-right: 0; }
-    .lp .lp-glance {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 31.91489%; }
-      .lp .lp-glance:last-child {
-        margin-right: 0; }
-    .lp .lp-collection {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 31.91489%;
-      margin-right: 0; }
-      .lp .lp-collection:last-child {
+      .lp-top-row .lp-welcome:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 900px) {
-    .lp .lp-menu {
+    .lp-top-row .lp-menu {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 23.40426%; }
-      .lp .lp-menu:last-child {
+      .lp-top-row .lp-menu:last-child {
         margin-right: 0; }
-    .lp .lp-slider {
+    .lp-top-row .lp-slider {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 48.93617%; }
-      .lp .lp-slider:last-child {
+      .lp-top-row .lp-slider:last-child {
         margin-right: 0; }
-      .lp .lp-slider .flexslider {
+      .lp-top-row .lp-slider .flexslider {
         border-radius: 0;
         margin-bottom: 1.5em; }
-    .lp .lp-welcome {
+    .lp-top-row .lp-welcome {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 23.40426%;
       margin-right: 0; }
-      .lp .lp-welcome:last-child {
+      .lp-top-row .lp-welcome:last-child {
+        margin-right: 0; } }
+
+.lp-second-row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .lp-second-row::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 600px) {
+    .lp-second-row .lp-glance {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 31.91489%; }
+      .lp-second-row .lp-glance:last-child {
         margin-right: 0; }
-    .lp .lp-glance {
+    .lp-second-row .lp-collection {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 31.91489%;
+      margin-right: 0; }
+      .lp-second-row .lp-collection:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 900px) {
+    .lp-second-row .lp-glance {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 48.93617%; }
-      .lp .lp-glance:last-child {
+      .lp-second-row .lp-glance:last-child {
         margin-right: 0; }
-    .lp .lp-collection {
+    .lp-second-row .lp-collection {
       float: left;
       display: block;
       margin-right: 2.12766%;
       width: 48.93617%;
       margin-right: 0; }
-      .lp .lp-collection:last-child {
+      .lp-second-row .lp-collection:last-child {
         margin-right: 0; } }
 
 .l-constrained, .l-region--navigation, .l-region--highlighted, .l-footer-wrapper .l-region--footer {
