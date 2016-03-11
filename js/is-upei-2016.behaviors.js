@@ -220,8 +220,8 @@
 		attach: function (context, settings) {
 			$("#block-islandora-solr-basic-facets .block__title").click(function() {
 
-				$("#block-islandora-solr-basic-facets .block__content").toggleClass("show_me", 1000);
-				$("#block-islandora-solr-sort").toggleClass("show_me", 1000);
+				$("#block-islandora-solr-basic-facets .block__content").toggleClass("show_me", 500);
+				$("#block-islandora-solr-sort").toggleClass("show_me", 500);
 
 
 			} );
