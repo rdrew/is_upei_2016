@@ -3833,7 +3833,7 @@ div#block-islandora-solr-sort {
     float: none;
     width: initial; }
   .page-islandora-search div#block-islandora-solr-sort {
-    display: none;
+    /*display: none;*/
     margin-top: 0.75em; }
   .page-islandora-search .block__title {
     margin: 0 auto;
@@ -3883,7 +3883,7 @@ div#block-islandora-solr-sort {
       .page-islandora-search .block__title:disabled:hover {
         background-color: #8B2004; }
   .page-islandora-search .block__content {
-    display: none; } }
+    /*display: none;*/ } }
 
 .islandora-solr-facet-wrapper::after {
   clear: both;
