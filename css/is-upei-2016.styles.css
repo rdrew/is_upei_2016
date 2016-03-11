@@ -3809,7 +3809,7 @@ div#block-islandora-solr-sort {
 @media screen and (max-width: 900px) {
   #block-islandora-solr-basic-facets .block__content,
   #block-islandora-solr-sort {
-    /*display: none;*/ }
+    display: none; }
   .show_me {
     /*display: block !important;*/ }
   .page-islandora-search .l-main.l-constrained, .page-islandora-search .l-main.l-region--navigation, .page-islandora-search .l-main.l-region--highlighted, .page-islandora-search .l-footer-wrapper .l-main.l-region--footer, .l-footer-wrapper .page-islandora-search .l-main.l-region--footer {
