@@ -93,6 +93,16 @@ div#block-islandora-solr-sort {
 //-  mobile facet display  -
 //--------------------------
 @include media(max-width 900px) {
+	//Hide/close on mobile. this is tied to a jquery behavior
+	#block-islandora-solr-basic-facets .block__content,
+	#block-islandora-solr-sort {
+		display: none;
+	}
+
+	.show_me {
+		display: block !important;
+	}
+
 	.page-islandora-search {
 		.l-main.l-constrained {
 			display: flex;
@@ -137,8 +147,6 @@ div#block-islandora-solr-sort {
 
 			//text-align: center;
 			margin: 0 auto;
-
-
 			margin: 0 auto !important;
 			display: block !important;
 			width: 159px;
@@ -653,16 +661,18 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 /*-------------------*/
 
 .roblib-coins a {
-	line-height:0;
+	line-height: 0;
 
 	@extend input[type="submit"];
 
 	@extend button.green;
 
 	width: 100%;
+
 	img {
-	padding:0;
+		padding: 0;
 	}
+
 	margin-bottom: 4px;
 }
 
