@@ -183,29 +183,51 @@
 	};
 
 
+	/*
+	 *adds placeholder text in the search box for the jQuery DataTables
+	 */
 	Drupal.behaviors.placeholder_text = {
-		//adds placeholder text in the search box for the jQuery DataTables
 		attach: function (context, settings) {
 
-			$(".dataTables_filter input").attr("placeholder", "Filter Results:").val("").focus().blur();
+			var target = ".dataTables_filter input";
+			var placeholder_text = "Filter Results:";
+
+			$(target).attr("placeholder", placeholder_text).val("").focus().blur();
 		}
 
 	};
+
+
+
+
+	/*
+	 *move the solr sort box after the facet block title
+	 */
 
 	Drupal.behaviors.move_the_sort = {
 
 		attach: function (context, settings) {
-			$('.block--islandora-facets .block__title').after($('#block-islandora-solr-sort'));
-			$("#block-islandora-solr-basic-facets .block__title").click(function() {
-				$("#block-islandora-solr-basic-facets .block__content").slideToggle();
-				$("#block-islandora-solr-sort").slideToggle();
-
-
-
-			} );
+			$('.block--islandora-facets .block__title', context).once(function() {
+				$(this).after($('#block-islandora-solr-sort'));	
+			});
 		}
 
 	};
+
+
+	//Drupal.behaviors.mobile_facets = {
+
+		//attach: function (context, settings) {
+			//$("#block-islandora-solr-basic-facets .block__title").click(function() {
+
+				//$("#block-islandora-solr-basic-facets .block__content").slideToggle();
+				//$("#block-islandora-solr-sort").slideToggle();
+
+
+			//} );
+		//}
+
+	//};
 
 
 })(jQuery);
