@@ -1,13 +1,23 @@
 (function ($) {
 
-
 	Drupal.behaviors.selectlist_defaults = {
 		attach: function (context, settings) {
 
-			$('#islandora-bookmark option[value="default"]').remove();
-			$('.form-item-add-bookmarks select').hide();
-			$('.roblib-bookmark-form option[value="default"]').remove();
-			$('.roblib-bookmark-form select').hide();
+			$('#islandora-bookmark option[value="default"]', context).once( function() {
+				$(this).remove();
+			});
+
+			$('.form-item-add-bookmarks select', context).once( function() {
+				$(this).hide();
+			});
+
+			$('.roblib-bookmark-form option[value="default"]', context).once( function() {
+				$(this).remove();
+			});
+
+			$('.roblib-bookmark-form select', context).once( function() {
+				$(this).hide();
+			});
 
 		}
 	};
@@ -19,24 +29,33 @@
 	};
 
 	//move the bookmarks block on the scholar page
-	Drupal.behaviors.bookmarks = {
+	Drupal.behaviors.move_bookmarks = {
 		attach: function (context, settings) {
 
-			$('.scholar-image').append($('#block-islandora-bookmark-islandora-bookmark'));
+			var target = '.scholar-image';
 
+			$(target, context).once(function() {
+				$(this).append($('#block-islandora-bookmark-islandora-bookmark'));
+			});
 		}
 	};
 
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
-			var bookmarks_button = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
-			$( bookmarks_button ).empty();
-			$( bookmarks_button ).append('My Bookmarks');
+			var target = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
 
-			var bookmarks_button = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
-			$( bookmarks_button ).empty();
-			$( bookmarks_button ).append('My Bookmarks');
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).append('My Bookmarks');
+			});
+
+			var target = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).append('My Bookmarks');
+			});
 
 
 		}
@@ -47,23 +66,38 @@
 
 			var image = 'img.islandora-solr-default-image.scholar-Journal--Electronic';
 			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+
+			$(image, context).once(function() {
+				$(this).replaceWith( icon );
+			});
 
 			var image = 'img.islandora-solr-default-image.scholar-Journal-Article';
 			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+			
+			$(image, context).once(function() {
+				$(this).replaceWith( icon );
+			});
 
 			var image = 'img.islandora-solr-default-image.scholar-Book--Whole';
 			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+
+			$(image, context).once(function() {
+				$(this).replaceWith( icon );
+			});
 
 			var image = 'img.islandora-solr-default-image.scholar-Book--Section';
 			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+
+			$(image, context).once(function() {
+				$(this).replaceWith( icon );
+			});
 
 			var image = 'img.islandora-solr-default-image.scholar-Book--Edited';
 			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+
+			$(image, context).once(function() {
+				$(this).replaceWith( icon );
+			});
 
 		}
 	};
@@ -76,17 +110,38 @@
 
 	Drupal.behaviors.solr_plus_minus = {
 		attach: function (context, settings) {
-			$('a.plus').empty();
-			$('a.minus').empty();
-			$('a.plus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
-			$('a.minus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
+
+			var target = 'a.plus';
+			var replacement = '<i class="fa fa-search-plus" aria-hidden="true"></i>';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).append(replacement);
+			});
+
+			var target = 'a.minus';
+			var replacement = '<i class="fa fa-search-minus" aria-hidden="true"></i>';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).append(replacement);
+			});
+
+
 		}
 	};
 
 
 	Drupal.behaviors.check_upei_button = {
 		attach: function (context, settings) {
-			$('.coins-img').replaceWith( '<div class="button--check-upei"><span>Check</span><span>@</span><span>UPEI</span></div>' );
+			//$('.coins-img').replaceWith( '<div class="button--check-upei"><span>Check</span><span>@</span><span>UPEI</span></div>' );
+			var target = '.coins-img';
+			var replacement =  '<div class="button--check-upei"><span>Check</span><span>@</span><span>UPEI</span></div>';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).append(replacement);
+			});
 		}
 	};
 
