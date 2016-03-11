@@ -3559,6 +3559,103 @@ header.l-header {
     .pager__item a {
       font-size: .9em; } }
 
+/**
+ * @file
+ *   CSS & media queries for responsive_menus_simple style.
+ */
+/* Responsive mode, engage! */
+.responsive-menus.responsified {
+  clear: both;
+  width: 100%; }
+  .responsive-menus.responsified i {
+    margin-right: 5px; }
+  .responsive-menus.responsified a {
+    text-transform: none; }
+
+.responsive-menus.responsified span.toggler {
+  padding: 1px;
+  display: block;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none; }
+
+.responsive-menus.responsified.responsive-toggled span.toggler {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #6b6b6b; }
+
+.responsive-menus.responsified .responsive-menus-simple {
+  display: none;
+  width: 100%;
+  background: #333;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple,
+.responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
+  display: block;
+  transition: display 150ms ease;
+  padding: 0;
+  margin: 0; }
+
+.responsive-menus.responsified.responsive-toggled.absolute {
+  position: relative;
+  z-index: 999; }
+
+.responsive-menus.responsified.responsive-toggled.absolute .responsive-menus-simple {
+  position: absolute;
+  z-index: 999;
+  top: auto;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-top: 0; }
+
+.responsive-menus.responsified .responsive-menus-simple li {
+  width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  list-style: none; }
+
+.responsive-menus.responsified .responsive-menus-simple li a {
+  color: #fff;
+  display: block;
+  padding: 0.5em 0.75em;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em;
+  border-bottom: 1px solid #6d6d6d;
+  text-decoration: none; }
+  .responsive-menus.responsified .responsive-menus-simple li a i {
+    width: 26px;
+    color: #5C8727; }
+  .responsive-menus.responsified .responsive-menus-simple li a:hover {
+    background: #e7ede0;
+    color: #333; }
+
+.responsive-menus.responsified .responsive-menus-simple > li.last a {
+  border-bottom: none; }
+
+.responsive-menus.responsified .responsive-menus-simple li ul li a {
+  padding: 1em 0 1em 10%; }
+
+.responsive-menus.responsified .responsive-menus-simple li ul li ul li a {
+  padding: 1em 0 1em 15%; }
+
+.responsive-menus.responsified .responsive-menus-simple li ul {
+  display: block !important;
+  visibility: visible !important;
+  margin: 0;
+  padding: 0; }
+
+/* Inactive rule */
+.responsive-menus span.toggler {
+  display: none; }
+
 .l-content {
   border: 1px solid #ccc;
   padding: 1.5em; }
@@ -3818,6 +3915,13 @@ div#block-islandora-solr-sort {
     content: "Sort by "; }
 
 @media screen and (max-width: 900px) {
+  #block-islandora-solr-basic-facets .block__content,
+  #block-islandora-solr-sort {
+    display: none; }
+  .show_me {
+    display: block !important; }
+  i {
+    font-size: 1.4em; }
   .page-islandora-search .l-main.l-constrained, .page-islandora-search .l-main.l-region--navigation, .page-islandora-search .l-main.l-region--highlighted, .page-islandora-search .l-footer-wrapper .l-main.l-region--footer, .l-footer-wrapper .page-islandora-search .l-main.l-region--footer {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -3844,7 +3948,7 @@ div#block-islandora-solr-sort {
     float: none;
     width: initial; }
   .page-islandora-search div#block-islandora-solr-sort {
-    display: none;
+    /*display: none;*/
     margin-top: 0.75em; }
   .page-islandora-search .block__title {
     margin: 0 auto;
@@ -3894,7 +3998,7 @@ div#block-islandora-solr-sort {
       .page-islandora-search .block__title:disabled:hover {
         background-color: #8B2004; }
   .page-islandora-search .block__content {
-    display: none; } }
+    /*display: none;*/ } }
 
 .islandora-solr-facet-wrapper::after {
   clear: both;
@@ -4273,17 +4377,11 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 /*-  check at upei  -*/
 /*-------------------*/
 .roblib-coins a {
+  line-height: 0;
   width: 100%;
   margin-bottom: 4px; }
-  .roblib-coins a:before {
-    content: "\f002";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 4px; }
+  .roblib-coins a img {
+    padding: 0; }
 
 .button--check-upei {
   display: inline-block; }

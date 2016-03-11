@@ -1,143 +1,227 @@
 (function ($) {
 
-
+	//this is a bit of a hack that removes the default selectlist, making the remaing one selected 
 	Drupal.behaviors.selectlist_defaults = {
 		attach: function (context, settings) {
 
-			$('#islandora-bookmark option[value="default"]').remove();
-			$('.form-item-add-bookmarks select').hide();
-			$('.roblib-bookmark-form option[value="default"]').remove();
-			$('.roblib-bookmark-form select').hide();
+			$('#islandora-bookmark option[value="default"]', context).once( function() {
+				$(this).remove();
+			});
+
+			/*********************************
+			 *  this could be done in css!!  *
+			 *********************************/
+
+			$('.form-item-add-bookmarks select', context).once( function() {
+				$(this).hide();
+			});
+
+			$('.roblib-bookmark-form option[value="default"]', context).once( function() {
+				$(this).remove();
+			});
+
+			/*********************************
+			 *  this could be done in css!!  *
+			 *********************************/
+			$('.roblib-bookmark-form select', context).once( function() {
+				$(this).hide();
+			});
 
 		}
 	};
 
+	/*
+	 *attach at pretty selectbox dropdown
+	 */
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
 			//$('select').selectbox("attach");
 		}
 	};
 
-	//move the bookmarks block on the scholar page
-	Drupal.behaviors.bookmarks = {
+	/*
+	 *move the bookmarks block on the scholar page
+	 */
+	Drupal.behaviors.move_bookmarks = {
 		attach: function (context, settings) {
 
-			$('.scholar-image').append($('#block-islandora-bookmark-islandora-bookmark'));
+			var target = '.scholar-image';
 
+			$(target, context).once(function() {
+				$(this).append($('#block-islandora-bookmark-islandora-bookmark'));
+			});
 		}
 	};
 
-	Drupal.behaviors.button_icons = {
-		attach: function (context, settings) {
+	//Drupal.behaviors.button_icons = {
+	//attach: function (context, settings) {
 
-			var bookmarks_button = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
-			$( bookmarks_button ).empty();
-			$( bookmarks_button ).append('My Bookmarks');
+	//var target = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
 
-			var bookmarks_button = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
-			$( bookmarks_button ).empty();
-			$( bookmarks_button ).append('My Bookmarks');
+	//$(target, context).once(function() {
+	//$(this).empty();
+	//$(this).append('My Bookmarks');
+	//});
+
+	//var target = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
+
+	//$(target, context).once(function() {
+	//$(this).empty();
+	//$(this).append('My Bookmarks');
+	//});
 
 
-		}
-	};
+	//}
+	//};
 
-	Drupal.behaviors.islandora_thumbnails = {
-		attach: function (context, settings) {
+	//Drupal.behaviors.islandora_thumbnails = {
+	//attach: function (context, settings) {
 
-			var image = 'img.islandora-solr-default-image.scholar-Journal--Electronic';
-			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+	//var image = 'img.islandora-solr-default-image.scholar-Journal--Electronic';
+	//var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
 
-			var image = 'img.islandora-solr-default-image.scholar-Journal-Article';
-			var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+	//$(image, context).once(function() {
+	//$(this).replaceWith( icon );
+	//});
 
-			var image = 'img.islandora-solr-default-image.scholar-Book--Whole';
-			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+	//var image = 'img.islandora-solr-default-image.scholar-Journal-Article';
+	//var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
 
-			var image = 'img.islandora-solr-default-image.scholar-Book--Section';
-			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+	//$(image, context).once(function() {
+	//$(this).replaceWith( icon );
+	//});
 
-			var image = 'img.islandora-solr-default-image.scholar-Book--Edited';
-			var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-			$( image ).replaceWith( icon );
+	//var image = 'img.islandora-solr-default-image.scholar-Book--Whole';
+	//var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
 
-		}
-	};
+	//$(image, context).once(function() {
+	//$(this).replaceWith( icon );
+	//});
 
+	//var image = 'img.islandora-solr-default-image.scholar-Book--Section';
+	//var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
+
+	//$(image, context).once(function() {
+	//$(this).replaceWith( icon );
+	//});
+
+	//var image = 'img.islandora-solr-default-image.scholar-Book--Edited';
+	//var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
+
+	//$(image, context).once(function() {
+	//$(this).replaceWith( icon );
+	//});
+
+	//}
+	//};
+
+	/*
+	 *this opens the islandora metadata fieldset
+	 */
 	Drupal.behaviors.open_metadata = {
 		attach: function (context, settings) {
 			$('.islandora-metadata').removeClass('collapsed');
+
+			$('.islandora-metadata').once(function() {
+
+				$(this).removeClass('collapsed');
+
+			});
 		}
 	};
 
-	Drupal.behaviors.solr_plus_minus = {
-		attach: function (context, settings) {
-			$('a.plus').empty();
-			$('a.minus').empty();
-			$('a.plus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
-			$('a.minus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
-		}
-	};
+	//Drupal.behaviors.solr_plus_minus = {
+	//attach: function (context, settings) {
+
+	//var target = 'a.plus';
+	//var replacement = '<i class="fa fa-search-plus" aria-hidden="true"></i>';
+
+	//$(target, context).once(function() {
+	//$(this).empty();
+	//$(this).append(replacement);
+	//});
+
+	//var target = 'a.minus';
+	//var replacement = '<i class="fa fa-search-minus" aria-hidden="true"></i>';
+
+	//$(target, context).once(function() {
+	//$(this).empty();
+	//$(this).append(replacement);
+	//});
 
 
-	Drupal.behaviors.check_upei_button = {
-		attach: function (context, settings) {
-			$('.coins-img').replaceWith( '<div class="button--check-upei"><span>Check</span><span>@</span><span>UPEI</span></div>' );
-		}
-	};
+	//}
+	//};
 
 
 
-	Drupal.behaviors.search_navigation = {
-		attach: function (context, settings) {
-
-			$('.block--search-navigation--prev a').empty();
-			$('.block--search-navigation--return a').empty();
-			$('.block--search-navigation--next a').empty();
-			$('.block--search-navigation--prev a').prepend('<i class="fa fa-arrow-left" aria-hidden="true"></i> Prev');
-			$('.block--search-navigation--return a').prepend('<i class="fa fa-search aria-hidden="true"></i> Search Results');
-			$('.block--search-navigation--next a').append('Next <i class="fa fa-arrow-right" aria-hidden="true"></i>');
-
-		}
-	};
+	/*
+	 *this moves the search results behind the page title 
+	 */
 	Drupal.behaviors.solr_search_move_results = {
-		//this moves the search results behind the page title 
 		attach: function (context, settings) {
 
-			$('#islandora-solr-result-count').insertAfter($('.page-islandora-search h1'));
-
+			$('#islandora-solr-result-count', context).once(function() {
+				$(this).insertAfter($('.page-islandora-search h1'));
+			});
 		}
 	};
 
+
+
+	/*
+	 *this moves the search navigation on the citation pages
+	 */
 	Drupal.behaviors.citation_page_blocks = {
 		attach: function (context, settings) {
 
-			$('.block--search-navigation').insertBefore($('form#islandora-scholar-citation-select-form'));
+			$('.block--search-navigation', context).once(function() {
+				$(this).insertBefore($('form#islandora-scholar-citation-select-form'));
+			});
 
 		}
 	};
 
+
+	/*
+	 *adds placeholder text in the search box for the jQuery DataTables
+	 */
 	Drupal.behaviors.placeholder_text = {
-		//adds placeholder text in the search box for the jQuery DataTables
 		attach: function (context, settings) {
 
-			$(".dataTables_filter input").attr("placeholder", "Filter Results:").val("").focus().blur();
+			var target = ".dataTables_filter input";
+			var placeholder_text = "Filter Results:";
+
+			$(target).attr("placeholder", placeholder_text).val("").focus().blur();
 		}
 
 	};
+
+
+
+
+	/*
+	 *move the solr sort box after the facet block title
+	 */
 
 	Drupal.behaviors.move_the_sort = {
 
 		attach: function (context, settings) {
-			$('.block--islandora-facets .block__title').after($('#block-islandora-solr-sort'));
-			$("#block-islandora-solr-basic-facets .block__title").click(function() {
-				$("#block-islandora-solr-basic-facets .block__content").slideToggle();
-				$("#block-islandora-solr-sort").slideToggle();
+			$('.block--islandora-facets .block__title', context).once(function() {
+				$(this).after($('#block-islandora-solr-sort'));	
+			});
+		}
 
+	};
+
+
+	Drupal.behaviors.mobile_facets = {
+
+		attach: function (context, settings) {
+			$("#block-islandora-solr-basic-facets .block__title").click(function() {
+
+				$("#block-islandora-solr-basic-facets .block__content").toggleClass("show_me", 1000);
+				$("#block-islandora-solr-sort").toggleClass("show_me", 1000);
 
 
 			} );
