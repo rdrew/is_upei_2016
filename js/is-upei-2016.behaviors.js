@@ -215,19 +215,19 @@
 	};
 
 
-	//Drupal.behaviors.mobile_facets = {
+	Drupal.behaviors.mobile_facets = {
 
-		//attach: function (context, settings) {
-			//$("#block-islandora-solr-basic-facets .block__title").click(function() {
+		attach: function (context, settings) {
+			$("#block-islandora-solr-basic-facets .block__title").click(function() {
 
-				//$("#block-islandora-solr-basic-facets .block__content").slideToggle();
-				//$("#block-islandora-solr-sort").slideToggle();
+				$("#block-islandora-solr-basic-facets .block__content").toggleClass("show_me", 1000);
+				$("#block-islandora-solr-sort").toggleClass("show_me", 1000);
 
 
-			//} );
-		//}
+			} );
+		}
 
-	//};
+	};
 
 
 })(jQuery);
