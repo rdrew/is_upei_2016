@@ -653,13 +653,16 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 /*-------------------*/
 
 .roblib-coins a {
-	@include icon(f002);
+	line-height:0;
 
 	@extend input[type="submit"];
 
 	@extend button.green;
 
 	width: 100%;
+	img {
+	padding:0;
+	}
 	margin-bottom: 4px;
 }
 
