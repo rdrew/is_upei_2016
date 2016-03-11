@@ -10,22 +10,14 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = css/is-upei-2016.reset.css
 stylesheets[all][] = css/is-upei-2016.styles.css
-;stylesheets[all][] = js/jquery.selectbox/css/jquery.selectbox.css
-;stylesheets[all][] = js/jquery.mobile.custom/jquery.mobile.custom.theme.css
-;stylesheets[all][] = js/jquery.mobile.custom/jquery.mobile.custom.structure.css 
-
-;scripts[] = libraries/okayNav/app/css/jquery.okayNav.css
 
 ; ========================================
 ; Scripts
 ; ========================================
 
-;scripts[] = js/jquery.mobile.custom/jquery.mobile.custom.js
-;scripts[] = js/jquery.ui.button.min.js
-scripts[] = js/is-upei-2016.behaviors.js
 scripts[] = js/jquery.selectbox/js/jquery.selectbox-0.2.min.js 
-;scripts[] = libraries/okayNav/app/js/jquery.okayNav.js
-scripts[] = js/jquery.okayNav.js
+scripts[] = js/is-upei-2016.behaviors.js
+scripts[] = js/is-upei-2016.buttons.js
 
 
 ; ========================================
