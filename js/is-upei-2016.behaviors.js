@@ -1,30 +1,20 @@
 (function ($) {
 
-	Drupal.behaviors.selectlist_defaults_scholar_page = {
-		attach: function (context, settings) {
-
-			$('#islandora-bookmark option[value="default"]').remove();
-			$('.form-item-add-bookmarks select').hide();
-
-		}
-	};
 
 	Drupal.behaviors.selectlist_defaults = {
 		attach: function (context, settings) {
 
+			$('#islandora-bookmark option[value="default"]').remove();
+			$('.form-item-add-bookmarks select').hide();
 			$('.roblib-bookmark-form option[value="default"]').remove();
 			$('.roblib-bookmark-form select').hide();
-
 
 		}
 	};
 
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
-
 			//$('select').selectbox("attach");
-
-
 		}
 	};
 
@@ -51,6 +41,7 @@
 
 		}
 	};
+
 	Drupal.behaviors.islandora_thumbnails = {
 		attach: function (context, settings) {
 
@@ -104,16 +95,12 @@
 	Drupal.behaviors.search_navigation = {
 		attach: function (context, settings) {
 
-			//$('a.plus').empty();
 			$('.block--search-navigation--prev a').empty();
 			$('.block--search-navigation--return a').empty();
 			$('.block--search-navigation--next a').empty();
 			$('.block--search-navigation--prev a').prepend('<i class="fa fa-arrow-left" aria-hidden="true"></i> Prev');
 			$('.block--search-navigation--return a').prepend('<i class="fa fa-search aria-hidden="true"></i> Search Results');
 			$('.block--search-navigation--next a').append('Next <i class="fa fa-arrow-right" aria-hidden="true"></i>');
-			//$('a.minus').empty();
-			//$('a.plus').append('<i class="fa fa-search-minus" aria-hidden="true"></i>');
-			//$('a.minus').append('<i class="fa fa-search-plus" aria-hidden="true"></i>');
 
 		}
 	};
@@ -121,54 +108,28 @@
 		//this moves the search results behind the page title 
 		attach: function (context, settings) {
 
-			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
 			$('#islandora-solr-result-count').insertAfter($('.page-islandora-search h1'));
 
 		}
 	};
 
 	Drupal.behaviors.citation_page_blocks = {
-		//this moves the search results behind the page title 
 		attach: function (context, settings) {
 
-			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
 			$('.block--search-navigation').insertBefore($('form#islandora-scholar-citation-select-form'));
 
 		}
 	};
 
-
-	Drupal.behaviors.okNav = {
-
-
-		attach: function (context, settings) {
-
-			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
-			//$('nav#block-menu-menu-scholar').okayNav();
-		}
-
-	};
-
 	Drupal.behaviors.placeholder_text = {
 		//adds placeholder text in the search box for the jQuery DataTables
-
 		attach: function (context, settings) {
 
-			//$('.page-islandora-search h1').append($('#islandora-solr-result-count'));
 			$(".dataTables_filter input").attr("placeholder", "Filter Results:").val("").focus().blur();
 		}
 
 	};
-	Drupal.behaviors.mobile_menu_stuff = {
 
-		attach: function (context, settings) {
-			//$('.l-region--navigation .menu a').contents().each(function () {
-				//if (this.nodeType == 3)
-				//$(this).remove();
-			//});
-		}
-
-	};
 	Drupal.behaviors.move_the_sort = {
 
 		attach: function (context, settings) {
@@ -176,9 +137,9 @@
 			$("#block-islandora-solr-basic-facets .block__title").click(function() {
 				$("#block-islandora-solr-basic-facets .block__content").slideToggle();
 				$("#block-islandora-solr-sort").slideToggle();
-			
-				
-			
+
+
+
 			} );
 		}
 
