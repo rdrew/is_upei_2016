@@ -264,7 +264,7 @@ h1 {
 
 h2 {
   /*font-family: $serif;*/
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: 400;
   line-height: 1.25em;
   margin-bottom: .3em; }
@@ -276,6 +276,14 @@ h2 {
 h3 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 0.4em; }
+
+h4 {
+  /*font-family: $roboto_condensed;*/
+  font-size: 1.3em;
+  font-variant: small-caps;
   font-weight: 500;
   line-height: 1.3em;
   margin-bottom: 0.4em; }
@@ -3216,13 +3224,23 @@ dl.islandora-metadata-fields {
 .landing-page .tabs--primary {
   display: none; }
 
+.landing-page .panel-pane {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.75em; }
+  @media screen and (min-width: 600px) {
+    .landing-page .panel-pane {
+      border-bottom: 0;
+      margin-bottom: 0; } }
+  .landing-page .panel-pane.lp-slider, .landing-page .panel-pane.pane-node-links {
+    border-bottom: 0; }
+
 .landing-page .l-content {
   border: 0;
   padding: 0;
   background: none; }
   @media screen and (min-width: 600px) {
     .landing-page .l-content {
-      margin-top: 1.5em; } }
+      margin-top: 0.5em; } }
 
 .lp-top-row {
   max-width: 100%;
@@ -3327,6 +3345,12 @@ dl.islandora-metadata-fields {
       margin-right: 0; }
       .lp-second-row .lp-collection:last-child {
         margin-right: 0; } }
+
+.lp-welcome i {
+  margin-right: 5px; }
+
+.lp-collection h4 {
+  margin-bottom: 0; }
 
 .l-constrained, .l-region--navigation, .l-region--highlighted, .l-footer-wrapper .l-region--footer {
   max-width: 100%;
@@ -3812,7 +3836,8 @@ aside .menu li {
 
 .flexslider {
   border: 1px solid #ccc;
-  padding: 5px; }
+  padding: 5px;
+  margin-bottom: 1.5em; }
   .flexslider figure {
     position: relative; }
   .flexslider figcaption {
@@ -3820,18 +3845,30 @@ aside .menu li {
     bottom: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.76);
-    padding: 10px; }
+    padding: 10px;
+    line-height: 1;
+    padding: 0.375em 0.5em; }
     .flexslider figcaption h3 {
-      FONT-SIZE: 1.5em;
+      font-size: 1.2em;
       margin: 0; }
+      @media screen and (min-width: 600px) {
+        .flexslider figcaption h3 {
+          FONT-SIZE: 1.5em; } }
     .flexslider figcaption p {
-      margin: 0; }
+      margin: 0;
+      font-size: .8em; }
+      @media screen and (min-width: 600px) {
+        .flexslider figcaption p {
+          FONT-SIZE: initial; } }
   .flexslider .view-works {
     float: right;
     margin: 0;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: .6em;
     font-family: "Roboto Condensed", sans-serif; }
+    @media screen and (min-width: 600px) {
+      .flexslider .view-works {
+        FONT-SIZE: .8em; } }
 
 .flex-direction-nav a {
   height: 50px; }

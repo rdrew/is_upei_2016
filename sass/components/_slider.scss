@@ -9,14 +9,27 @@
 		width: 100%;
 		background: rgba(255, 255, 255, 0.76);
 		padding: 10px;
+		line-height: 1;
+		padding: ($base-spacing / 4) ($base-spacing / 3);
 
 		h3 {
-			FONT-SIZE: 1.5em;
+			font-size: 1.2em;
+
+			@include media($medium-screen) {
+				FONT-SIZE: 1.5em;
+			}
+
+
 			margin: 0;
 		}
 
 		p {
 			margin: 0;
+		font-size: .8em;
+
+		@include media($medium-screen) {
+			FONT-SIZE: initial;
+		}
 		}
 	}
 
@@ -24,12 +37,19 @@
 		float: right;
 		margin: 0;
 		text-transform: uppercase;
-		font-size: .8em;
+		font-size: .6em;
+
+		@include media($medium-screen) {
+			FONT-SIZE: .8em;
+		}
+
+
 		font-family: $roboto_condensed;
 	}
 
 	border: $base-border;
 	padding: 5px;
+	margin-bottom: $base-spacing;
 }
 
 .flex-direction-nav a {
