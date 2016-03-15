@@ -1,19 +1,43 @@
 .landing-page .tabs--primary {
 	display: none;
 }
+@include breakpoint(0 $medium-screen) {
+	
+}
+.landing-page .panel-pane {
+	border-bottom: $base-border;
+	margin-bottom: $base-spacing/2;
+	@include media($medium-screen) {
+	
 
+	border-bottom: 0;
+	margin-bottom: 0;
+	
+	}
+	&.lp-slider,
+	&.pane-node-links {
+		
+	border-bottom: 0;
+	}
+
+}
 .landing-page .l-content {
 	border: 0;
 	padding: 0;
-	@include media($medium-screen){
-		margin-top: $base-spacing;
+
+	@include media($medium-screen) {
+		margin-top: $base-spacing / 3;
 	}
+
+
 	background: none;
 }
+
 .lp-top-row {
 	.lp-menu {
 		display: none;
 	}
+
 	@include outer-container;
 
 	@include media($medium-screen) {
@@ -25,6 +49,7 @@
 			@include span-columns(8);
 
 			@include omega;
+
 			.flexslider {
 				border-radius: 0;
 				margin-bottom: $base-spacing;
@@ -33,10 +58,9 @@
 
 		.lp-welcome {
 			@include span-columns(4);
-
 		}
-
 	}
+
 
 	@include media($large-screen) {
 		.lp-menu {
@@ -57,9 +81,7 @@
 
 			@include omega;
 		}
-
 	}
-
 }
 
 .lp-second-row {
@@ -77,8 +99,8 @@
 		}
 	}
 
-	@include media($large-screen) {
 
+	@include media($large-screen) {
 		.lp-glance {
 			@include span-columns(6);
 		}
@@ -93,8 +115,16 @@
 
 .lp-slider {}
 
-.lp-welcome {}
+.lp-welcome {
+	i {
+		margin-right: 5px;
+	}
+}
 
 .lp-glance {}
 
-.lp-collection {}
+.lp-collection {
+	h4 {
+		margin-bottom: 0;
+	}
+}

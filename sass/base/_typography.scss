@@ -31,7 +31,7 @@ h1 {
 
 h2 {
 	/*font-family: $serif;*/
-	font-size: 1.3em;
+	font-size: 1.6em;
 	font-weight: 400;
 	line-height: 1.25em;
 	margin-bottom: .3em;
@@ -46,6 +46,17 @@ h2 {
 h3 {
 	font-family: $roboto_condensed;
 	font-size: 1.5em;
+
+	//font-style: italic;
+	font-weight: 500;
+	line-height: 1.3em;
+	margin-bottom: 0.4em;
+}
+
+h4 {
+	/*font-family: $roboto_condensed;*/
+	font-size: 1.3em;
+	font-variant: small-caps;
 
 	//font-style: italic;
 	font-weight: 500;
