@@ -4393,7 +4393,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   margin-bottom: 10px;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  line-height: 1;
+  /*line-height: 1;*/
   padding: 0.375em 0.75em;
   text-decoration: none;
   transition: background-color 150ms ease;
@@ -4428,9 +4428,18 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 /*-  check at upei  -*/
 /*-------------------*/
 .roblib-coins a {
-  line-height: 0;
+  /*line-height: 0;*/
   width: 100%;
   margin-bottom: 4px; }
+  .roblib-coins a:before {
+    content: "\f002";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 4px; }
   .roblib-coins a img {
     padding: 0; }
 
