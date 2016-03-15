@@ -65,12 +65,12 @@ button, .block--search-navigation--list-item a, input[type="button"], input[type
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1;
-  padding: 0.375em 0.75em;
+  padding: 0.5em 0.75em;
   text-decoration: none;
   transition: background-color 150ms ease;
   -webkit-user-select: none;
@@ -2152,11 +2152,12 @@ div#edit-lists a,
   display: inline-block;
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1;
-  padding: 0.375em 0.75em;
+  /*padding: ($small-spacing/2.5 $base-spacing/2);*/
+  padding: 0.5em 0.75em;
   text-decoration: none;
   transition: background-color 150ms ease;
   -webkit-user-select: none;
@@ -3991,7 +3992,8 @@ div#block-islandora-solr-sort {
     margin: 0 auto;
     margin: 0 auto !important;
     display: block !important;
-    width: 159px;
+    width: 180px;
+    text-align: center;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -4000,9 +4002,8 @@ div#block-islandora-solr-sort {
     border-radius: 2px;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
@@ -4167,6 +4168,19 @@ dl.solr-thumb {
   dl.solr-thumb img {
     padding: 4px;
     border: 1px solid #ccc; }
+
+@media screen and (max-width: 600px) {
+  .solr-thumb dt:first-child {
+    width: 50%;
+    float: left;
+    margin-right: 5%; }
+  .solr-thumb .solr-label {
+    width: 45% !important;
+    float: left; }
+  .solr-thumb::after {
+    clear: both;
+    content: "";
+    display: table; } }
 
 .solr-thumb dt,
 .solr-thumb dd {

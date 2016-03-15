@@ -123,7 +123,11 @@
 		}
 	};
 
-
+	Drupal.behaviors.check_upei_button = {
+	 		attach: function (context, settings) {
+				$('.coins-img').replaceWith( '<div class="button--check-upei"><span>Check</span><span>@</span><span>UPEI</span></div>' );
+			 		}
+	 	}
 
 
 

@@ -155,14 +155,16 @@ div#block-islandora-solr-sort {
 			margin: 0 auto;
 			margin: 0 auto !important;
 			display: block !important;
-			width: 159px;
+			width: 180px;
+			text-align: center;
+
 			appearance: none;
 			background-color: $action-color;
 			border: 0;
 			border-radius: $base-border-radius;
 			color: #fff;
 			cursor: pointer;
-			display: inline-block;
+			//display: inline-block;
 
 			//font-family: $base-font-family;
 			font-family: $button-font;
@@ -355,6 +357,31 @@ dl.solr-thumb {
 		border: $base-border;
 	}
 }
+
+//--------------------------------------------------
+//-  mobile version of the solr-thumb and buttons  -
+//--------------------------------------------------
+
+@include media(max-width 600px) {
+	.solr-thumb dt:first-child {
+		width: 50%;
+		//display: inline-block;
+		float: left;
+
+		//margin-right: $base-spacing/2;
+		margin-right: 5%
+	}
+	.solr-thumb .solr-label {
+		//display: inline-block;
+		width: 45% !important;	
+		float: left;
+	}
+	.solr-thumb {
+		@include clearfix;
+
+	}
+}
+
 
 .solr-thumb dt,
 .solr-thumb dd {
