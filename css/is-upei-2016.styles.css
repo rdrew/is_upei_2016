@@ -3255,34 +3255,32 @@ dl.islandora-metadata-fields {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 1021px) {
-    .lp-top-row {
-      /*@include media($medium-screen) {*/ }
-      .lp-top-row .lp-menu {
-        float: left;
-        display: block;
-        margin-right: 2.12766%;
-        width: 31.91489%; }
-        .lp-top-row .lp-menu:last-child {
-          margin-right: 0; }
-      .lp-top-row .lp-slider {
-        float: left;
-        display: block;
-        margin-right: 2.12766%;
-        width: 65.95745%;
+  @media screen and (min-width: 1000px) {
+    .lp-top-row .lp-menu {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 31.91489%; }
+      .lp-top-row .lp-menu:last-child {
         margin-right: 0; }
-        .lp-top-row .lp-slider:last-child {
-          margin-right: 0; }
-        .lp-top-row .lp-slider .flexslider {
-          border-radius: 0;
-          margin-bottom: 1.5em; }
-      .lp-top-row .lp-welcome {
-        float: left;
-        display: block;
-        margin-right: 2.12766%;
-        width: 31.91489%; }
-        .lp-top-row .lp-welcome:last-child {
-          margin-right: 0; } }
+    .lp-top-row .lp-slider {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 65.95745%;
+      margin-right: 0; }
+      .lp-top-row .lp-slider:last-child {
+        margin-right: 0; }
+      .lp-top-row .lp-slider .flexslider {
+        border-radius: 0;
+        margin-bottom: 1.5em; }
+    .lp-top-row .lp-welcome {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 31.91489%; }
+      .lp-top-row .lp-welcome:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 900px) {
     .lp-top-row .lp-menu {
       float: left;

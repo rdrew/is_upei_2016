@@ -37,8 +37,7 @@
 
 	@include outer-container;
 
-	@include media(1021px) {
-	/*@include media($medium-screen) {*/
+	@include media(1000px) {
 		.lp-menu {
 			@include span-columns(4);
 		}
