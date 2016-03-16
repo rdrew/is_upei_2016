@@ -19,7 +19,8 @@ input + input {
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
 	line-height: 1;
-	padding: $small-spacing/1.5 $base-spacing/2;
+	/*padding: $small-spacing/1.5 $base-spacing/2;*/
+	padding: $button-padding;
 	text-decoration: none;
 	transition: background-color $base-duration $base-timing;
 	user-select: none;

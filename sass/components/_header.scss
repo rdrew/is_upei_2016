@@ -80,9 +80,9 @@
 }
 
 .site-branding__name {
-	font-size: 1.5em;
+	font-size: 1.6em;
 
-	@include media(700px) {
+	@include media(400px) {
 		font-size: 2em;
 	}
 
@@ -95,9 +95,9 @@
 
 .site-branding__slogan {
 	margin: 0;
-	font-size: 1.1em;
+	font-size: 1.2em;
 
-	@include media(700px) {
+	@include media(400px) {
 		font-size: 1.5em;
 	}
 

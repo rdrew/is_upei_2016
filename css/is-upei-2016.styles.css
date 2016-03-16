@@ -70,7 +70,8 @@ button, .block--search-navigation--list-item a, input[type="button"], input[type
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1;
-  padding: 0.5em 0.75em;
+  /*padding: $small-spacing/1.5 $base-spacing/2;*/
+  padding: 0.5em 0.75em 0.4em;
   text-decoration: none;
   transition: background-color 150ms ease;
   -webkit-user-select: none;
@@ -289,7 +290,8 @@ h4 {
   margin-bottom: 0.4em; }
 
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  line-height: 1.4; }
 
 a {
   color: #8B2004;
@@ -2994,21 +2996,21 @@ tr:hover {
   border-left: 1px solid #151515; }
 
 .site-branding__name {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   margin-top: 8px;
   display: block;
   line-height: 1; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 400px) {
     .site-branding__name {
       font-size: 2em; } }
 
 .site-branding__slogan {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   display: inline-block;
   line-height: 1; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 400px) {
     .site-branding__slogan {
       font-size: 1.5em; } }
 
@@ -3253,32 +3255,34 @@ dl.islandora-metadata-fields {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 600px) {
-    .lp-top-row .lp-menu {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 31.91489%; }
-      .lp-top-row .lp-menu:last-child {
+  @media screen and (min-width: 1021px) {
+    .lp-top-row {
+      /*@include media($medium-screen) {*/ }
+      .lp-top-row .lp-menu {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 31.91489%; }
+        .lp-top-row .lp-menu:last-child {
+          margin-right: 0; }
+      .lp-top-row .lp-slider {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 65.95745%;
         margin-right: 0; }
-    .lp-top-row .lp-slider {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 65.95745%;
-      margin-right: 0; }
-      .lp-top-row .lp-slider:last-child {
-        margin-right: 0; }
-      .lp-top-row .lp-slider .flexslider {
-        border-radius: 0;
-        margin-bottom: 1.5em; }
-    .lp-top-row .lp-welcome {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 31.91489%; }
-      .lp-top-row .lp-welcome:last-child {
-        margin-right: 0; } }
+        .lp-top-row .lp-slider:last-child {
+          margin-right: 0; }
+        .lp-top-row .lp-slider .flexslider {
+          border-radius: 0;
+          margin-bottom: 1.5em; }
+      .lp-top-row .lp-welcome {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 31.91489%; }
+        .lp-top-row .lp-welcome:last-child {
+          margin-right: 0; } }
   @media screen and (min-width: 900px) {
     .lp-top-row .lp-menu {
       float: left;
@@ -3373,7 +3377,7 @@ dl.islandora-metadata-fields {
 header.l-header {
   background: white; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 700px) {
   .site-branding {
     float: left;
     display: block;
@@ -3412,14 +3416,27 @@ header.l-header {
   display: -ms-flexbox;
   display: flex; }
   .site-branding .site-branding__logo {
-    width: 165px;
+    -webkit-flex-basis: 140px;
+        -ms-flex-preferred-size: 140px;
+            flex-basis: 140px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     line-height: 0; }
+    @media screen and (min-width: 400px) {
+      .site-branding .site-branding__logo {
+        -webkit-flex-basis: 165px;
+            -ms-flex-preferred-size: 165px;
+                flex-basis: 165px; } }
+    @media screen and (min-width: 400px) {
+      .site-branding .site-branding__logo {
+        margin-right: 10px; } }
   .site-branding .name_slogan {
     border-left: 1px solid #ccc;
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 4px; }
+    @media screen and (min-width: 400px) {
+      .site-branding .name_slogan {
+        padding-left: 10px; } }
     .site-branding .name_slogan a {
       margin: 0; }
   .site-branding::after {
@@ -3539,7 +3556,7 @@ header.l-header {
     display: block;
     padding: 0.34em 0.75em;
     border-bottom: 1px solid #ccc; }
-    @media screen and (min-width: 1094px) {
+    @media screen and (min-width: 1130px) {
       .lp-menu .menu a {
         font-size: 1.4em; } }
     .lp-menu .menu a:hover {

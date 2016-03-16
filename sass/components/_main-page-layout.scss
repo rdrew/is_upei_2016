@@ -24,7 +24,7 @@ header.l-header {
 }
 
 
-@include media(480px) {
+@include media(700px) {
 	.site-branding {
 		@include span-columns(7);
 	}
@@ -55,9 +55,16 @@ header.l-header {
 
 	.site-branding__logo {
 		//@include span-columns(2);
-		width: 165px;
+
+		flex-basis: 140px;
+		@include media(400px) {
+		flex-basis: 165px;
+		}
 		display: inline-block;
-		margin-right: 10px;
+		margin-right: 5px;
+		@include media(400px) {
+			margin-right: 10px;
+		}
 		line-height: 0;
 	}
 
@@ -65,7 +72,10 @@ header.l-header {
 		//@include span-columns(9);
 
 		border-left: $base-border;
-		padding-left: 10px;
+		padding-left: 5px;
+		@include media(400px) {
+			padding-left: 10px;
+		}
 		padding-top: 4px;
 
 		a {

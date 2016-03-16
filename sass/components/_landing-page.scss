@@ -1,9 +1,6 @@
 .landing-page .tabs--primary {
 	display: none;
 }
-@include breakpoint(0 $medium-screen) {
-	
-}
 .landing-page .panel-pane {
 	border-bottom: $base-border;
 	margin-bottom: $base-spacing/2;
@@ -40,7 +37,8 @@
 
 	@include outer-container;
 
-	@include media($medium-screen) {
+	@include media(1021px) {
+	/*@include media($medium-screen) {*/
 		.lp-menu {
 			@include span-columns(4);
 		}
