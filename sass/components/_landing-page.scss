@@ -5,16 +5,16 @@
 	border-bottom: $base-border;
 	margin-bottom: $base-spacing/2;
 	@include media($medium-screen) {
-	
 
-	border-bottom: 0;
-	margin-bottom: 0;
-	
+
+		border-bottom: 0;
+		margin-bottom: 0;
+
 	}
 	&.lp-slider,
 	&.pane-node-links {
-		
-	border-bottom: 0;
+
+		border-bottom: 0;
 	}
 
 }
@@ -30,82 +30,60 @@
 	background: none;
 }
 
+.flexslider {
+	border-radius: 0;
+	margin-bottom: $base-spacing;
+}
+
 .lp-top-row {
 	.lp-menu {
 		display: none;
 	}
 
-	@include outer-container;
-
-	@include media(1000px) {
-		.lp-menu {
-			@include span-columns(4);
-		}
-
-		.lp-slider {
-			@include span-columns(8);
-
-			@include omega;
-
-			.flexslider {
-				border-radius: 0;
-				margin-bottom: $base-spacing;
-			}
-		}
-
-		.lp-welcome {
-			@include span-columns(4);
-		}
-	}
-
-
 	@include media($large-screen) {
+		align-content: space-between;
+		display: flex;
+		margin: 0 -10px;
 		.lp-menu {
-			@include span-columns(3);
+			display: block;
+			//flex: 1;
+			margin: 0 10px;
+			flex-basis: 260px;
+
 		}
 
 		.lp-slider {
-			@include span-columns(6);
+			flex: 2;
+			margin: 0 10px;
 
-			.flexslider {
-				border-radius: 0;
-				margin-bottom: $base-spacing;
-			}
 		}
 
 		.lp-welcome {
-			@include span-columns(3);
-
-			@include omega;
+			flex: 1;
+			margin: 0 10px;
 		}
 	}
 }
 
 .lp-second-row {
-	@include outer-container;
-
-	@include media($medium-screen) {
-		.lp-glance {
-			@include span-columns(4);
-		}
-
-		.lp-collection {
-			@include span-columns(4);
-
-			@include omega;
-		}
-	}
-
 
 	@include media($large-screen) {
+		align-content: space-between;
+		display: flex;
+		margin: 0 -10px;
+			margin: 0 -10px;
+		.lp-welcome.alt {
+			display: none;
+		}
 		.lp-glance {
-			@include span-columns(6);
+			flex: 1;
+			margin: 0 10px;
 		}
 
 		.lp-collection {
-			@include span-columns(6);
 
-			@include omega;
+			margin: 0 10px;
+			flex: 1;
 		}
 	}
 }
