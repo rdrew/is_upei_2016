@@ -3880,10 +3880,7 @@ ul.islandora-solr-sort {
   padding: 0;
   border: 0;
   text-align: center;
-  margin: 0 auto;
-  /*img {*/
-  /*display: none;*/
-  /*}*/ }
+  margin: 0 auto; }
   ul.islandora-solr-sort::after {
     clear: both;
     content: "";
