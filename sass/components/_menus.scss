@@ -1,65 +1,40 @@
-.lp-menu {
-	.menu {
-		margin-bottom: $base-spacing;
 
-		/*@include small-shadow();*/
-		//border: $base-border;
-		border: 5px solid #fff;
-		outline: 1px solid #ccc;
-		border-radius: $base-border-radius;
-
-		.leaf {
-			list-style-image: none;
-			list-style-type: none;
-		}
-
-		a {
-			font-size: 1.2em;
-
-			@include media(1130px) {
-
-				font-size: 1.4em;
-			}
-
-
-			background: $light-green;
-
-			/*font-family: $roboto_condensed;*/
-			font-family: $roboto_condensed;
-
-			/*text-transform: uppercase;*/
-			color: $dark-gray;
-			display: block;
-
-			//padding: $base-spacing/4 $base-spacing/2;
-			padding: 0.34em ($base-spacing / 2);
-			border-bottom: $base-border;
-
-			&:hover {
-				//background: $light-green;
-				background: white;
-
-				@include transition;
-
-				i {
-					color: $green;
-
-					@include transition;
-				}
-			}
-		}
-
-		.first a {
-			/*border-top: $base-border;*/
-		}
-
-		.last a {
-			border-bottom: 0;
-		}
-
-		i {
-			width: 20px;
-			margin-right: $base-spacing / 2;
-		}
+.lp-menu .menu .leaf {
+	list-style-image: none;
+	list-style-type: none;
+}
+.lp-menu .menu {
+	margin-bottom: $base-spacing;
+	border: 5px solid #fff;
+	outline: 1px solid #ccc;
+	border-radius: $base-border-radius;
+}
+.lp-menu .menu a {
+	background: $light-green;
+	color: $dark-gray;
+	display: block;
+	padding: 0.34em ($base-spacing / 2);
+	border-bottom: $base-border;
+	font-family: $roboto_condensed;
+	font-size: 1.2em;
+	@include media(1130px) {
+		font-size: 1.4em;
 	}
 }
+.lp-menu .menu a:hover {
+	background: white;
+	@include transition;
+}
+.lp-menu .menu i {
+	width: 20px;
+	margin-right: $base-spacing / 2;
+}
+.lp-menu .menu a:hover i {
+	color: $green;
+	@include transition;
+}
+
+.lp-menu .menu .last a {
+	border-bottom: 0;
+}
+

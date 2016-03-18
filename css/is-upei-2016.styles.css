@@ -3230,12 +3230,14 @@ dl.islandora-metadata-fields {
 .landing-page .panel-pane {
   border-bottom: 1px solid #ccc;
   margin-bottom: 0.75em; }
-  @media screen and (min-width: 600px) {
-    .landing-page .panel-pane {
-      border-bottom: 0;
-      margin-bottom: 0; } }
-  .landing-page .panel-pane.lp-slider, .landing-page .panel-pane.pane-node-links {
-    border-bottom: 0; }
+
+@media screen and (min-width: 600px) {
+  .landing-page .panel-pane {
+    border-bottom: 0;
+    margin-bottom: 0; }
+  .landing-page .panel-pane .lp-slider,
+  .landing-page .panel-pane .pane-node-links {
+    border-bottom: 0; } }
 
 .landing-page .l-content {
   border: 0;
@@ -3248,6 +3250,35 @@ dl.islandora-metadata-fields {
 .flexslider {
   border-radius: 0;
   margin-bottom: 1.5em; }
+
+.lp-menu {
+  display: none; }
+
+@media screen and (min-width: 900px) {
+  .lp-top-row {
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -10px; }
+  .lp-menu {
+    display: block;
+    margin: 0 10px;
+    -webkit-flex-basis: 260px;
+        -ms-flex-preferred-size: 260px;
+            flex-basis: 260px; }
+  .lp-slider {
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    margin: 0 10px; }
+  .lp-welcome {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 10px; } }
 
 .lp-top-row .lp-menu {
   display: none; }
@@ -3278,6 +3309,12 @@ dl.islandora-metadata-fields {
               flex: 1;
       margin: 0 10px; } }
 
+.lp-welcome i {
+  margin-right: 5px; }
+
+.lp-collection h4 {
+  margin-bottom: 0; }
+
 @media screen and (min-width: 900px) {
   .lp-second-row {
     -webkit-align-content: space-between;
@@ -3288,24 +3325,18 @@ dl.islandora-metadata-fields {
     display: flex;
     margin: 0 -10px;
     margin: 0 -10px; }
-    .lp-second-row .lp-welcome.alt {
-      display: none; }
-    .lp-second-row .lp-glance {
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1;
-      margin: 0 10px; }
-    .lp-second-row .lp-collection {
-      margin: 0 10px;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1; } }
-
-.lp-welcome i {
-  margin-right: 5px; }
-
-.lp-collection h4 {
-  margin-bottom: 0; }
+  .lp-welcome.alt {
+    display: none; }
+  .lp-glance {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 10px; }
+  .lp-collection {
+    margin: 0 10px;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; } }
 
 .l-constrained, .l-region--navigation, .l-region--highlighted, .l-footer-wrapper .l-region--footer {
   max-width: 100%;
@@ -3487,41 +3518,42 @@ header.l-header {
 .l-footer-wrapper {
   padding: 1.5em 0; }
 
+.lp-menu .menu .leaf {
+  list-style-image: none;
+  list-style-type: none; }
+
 .lp-menu .menu {
   margin-bottom: 1.5em;
-  /*@include small-shadow();*/
   border: 5px solid #fff;
   outline: 1px solid #ccc;
   border-radius: 2px; }
-  .lp-menu .menu .leaf {
-    list-style-image: none;
-    list-style-type: none; }
-  .lp-menu .menu a {
-    font-size: 1.2em;
-    background: #e7ede0;
-    /*font-family: $roboto_condensed;*/
-    font-family: "Roboto Condensed", sans-serif;
-    /*text-transform: uppercase;*/
-    color: #333;
-    display: block;
-    padding: 0.34em 0.75em;
-    border-bottom: 1px solid #ccc; }
-    @media screen and (min-width: 1130px) {
-      .lp-menu .menu a {
-        font-size: 1.4em; } }
-    .lp-menu .menu a:hover {
-      background: white;
-      transition: all 0.15s ease-out 0s; }
-      .lp-menu .menu a:hover i {
-        color: #5C8727;
-        transition: all 0.15s ease-out 0s; }
-  .lp-menu .menu .first a {
-    /*border-top: $base-border;*/ }
-  .lp-menu .menu .last a {
-    border-bottom: 0; }
-  .lp-menu .menu i {
-    width: 20px;
-    margin-right: 0.75em; }
+
+.lp-menu .menu a {
+  background: #e7ede0;
+  color: #333;
+  display: block;
+  padding: 0.34em 0.75em;
+  border-bottom: 1px solid #ccc;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em; }
+  @media screen and (min-width: 1130px) {
+    .lp-menu .menu a {
+      font-size: 1.4em; } }
+
+.lp-menu .menu a:hover {
+  background: white;
+  transition: all 0.15s ease-out 0s; }
+
+.lp-menu .menu i {
+  width: 20px;
+  margin-right: 0.75em; }
+
+.lp-menu .menu a:hover i {
+  color: #5C8727;
+  transition: all 0.15s ease-out 0s; }
+
+.lp-menu .menu .last a {
+  border-bottom: 0; }
 
 .pager {
   margin-bottom: 10px; }
