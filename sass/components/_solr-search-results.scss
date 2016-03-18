@@ -1,28 +1,19 @@
-ul.islandora-solr-facet li a {
-
+.islandora-solr-facet li a {
 	width: 68%;
 }
 
-span.count {}
-
-span.plusminus {}
-
-ul.islandora-solr-facet li {
-
+.islandora-solr-facet li {
 	display: flex;
 	justify-content: space-between;
 }
 
-ul.islandora-solr-facet li a {
-	/*width: 180px;*/
-}
-
 //needs to be dealt with
-dl.solr-thumb input, .button--bookmark {
+.solr-thumb input,
+.button--bookmark {
 	width: 100%;
 }
 
-a.button--bookmark {
+.button--bookmark {
 	text-align: center;
 }
 
@@ -34,7 +25,7 @@ a.button--bookmark {
 		display: inline-block;
 	}
 
-	div#islandora-solr-result-count {
+	#islandora-solr-result-count {
 		display: inline-block;
 		margin-left: 10px;
 		font-family: $roboto_condensed;
@@ -48,44 +39,37 @@ a.button--bookmark {
 //Facets
 
 //sort by date/ title
-
-ul.islandora-solr-sort {
-	@include horizontal-list;
-
-	text-align: center;
-	margin: 0 auto;
-
-	li {
-		width: 50%;
-	}
-
-}
-
-div#block-islandora-solr-sort {
+#block-islandora-solr-sort {
 	border: 0;
 	margin: 0;
 }
 
-.block--islandora-solr-sort ul.islandora-solr-sort a {
-	width: 100%;
+.islandora-solr-sort {
+	@include horizontal-list;
 
-	&:before {
-		margin-left: 4px;
-		content: "Sort by ";
-	}
+	text-align: center;
+	margin: 0 auto;
+}
+
+.islandora-solr-sort li {
+	width: 50%;
+}
+
+.islandora-solr-sort a {
+	width: 100%;
 
 	@extend input[type="submit"];
 
 	@extend button.gray;
+}
 
-	&.active {
-		@extend button.green;
+.islandora-solr-sort a:before {
+	margin-left: 4px;
+	content: "Sort by ";
+}
 
-		&:before {
-			margin-left: 4px;
-			content: "Sort by ";
-		}
-	}
+.islandora-solr-sort a.active {
+	@extend button.green;
 }
 
 //--------------------------
@@ -101,9 +85,9 @@ div#block-islandora-solr-sort {
 	.show_me {
 		display: block !important;
 	}
+
 	i {
-	font-size:1.4em;
-	
+		font-size: 1.4em;
 	}
 
 	.page-islandora-search {
@@ -146,7 +130,7 @@ div#block-islandora-solr-sort {
 		}
 
 		.block__title {
-			@include icon(f085);
+			@include icon(f085);// {{{
 
 			//text-align: center;
 			margin: 0 auto;
@@ -154,13 +138,13 @@ div#block-islandora-solr-sort {
 			display: block !important;
 			width: 180px;
 			text-align: center;
-
 			appearance: none;
 			background-color: $action-color;
 			border: 0;
 			border-radius: $base-border-radius;
 			color: #fff;
 			cursor: pointer;
+
 			//display: inline-block;
 
 			//font-family: $base-font-family;
@@ -192,7 +176,7 @@ div#block-islandora-solr-sort {
 				&:hover {
 					background-color: $action-color;
 				}
-			}
+			}// }}}
 		}
 
 		.block__content {
@@ -362,20 +346,22 @@ dl.solr-thumb {
 @include media(max-width 600px) {
 	.solr-thumb dt:first-child {
 		width: 50%;
+
 		//display: inline-block;
 		float: left;
 
 		//margin-right: $base-spacing/2;
-		margin-right: 5%
+		margin-right: 5%;
 	}
+
 	.solr-thumb .solr-label {
 		//display: inline-block;
-		width: 45% !important;	
+		width: 45% !important;
 		float: left;
 	}
+
 	.solr-thumb {
 		@include clearfix;
-
 	}
 }
 
@@ -656,6 +642,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	margin-bottom: 10px;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
+
 	/*line-height: 1;*/
 	padding: ($small-spacing / 2) ($base-spacing / 2);
 	text-decoration: none;
@@ -692,7 +679,8 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 .roblib-coins a {
 	/*line-height: 0;*/
-@include icon(f002);
+	@include icon(f002);
+
 	@extend input[type="submit"];
 
 	@extend button.green;
