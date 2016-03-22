@@ -1,3 +1,22 @@
+//------------------------
+//-  lp citations block  -
+//------------------------
+.block--recent-citations--title {
+	font-size:1em;
+	font-family: $roboto;
+	font-weight: normal;
+	@include clean;
+}
+.block--recent-citations--publication {
+	font-style: italic;
+	
+}
+.block--recent-citations dd {
+
+	margin-bottom: $base-spacing/2;
+}
+//=======================
+
 .csl-bib-body {
 	font-family: $georgia;
 
