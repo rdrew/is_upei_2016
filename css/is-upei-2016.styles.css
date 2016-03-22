@@ -58,7 +58,7 @@ button, .block--search-navigation--list-item a, input[type="button"], input[type
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #8B2004;
+  background-color: #8c2004;
   border: 0;
   border-radius: 2px;
   color: #fff;
@@ -82,13 +82,13 @@ button, .block--search-navigation--list-item a, input[type="button"], input[type
   white-space: nowrap;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
   button:hover, .block--search-navigation--list-item a:hover, button:focus, .block--search-navigation--list-item a:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input#edit-add-button:hover, .islandora-solr-sort a:hover, .islandora-solr-facet-wrapper .soft-limit:hover, .roblib-coins a:hover, input[type="submit"]:focus, input#edit-add-button:focus, .islandora-solr-sort a:focus, .islandora-solr-facet-wrapper .soft-limit:focus, .roblib-coins a:focus {
-    background-color: #6f1a03;
+    background-color: #701a03;
     color: #fff; }
   button:disabled, .block--search-navigation--list-item a:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, input#edit-add-button:disabled, .islandora-solr-sort a:disabled, .islandora-solr-facet-wrapper .soft-limit:disabled, .roblib-coins a:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, .block--search-navigation--list-item a:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, input#edit-add-button:disabled:hover, .islandora-solr-sort a:disabled:hover, .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .roblib-coins a:disabled:hover {
-      background-color: #8B2004; }
+      background-color: #8c2004; }
 
 button.gray, .block--search-navigation--list-item a.gray, #islandora-bookmark-detailed-overview .operations input, .islandora-solr-sort a, input[type="button"].gray, input[type="reset"].gray, input[type="submit"].gray, input.gray#edit-add-button, .islandora-solr-sort a.gray, .islandora-solr-facet-wrapper .gray.soft-limit, .roblib-coins a.gray {
   background-color: #5A5A5A; }
@@ -293,11 +293,11 @@ p {
   line-height: 1.4; }
 
 a {
-  color: #8B2004;
+  color: #8c2004;
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #681803; }
+    color: #691803; }
 
 hr {
   border-bottom: 1px solid #ccc;
@@ -2365,6 +2365,15 @@ div#islandora-bookmark-detailed-list legend {
 
 .block--recent-citations dd {
   margin-bottom: 0.75em; }
+  .block--recent-citations dd:before {
+    content: "\f105";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 4px; }
 
 .csl-bib-body {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
@@ -3165,7 +3174,7 @@ dl.islandora-metadata-fields {
   width: 170px; }
 
 .sbSelector:link, .sbSelector:visited, .sbSelector:hover {
-  color: #8B2004;
+  color: #8c2004;
   outline: none;
   text-decoration: none; }
 
@@ -3221,7 +3230,7 @@ dl.islandora-metadata-fields {
 .sbOptions a:hover,
 .sbOptions a:focus,
 .sbOptions a.sbFocus {
-  color: #8B2004; }
+  color: #8c2004; }
 
 .sbOptions li.last a {
   border-bottom: none; }
@@ -3341,20 +3350,29 @@ dl.islandora-metadata-fields {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 -10px;
-    margin: 0 -10px; }
+    /*margin: 0 -16px;*/
+    padding: 0 -16px; }
   .lp-welcome.alt {
     display: none; }
   .lp-glance {
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    margin: 0 10px; }
+    padding: 0 16px;
+    border-right: 1px dotted #ccc;
+    border-left: 1px dotted #ccc; }
   .block--student-works {
-    margin: 0 10px;
+    padding: 0 16px;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; } }
+            flex: 1;
+    border-right: 1px dotted #ccc; } }
+
+.more-link {
+  float: none;
+  position: relative;
+  bottom: 0;
+  left: 0; }
 
 .l-constrained, .l-region--navigation, .l-region--highlighted, .l-footer-wrapper .l-region--footer {
   *zoom: 1;
@@ -4020,7 +4038,7 @@ aside .menu li {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color: #8B2004;
+    background-color: #8c2004;
     border: 0;
     border-radius: 2px;
     color: #fff;
@@ -4051,13 +4069,13 @@ aside .menu li {
       -moz-osx-font-smoothing: grayscale;
       margin-right: 4px; }
     .page-islandora-search .block__title:hover, .page-islandora-search .block__title:focus {
-      background-color: #6f1a03;
+      background-color: #701a03;
       color: #fff; }
     .page-islandora-search .block__title:disabled {
       cursor: not-allowed;
       opacity: 0.5; }
       .page-islandora-search .block__title:disabled:hover {
-        background-color: #8B2004; }
+        background-color: #8c2004; }
   .page-islandora-search .block__content {
     /*display: none;*/ } }
 
@@ -4178,7 +4196,7 @@ ul.islandora-solr-facet {
   color: #333; }
 
 .icon-wrapper:hover i {
-  color: #8B2004;
+  color: #8c2004;
   transition: all 0.15s ease-out 0s; }
 
 .icon-wrapper a {
@@ -4765,129 +4783,6 @@ td.active {
 
 body {
   /*background:blue;*/ }
-
-/*
-
- * We are hiding the invisible nav outside the screen
- * so we need to avoid the horizontal scroll
- */
-body.okayNav-loaded {
-  overflow-x: hidden; }
-
-.okayNav:not(.loaded) {
-  visibility: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.okayNav ul {
-  /* We want two navigations - one hidden and one visible */
-  float: left; }
-
-.okayNav a {
-  /* Links general styling */ }
-
-.okayNav__nav--visible {
-  overflow: hidden;
-  white-space: nowrap; }
-
-.okayNav__nav--visible li {
-  display: inline-block; }
-
-.okayNav__nav--visible a {
-  /* Link styling for the visible part of the nav */
-  display: block;
-  transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1); }
-
-/* Link styling for the off-screen part of the nav */
-.okayNav__nav--invisible {
-  position: fixed;
-  top: 70px;
-  bottom: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  background: #fff; }
-
-.okayNav__nav--invisible a {
-  background: #fff;
-  width: 240px;
-  display: block;
-  padding: 15px; }
-
-.okayNav__nav--invisible.nav-left {
-  left: 0;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%); }
-
-.okayNav__nav--invisible.nav-right {
-  right: 0;
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%); }
-
-.okayNav__nav--invisible.transition-enabled {
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1); }
-
-.okayNav__nav--invisible.nav-open {
-  -webkit-transform: translateX(0);
-  transform: translateX(0); }
-
-/* Kebab icon */
-.okayNav__menu-toggle {
-  position: relative;
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1);
-  cursor: pointer;
-  width: 40px;
-  height: 20px;
-  float: left;
-  z-index: 1;
-  top: 15px; }
-
-.okayNav__menu-toggle.okay-invisible {
-  position: absolute;
-  opacity: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none; }
-
-.okayNav__menu-toggle span {
-  display: block;
-  position: absolute;
-  margin: auto;
-  height: 4px;
-  width: 4px;
-  background: #2e2e33;
-  border-radius: 50%;
-  left: 0;
-  right: 0;
-  pointer-events: none; }
-
-.okayNav__menu-toggle span:nth-child(1) {
-  top: 0; }
-
-.okayNav__menu-toggle span:nth-child(2) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.okayNav__menu-toggle span:nth-child(3) {
-  bottom: 0; }
-
-.okayNav__menu-toggle.icon--active {
-  /* Kebab icon when off-screen nav is open */
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
-.okayNav__menu-toggle.icon--active span {
-  background: #546edb; }
 
 body {
   -webkit-font-smoothing: antialiased;
