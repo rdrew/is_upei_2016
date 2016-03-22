@@ -15,6 +15,10 @@
 @include icon(f105);
 	margin-bottom: $base-spacing/2;
 }
+.block--recent-citations--more {
+	@extend input[type="button"];
+	margin-top: $base-spacing /2;
+}
 //=======================
 
 .csl-bib-body {
