@@ -6,17 +6,13 @@
 
 			var target = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
 
-			$(target, context).once(function() {
-				$(this).empty();
-				$(this).append('My Bookmarks');
-			});
+				$(target).empty();
+				$(target).append('My Bookmarks');
 
 			var target = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
 
-			$(target, context).once(function() {
-				$(this).empty();
-				$(this).append('My Bookmarks');
-			});
+				$(target).empty();
+				$(target).append('My Bookmarks');
 
 
 		}
