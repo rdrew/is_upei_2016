@@ -204,6 +204,13 @@
 	 *move the solr sort box after the facet block title
 	 */
 
+	Drupal.behaviors.equal_height_lp_blocks = {
+
+		attach: function (context, settings) {
+			$('.lp-second-row .view-content').matchHeight();
+		}
+
+	};
 	Drupal.behaviors.move_the_sort = {
 
 		attach: function (context, settings) {
