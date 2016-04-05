@@ -210,8 +210,7 @@ dl {
 
 table {
   border-collapse: collapse;
-  -webkit-font-feature-settings: "kern", "liga", "tnum";
-          font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
   margin: 0.75em 0;
   table-layout: fixed;
   width: 100%; }
@@ -238,8 +237,7 @@ th {
 body {
   color: #333;
   font-family: "Roboto", sans-serif;
-  -webkit-font-feature-settings: "kern", "liga", "pnum";
-          font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
   font-size: 1em;
   line-height: 1.5; }
 
@@ -3779,18 +3777,9 @@ header.l-header {
       display: none; }
     .scholar .bio p {
       margin-bottom: 1.5em; }
-  .scholar .activities {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1.5em;
-    padding-bottom: 1.5em; }
-  .scholar .citations {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1.5em;
-    padding-bottom: 1.5em; }
-  .scholar .other-scholars {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1.5em;
-    padding-bottom: 1.5em; }
+  .scholar .activities,
+  .scholar .citations,
+  .scholar .other-scholars,
   .scholar .rss {
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;

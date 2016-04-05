@@ -9,7 +9,9 @@
 
 .scholar {
 	@include outer-container;
-@include clearfix();
+
+	@include clearfix;
+
 	//width: 100%;
 	//max-width: 100%;
 	.scholar-image {
@@ -28,30 +30,23 @@
 
 	.bio {
 		clear: both;
+
 		@include border-bottom;
+
 		@include border-top;
+
 		br {
 			display: none;
 		}
+
 		p {
 			margin-bottom: $base-spacing;
-			
 		}
 	}
 
-	.activities {
-		@include border-bottom;
-	}
-
-	.citations {
-		@include border-bottom;
-	}
-
-	.other-scholars {
-
-		@include border-bottom;
-	}
-
+	.activities,
+	.citations,
+	.other-scholars,
 	.rss {
 		@include border-bottom;
 	}
