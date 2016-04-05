@@ -3736,7 +3736,14 @@ header.l-header {
   *zoom: 1;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  *zoom: 1; }
+  .scholar:before, .scholar:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  .scholar:after {
+    clear: both; }
   .scholar:before, .scholar:after {
     display: table;
     content: '';
@@ -3761,67 +3768,33 @@ header.l-header {
     .scholar .metadata:last-child {
       margin-right: 0; }
   .scholar .bio {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 100%;
-    margin-right: 0;
+    clear: both;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
     border-top: 1px solid #ccc;
     margin-top: 1.5em;
     padding-top: 1.5em; }
-    .scholar .bio:last-child {
-      margin-right: 0; }
     .scholar .bio br {
       display: none; }
     .scholar .bio p {
       margin-bottom: 1.5em; }
   .scholar .activities {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 100%;
-    margin-right: 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
-    .scholar .activities:last-child {
-      margin-right: 0; }
   .scholar .citations {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 100%;
-    margin-right: 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
-    .scholar .citations:last-child {
-      margin-right: 0; }
   .scholar .other-scholars {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 100%;
-    margin-right: 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
-    .scholar .other-scholars:last-child {
-      margin-right: 0; }
   .scholar .rss {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 100%;
-    margin-right: 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em; }
-    .scholar .rss:last-child {
-      margin-right: 0; }
 
 .scholar-image img {
   border: 1px solid #ccc;
