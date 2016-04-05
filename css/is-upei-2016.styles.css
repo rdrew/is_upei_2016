@@ -3444,11 +3444,15 @@ header.l-header {
     display: inline-block;
     margin-right: 5px;
     line-height: 0; }
+    .site-branding .site-branding__logo img {
+      width: 140px; }
     @media screen and (min-width: 400px) {
       .site-branding .site-branding__logo {
         -webkit-flex-basis: 165px;
             -ms-flex-preferred-size: 165px;
-                flex-basis: 165px; } }
+                flex-basis: 165px; }
+        .site-branding .site-branding__logo img {
+          width: 165px; } }
     @media screen and (min-width: 400px) {
       .site-branding .site-branding__logo {
         margin-right: 10px; } }

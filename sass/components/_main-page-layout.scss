@@ -23,7 +23,6 @@ header.l-header {
 	background: white;
 }
 
-
 @include media(700px) {
 	.site-branding {
 		@include span-columns(7);
@@ -35,6 +34,7 @@ header.l-header {
 		@include omega;
 	}
 }
+
 
 @include media(980px) {
 	.l-region--header {
@@ -57,14 +57,28 @@ header.l-header {
 		//@include span-columns(2);
 
 		flex-basis: 140px;
-		@include media(400px) {
-		flex-basis: 165px;
+
+		img {
+			width: 140px;
 		}
+
+		@include media(400px) {
+			flex-basis: 165px;
+
+			img {
+				width:  165px;
+			}
+		}
+
+
 		display: inline-block;
 		margin-right: 5px;
+
 		@include media(400px) {
 			margin-right: 10px;
 		}
+
+
 		line-height: 0;
 	}
 
@@ -73,9 +87,12 @@ header.l-header {
 
 		border-left: $base-border;
 		padding-left: 5px;
+
 		@include media(400px) {
 			padding-left: 10px;
 		}
+
+
 		padding-top: 4px;
 
 		a {
@@ -143,6 +160,7 @@ header.l-header {
 		}
 	}
 }
+
 
 /*.has-one-sidebar .has-sidebar-first {*/
 /*.l-region--sidebar-first {*/
