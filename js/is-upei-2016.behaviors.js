@@ -23,7 +23,7 @@
 			/*********************************
 			 *  this could be done in css!!  *
 			 *********************************/
-			$('.roblib-bookmark-form select', context).once( function() {
+			$('.roblib-bookmark-form select').once( function() {
 				$(this).hide();
 			});
 
@@ -35,7 +35,7 @@
 	 */
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
-			$('select').selectbox("attach");
+			//$('select').selectbox("attach");
 		}
 	};
 

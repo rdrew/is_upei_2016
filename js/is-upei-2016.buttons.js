@@ -126,6 +126,11 @@
 	 	}
 
 
+	Drupal.behaviors.bookmark_button_text = {
+	 		attach: function (context, settings) {
+				$('.roblib-bookmark-form .form-submit').attr('value', 'Bookmark This');
+			 		}
+	 	}
 
 
 
