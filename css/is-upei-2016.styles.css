@@ -3738,60 +3738,35 @@ header.l-header {
 .scholar-page .l-content {
   background: #fff  !important; }
 
-.scholar {
-  *zoom: 1;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  *zoom: 1; }
-  .scholar:before, .scholar:after {
-    display: table;
-    content: '';
-    line-height: 0; }
-  .scholar:after {
-    clear: both; }
-  .scholar:before, .scholar:after {
-    display: table;
-    content: '';
-    line-height: 0; }
-  .scholar:after {
-    clear: both; }
+.scholar .scholar-image {
+  width: 170px; }
+
+@media screen and (min-width: 600px) {
   .scholar .scholar-image {
     float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 14.89362%; }
-    .scholar .scholar-image:last-child {
-      margin-right: 0; }
-    .scholar .scholar-image img {
-      width: 100%; }
+    margin-right: 1.5em; }
   .scholar .metadata {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 82.97872%;
-    margin-right: 0;
-    min-height: 280px; }
-    .scholar .metadata:last-child {
-      margin-right: 0; }
-  .scholar .bio {
-    clear: both;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 0.75em;
-    padding-bottom: 0.75em;
-    border-top: 1px solid #ccc;
-    margin-top: 0.75em;
-    padding-top: 0.75em; }
-    .scholar .bio br {
-      display: none; }
-    .scholar .bio p {
-      /*margin-bottom: $base-spacing;*/ }
-  .scholar .activities,
-  .scholar .citations,
-  .scholar .other-scholars {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 0.75em;
-    padding-bottom: 0.75em; }
+    min-height: 270px; } }
+
+.scholar .bio {
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.75em;
+  border-top: 1px solid #ccc;
+  margin-top: 0.75em;
+  padding-top: 0.75em; }
+  .scholar .bio br {
+    display: none; }
+  .scholar .bio p {
+    /*margin-bottom: $base-spacing;*/ }
+
+.scholar .activities,
+.scholar .citations,
+.scholar .other-scholars {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.75em; }
 
 /*---------------------*/
 /*-  fellow scholars  -*/
