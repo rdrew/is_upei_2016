@@ -34,7 +34,7 @@
 <h3>
 	Recent Citations
 </h3>
-<?php print views_embed_view('recent_citations', 'block', $identifier); ?>
+<?php print views_embed_view('recent_citations', 'citations', $identifier); ?>
 	</div>
 
 

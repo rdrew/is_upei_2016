@@ -35,7 +35,7 @@
 	 */
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
-			//$('select').selectbox("attach");
+			$('select').selectbox("attach");
 		}
 	};
 
@@ -49,6 +49,13 @@
 
 			$(target, context).once(function() {
 				$(this).append($('#block-islandora-bookmark-islandora-bookmark'));
+			});
+
+			
+			var target = '#block-islandora-bookmark-islandora-bookmark';
+
+			$(target, context).once(function() {
+				$(this).insertAfter($('#islandora-scholar-citation-select-form'));
 			});
 		}
 	};
