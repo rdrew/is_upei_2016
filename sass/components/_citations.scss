@@ -65,9 +65,11 @@ fieldset#edit-bookmarks-fieldset td a {
 }
 .citation-page #block-islandora-bookmark-islandora-bookmark {
 	width: 164px;
-	
+float: right;	
 }
-
+.citation-page h1 {
+font-size: 1.6em;	
+}
 .citation-page {
 	.islandora-inline-metadata dt {
 	    width: 12%;

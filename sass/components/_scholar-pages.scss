@@ -26,6 +26,7 @@
 		@include span-columns(10);
 
 		@include omega;
+		min-height: 280px;
 	}
 
 	.bio {
@@ -40,16 +41,23 @@
 		}
 
 		p {
-			margin-bottom: $base-spacing;
+			/*margin-bottom: $base-spacing;*/
 		}
 	}
 
 	.activities,
 	.citations,
-	.other-scholars,
-	.rss {
+	.other-scholars {
 		@include border-bottom;
 	}
+}
+/*---------------------*/
+/*-  fellow scholars  -*/
+/*---------------------*/
+.fellow_scholars {
+	height: 400px;
+	column-count: 3;
+	
 }
 
 .scholar-image img {
