@@ -101,15 +101,25 @@ button.gray, .block--search-navigation--list-item a.gray, #islandora-bookmark-de
     button.gray:disabled:hover, .block--search-navigation--list-item a.gray:disabled:hover, #islandora-bookmark-detailed-overview .operations input:disabled:hover, .islandora-solr-sort a:disabled:hover, input[type="button"].gray:disabled:hover, .gray.block--recent-citations--more:disabled:hover, input[type="reset"].gray:disabled:hover, input[type="submit"].gray:disabled:hover, input.gray#edit-add-button:disabled:hover, .ir_thesisCModel .form-item a.gray:disabled:hover, .islandora-solr-sort a.gray:disabled:hover, .islandora-solr-facet-wrapper .gray.soft-limit:disabled:hover, .roblib-coins a.gray:disabled:hover {
       background-color: #5A5A5A; }
 
-button.green, .block--search-navigation--list-item a.green, .views-exposed-widget.views-submit-button input[type="submit"], .views-exposed-widget.views-submit-button input#edit-add-button, .views-exposed-widget.views-submit-button .ir_thesisCModel .form-item a, .ir_thesisCModel .form-item .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-sort a, .islandora-solr-sort .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit, .views-exposed-widget.views-submit-button .roblib-coins a, .roblib-coins .views-exposed-widget.views-submit-button a, .ir_thesisCModel .form-item a, .islandora-solr-sort a.active, .roblib-coins a, input[type="button"].green, .green.block--recent-citations--more, input[type="reset"].green, input[type="submit"].green, input.green#edit-add-button, .ir_thesisCModel .form-item a.green, .islandora-solr-sort a.green, .islandora-solr-facet-wrapper .green.soft-limit, .roblib-coins a.green {
+button.green, .block--search-navigation--list-item a.green, #edit-bookmarks-fieldset-format-opts-export-selected,
+#edit-bookmarks-fieldset-format-opts-export-all,
+#edit-bookmarks-users-listadd, .views-exposed-widget.views-submit-button input[type="submit"], .views-exposed-widget.views-submit-button input#edit-add-button, .views-exposed-widget.views-submit-button .ir_thesisCModel .form-item a, .ir_thesisCModel .form-item .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-sort a, .islandora-solr-sort .views-exposed-widget.views-submit-button a, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit, .views-exposed-widget.views-submit-button .roblib-coins a, .roblib-coins .views-exposed-widget.views-submit-button a, .ir_thesisCModel .form-item a, .islandora-solr-sort a.active, .roblib-coins a, input[type="button"].green, .green.block--recent-citations--more, input[type="reset"].green, input[type="submit"].green, input.green#edit-add-button, .ir_thesisCModel .form-item a.green, .islandora-solr-sort a.green, .islandora-solr-facet-wrapper .green.soft-limit, .roblib-coins a.green {
   background-color: #5C8727; }
-  button.green:hover, .block--search-navigation--list-item a.green:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, .views-exposed-widget.views-submit-button input#edit-add-button:hover, .views-exposed-widget.views-submit-button .islandora-solr-sort a:hover, .islandora-solr-sort .views-exposed-widget.views-submit-button a:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:hover, .views-exposed-widget.views-submit-button .roblib-coins a:hover, .roblib-coins .views-exposed-widget.views-submit-button a:hover, .ir_thesisCModel .form-item a:hover, .islandora-solr-sort a.active:hover, .roblib-coins a:hover, button.green:focus, .block--search-navigation--list-item a.green:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, .views-exposed-widget.views-submit-button input#edit-add-button:focus, .views-exposed-widget.views-submit-button .islandora-solr-sort a:focus, .islandora-solr-sort .views-exposed-widget.views-submit-button a:focus, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:focus, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:focus, .views-exposed-widget.views-submit-button .roblib-coins a:focus, .roblib-coins .views-exposed-widget.views-submit-button a:focus, .ir_thesisCModel .form-item a:focus, .islandora-solr-sort a.active:focus, .roblib-coins a:focus, input[type="button"].green:hover, .green.block--recent-citations--more:hover, input[type="button"].green:focus, .green.block--recent-citations--more:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input.green#edit-add-button:hover, .ir_thesisCModel .form-item a.green:hover, .islandora-solr-sort a.green:hover, .islandora-solr-facet-wrapper .green.soft-limit:hover, .roblib-coins a.green:hover, input[type="submit"].green:focus, input.green#edit-add-button:focus, .ir_thesisCModel .form-item a.green:focus, .islandora-solr-sort a.green:focus, .islandora-solr-facet-wrapper .green.soft-limit:focus, .roblib-coins a.green:focus {
+  button.green:hover, .block--search-navigation--list-item a.green:hover, #edit-bookmarks-fieldset-format-opts-export-selected:hover,
+  #edit-bookmarks-fieldset-format-opts-export-all:hover,
+  #edit-bookmarks-users-listadd:hover, .views-exposed-widget.views-submit-button input[type="submit"]:hover, .views-exposed-widget.views-submit-button input#edit-add-button:hover, .views-exposed-widget.views-submit-button .islandora-solr-sort a:hover, .islandora-solr-sort .views-exposed-widget.views-submit-button a:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:hover, .views-exposed-widget.views-submit-button .roblib-coins a:hover, .roblib-coins .views-exposed-widget.views-submit-button a:hover, .ir_thesisCModel .form-item a:hover, .islandora-solr-sort a.active:hover, .roblib-coins a:hover, button.green:focus, .block--search-navigation--list-item a.green:focus, #edit-bookmarks-fieldset-format-opts-export-selected:focus,
+  #edit-bookmarks-fieldset-format-opts-export-all:focus,
+  #edit-bookmarks-users-listadd:focus, .views-exposed-widget.views-submit-button input[type="submit"]:focus, .views-exposed-widget.views-submit-button input#edit-add-button:focus, .views-exposed-widget.views-submit-button .islandora-solr-sort a:focus, .islandora-solr-sort .views-exposed-widget.views-submit-button a:focus, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:focus, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:focus, .views-exposed-widget.views-submit-button .roblib-coins a:focus, .roblib-coins .views-exposed-widget.views-submit-button a:focus, .ir_thesisCModel .form-item a:focus, .islandora-solr-sort a.active:focus, .roblib-coins a:focus, input[type="button"].green:hover, .green.block--recent-citations--more:hover, input[type="button"].green:focus, .green.block--recent-citations--more:focus, input[type="reset"].green:hover, input[type="reset"].green:focus, input[type="submit"].green:hover, input.green#edit-add-button:hover, .ir_thesisCModel .form-item a.green:hover, .islandora-solr-sort a.green:hover, .islandora-solr-facet-wrapper .green.soft-limit:hover, .roblib-coins a.green:hover, input[type="submit"].green:focus, input.green#edit-add-button:focus, .ir_thesisCModel .form-item a.green:focus, .islandora-solr-sort a.green:focus, .islandora-solr-facet-wrapper .green.soft-limit:focus, .roblib-coins a.green:focus {
     background-color: #4a6c1f;
     color: #fff; }
-  button.green:disabled, .block--search-navigation--list-item a.green:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, .views-exposed-widget.views-submit-button input#edit-add-button:disabled, .views-exposed-widget.views-submit-button .islandora-solr-sort a:disabled, .islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled, .views-exposed-widget.views-submit-button .roblib-coins a:disabled, .roblib-coins .views-exposed-widget.views-submit-button a:disabled, .ir_thesisCModel .form-item a:disabled, .islandora-solr-sort a.active:disabled, .roblib-coins a:disabled, input[type="button"].green:disabled, .green.block--recent-citations--more:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled, input.green#edit-add-button:disabled, .ir_thesisCModel .form-item a.green:disabled, .islandora-solr-sort a.green:disabled, .islandora-solr-facet-wrapper .green.soft-limit:disabled, .roblib-coins a.green:disabled {
+  button.green:disabled, .block--search-navigation--list-item a.green:disabled, #edit-bookmarks-fieldset-format-opts-export-selected:disabled,
+  #edit-bookmarks-fieldset-format-opts-export-all:disabled,
+  #edit-bookmarks-users-listadd:disabled, .views-exposed-widget.views-submit-button input[type="submit"]:disabled, .views-exposed-widget.views-submit-button input#edit-add-button:disabled, .views-exposed-widget.views-submit-button .islandora-solr-sort a:disabled, .islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled, .views-exposed-widget.views-submit-button .roblib-coins a:disabled, .roblib-coins .views-exposed-widget.views-submit-button a:disabled, .ir_thesisCModel .form-item a:disabled, .islandora-solr-sort a.active:disabled, .roblib-coins a:disabled, input[type="button"].green:disabled, .green.block--recent-citations--more:disabled, input[type="reset"].green:disabled, input[type="submit"].green:disabled, input.green#edit-add-button:disabled, .ir_thesisCModel .form-item a.green:disabled, .islandora-solr-sort a.green:disabled, .islandora-solr-facet-wrapper .green.soft-limit:disabled, .roblib-coins a.green:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    button.green:disabled:hover, .block--search-navigation--list-item a.green:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, .views-exposed-widget.views-submit-button input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-sort a:disabled:hover, .islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled:hover, .ir_thesisCModel .form-item a:disabled:hover, .islandora-solr-sort a.active:disabled:hover, .roblib-coins a:disabled:hover, input[type="button"].green:disabled:hover, .green.block--recent-citations--more:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover, input.green#edit-add-button:disabled:hover, .ir_thesisCModel .form-item a.green:disabled:hover, .islandora-solr-sort a.green:disabled:hover, .islandora-solr-facet-wrapper .green.soft-limit:disabled:hover, .roblib-coins a.green:disabled:hover {
+    button.green:disabled:hover, .block--search-navigation--list-item a.green:disabled:hover, #edit-bookmarks-fieldset-format-opts-export-selected:disabled:hover,
+    #edit-bookmarks-fieldset-format-opts-export-all:disabled:hover,
+    #edit-bookmarks-users-listadd:disabled:hover, .views-exposed-widget.views-submit-button input[type="submit"]:disabled:hover, .views-exposed-widget.views-submit-button input#edit-add-button:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-sort a:disabled:hover, .islandora-solr-sort .views-exposed-widget.views-submit-button a:disabled:hover, .views-exposed-widget.views-submit-button .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .islandora-solr-facet-wrapper .views-exposed-widget.views-submit-button .soft-limit:disabled:hover, .ir_thesisCModel .form-item a:disabled:hover, .islandora-solr-sort a.active:disabled:hover, .roblib-coins a:disabled:hover, input[type="button"].green:disabled:hover, .green.block--recent-citations--more:disabled:hover, input[type="reset"].green:disabled:hover, input[type="submit"].green:disabled:hover, input.green#edit-add-button:disabled:hover, .ir_thesisCModel .form-item a.green:disabled:hover, .islandora-solr-sort a.green:disabled:hover, .islandora-solr-facet-wrapper .green.soft-limit:disabled:hover, .roblib-coins a.green:disabled:hover {
       background-color: #5C8727; }
 
 fieldset {
@@ -244,6 +254,7 @@ body {
 h1,
 h2,
 h3,
+#islandora-bookmark-detailed-overview .fieldset-title,
 h4,
 h5,
 h6 {
@@ -272,7 +283,7 @@ h2 {
       font-size: 1.8em;
       /*font-weight:bold;*/ } }
 
-h3 {
+h3, #islandora-bookmark-detailed-overview .fieldset-title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5em;
   font-weight: 500;
@@ -2045,7 +2056,7 @@ picture {
  * Styles for Islandora Bookmark.
  */
 div.islandora-bookmark-users div.form-item {
-  width: 200px;
+  width: 194px;
   display: inline-block;
   display: -moz-inline-block;
   margin-right: 10px;
@@ -2114,7 +2125,7 @@ div.islandora-bookmark-error-message {
     display: none; }
   #block-islandora-bookmark-islandora-bookmark .upei-roblib-scholar-search-bookmark, .solr-thumb .upei-roblib-scholar-search-bookmark {
     display: none; }
-  #block-islandora-bookmark-islandora-bookmark h3, .solr-thumb h3 {
+  #block-islandora-bookmark-islandora-bookmark h3, #block-islandora-bookmark-islandora-bookmark #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview #block-islandora-bookmark-islandora-bookmark .fieldset-title, .solr-thumb h3, .solr-thumb #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview .solr-thumb .fieldset-title {
     display: none; }
   #block-islandora-bookmark-islandora-bookmark .sbOptions, #block-islandora-bookmark-islandora-bookmark .sbHolder, .solr-thumb .sbOptions, .solr-thumb .sbHolder {
     width: 100%  !important; }
@@ -2207,7 +2218,9 @@ div#edit-lists a,
  *my bookmarks page
  */
 input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
-  float: right; }
+  float: right;
+  margin-top: -20px;
+  margin-bottom: 1.5em; }
 
 #islandora-bookmark-detailed-overview .csl-bib-body {
   margin-right: 0; }
@@ -2242,8 +2255,21 @@ input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-field
 #islandora-bookmark-detailed-overview fieldset#edit-bookmarks-fieldset {
   padding: 0px; }
 
-#islandora-bookmark-detailed-overview legend {
-  display: none; }
+#islandora-bookmark-detailed-overview .fieldset-legend {
+  margin: 0;
+  padding: 0; }
+
+#islandora-bookmark-detailed-overview .fieldset-title {
+  display: block;
+  color: #333;
+  pointer-events: none;
+  cursor: default; }
+
+#islandora-bookmark-detailed-overview-users {
+  border-top: 1px solid #ccc;
+  padding-top: 0.75em; }
+  #islandora-bookmark-detailed-overview-users .summary {
+    display: none; }
 
 div#islandora-bookmark-detailed-list legend {
   display: none; }
@@ -2273,11 +2299,60 @@ div#islandora-bookmark-detailed-list legend {
   padding: 0;
   margin: 0; }
 
-#islandora-bookmark-overview-form legend {
-  display: none; }
+.form-item-bookmarks-fieldset-export-options label {
+  display: none !important; }
 
-#edit-shared-bookmarks-fieldset {
-  display: none; }
+.form-item-bookmarks-fieldset-export-options {
+  width: 200px;
+  margin-right: 1em;
+  float: left; }
+
+#edit-bookmarks-fieldset h3, #edit-bookmarks-fieldset #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview #edit-bookmarks-fieldset .fieldset-title {
+  clear: both;
+  border-top: 1px solid #ccc;
+  margin-top: 0.75em;
+  padding-top: 0.75em; }
+
+#edit-bookmarks-fieldset-format-opts-export-selected {
+  margin-top: 2px; }
+
+#edit-bookmarks-fieldset-format-opts-export-all {
+  margin-top: 2px; }
+
+#edit-bookmarks-users {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+#islandora-bookmark-detailed-overview-users fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+#islandora-bookmark-detailed-overview-users legend {
+  margin-bottom: 0.75em; }
+
+#islandora-bookmark-detailed-overview-users .fieldset-wrapper h3, #islandora-bookmark-detailed-overview-users .fieldset-wrapper #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview #islandora-bookmark-detailed-overview-users .fieldset-wrapper .fieldset-title {
+  font-size: 1em; }
+
+#islandora-bookmark-detailed-overview-users .form-item-bookmarks-users-listusers {
+  width: 200px;
+  margin-right: 22px;
+  float: left; }
+
+.islandora-bookmark-users {
+  border: 1px solid #ccc;
+  width: 305px;
+  background: white;
+  margin-bottom: 5px;
+  padding: 0.75em; }
+  .islandora-bookmark-users .form-item {
+    margin: 0;
+    padding: 0; }
+
+edit-bookmarks-fieldset-remove-remove-selected,
+edit-bookmarks-fieldset-remove-remove-all {
+  margin-top: -34px; }
 
 /**
  * $BREADCRUMB
@@ -3909,11 +3984,11 @@ aside .menu li {
     padding: 10px;
     line-height: 1;
     padding: 0.375em 0.5em; }
-    .flexslider figcaption h3 {
+    .flexslider figcaption h3, .flexslider figcaption #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview .flexslider figcaption .fieldset-title {
       font-size: 1.2em;
       margin: 0; }
       @media screen and (min-width: 600px) {
-        .flexslider figcaption h3 {
+        .flexslider figcaption h3, .flexslider figcaption #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview .flexslider figcaption .fieldset-title {
           FONT-SIZE: 1.5em; } }
     .flexslider figcaption p {
       margin: 0;

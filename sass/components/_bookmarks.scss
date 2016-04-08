@@ -3,7 +3,7 @@
  * Styles for Islandora Bookmark.
  */
 div.islandora-bookmark-users div.form-item {
-	width: 200px;
+	width: 194px;
 	display: inline-block;
 	display: -moz-inline-block;
 	margin-right: 10px;
@@ -151,8 +151,9 @@ div#edit-lists a,
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
 	line-height: 1;
+
 	/*padding: ($small-spacing/2.5 $base-spacing/2);*/
-	padding: $small-spacing/1.5 $base-spacing/2;
+	padding: ($small-spacing / 1.5) ($base-spacing / 2);
 	text-decoration: none;
 	transition: background-color $base-duration $base-timing;
 	user-select: none;
@@ -189,6 +190,8 @@ div#edit-lists a,
  */
 input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
 	float: right;
+	margin-top: -20px;
+	margin-bottom: $base-spacing;
 }
 
 #islandora-bookmark-detailed-overview {
@@ -253,11 +256,28 @@ input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-field
 		padding: 0px;
 	}
 
-	legend {
-		display: none;
+	.fieldset-legend {
+		@include clean;
+	}
+
+	.fieldset-title {
+		@extend h3;
+		display: block;
+
+		color: $dark-gray;
+		pointer-events: none;
+		cursor: default;
 	}
 }
-
+#islandora-bookmark-detailed-overview-users {
+	border-top: $base-border;
+	padding-top: $small-spacing;
+	
+	.summary {
+		display: none;
+		
+	}
+}
 div#islandora-bookmark-detailed-list legend {
 	display: none;
 }
@@ -299,9 +319,104 @@ div#islandora-bookmark-detailed-list legend {
 }
 
 #islandora-bookmark-overview-form legend {
-	display: none;
+	//display: none;
 }
 
 #edit-shared-bookmarks-fieldset {
-	display: none;
+	//display: none;
+}
+
+//---------------------
+//-  bookmark export  -
+//---------------------
+
+.form-item-bookmarks-fieldset-export-options label {
+	display: none !important;
+}
+
+.form-item-bookmarks-fieldset-export-options {
+	width: 200px;
+	margin-right: 1em;
+	float: left;
+}
+
+#edit-bookmarks-fieldset h3 {
+	clear: both;
+	border-top: $base-border;
+margin-top: $small-spacing;
+padding-top: $small-spacing;
+}
+
+#edit-bookmarks-fieldset-format-opts-export-selected {
+	margin-top: 2px;
+}
+
+#edit-bookmarks-fieldset-format-opts-export-all {
+	margin-top: 2px;
+}
+
+//---------------------
+//-  bookmark export  -
+//---------------------
+
+#edit-bookmarks-users {
+	@include clean;
+
+	border: 0;
+}
+
+#islandora-bookmark-detailed-overview-users {
+	fieldset {
+		border: 0;
+
+		@include clean;
+	}
+
+	legend {
+		margin-bottom: $small-spacing;
+	}
+
+	.fieldset-wrapper h3 {
+		font-size: 1em;
+	}
+
+	.form-item-bookmarks-users-listusers {
+		width: 200px;
+		margin-right: 22px;
+		float: left;
+	}
+}
+
+.islandora-bookmark-adduser {
+	//border: $base-border;
+	//width: 305px;
+	//background: white;
+	//padding: $small-spacing;
+
+	.form-item {
+		//@include clean;
+	}
+}
+
+#edit-bookmarks-fieldset-format-opts-export-selected,
+#edit-bookmarks-fieldset-format-opts-export-all,
+#edit-bookmarks-users-listadd {
+	@extend button.green;
+}
+
+.islandora-bookmark-users {
+	border: $base-border;
+	width: 305px;
+	background: white;
+	margin-bottom: 5px;
+	padding: $small-spacing;
+
+	.form-item {
+		@include clean;
+	}
+}
+edit-bookmarks-fieldset-remove-remove-selected,
+edit-bookmarks-fieldset-remove-remove-all {
+margin-top: -34px;
+
 }
