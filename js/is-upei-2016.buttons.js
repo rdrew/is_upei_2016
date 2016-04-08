@@ -14,6 +14,10 @@
 				$(target).empty();
 				$(target).append('My Bookmarks');
 
+			var target = '.ir_thesisCModel .form-item a';
+
+				$(target).empty();
+				$(target).append('Download Thesis');
 
 		}
 	};
@@ -129,6 +133,7 @@
 	Drupal.behaviors.bookmark_button_text = {
 	 		attach: function (context, settings) {
 				$('.roblib-bookmark-form .form-submit').attr('value', 'Bookmark This');
+				$('#block-islandora-bookmark-islandora-bookmark .form-submit').attr('value', 'Bookmark This');
 			 		}
 	 	}
 
