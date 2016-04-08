@@ -23,9 +23,12 @@
 			/*********************************
 			 *  this could be done in css!!  *
 			 *********************************/
-			$('.roblib-bookmark-form select').once( function() {
+			$('.roblib-bookmark-form .form-type-select').once( function() {
 				$(this).hide();
 			});
+			//$('.roblib-bookmark-form select').once( function() {
+				//$(this).hide();
+			//});
 
 		}
 	};
@@ -35,7 +38,8 @@
 	 */
 	Drupal.behaviors.nicer_select_box = {
 		attach: function (context, settings) {
-			//$('select').selectbox("attach");
+			//$('.islandora-scholar-citation-select-form select').selectbox("attach");
+			$('select').selectbox("attach");
 		}
 	};
 
@@ -59,69 +63,6 @@
 			});
 		}
 	};
-
-	//Drupal.behaviors.button_icons = {
-	//attach: function (context, settings) {
-
-	//var target = '.roblib-bookmark-form a[href^="/islandora-bookmark/listid/"]';
-
-	//$(target, context).once(function() {
-	//$(this).empty();
-	//$(this).append('My Bookmarks');
-	//});
-
-	//var target = '#islandora-bookmark a[href^="/islandora-bookmark/listid/"]';
-
-	//$(target, context).once(function() {
-	//$(this).empty();
-	//$(this).append('My Bookmarks');
-	//});
-
-
-	//}
-	//};
-
-	//Drupal.behaviors.islandora_thumbnails = {
-	//attach: function (context, settings) {
-
-	//var image = 'img.islandora-solr-default-image.scholar-Journal--Electronic';
-	//var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-
-	//$(image, context).once(function() {
-	//$(this).replaceWith( icon );
-	//});
-
-	//var image = 'img.islandora-solr-default-image.scholar-Journal-Article';
-	//var icon = '<div class="icon-wrapper"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>';
-
-	//$(image, context).once(function() {
-	//$(this).replaceWith( icon );
-	//});
-
-	//var image = 'img.islandora-solr-default-image.scholar-Book--Whole';
-	//var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-
-	//$(image, context).once(function() {
-	//$(this).replaceWith( icon );
-	//});
-
-	//var image = 'img.islandora-solr-default-image.scholar-Book--Section';
-	//var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-
-	//$(image, context).once(function() {
-	//$(this).replaceWith( icon );
-	//});
-
-	//var image = 'img.islandora-solr-default-image.scholar-Book--Edited';
-	//var icon = '<div class="icon-wrapper"><i class="fa fa-book aria-hidden="true"></i></div>';
-
-	//$(image, context).once(function() {
-	//$(this).replaceWith( icon );
-	//});
-
-	//}
-	//};
-
 	/*
 	 *this opens the islandora metadata fieldset
 	 */
@@ -136,31 +77,6 @@
 			});
 		}
 	};
-
-	//Drupal.behaviors.solr_plus_minus = {
-	//attach: function (context, settings) {
-
-	//var target = 'a.plus';
-	//var replacement = '<i class="fa fa-search-plus" aria-hidden="true"></i>';
-
-	//$(target, context).once(function() {
-	//$(this).empty();
-	//$(this).append(replacement);
-	//});
-
-	//var target = 'a.minus';
-	//var replacement = '<i class="fa fa-search-minus" aria-hidden="true"></i>';
-
-	//$(target, context).once(function() {
-	//$(this).empty();
-	//$(this).append(replacement);
-	//});
-
-
-	//}
-	//};
-
-
 
 	/*
 	 *this moves the search results behind the page title 
