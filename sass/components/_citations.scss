@@ -2,28 +2,33 @@
 //-  lp citations block  -
 //------------------------
 .block--recent-citations--title {
-	font-size:1em;
+	font-size: 1em;
 	font-family: $roboto;
 	font-weight: normal;
+
 	@include clean;
 }
+
 .block--recent-citations--publication {
 	font-style: italic;
-	
 }
+
 .block--recent-citations dd {
-@include icon(f105);
-	margin-bottom: $base-spacing/2;
+	@include icon(f105);
+
+	margin-bottom: $base-spacing / 2;
 }
+
 .block--recent-citations--more {
 	@extend input[type="button"];
-	margin-top: $base-spacing /2;
+
+	margin-top: $base-spacing / 2;
 }
+
 //=======================
 
 .csl-bib-body {
 	font-family: $georgia;
-
 	padding-right: $base-spacing / 2;
 }
 
@@ -33,10 +38,11 @@
 		background: $light-green;
 		margin-bottom: $base-spacing;
 		padding: $base-spacing / 2;
-margin-right: 0;
+		margin-right: 0;
 		border: $base-border;
 
 		//@include small-shadow;
+
 	}
 }
 
@@ -63,18 +69,51 @@ fieldset#edit-bookmarks-fieldset td a {
 	text-align: center;
 	text-transform: uppercase;
 }
+
 .citation-page #block-islandora-bookmark-islandora-bookmark {
 	width: 164px;
-float: right;	
+	float: right;
 }
+
 .citation-page h1 {
-font-size: 1.6em;	
+	font-size: 1.6em;
 }
+
 .citation-page {
 	.islandora-inline-metadata dt {
-	    width: 12%;
+		width: 12%;
 	}
+
 	.islandora-inline-metadata dd {
-	    width: 88%;
+		width: 88%;
+	}
+}
+
+//------------------------------------------
+//-  thesis thumbnail and download button  -
+//------------------------------------------
+
+.ir_thesisCModel > a > img {
+	border: $base-border;
+	width: 200px;
+}
+
+//I am not proud of this, could break other stuff
+.ir_thesisCModel {
+	.form-item {
+		label {
+			display: none;
+		}
+
+		a {
+			@include icon(f019);
+
+			@extend input[type="submit"];
+
+			@extend button.green;
+
+			width: 200px;
+			text-align: center;
+		}
 	}
 }
