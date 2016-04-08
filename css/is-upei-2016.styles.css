@@ -2475,7 +2475,8 @@ fieldset#edit-bookmarks-fieldset td a {
     float: right;
     width: 200px; }
 
-.citation-page .ir_thesisCModel.fedora_system_FedoraObject_3_0 {
+.citation-page .ir_thesisCModel.fedora_system_FedoraObject_3_0,
+.citation-page .ir_citationCModel.fedora_system_FedoraObject_3_0 {
   clear: both; }
 
 /*
