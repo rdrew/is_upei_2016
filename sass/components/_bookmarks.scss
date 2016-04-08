@@ -356,7 +356,7 @@ padding-top: $small-spacing;
 }
 
 //---------------------
-//-  bookmark export  -
+//-  bookmark share  -
 //---------------------
 
 #edit-bookmarks-users {
@@ -398,6 +398,7 @@ padding-top: $small-spacing;
 	}
 }
 
+.islandora-bookmark-adduser input,
 #edit-bookmarks-fieldset-format-opts-export-selected,
 #edit-bookmarks-fieldset-format-opts-export-all,
 #edit-bookmarks-users-listadd {

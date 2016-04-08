@@ -9,7 +9,7 @@
 
 .scholar {
 	.scholar-image {
-//@include center-block;
+		//@include center-block;
 		width: 170px;
 	}
 
@@ -60,6 +60,10 @@
 		p {
 			/*margin-bottom: $base-spacing;*/
 		}
+	}
+
+	.activities ul {
+		@extend %default-ul;
 	}
 
 	.activities,
