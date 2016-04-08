@@ -23,7 +23,10 @@
 			/*********************************
 			 *  this could be done in css!!  *
 			 *********************************/
-			$('.roblib-bookmark-form .form-type-select').once( function() {
+			$('.islandora-bookmark-fedora-repository-object-form .form-type-select').once( function() {
+				$(this).hide();
+			});
+			$('.islandora-bookmark-fedora-repository-object-form .form-type-select').once( function() {
 				$(this).hide();
 			});
 			//$('.roblib-bookmark-form select').once( function() {
@@ -99,7 +102,7 @@
 		attach: function (context, settings) {
 
 			$('.block--search-navigation', context).once(function() {
-				$(this).insertBefore($('form#islandora-scholar-citation-select-form'));
+				$(this).insertAfter($('form#islandora-scholar-citation-select-form'));
 			});
 
 		}
