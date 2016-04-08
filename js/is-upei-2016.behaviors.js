@@ -26,12 +26,12 @@
 			$('.islandora-bookmark-fedora-repository-object-form .form-type-select').once( function() {
 				$(this).hide();
 			});
-			$('.islandora-bookmark-fedora-repository-object-form .form-type-select').once( function() {
-				$(this).hide();
-			});
-			//$('.roblib-bookmark-form select').once( function() {
+			//$('.islandora-bookmark-fedora-repository-object-form .form-type-select').once( function() {
 				//$(this).hide();
 			//});
+			$('.roblib-bookmark-form .form-type-select').once( function() {
+				$(this).hide();
+			});
 
 		}
 	};
