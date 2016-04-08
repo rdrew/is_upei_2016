@@ -1974,10 +1974,10 @@ picture {
 .fa-meanpath:before {
   content: "\f20c"; }
 
-.block--search-navigation {
-  display: inline-block;
-  float: right; }
-
+/*.block--search-navigation {*/
+/*display: inline-block;*/
+/*float: right;*/
+/*}*/
 .block--search-navigation--list {
   margin: 0;
   padding: 0;
@@ -2404,12 +2404,12 @@ fieldset#edit-bookmarks-fieldset td a {
 #islandora-scholar-citation-select-form .description {
   font-size: .9em;
   font-family: "Roboto Condensed", sans-serif;
-  text-align: center;
+  /*text-align: center;*/
   text-transform: uppercase; }
 
 .citation-page #block-islandora-bookmark-islandora-bookmark {
-  width: 164px;
-  float: right; }
+  /* width: 164px;*/
+  /*float: right;*/ }
 
 .citation-page h1 {
   font-size: 1.6em; }
@@ -2439,6 +2439,44 @@ fieldset#edit-bookmarks-fieldset td a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin-right: 4px; }
+
+.citation-page form#islandora-scholar-citation-select-form {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 23.40426%; }
+  .citation-page form#islandora-scholar-citation-select-form:last-child {
+    margin-right: 0; }
+
+.citation-page .block--islandora-solr-search-navigation {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%; }
+  .citation-page .block--islandora-solr-search-navigation:last-child {
+    margin-right: 0; }
+  .citation-page .block--islandora-solr-search-navigation .block--search-navigation--list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.citation-page #block-islandora-bookmark-islandora-bookmark {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 23.40426%;
+  margin-right: 0; }
+  .citation-page #block-islandora-bookmark-islandora-bookmark:last-child {
+    margin-right: 0; }
+  .citation-page #block-islandora-bookmark-islandora-bookmark #islandora-bookmark {
+    float: right;
+    width: 200px; }
+
+.citation-page .ir_thesisCModel.fedora_system_FedoraObject_3_0 {
+  clear: both; }
 
 /*
  *  File:         demo_table.css
@@ -3625,6 +3663,9 @@ header.l-header {
 
 .lp-menu .menu .last a {
   border-bottom: 0; }
+
+body {
+  background: blue  !important; }
 
 .pager {
   margin-bottom: 10px; }

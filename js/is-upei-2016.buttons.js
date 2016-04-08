@@ -100,13 +100,13 @@
 				$(this).prepend(replacement);
 			});
 
-			var target = '.block--search-navigation--return a';
-			var replacement = '<i class="fa fa-search aria-hidden="true"></i> Search Results';
+   /*         var target = '.block--search-navigation--return a';*/
+			//var replacement = '<i class="fa fa-search aria-hidden="true"></i> Search Results';
 
-			$(target, context).once(function() {
-				$(this).empty();
-				$(this).prepend(replacement);
-			});
+			//$(target, context).once(function() {
+				//$(this).empty();
+				//$(this).prepend(replacement);
+			//});
 
 			var target = '.block--search-navigation--next a';
 			var replacement = 'Next <i class="fa fa-arrow-right" aria-hidden="true"></i>';

@@ -7,6 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var importer = require('node-sass-globbing');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
+//var uglify = require('gulp-uglify');
 
 var sass_config = {
 	importer: importer,
@@ -26,7 +27,8 @@ gulp.task('browser-sync', function() {
 	//gulp.watch("./sass/**/*.scss", ['sass']).on('change', browserSync.reload);
 	gulp.watch("./sass/**/*.scss", ['sass']);
 	gulp.watch("./css/**/*.css").on('change', browserSync.reload);
-	gulp.watch("./js/**/*.js", ['uglify']).on('change', browserSync.reload);
+	//gulp.watch("./js/**/*.js", ['uglify']).on('change', browserSync.reload);
+	gulp.watch("./js/**/*.js").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {

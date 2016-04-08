@@ -66,13 +66,13 @@ fieldset#edit-bookmarks-fieldset td a {
 #islandora-scholar-citation-select-form .description {
 	font-size: .9em;
 	font-family: $roboto_condensed;
-	text-align: center;
+	/*text-align: center;*/
 	text-transform: uppercase;
 }
 
 .citation-page #block-islandora-bookmark-islandora-bookmark {
-	width: 164px;
-	float: right;
+	/* width: 164px;*/
+	/*float: right;*/
 }
 
 .citation-page h1 {
@@ -115,5 +115,32 @@ fieldset#edit-bookmarks-fieldset td a {
 			width: 200px;
 			text-align: center;
 		}
+	}
+}
+
+.citation-page {
+	form#islandora-scholar-citation-select-form {
+		@include span-columns(3);
+	}
+
+	.block--islandora-solr-search-navigation {
+		@include span-columns(6);
+		.block--search-navigation--list {
+			display: flex;
+			justify-content: center;
+
+		}
+	}
+
+	#block-islandora-bookmark-islandora-bookmark {
+		@include span-columns(3);
+		@include omega;
+		#islandora-bookmark {
+			float:right;
+			width: 200px;
+		}
+	}
+	.ir_thesisCModel.fedora_system_FedoraObject_3_0 {
+	    clear: both;
 	}
 }
