@@ -3050,6 +3050,12 @@ div.box {
 .views-field-MADS-status-mt {
   width: 150px; }
 
+.page-browse-dept .l-content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none; }
+
 .l-footer-wrapper {
   background: #333; }
 
