@@ -2305,6 +2305,7 @@ div#islandora-bookmark-detailed-list legend {
   margin: 0; }
 
 #islandora-bookmark-overview-form table {
+  border: 1px solid #ccc;
   padding: 0;
   margin: 0; }
 
@@ -3885,7 +3886,13 @@ header.l-header {
   padding: 1.5em; }
 
 .scholar-page .l-content {
-  background: #fff  !important; }
+  background: #fff  !important;
+  position: relative; }
+
+.scholar-page .block--search-navigation {
+  /*float: right;*/
+  position: absolute;
+  right: 0; }
 
 .scholar .scholar-image {
   width: 170px; }

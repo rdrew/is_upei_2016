@@ -5,6 +5,15 @@
 
 .scholar-page .l-content {
 	background: #fff  !important;
+	position:relative;
+}
+
+
+.scholar-page .block--search-navigation {
+	/*float: right;*/
+
+	position: absolute;
+	right: 0;
 }
 
 .scholar {
