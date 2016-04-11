@@ -3892,7 +3892,7 @@ header.l-header {
 .scholar-page .block--search-navigation {
   /*float: right;*/
   position: absolute;
-  right: 0; }
+  right: 33px; }
 
 .scholar .scholar-image {
   width: 170px; }
