@@ -582,6 +582,10 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	border: $base-border;
 	background: white;
 
+	.islandora-inline-metadata {
+		margin: 0;
+	}
+
 	.islandora-inline-metadata dt,
 	.islandora-inline-metadata dd {
 		display: inline-block;
@@ -596,17 +600,15 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 	.islandora-inline-metadata dt {
 		margin-right: -1px;
-
-		@include media($medium-screen) {
-			//width: 10%;
-		}
-
-
 		font-family: "Roboto Condensed", sans-serif;
 
 		/*font-weight: bold;*/
 		padding-right: 0;
 		word-wrap: normal;
+
+		@include media($medium-screen) {
+			//width: 10%;
+		}
 	}
 
 	.islandora-inline-metadata dd {
@@ -616,6 +618,18 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 			/*font-size: .9em;*/
 			padding-left: $base-spacing;
 		}
+	}
+}
+
+.page-islandora-search-rels-ext-ismemberofcollection-uri-mtircitationcollection .islandora-inline-metadata dt {
+	@include media($medium-screen) {
+		width: 15%;
+	}
+}
+
+.page-islandora-search-rels-ext-ismemberofcollection-uri-mtircitationcollection .islandora-inline-metadata dd {
+	@include media($medium-screen) {
+		width: 85%;
 	}
 }
 

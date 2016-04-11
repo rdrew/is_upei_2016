@@ -11,6 +11,12 @@
 	.scholar-image {
 		//@include center-block;
 		width: 170px;
+
+		img {
+			border: 1px solid #ccc;
+			padding: 4px;
+			width: 100%;
+		}
 	}
 
 	@include media(600px) {
@@ -25,27 +31,6 @@
 	}
 
 
-	//@include media($medium-screen) {
-	//@include outer-container;
-
-	//@include clearfix;
-
-	//.scholar-image {
-	//@include span-columns(2);
-
-	//img {
-	//width: 100%;
-	//}
-	//}
-
-	//.metadata {
-	//@include span-columns(10);
-
-	//@include omega;
-	//min-height: 280px;
-	//}
-	//}
-
 	.bio {
 		clear: both;
 
@@ -55,10 +40,6 @@
 
 		br {
 			display: none;
-		}
-
-		p {
-			/*margin-bottom: $base-spacing;*/
 		}
 	}
 
@@ -77,11 +58,5 @@
 /*-  fellow scholars  -*/
 /*---------------------*/
 .fellow_scholars {
-	/*height: 400px;*/
 	column-count: 3;
-}
-
-.scholar-image img {
-	border: 1px solid #ccc;
-	padding: 4px;
 }

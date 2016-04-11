@@ -3889,6 +3889,10 @@ header.l-header {
 
 .scholar .scholar-image {
   width: 170px; }
+  .scholar .scholar-image img {
+    border: 1px solid #ccc;
+    padding: 4px;
+    width: 100%; }
 
 @media screen and (min-width: 600px) {
   .scholar .scholar-image {
@@ -3907,8 +3911,6 @@ header.l-header {
   padding-top: 0.75em; }
   .scholar .bio br {
     display: none; }
-  .scholar .bio p {
-    /*margin-bottom: $base-spacing;*/ }
 
 .scholar .activities,
 .scholar .citations,
@@ -3921,14 +3923,9 @@ header.l-header {
 /*-  fellow scholars  -*/
 /*---------------------*/
 .fellow_scholars {
-  /*height: 400px;*/
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3; }
-
-.scholar-image img {
-  border: 1px solid #ccc;
-  padding: 4px; }
 
 .search-bar form {
   position: relative;
@@ -4499,6 +4496,8 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
       .islandora-solr-search-result dl {
         font-size: inherit;
         line-height: inherit; } }
+  .islandora-solr-search-result .islandora-inline-metadata {
+    margin: 0; }
   .islandora-solr-search-result .islandora-inline-metadata dt,
   .islandora-solr-search-result .islandora-inline-metadata dd {
     display: inline-block;
@@ -4519,6 +4518,14 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
     .islandora-solr-search-result .islandora-inline-metadata dd {
       /*font-size: .9em;*/
       padding-left: 1.5em; } }
+
+@media screen and (min-width: 600px) {
+  .page-islandora-search-rels-ext-ismemberofcollection-uri-mtircitationcollection .islandora-inline-metadata dt {
+    width: 15%; } }
+
+@media screen and (min-width: 600px) {
+  .page-islandora-search-rels-ext-ismemberofcollection-uri-mtircitationcollection .islandora-inline-metadata dd {
+    width: 85%; } }
 
 .islandora-solr-search-result-inner input[type="submit"], .islandora-solr-search-result-inner input#edit-add-button, .islandora-solr-search-result-inner .ir_thesisCModel .form-item a, .ir_thesisCModel .form-item .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-sort a, .islandora-solr-sort .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .islandora-solr-search-result-inner .soft-limit, .islandora-solr-search-result-inner .roblib-coins a, .roblib-coins .islandora-solr-search-result-inner a {
   /*     padding: 8px;*/
