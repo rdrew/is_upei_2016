@@ -63,7 +63,7 @@
 	<?php print render($page['sidebar_second']); ?>
   </div>
 
+</div>
   <footer class="l-footer-wrapper" role="contentinfo">
 	<?php print render($page['footer']); ?>
   </footer>
-</div>
