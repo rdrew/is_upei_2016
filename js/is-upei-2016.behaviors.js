@@ -37,6 +37,14 @@
 	};
 
 	/*
+	 *remove some elements from My Bookmarks
+	 */
+	Drupal.behaviors.book_marks_list_mods = {
+		attach: function (context, settings) {
+			$('.islandora-bookmark-overview-form .fieldset-wrapper').unwrap();
+		}
+	};
+	/*
 	 *attach at pretty selectbox dropdown
 	 */
 	Drupal.behaviors.nicer_select_box = {
@@ -101,6 +109,9 @@
 	Drupal.behaviors.citation_page_blocks = {
 		attach: function (context, settings) {
 
+			$('.page-islandora-object .block--search-navigation', context).once(function() {
+				$(this).insertBefore($('.scholar'));
+			});
 			$('.block--search-navigation', context).once(function() {
 				$(this).insertAfter($('form#islandora-scholar-citation-select-form'));
 			});
