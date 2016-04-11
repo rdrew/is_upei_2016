@@ -1,4 +1,11 @@
 
+.lp-menu .menu .leaf.last {
+	display: none;
+}
+.lp-menu .menu .leaf {
+	list-style-image: none;
+	list-style-type: none;
+}
 .lp-menu .menu .leaf {
 	list-style-image: none;
 	list-style-type: none;
