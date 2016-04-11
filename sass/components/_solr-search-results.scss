@@ -81,6 +81,7 @@
 .page-islandora-search .l-region--sidebar-second {
 	position: relative;
 	top: -10px;
+
 	/* order: 1; */
 }
 
@@ -398,16 +399,12 @@ dl.solr-thumb {
 }
 
 dl.solr-fields {
-	/*float: right;*/
-	/*width: 80%;*/
-	/*padding-left: $base-spacing;*/
-
-	//border-top: 3px solid #ddd;
-}
-
-.solr-fields dt,
-.solr-fields dd {
-	border-top: 1px solid #ddd;
+	dd,
+	dt {
+		&:not(:first-of-type) {
+			border-top: $base-border;
+		}
+	}
 }
 
 .solr-fields .mods-titleinfo-title-s {

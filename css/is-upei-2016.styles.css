@@ -4357,14 +4357,9 @@ dl.solr-thumb {
     display: -ms-flexbox;
     display: flex; } }
 
-dl.solr-fields {
-  /*float: right;*/
-  /*width: 80%;*/
-  /*padding-left: $base-spacing;*/ }
-
-.solr-fields dt,
-.solr-fields dd {
-  border-top: 1px solid #ddd; }
+dl.solr-fields dd:not(:first-of-type),
+dl.solr-fields dt:not(:first-of-type) {
+  border-top: 1px solid #ccc; }
 
 .solr-fields .mods-titleinfo-title-s {
   border-top: 0; }
