@@ -21,19 +21,24 @@
  *Page title
  */
 .page-islandora-search {
-
 	h1 {
-		display: inline-block;
+		//display: inline-block;
+		width: 200px;
+		float: left;
 	}
 
 	#islandora-solr-result-count {
-		display: inline-block;
+		//display: inline-block;
 		margin-left: 10px;
 		font-family: $roboto_condensed;
 	}
 
 	#islandora-solr-top {
 		display: none;
+	}
+
+	.l-content {
+		clear: both;
 	}
 }
 
@@ -71,6 +76,12 @@
 
 .islandora-solr-sort a.active {
 	@extend button.green;
+}
+
+.page-islandora-search .l-region--sidebar-second {
+	position: relative;
+	top: -10px;
+	/* order: 1; */
 }
 
 //--------------------------
@@ -131,7 +142,9 @@
 		}
 
 		.block__title {
-			@include icon(f085);// {{{
+			@include icon(f085);
+
+			// {{{
 
 			//text-align: center;
 			margin: 0 auto;
@@ -177,7 +190,10 @@
 				&:hover {
 					background-color: $action-color;
 				}
-			}// }}}
+			}
+
+			// }}}
+	
 		}
 
 		.block__content {
@@ -328,6 +344,9 @@ ul.islandora-solr-facet {
 dl.solr-thumb {
 	/*float: left;*/
 	/*width: 20%;*/
+	max-width: 134px;
+	min-width: 134px;
+
 	/*margin: 0;*/
 	@include media($medium-screen) {
 		margin-right: $base-spacing;
@@ -582,7 +601,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 		margin-right: -1px;
 
 		@include media($medium-screen) {
-			width: 10%;
+			//width: 10%;
 		}
 
 
@@ -595,7 +614,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 	.islandora-inline-metadata dd {
 		@include media($medium-screen) {
-			width: 90%;
+			//width: 90%;
 
 			/*font-size: .9em;*/
 			padding-left: $base-spacing;
@@ -626,7 +645,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 .roblib-fulltext a {
 	appearance: none;
 
-	@include icon(f1c1);
+	@include icon(f0ed);
 
 	background-color: $green;
 	width: 100%;
@@ -638,14 +657,15 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 	//font-family: $base-font-family;
 	font-family: $roboto_condensed;
-	font-size: .8em;
+	font-size: .9em;
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
+	line-height: 1;
 
-	/*line-height: 1;*/
-	padding: ($small-spacing / 2) ($base-spacing / 2);
+	/*padding: ($small-spacing / 2) ($base-spacing / 2);*/
+	padding: 0.5em 0.75em 0.375em;
 	text-decoration: none;
 	transition: background-color $base-duration $base-timing;
 	user-select: none;
