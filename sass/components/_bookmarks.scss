@@ -9,6 +9,7 @@ div.islandora-bookmark-users div.form-item {
 	margin-right: 10px;
 	*display: inline;
 	*zoom: 1;
+
 	*vertical-align: 2%;
 }
 
@@ -190,7 +191,7 @@ div#edit-lists a,
  */
 input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
 	float: right;
-	margin-top: -20px;
+	/*margin-top: -20px;*/
 	margin-bottom: $base-spacing;
 }
 

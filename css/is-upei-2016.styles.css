@@ -2228,7 +2228,7 @@ div#edit-lists a,
  */
 input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-fieldset-remove-remove-all {
   float: right;
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   margin-bottom: 1.5em; }
 
 #islandora-bookmark-detailed-overview .csl-bib-body {
