@@ -208,3 +208,22 @@ header.l-header {
 		@extend .l-constrained;
 	}
 }
+//-------------------
+//-  sticky footer  -
+//-------------------
+html, body {
+    height: 100%;
+}
+
+.l-page {
+    min-height: 100%;
+    margin-bottom: -300px;
+}
+
+.l-page:after {content: "";display: block;}
+
+footer {}
+
+footer, .l-content:after {
+    height: 300px;
+}

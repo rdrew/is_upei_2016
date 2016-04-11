@@ -2319,6 +2319,9 @@ div#islandora-bookmark-detailed-list legend {
 #edit-shared-bookmarks-fieldset {
   display: none; }
 
+.islandora-bookmark-detailed-form-manage {
+  display: none; }
+
 .form-item-bookmarks-fieldset-export-options label {
   display: none !important; }
 
@@ -3728,6 +3731,20 @@ header.l-header {
 /* Footer */
 .l-footer-wrapper {
   padding: 1.5em 0; }
+
+html, body {
+  height: 100%; }
+
+.l-page {
+  min-height: 100%;
+  margin-bottom: -300px; }
+
+.l-page:after {
+  content: "";
+  display: block; }
+
+footer, .l-content:after {
+  height: 300px; }
 
 .lp-menu .menu .leaf {
   list-style-image: none;
