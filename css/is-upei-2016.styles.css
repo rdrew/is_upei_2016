@@ -3743,7 +3743,7 @@ html, body {
   content: "";
   display: block; }
 
-footer, .l-content:after {
+footer, .l-page:after {
   height: 300px; }
 
 .lp-menu .menu .leaf {
