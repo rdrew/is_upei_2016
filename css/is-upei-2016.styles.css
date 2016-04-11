@@ -2304,10 +2304,20 @@ div#islandora-bookmark-detailed-list legend {
   padding: 0;
   margin: 0; }
 
+.section-islandora-bookmark .tabs {
+  display: none; }
+
 #islandora-bookmark-overview-form table {
   border: 1px solid #ccc;
   padding: 0;
   margin: 0; }
+
+#islandora-bookmark-overview-form legend,
+#edit-shared-bookmarks-fieldset-empty {
+  display: none; }
+
+#edit-shared-bookmarks-fieldset {
+  display: none; }
 
 .form-item-bookmarks-fieldset-export-options label {
   display: none !important; }
