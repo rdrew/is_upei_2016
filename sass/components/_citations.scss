@@ -93,12 +93,14 @@ fieldset#edit-bookmarks-fieldset td a {
 //-  thesis thumbnail and download button  -
 //------------------------------------------
 
-.ir_thesisCModel > a > img {
+.ir_thesisCModel > a > img,
+.ir_citationCModel > a > img {
 	border: $base-border;
 	width: 200px;
 }
 
 //I am not proud of this, could break other stuff
+.ir_citationCModel,
 .ir_thesisCModel {
 	.form-item {
 		label {
