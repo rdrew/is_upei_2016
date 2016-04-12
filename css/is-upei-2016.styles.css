@@ -2347,21 +2347,20 @@ div#islandora-bookmark-detailed-list legend {
   padding: 0;
   border: 0; }
 
-#islandora-bookmark-detailed-overview-users fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
-
-#islandora-bookmark-detailed-overview-users legend {
-  margin-bottom: 0.75em; }
-
-#islandora-bookmark-detailed-overview-users .fieldset-wrapper h3, #islandora-bookmark-detailed-overview-users .fieldset-wrapper #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview #islandora-bookmark-detailed-overview-users .fieldset-wrapper .fieldset-title {
-  font-size: 1em; }
-
-#islandora-bookmark-detailed-overview-users .form-item-bookmarks-users-listusers {
-  width: 200px;
-  margin-right: 22px;
-  float: left; }
+#islandora-bookmark-detailed-overview-users {
+  display: none; }
+  #islandora-bookmark-detailed-overview-users fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0; }
+  #islandora-bookmark-detailed-overview-users legend {
+    margin-bottom: 0.75em; }
+  #islandora-bookmark-detailed-overview-users .fieldset-wrapper h3, #islandora-bookmark-detailed-overview-users .fieldset-wrapper #islandora-bookmark-detailed-overview .fieldset-title, #islandora-bookmark-detailed-overview #islandora-bookmark-detailed-overview-users .fieldset-wrapper .fieldset-title {
+    font-size: 1em; }
+  #islandora-bookmark-detailed-overview-users .form-item-bookmarks-users-listusers {
+    width: 200px;
+    margin-right: 22px;
+    float: left; }
 
 .islandora-bookmark-users {
   border: 1px solid #ccc;
