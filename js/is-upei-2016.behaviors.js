@@ -27,7 +27,7 @@
 				$(this).hide();
 			});
 			//$('.islandora-bookmark-fedora-repository-object-form .form-type-select').once( function() {
-				//$(this).hide();
+			//$(this).hide();
 			//});
 			$('.roblib-bookmark-form .form-type-select').once( function() {
 				$(this).hide();
@@ -66,7 +66,7 @@
 				$(this).append($('#block-islandora-bookmark-islandora-bookmark'));
 			});
 
-			
+
 			var target = '#block-islandora-bookmark-islandora-bookmark';
 
 			$(target, context).once(function() {
@@ -158,7 +158,6 @@
 
 	};
 
-
 	Drupal.behaviors.mobile_facets = {
 
 		attach: function (context, settings) {
@@ -173,5 +172,38 @@
 
 	};
 
+
+	
+	Drupal.behaviors.showme = {
+
+		attach: function (context, settings) {
+			$('.block--islandora-facets .block__title').click(function() {
+			
+				$('.block--islandora-facets .block__content').toggleClass("show_me");
+				$("#block-islandora-solr-sort").toggleClass("show_me");
+
+
+			});
+		}
+
+	};
+
+	Drupal.behaviors.citation_thumbnail = {
+
+		attach: function (context, settings) {
+			//$('<div>').insertBefore('.ir_citationCModel > a');
+			$('.ir_citationCModel > a').each(function(){
+				$(this).next('.ir_citationCModel .form-item').andSelf().wrapAll('<div class="fulltext"/>');
+			});
+			$('.ir_thesisCModel > a').each(function(){
+				$(this).next('.ir_thesisCModel .form-item').andSelf().wrapAll('<div class="fulltext"/>');
+			});
+		}
+
+	};
+
+	//$('.ir_citationCModel > a').each(function(){
+	//$(this).next('.ir_citationCModel .form-item').andSelf().wrapAll('<div class="test"/>');
+	//});
 
 })(jQuery);

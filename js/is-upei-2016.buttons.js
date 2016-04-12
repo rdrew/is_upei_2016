@@ -17,7 +17,12 @@
 			var target = '.ir_thesisCModel .form-item a';
 
 				$(target).empty();
-				$(target).append('Download Thesis');
+				$(target).append('Full Text');
+
+			var target = '.ir_citationCModel .form-item a';
+
+				$(target).empty();
+				$(target).append('Full Text');
 
 		}
 	};
