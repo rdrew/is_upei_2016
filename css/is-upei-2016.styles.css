@@ -4154,7 +4154,7 @@ aside .menu li {
 @media screen and (max-width: 900px) {
   #block-islandora-solr-basic-facets .block__content,
   #block-islandora-solr-sort {
-    /*display: none;*/ }
+    display: none; }
   .show_me {
     display: block !important; }
   i {
@@ -4170,7 +4170,7 @@ aside .menu li {
     margin: 0;
     text-align: center; }
   .page-islandora-search #islandora-solr-result-count {
-    text-align: center; }
+    /*text-align: center;*/ }
   .page-islandora-search aside.l-region.l-region--sidebar-second {
     /* order: 1; */ }
   .page-islandora-search .l-content {

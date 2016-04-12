@@ -92,7 +92,7 @@
 	//Hide/close on mobile. this is tied to a jquery behavior
 	#block-islandora-solr-basic-facets .block__content,
 	#block-islandora-solr-sort {
-		/*display: none;*/
+		display: none;
 	}
 
 	.show_me {
@@ -115,7 +115,7 @@
 		}
 
 		#islandora-solr-result-count {
-			text-align: center;
+			/*text-align: center;*/
 		}
 
 		aside.l-region.l-region--sidebar-second {
