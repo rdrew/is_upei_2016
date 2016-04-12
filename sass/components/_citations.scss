@@ -66,6 +66,7 @@ fieldset#edit-bookmarks-fieldset td a {
 #islandora-scholar-citation-select-form .description {
 	font-size: .9em;
 	font-family: $roboto_condensed;
+
 	/*text-align: center;*/
 	text-transform: uppercase;
 }
@@ -93,15 +94,12 @@ fieldset#edit-bookmarks-fieldset td a {
 //-  thesis thumbnail and download button  -
 //------------------------------------------
 
-.ir_thesisCModel > a > img,
-.ir_citationCModel > a > img {
-	border: $base-border;
-	width: 200px;
-}
-
 //I am not proud of this, could break other stuff
-.ir_citationCModel,
-.ir_thesisCModel {
+.fulltext {
+	img {
+		border: $base-border;
+	}
+
 	.form-item {
 		label {
 			display: none;
@@ -114,12 +112,19 @@ fieldset#edit-bookmarks-fieldset td a {
 
 			@extend button.green;
 
-			width: 200px;
 			text-align: center;
 		}
 	}
+
+	img, .form-item a {
+		width: 200px;
+	}
 }
 
+.fulltext {
+    float: left;
+    margin-right: $base-spacing;
+}
 .citation-page {
 	form#islandora-scholar-citation-select-form {
 		@include span-columns(3);
@@ -127,23 +132,28 @@ fieldset#edit-bookmarks-fieldset td a {
 
 	.block--islandora-solr-search-navigation {
 		@include span-columns(6);
+
 		.block--search-navigation--list {
 			display: flex;
 			justify-content: center;
-
 		}
 	}
 
 	#block-islandora-bookmark-islandora-bookmark {
 		@include span-columns(3);
+
 		@include omega;
+
 		#islandora-bookmark {
-			float:right;
+			float: right;
 			width: 140px;
 		}
+
+		float: right;
 	}
+
 	.ir_thesisCModel.fedora_system_FedoraObject_3_0,
 	.ir_citationCModel.fedora_system_FedoraObject_3_0 {
-	    clear: both;
+		clear: both;
 	}
 }
