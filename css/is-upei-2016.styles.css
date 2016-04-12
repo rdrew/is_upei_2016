@@ -2232,7 +2232,8 @@ input#edit-bookmarks-fieldset-remove-remove-selected, input#edit-bookmarks-field
   margin-bottom: 1.5em; }
 
 #islandora-bookmark-detailed-overview .csl-bib-body {
-  margin-right: 0; }
+  margin-right: 0;
+  overflow: hidden; }
 
 #islandora-bookmark-detailed-overview table {
   border: 1px solid #ccc;
@@ -4153,7 +4154,7 @@ aside .menu li {
 @media screen and (max-width: 900px) {
   #block-islandora-solr-basic-facets .block__content,
   #block-islandora-solr-sort {
-    display: none; }
+    /*display: none;*/ }
   .show_me {
     display: block !important; }
   i {
