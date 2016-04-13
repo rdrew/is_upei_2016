@@ -82,11 +82,24 @@ fieldset#edit-bookmarks-fieldset td a {
 
 .citation-page {
 	.islandora-inline-metadata dt {
-		width: 12%;
+		width: 30%;
 	}
 
 	.islandora-inline-metadata dd {
-		width: 88%;
+		width: 70%;
+		padding-left: 20px;
+			
+	}
+	@include media($medium-screen) {
+		.islandora-inline-metadata dt {
+			width: 20%;
+		}
+
+		.islandora-inline-metadata dd {
+			width: 80%;
+			padding-left: 40px;
+
+		}
 	}
 }
 
@@ -96,6 +109,7 @@ fieldset#edit-bookmarks-fieldset td a {
 
 //I am not proud of this, could break other stuff
 .fulltext {
+	width:200%;
 	img {
 		border: $base-border;
 	}
@@ -117,43 +131,172 @@ fieldset#edit-bookmarks-fieldset td a {
 	}
 
 	img, .form-item a {
-		width: 200px;
+		//width: 200px;
+		width: 100%;
+	}
+	@include media( $medium-screen ){
+		float: left;
+		margin-right: $base-spacing;
 	}
 }
 
 .fulltext {
-    float: left;
-    margin-right: $base-spacing;
 }
-.citation-page {
-	form#islandora-scholar-citation-select-form {
-		@include span-columns(3);
+
+//.citation-page {
+//form#islandora-scholar-citation-select-form {
+//@include span-columns(3);
+//}
+
+//.block--islandora-solr-search-navigation {
+//@include span-columns(6);
+
+//.block--search-navigation--list {
+//display: flex;
+//justify-content: center;
+//}
+//}
+
+//#block-islandora-bookmark-islandora-bookmark {
+//@include span-columns(3);
+
+//@include omega;
+
+//#islandora-bookmark {
+//float: right;
+//width: 140px;
+//}
+
+//float: right;
+//}
+
+//.ir_thesisCModel.fedora_system_FedoraObject_3_0,
+//.ir_citationCModel.fedora_system_FedoraObject_3_0 {
+//clear: both;
+//}
+//}
+.citation-page h1 {
+	@include media( max-width $medium-screen ) {
+	
+		font-size: 1.3em;
+
+	
+	}
+	
+}
+.citation-page .l-content {
+	//-----------------
+	//-  flex layout  -
+	//-----------------
+
+	.csl-entry {
+		/* overflow: hidden; */
+		word-break: break-word;
 	}
 
-	.block--islandora-solr-search-navigation {
-		@include span-columns(6);
+	@include media(max-width $medium-screen) {
+		display: flex;
 
-		.block--search-navigation--list {
-			display: flex;
-			justify-content: center;
+		// {{{
+		flex-wrap: wrap;
+
+		.islandora-scholar-citation-select-form {
+			order: 3;
+			margin: 0 auto;
+			display: block;
+			width: 200px;
+
+			//width: 100%;
+	
 		}
-	}
 
-	#block-islandora-bookmark-islandora-bookmark {
-		@include span-columns(3);
+		#block-islandora-solr-search-navigation {
+			order: 1;
 
-		@include omega;
+			//width: 100%;
+			margin: 0 auto;
+			//width: 439px;
+			margin-bottom: 1em;
 
-		#islandora-bookmark {
-			float: right;
+			ul.block--search-navigation--list {
+				margin: 0 auto;
+				//width: 223px;
+				//float: right;
+				display: inline-flex;
+			}
+		}
+
+		#block-islandora-bookmark-islandora-bookmark {
+			order: 2;
+
+			//width: 100%;
 			width: 140px;
+			margin: 0 auto;
+			margin-bottom: 1em;
+			.form-item {
+				@include clean;
+				
+			}
 		}
 
-		float: right;
+		.ir_thesisCModel {
+			order: 4;
+			word-break: break-word;
+			font-size: .9em;
+		}
+
+		.ir_citationCModel {
+			order: 4;
+			word-break: break-word;
+		}
+
+		// }}}
+
+		.csl-entry {
+			/* overflow: hidden; */
+			font-size: .9em;
+			word-break: break-word;
+		}
+
+		//==============
 	}
 
-	.ir_thesisCModel.fedora_system_FedoraObject_3_0,
-	.ir_citationCModel.fedora_system_FedoraObject_3_0 {
-		clear: both;
+
+	@include media($medium-screen) {
+		form#islandora-scholar-citation-select-form {
+			// {{{
+			@include span-columns(3);
+		}
+
+		.block--islandora-solr-search-navigation {
+			@include span-columns(6);
+
+			.block--search-navigation--list {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		#block-islandora-bookmark-islandora-bookmark {
+			@include span-columns(3);
+
+			@include omega;
+
+			#islandora-bookmark {
+				float: right;
+				width: 140px;
+			}
+
+			float: right;
+		}
+
+		.ir_thesisCModel.fedora_system_FedoraObject_3_0,
+		.ir_citationCModel.fedora_system_FedoraObject_3_0 {
+			clear: both;
+		}
+
+		// }}}
 	}
 }
+
+//==============
