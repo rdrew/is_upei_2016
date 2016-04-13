@@ -88,9 +88,9 @@ fieldset#edit-bookmarks-fieldset td a {
 	.islandora-inline-metadata dd {
 		width: 70%;
 		padding-left: 20px;
-			
 	}
-	@include media($medium-screen) {
+
+	@include media($medium-screen-alt) {
 		.islandora-inline-metadata dt {
 			width: 20%;
 		}
@@ -98,7 +98,6 @@ fieldset#edit-bookmarks-fieldset td a {
 		.islandora-inline-metadata dd {
 			width: 80%;
 			padding-left: 40px;
-
 		}
 	}
 }
@@ -109,7 +108,9 @@ fieldset#edit-bookmarks-fieldset td a {
 
 //I am not proud of this, could break other stuff
 .fulltext {
-	width:200%;
+	width: 200px;
+	margin: 0 auto;
+
 	img {
 		border: $base-border;
 	}
@@ -134,14 +135,14 @@ fieldset#edit-bookmarks-fieldset td a {
 		//width: 200px;
 		width: 100%;
 	}
-	@include media( $medium-screen ){
+
+	@include media($medium-screen-alt) {
 		float: left;
 		margin-right: $base-spacing;
 	}
 }
 
-.fulltext {
-}
+.fulltext {}
 
 //.citation-page {
 //form#islandora-scholar-citation-select-form {
@@ -176,14 +177,12 @@ fieldset#edit-bookmarks-fieldset td a {
 //}
 //}
 .citation-page h1 {
-	@include media( max-width $medium-screen ) {
-	
+	@include media(max-width $medium-screen-alt) {
 		font-size: 1.3em;
-
-	
 	}
-	
 }
+
+
 .citation-page .l-content {
 	//-----------------
 	//-  flex layout  -
@@ -194,7 +193,7 @@ fieldset#edit-bookmarks-fieldset td a {
 		word-break: break-word;
 	}
 
-	@include media(max-width $medium-screen) {
+	@include media(max-width $medium-screen-alt) {
 		display: flex;
 
 		// {{{
@@ -215,11 +214,16 @@ fieldset#edit-bookmarks-fieldset td a {
 
 			//width: 100%;
 			margin: 0 auto;
+
 			//width: 439px;
 			margin-bottom: 1em;
 
+			.block__content {
+			line-height: 0;	
+			}
 			ul.block--search-navigation--list {
 				margin: 0 auto;
+
 				//width: 223px;
 				//float: right;
 				display: inline-flex;
@@ -228,14 +232,19 @@ fieldset#edit-bookmarks-fieldset td a {
 
 		#block-islandora-bookmark-islandora-bookmark {
 			order: 2;
+			width: 100%;
 
-			//width: 100%;
-			width: 140px;
-			margin: 0 auto;
+			/*width: 140px;*/
+			/*margin: 0 auto;*/
 			margin-bottom: 1em;
+
 			.form-item {
 				@include clean;
-				
+			}
+
+			form {
+				width: 140px;
+				margin: 0 auto;
 			}
 		}
 
@@ -262,14 +271,14 @@ fieldset#edit-bookmarks-fieldset td a {
 	}
 
 
-	@include media($medium-screen) {
+	@include media($medium-screen-alt) {
 		form#islandora-scholar-citation-select-form {
 			// {{{
-			@include span-columns(3);
+			@include span-columns(5 of 18);
 		}
 
 		.block--islandora-solr-search-navigation {
-			@include span-columns(6);
+			@include span-columns(8 of 18);
 
 			.block--search-navigation--list {
 				display: flex;
@@ -278,7 +287,7 @@ fieldset#edit-bookmarks-fieldset td a {
 		}
 
 		#block-islandora-bookmark-islandora-bookmark {
-			@include span-columns(3);
+			@include span-columns(5 of 18);
 
 			@include omega;
 
