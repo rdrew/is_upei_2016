@@ -2502,12 +2502,7 @@ fieldset#edit-bookmarks-fieldset td a {
 #islandora-scholar-citation-select-form .description {
   font-size: .9em;
   font-family: "Roboto Condensed", sans-serif;
-  /*text-align: center;*/
   text-transform: uppercase; }
-
-.citation-page #block-islandora-bookmark-islandora-bookmark {
-  /* width: 164px;*/
-  /*float: right;*/ }
 
 .citation-page h1 {
   font-size: 1.6em; }
@@ -2519,7 +2514,7 @@ fieldset#edit-bookmarks-fieldset td a {
   width: 70%;
   padding-left: 20px; }
 
-@media screen and (min-width: 774px) {
+@media screen and (min-width: 766px) {
   .citation-page .islandora-inline-metadata dt {
     width: 20%; }
   .citation-page .islandora-inline-metadata dd {
@@ -2546,20 +2541,19 @@ fieldset#edit-bookmarks-fieldset td a {
       margin-right: 4px; }
   .fulltext img, .fulltext .form-item a {
     width: 100%; }
-  @media screen and (min-width: 774px) {
+  @media screen and (min-width: 766px) {
     .fulltext {
       float: left;
       margin-right: 1.5em; } }
 
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 766px) {
   .citation-page h1 {
     font-size: 1.3em; } }
 
 .citation-page .l-content .csl-entry {
-  /* overflow: hidden; */
   word-break: break-word; }
 
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 766px) {
   .citation-page .l-content {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2592,8 +2586,6 @@ fieldset#edit-bookmarks-fieldset td a {
           -ms-flex-order: 2;
               order: 2;
       width: 100%;
-      /*width: 140px;*/
-      /*margin: 0 auto;*/
       margin-bottom: 1em; }
       .citation-page .l-content #block-islandora-bookmark-islandora-bookmark .form-item {
         margin: 0;
@@ -2613,16 +2605,15 @@ fieldset#edit-bookmarks-fieldset td a {
               order: 4;
       word-break: break-word; }
     .citation-page .l-content .csl-entry {
-      /* overflow: hidden; */
       font-size: .9em;
       word-break: break-word; } }
 
-@media screen and (min-width: 774px) {
+@media screen and (min-width: 766px) {
   .citation-page .l-content form#islandora-scholar-citation-select-form {
     float: left;
     display: block;
     margin-right: 1.40845%;
-    width: 26.76056%; }
+    width: 32.39437%; }
     .citation-page .l-content form#islandora-scholar-citation-select-form:last-child {
       margin-right: 0; }
   .citation-page .l-content .block--islandora-solr-search-navigation {
@@ -2643,7 +2634,7 @@ fieldset#edit-bookmarks-fieldset td a {
     float: left;
     display: block;
     margin-right: 1.40845%;
-    width: 26.76056%;
+    width: 21.12676%;
     margin-right: 0;
     float: right; }
     .citation-page .l-content #block-islandora-bookmark-islandora-bookmark:last-child {

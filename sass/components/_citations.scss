@@ -67,14 +67,9 @@ fieldset#edit-bookmarks-fieldset td a {
 	font-size: .9em;
 	font-family: $roboto_condensed;
 
-	/*text-align: center;*/
 	text-transform: uppercase;
 }
 
-.citation-page #block-islandora-bookmark-islandora-bookmark {
-	/* width: 164px;*/
-	/*float: right;*/
-}
 
 .citation-page h1 {
 	font-size: 1.6em;
@@ -132,7 +127,6 @@ fieldset#edit-bookmarks-fieldset td a {
 	}
 
 	img, .form-item a {
-		//width: 200px;
 		width: 100%;
 	}
 
@@ -144,44 +138,11 @@ fieldset#edit-bookmarks-fieldset td a {
 
 .fulltext {}
 
-//.citation-page {
-//form#islandora-scholar-citation-select-form {
-//@include span-columns(3);
-//}
-
-//.block--islandora-solr-search-navigation {
-//@include span-columns(6);
-
-//.block--search-navigation--list {
-//display: flex;
-//justify-content: center;
-//}
-//}
-
-//#block-islandora-bookmark-islandora-bookmark {
-//@include span-columns(3);
-
-//@include omega;
-
-//#islandora-bookmark {
-//float: right;
-//width: 140px;
-//}
-
-//float: right;
-//}
-
-//.ir_thesisCModel.fedora_system_FedoraObject_3_0,
-//.ir_citationCModel.fedora_system_FedoraObject_3_0 {
-//clear: both;
-//}
-//}
 .citation-page h1 {
 	@include media(max-width $medium-screen-alt) {
 		font-size: 1.3em;
 	}
 }
-
 
 .citation-page .l-content {
 	//-----------------
@@ -189,7 +150,7 @@ fieldset#edit-bookmarks-fieldset td a {
 	//-----------------
 
 	.csl-entry {
-		/* overflow: hidden; */
+
 		word-break: break-word;
 	}
 
@@ -205,27 +166,23 @@ fieldset#edit-bookmarks-fieldset td a {
 			display: block;
 			width: 200px;
 
-			//width: 100%;
 	
 		}
 
 		#block-islandora-solr-search-navigation {
 			order: 1;
 
-			//width: 100%;
 			margin: 0 auto;
 
-			//width: 439px;
 			margin-bottom: 1em;
 
 			.block__content {
-			line-height: 0;	
+				line-height: 0;
 			}
+
 			ul.block--search-navigation--list {
 				margin: 0 auto;
 
-				//width: 223px;
-				//float: right;
 				display: inline-flex;
 			}
 		}
@@ -234,8 +191,6 @@ fieldset#edit-bookmarks-fieldset td a {
 			order: 2;
 			width: 100%;
 
-			/*width: 140px;*/
-			/*margin: 0 auto;*/
 			margin-bottom: 1em;
 
 			.form-item {
@@ -262,7 +217,6 @@ fieldset#edit-bookmarks-fieldset td a {
 		// }}}
 
 		.csl-entry {
-			/* overflow: hidden; */
 			font-size: .9em;
 			word-break: break-word;
 		}
@@ -274,7 +228,7 @@ fieldset#edit-bookmarks-fieldset td a {
 	@include media($medium-screen-alt) {
 		form#islandora-scholar-citation-select-form {
 			// {{{
-			@include span-columns(5 of 18);
+			@include span-columns(6 of 18);
 		}
 
 		.block--islandora-solr-search-navigation {
@@ -287,7 +241,7 @@ fieldset#edit-bookmarks-fieldset td a {
 		}
 
 		#block-islandora-bookmark-islandora-bookmark {
-			@include span-columns(5 of 18);
+			@include span-columns(4 of 18);
 
 			@include omega;
 
