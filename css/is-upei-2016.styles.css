@@ -4220,10 +4220,11 @@ aside .menu li {
 
 .page-islandora-search .l-region--sidebar-second {
   position: relative;
-  top: -10px;
-  /* order: 1; */ }
+  top: -10px; }
 
 @media screen and (max-width: 900px) {
+  #block-islandora-solr-basic-facets {
+    padding: 0; }
   #block-islandora-solr-basic-facets .block__content,
   #block-islandora-solr-sort {
     display: none; }
@@ -4241,10 +4242,6 @@ aside .menu li {
   .page-islandora-search h1 {
     margin: 0;
     text-align: center; }
-  .page-islandora-search #islandora-solr-result-count {
-    /*text-align: center;*/ }
-  .page-islandora-search aside.l-region.l-region--sidebar-second {
-    /* order: 1; */ }
   .page-islandora-search .l-content {
     -webkit-order: 2;
         -ms-flex-order: 2;
@@ -4257,7 +4254,6 @@ aside .menu li {
     float: none;
     width: initial; }
   .page-islandora-search div#block-islandora-solr-sort {
-    /*display: none;*/
     margin-top: 0.75em; }
   .page-islandora-search .block__title {
     margin: 0 auto;
@@ -4305,9 +4301,7 @@ aside .menu li {
       cursor: not-allowed;
       opacity: 0.5; }
       .page-islandora-search .block__title:disabled:hover {
-        background-color: #8c2004; }
-  .page-islandora-search .block__content {
-    /*display: none;*/ } }
+        background-color: #8c2004; } }
 
 .islandora-solr-facet-wrapper {
   *zoom: 1; }
@@ -4373,7 +4367,6 @@ ul.islandora-solr-facet .count {
 ul.islandora-solr-facet {
   font-size: .9em; }
   ul.islandora-solr-facet li {
-    /* background: white; */
     border-bottom: 1px solid rgba(204, 204, 204, 0);
     border-top: 1px solid rgba(204, 204, 204, 0); }
   ul.islandora-solr-facet li:hover {
@@ -4409,11 +4402,9 @@ ul.islandora-solr-facet {
   width: 100%;
   border: 8px solid #fff;
   outline: 1px solid #ccc;
-  /* text-align: center; */
   font-size: 5em;
   margin-bottom: 10px;
   height: 160px;
-  /* position: relative; */
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4429,22 +4420,15 @@ ul.islandora-solr-facet {
   color: #8c2004;
   transition: all 0.15s ease-out 0s; }
 
-.icon-wrapper a {
-  /* position: absolute; */
-  /* bottom: 0; */ }
+@media screen and (min-width: 600px) {
+  dl.solr-thumb {
+    max-width: 134px;
+    min-width: 134px;
+    margin-right: 1.5em; } }
 
-dl.solr-thumb {
-  /*float: left;*/
-  /*width: 20%;*/
-  max-width: 134px;
-  min-width: 134px;
-  /*margin: 0;*/ }
-  @media screen and (min-width: 600px) {
-    dl.solr-thumb {
-      margin-right: 1.5em; } }
-  dl.solr-thumb img {
-    padding: 4px;
-    border: 1px solid #ccc; }
+dl.solr-thumb img {
+  padding: 4px;
+  border: 1px solid #ccc; }
 
 @media screen and (max-width: 600px) {
   .solr-thumb dt:first-child {
@@ -4603,9 +4587,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
     color: #5C8727; }
 
 .islandora-solr-search-result {
-  /*border: 1px solid #ccc;*/
   padding: 1em;
-  /*@include small-shadow;*/
   border: 1px solid #ccc;
   background: white; }
   .islandora-solr-search-result dl {
@@ -4630,12 +4612,10 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   .islandora-solr-search-result .islandora-inline-metadata dt {
     margin-right: -1px;
     font-family: "Roboto Condensed", sans-serif;
-    /*font-weight: bold;*/
     padding-right: 0;
     word-wrap: normal; }
   @media screen and (min-width: 600px) {
     .islandora-solr-search-result .islandora-inline-metadata dd {
-      /*font-size: .9em;*/
       padding-left: 1.5em; } }
 
 @media screen and (min-width: 600px) {
@@ -4645,10 +4625,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 @media screen and (min-width: 600px) {
   .page-islandora-search-rels-ext-ismemberofcollection-uri-mtircitationcollection .islandora-inline-metadata dd {
     width: 85%; } }
-
-.islandora-solr-search-result-inner input[type="submit"], .islandora-solr-search-result-inner input#edit-add-button, .islandora-solr-search-result-inner .fulltext .form-item a, .fulltext .form-item .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-sort a, .islandora-solr-sort .islandora-solr-search-result-inner a, .islandora-solr-search-result-inner .islandora-solr-facet-wrapper .soft-limit, .islandora-solr-facet-wrapper .islandora-solr-search-result-inner .soft-limit, .islandora-solr-search-result-inner .roblib-coins a, .roblib-coins .islandora-solr-search-result-inner a {
-  /*     padding: 8px;*/
-  /*font-size: .8em;*/ }
 
 .islandora-solr-search-result-inner .form-item.form-type-select {
   margin-bottom: 0;
@@ -4676,7 +4652,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1;
-  /*padding: ($small-spacing / 2) ($base-spacing / 2);*/
   padding: 0.5em 0.75em 0.375em;
   text-decoration: none;
   transition: background-color 150ms ease;
@@ -4711,7 +4686,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 /*-  check at upei  -*/
 /*-------------------*/
 .roblib-coins a {
-  /*line-height: 0;*/
   width: 100%;
   margin-bottom: 4px; }
   .roblib-coins a:before {

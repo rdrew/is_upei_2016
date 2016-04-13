@@ -22,13 +22,11 @@
  */
 .page-islandora-search {
 	h1 {
-		//display: inline-block;
 		width: 200px;
 		float: left;
 	}
 
 	#islandora-solr-result-count {
-		//display: inline-block;
 		margin-left: 10px;
 		font-family: $roboto_condensed;
 	}
@@ -81,8 +79,6 @@
 .page-islandora-search .l-region--sidebar-second {
 	position: relative;
 	top: -10px;
-
-	/* order: 1; */
 }
 
 //--------------------------
@@ -90,6 +86,10 @@
 //--------------------------
 @include media(max-width 900px) {
 	//Hide/close on mobile. this is tied to a jquery behavior
+	#block-islandora-solr-basic-facets {
+		padding: 0;
+	}
+
 	#block-islandora-solr-basic-facets .block__content,
 	#block-islandora-solr-sort {
 		display: none;
@@ -114,13 +114,9 @@
 			text-align: center;
 		}
 
-		#islandora-solr-result-count {
-			/*text-align: center;*/
-		}
+		#islandora-solr-result-count {}
 
-		aside.l-region.l-region--sidebar-second {
-			/* order: 1; */
-		}
+		aside.l-region.l-region--sidebar-second {}
 
 		.l-content {
 			order: 2;
@@ -138,7 +134,6 @@
 		}
 
 		div#block-islandora-solr-sort {
-			/*display: none;*/
 			margin-top: $base-spacing / 2;
 		}
 
@@ -147,7 +142,6 @@
 
 			// {{{
 
-			//text-align: center;
 			margin: 0 auto;
 			margin: 0 auto !important;
 			display: block !important;
@@ -160,9 +154,7 @@
 			color: #fff;
 			cursor: pointer;
 
-			//display: inline-block;
 
-			//font-family: $base-font-family;
 			font-family: $button-font;
 			font-size: $button-font-size;
 			text-transform: uppercase;
@@ -195,10 +187,6 @@
 
 			// }}}
 	
-		}
-
-		.block__content {
-			/*display: none;*/
 		}
 	}
 }
@@ -271,7 +259,6 @@ ul.islandora-solr-facet {
 	font-size: .9em;
 
 	li {
-		/* background: white; */
 		border-bottom: 1px solid rgba(204, 204, 204, 0);
 		border-top: 1px solid rgba(204, 204, 204, 0);
 	}
@@ -316,12 +303,10 @@ ul.islandora-solr-facet {
 	border: 8px solid #fff;
 	outline: $base-border;
 
-	/* text-align: center; */
 	font-size: 5em;
 	margin-bottom: 10px;
 	height: 160px;
 
-	/* position: relative; */
 	align-items: center;
 	background: $light-green;
 	justify-content: center;
@@ -337,19 +322,11 @@ ul.islandora-solr-facet {
 	@include transition;
 }
 
-.icon-wrapper a {
-	/* position: absolute; */
-	/* bottom: 0; */
-}
 
 dl.solr-thumb {
-	/*float: left;*/
-	/*width: 20%;*/
-	max-width: 134px;
-	min-width: 134px;
-
-	/*margin: 0;*/
 	@include media($medium-screen) {
+		max-width: 134px;
+		min-width: 134px;
 		margin-right: $base-spacing;
 	}
 
@@ -368,15 +345,12 @@ dl.solr-thumb {
 	.solr-thumb dt:first-child {
 		width: 50%;
 
-		//display: inline-block;
 		float: left;
 
-		//margin-right: $base-spacing/2;
 		margin-right: 5%;
 	}
 
 	.solr-thumb .solr-label {
-		//display: inline-block;
 		width: 45% !important;
 		float: left;
 	}
@@ -575,10 +549,8 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 		}
 	}
 
-	/*border: 1px solid #ccc;*/
 	padding: 1em;
 
-	/*@include small-shadow;*/
 	border: $base-border;
 	background: white;
 
@@ -602,20 +574,16 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 		margin-right: -1px;
 		font-family: "Roboto Condensed", sans-serif;
 
-		/*font-weight: bold;*/
 		padding-right: 0;
 		word-wrap: normal;
 
 		@include media($medium-screen) {
-			//width: 10%;
 		}
 	}
 
 	.islandora-inline-metadata dd {
 		@include media($medium-screen) {
-			//width: 90%;
 
-			/*font-size: .9em;*/
 			padding-left: $base-spacing;
 		}
 	}
@@ -636,8 +604,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 //shrink the bookmark button
 .islandora-solr-search-result-inner {
 	input[type="submit"] {
-		/*     padding: 8px;*/
-		/*font-size: .8em;*/
 	}
 
 	.form-item.form-type-select {
@@ -675,7 +641,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	font-weight: 400;
 	line-height: 1;
 
-	/*padding: ($small-spacing / 2) ($base-spacing / 2);*/
 	padding: 0.5em 0.75em 0.375em;
 	text-decoration: none;
 	transition: background-color $base-duration $base-timing;
@@ -710,7 +675,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 /*-------------------*/
 
 .roblib-coins a {
-	/*line-height: 0;*/
 	@include icon(f002);
 
 	@extend input[type="submit"];
