@@ -56,10 +56,10 @@ header.l-header {
 	.site-branding__logo {
 		//@include span-columns(2);
 
-		flex-basis: 140px;
+		flex-basis: 120px;
 
 		img {
-			width: 140px;
+			width: 120px;
 		}
 
 		@include media(400px) {
