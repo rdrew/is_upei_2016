@@ -3674,14 +3674,14 @@ header.l-header {
   display: flex;
   *zoom: 1; }
   .site-branding .site-branding__logo {
-    -webkit-flex-basis: 120px;
-        -ms-flex-preferred-size: 120px;
-            flex-basis: 120px;
+    -webkit-flex-basis: 140px;
+        -ms-flex-preferred-size: 140px;
+            flex-basis: 140px;
     display: inline-block;
     margin-right: 5px;
     line-height: 0; }
     .site-branding .site-branding__logo img {
-      width: 120px; }
+      width: 140px; }
     @media screen and (min-width: 400px) {
       .site-branding .site-branding__logo {
         -webkit-flex-basis: 165px;
