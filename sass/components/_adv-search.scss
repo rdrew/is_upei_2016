@@ -1,0 +1,43 @@
+//---------------------
+//-  advanced search  -
+//---------------------
+#islandora-solr-advanced-terms {
+	.messages--error,
+	label {
+		display: none !important;
+	}
+
+	.form-type-textfield {
+		top: -24px;
+		position: relative;
+	}
+
+	input.form-submit {
+		top: -25px;
+		position: relative;
+		margin: 0;
+		margin-right: 12px;
+		font-size: 1.1em;
+		border-radius: 50%;
+		padding: 8px;
+		width: 1.4em;
+		height: 1.4em;
+		line-height: 0;
+	}
+	input[value="+"] {
+		@extend button.green;
+	}
+}
+
+//==================
+
+.link--advanced-search {
+	a {
+		text-transform: uppercase;
+		font-size: .8em;
+		font-family: $roboto_condensed;
+	}
+}
+.section-search h1 {
+@include icon(f002);
+}

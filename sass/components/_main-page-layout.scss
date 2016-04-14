@@ -107,12 +107,16 @@ header.l-header {
 }
 
 .branding-container {
-	padding: ($base-spacing / 2) 0;
+	padding: ($base-spacing / 2) 0 ($base-spacing / 4) 0;
 
 	/*display: flex;*/
 }
 
-.site-branding {}
+.site-branding {
+
+	margin-top: 4px;
+
+}
 
 /* Content Area */
 .l-highlighted-wrapper {}

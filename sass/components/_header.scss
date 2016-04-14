@@ -113,12 +113,12 @@ header.l-header {
 //-------------------------------
 //-  responsive menu behaviors  -
 //-------------------------------
-
+$menu-bp: 1068px;
 
 .l-region--navigation .menu li {
 		padding-left: .6em;
 		padding-right: .6em;
-	@include media(994px) {
+	@include media($menu-bp) {
    /*     padding-left: inherit;*/
 		/*padding-right: inherit;*/
 	}
@@ -129,7 +129,7 @@ header.l-header {
 	display: block;
 	text-align: center;
 	font-size: 1.5em;
-	@include media(994px) {
+	@include media($menu-bp) {
 		display: inherit;
 		font-size: inherit;
 
@@ -139,7 +139,7 @@ header.l-header {
 
 .l-region--navigation .menu .title {
 	font-size: .8em;
-	@include media(994px) {
+	@include media($menu-bp) {
 
 		font-size: inherit;
 
