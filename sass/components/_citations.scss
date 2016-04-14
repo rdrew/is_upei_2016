@@ -188,8 +188,8 @@ fieldset#edit-bookmarks-fieldset td a {
 		}
 
 		#block-islandora-bookmark-islandora-bookmark {
-			order: 2;
 			width: 100%;
+			order: 2;
 
 			margin-bottom: 1em;
 
@@ -241,16 +241,15 @@ fieldset#edit-bookmarks-fieldset td a {
 		}
 
 		#block-islandora-bookmark-islandora-bookmark {
-			@include span-columns(4 of 18);
+			//@include span-columns(4 of 18);
 
-			@include omega;
+			//@include omega;
 
 			#islandora-bookmark {
-				float: right;
 				width: 140px;
 			}
 
-			float: right;
+			//float: right;
 		}
 
 		.ir_thesisCModel.fedora_system_FedoraObject_3_0,
@@ -262,4 +261,14 @@ fieldset#edit-bookmarks-fieldset td a {
 	}
 }
 
+.block--islandora-altmetrics {
+	float:right;
+	
+}
+.share-links {
+	@include horizontal-list();
+	float:right;
+	margin-right: $small-spacing;
+	
+}
 //==============

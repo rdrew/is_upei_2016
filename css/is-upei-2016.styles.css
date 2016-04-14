@@ -2617,10 +2617,10 @@ fieldset#edit-bookmarks-fieldset td a {
         display: -ms-inline-flexbox;
         display: inline-flex; }
     .citation-page .l-content #block-islandora-bookmark-islandora-bookmark {
+      width: 100%;
       -webkit-order: 2;
           -ms-flex-order: 2;
               order: 2;
-      width: 100%;
       margin-bottom: 1em; }
       .citation-page .l-content #block-islandora-bookmark-islandora-bookmark .form-item {
         margin: 0;
@@ -2665,21 +2665,43 @@ fieldset#edit-bookmarks-fieldset td a {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
-  .citation-page .l-content #block-islandora-bookmark-islandora-bookmark {
-    float: left;
-    display: block;
-    margin-right: 1.40845%;
-    width: 21.12676%;
-    margin-right: 0;
-    float: right; }
-    .citation-page .l-content #block-islandora-bookmark-islandora-bookmark:last-child {
-      margin-right: 0; }
-    .citation-page .l-content #block-islandora-bookmark-islandora-bookmark #islandora-bookmark {
-      float: right;
-      width: 140px; }
+  .citation-page .l-content #block-islandora-bookmark-islandora-bookmark #islandora-bookmark {
+    width: 140px; }
   .citation-page .l-content .ir_thesisCModel.fedora_system_FedoraObject_3_0,
   .citation-page .l-content .ir_citationCModel.fedora_system_FedoraObject_3_0 {
     clear: both; } }
+
+.block--islandora-altmetrics {
+  float: right; }
+
+.share-links {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  float: right;
+  margin-right: 0.75em; }
+  .share-links:before, .share-links:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  .share-links:after {
+    clear: both; }
+  .share-links li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px; }
+    .share-links li:first-child, .share-links li.first {
+      padding-left: 0; }
+    .share-links li:last-child {
+      padding-right: 0; }
+    .share-links li.last {
+      padding-right: 0; }
 
 /*
  *  File:         demo_table.css
