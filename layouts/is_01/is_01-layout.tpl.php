@@ -35,6 +35,9 @@
   <div class="l-main l-constrained">
 	<a id="main-content"></a>
 
+	<?php print $messages; ?>
+	<?php print render($page['help']); ?>
+
   <?php print render($title_prefix); ?>
 	  <?php if ($title): ?>
 		<h1><?php print $title; ?></h1>
@@ -42,8 +45,6 @@
 	  <?php print render($title_suffix); ?>
 
 	<?php print render($tabs); ?>
-	<?php print $messages; ?>
-	<?php print render($page['help']); ?>
 
 	<?php print render($page['sidebar_first']); ?>
 	<div class="l-content" role="main">
