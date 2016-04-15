@@ -80,6 +80,25 @@
 	position: relative;
 	top: -10px;
 }
+//-------------------------
+//-  current query block  -
+//-------------------------
+.block--islandora-solr-current-query {
+	background: white;
+	border: $base-border;
+	padding: $small-spacing;
+   li {
+	   font-family: $roboto_condensed;
+	   font-size: .9em;
+		
+	}
+	a {
+		//@include hide-text;
+	@include icon(f057);
+	}
+
+
+}
 
 //--------------------------
 //-  mobile facet display  -

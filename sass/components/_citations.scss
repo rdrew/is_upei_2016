@@ -174,7 +174,11 @@ fieldset#edit-bookmarks-fieldset td a {
 
 			margin: 0 auto;
 
-			margin-bottom: 1em;
+			margin-bottom: $small-spacing;
+				margin-top: $small-spacing;
+			@include media($medium-screen) {
+				margin-top: 0;
+			}
 
 			.block__content {
 				line-height: 0;

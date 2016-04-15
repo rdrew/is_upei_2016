@@ -1,28 +1,35 @@
 .l-content {
 	border: $base-border;
 	padding: $base-spacing;
-position: relative;
+	position: relative;
 }
 
 .scholar-page .l-content {
 	background: #fff  !important;
-	position:relative;
+	position: relative;
 }
-
 
 .scholar-page .block--search-navigation {
 	//[>float: right;<]
-display: flex;
-justify-content: center;
+	display: flex;
+	justify-content: center;
+
 	//position: absolute;
 	margin-bottom: $small-spacing;
+/*margin-top: $small-spacing;*/
 	//right: 33px;
 }
+
 .block--share-links {
-	position:absolute;
+	position: absolute;
+	top: $small-spacing;
 	right: 0;
-	
+
+	@include media($medium-screen) {
+	top: initial;
+	}
 }
+
 .scholar {
 	.scholar-image {
 		//@include center-block;
