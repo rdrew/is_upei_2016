@@ -4046,7 +4046,8 @@ footer, .l-page:after {
 
 .l-content {
   border: 1px solid #ccc;
-  padding: 1.5em; }
+  padding: 1.5em;
+  position: relative; }
 
 .scholar-page .l-content {
   background: #fff  !important;
