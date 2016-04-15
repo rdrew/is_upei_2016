@@ -4300,15 +4300,6 @@ aside .menu li {
   .block--islandora-solr-current-query li {
     font-family: "Roboto Condensed", sans-serif;
     font-size: .9em; }
-  .block--islandora-solr-current-query a:before {
-    content: "\f057";
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 4px; }
 
 @media screen and (max-width: 900px) {
   #block-islandora-solr-basic-facets {
