@@ -10,12 +10,18 @@
 
 
 .scholar-page .block--search-navigation {
-	/*float: right;*/
-
-	position: absolute;
-	right: 33px;
+	//[>float: right;<]
+display: flex;
+justify-content: center;
+	//position: absolute;
+	margin-bottom: $small-spacing;
+	//right: 33px;
 }
-
+.block--share-links {
+	position:absolute;
+	right: 0;
+	
+}
 .scholar {
 	.scholar-image {
 		//@include center-block;

@@ -4053,9 +4053,17 @@ footer, .l-page:after {
   position: relative; }
 
 .scholar-page .block--search-navigation {
-  /*float: right;*/
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.75em; }
+
+.block--share-links {
   position: absolute;
-  right: 33px; }
+  right: 0; }
 
 .scholar .scholar-image {
   width: 170px; }
