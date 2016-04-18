@@ -80,37 +80,20 @@
 	position: relative;
 	top: -10px;
 }
-//-------------------------
-//-  current query block  -
-//-------------------------
-.block--islandora-solr-current-query {
-	background: white;
-	border: $base-border;
-	padding: $small-spacing;
-   li {
-	   font-family: $roboto_condensed;
-	   font-size: .9em;
-		
-	}
-	a {
-		//@include hide-text;
-	//@include icon(f057);
-	}
 
-
-}
 
 //--------------------------
 //-  mobile facet display  -
 //--------------------------
 @include media(max-width 900px) {
-	//Hide/close on mobile. this is tied to a jquery behavior
+	//Hide/close on mobile. this is tied to a jquery behavior// {{{
 	#block-islandora-solr-basic-facets {
 		padding: 0;
 	}
 
 	#block-islandora-solr-basic-facets .block__content,
-	#block-islandora-solr-sort {
+	#block-islandora-solr-sort,
+	.block--islandora-solr-current-query {
 		display: none;
 	}
 
@@ -172,8 +155,6 @@
 			border-radius: $base-border-radius;
 			color: #fff;
 			cursor: pointer;
-
-
 			font-family: $button-font;
 			font-size: $button-font-size;
 			text-transform: uppercase;
@@ -208,6 +189,8 @@
 	
 		}
 	}
+
+	// }}}
 }
 
 
@@ -270,6 +253,23 @@ ul.islandora-solr-facet .count {
 	}
 }
 
+//-------------------------
+//-  current query block  -
+//-------------------------
+.block--islandora-solr-current-query {
+	@extend .islandora-solr-facet-wrapper;
+}
+.block--islandora-solr-current-query li {
+	font-family: $roboto_condensed;
+	font-size: .9em;
+	background: $light-green;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+
+}
+.block--islandora-solr-current-query i {
+color:$red !important; 
+}
 /* Theme style sheet for islandora solr */
 
 /* breadcrumbs */
@@ -321,11 +321,9 @@ ul.islandora-solr-facet {
 	width: 100%;
 	border: 8px solid #fff;
 	outline: $base-border;
-
 	font-size: 5em;
 	margin-bottom: 10px;
 	height: 160px;
-
 	align-items: center;
 	background: $light-green;
 	justify-content: center;
@@ -340,7 +338,6 @@ ul.islandora-solr-facet {
 
 	@include transition;
 }
-
 
 dl.solr-thumb {
 	@include media($medium-screen) {
@@ -363,9 +360,7 @@ dl.solr-thumb {
 @include media(max-width 600px) {
 	.solr-thumb dt:first-child {
 		width: 50%;
-
 		float: left;
-
 		margin-right: 5%;
 	}
 
@@ -569,7 +564,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	}
 
 	padding: 1em;
-
 	border: $base-border;
 	background: white;
 
@@ -592,17 +586,14 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	.islandora-inline-metadata dt {
 		margin-right: -1px;
 		font-family: "Roboto Condensed", sans-serif;
-
 		padding-right: 0;
 		word-wrap: normal;
 
-		@include media($medium-screen) {
-		}
+		@include media($medium-screen) {}
 	}
 
 	.islandora-inline-metadata dd {
 		@include media($medium-screen) {
-
 			padding-left: $base-spacing;
 		}
 	}
@@ -622,8 +613,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 
 //shrink the bookmark button
 .islandora-solr-search-result-inner {
-	input[type="submit"] {
-	}
+	input[type="submit"] {}
 
 	.form-item.form-type-select {
 		margin-bottom: 0;
@@ -659,7 +649,6 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
 	line-height: 1;
-
 	padding: 0.5em 0.75em 0.375em;
 	text-decoration: none;
 	transition: background-color $base-duration $base-timing;
