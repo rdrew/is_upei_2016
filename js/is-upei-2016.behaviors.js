@@ -42,31 +42,31 @@
 	Drupal.behaviors.facebook = {
 		attach: function (context, settings) {
 			(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
 		}
 	};
 	Drupal.behaviors.twitter = {
 		attach: function (context, settings) {
 			window.twttr = (function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0],
-			    t = window.twttr || {};
-			  if (d.getElementById(id)) return t;
-			  js = d.createElement(s);
-			  js.id = id;
-			  js.src = "https://platform.twitter.com/widgets.js";
-			  fjs.parentNode.insertBefore(js, fjs);
-			 
-			  t._e = [];
-			  t.ready = function(f) {
-			        t._e.push(f);
-			      };
-			 
-			  return t;
+				var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+			if (d.getElementById(id)) return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+
+			t._e = [];
+			t.ready = function(f) {
+				t._e.push(f);
+			};
+
+			return t;
 			}(document, "script", "twitter-wjs"));
 		}
 	};
@@ -104,7 +104,7 @@
 			//var target = '#block-islandora-bookmark-islandora-bookmark';
 
 			//$(target, context).once(function() {
-				//$(this).insertAfter($('#islandora-scholar-citation-select-form'));
+			//$(this).insertAfter($('#islandora-scholar-citation-select-form'));
 			//});
 		}
 	};
@@ -169,12 +169,6 @@
 	};
 
 
-
-
-	/*
-	 *move the solr sort box after the facet block title
-	 */
-
 	Drupal.behaviors.equal_height_lp_blocks = {
 
 		attach: function (context, settings) {
@@ -182,15 +176,35 @@
 		}
 
 	};
+
+	/*
+	 *move the solr sort box after the facet block title
+	 */
+
 	Drupal.behaviors.move_the_sort = {
 
 		attach: function (context, settings) {
-			$('.block--islandora-facets .block__title', context).once(function() {
-				$(this).after($('#block-islandora-solr-sort'));	
-			});
+			var location = '.block--islandora-facets .block__title';
+			var target = '.block--islandora-solr-current-query';
+
+			$(target).insertAfter(location);
+
+			var target = '#block-islandora-solr-sort';
+
+			$(target).insertAfter(location);
 		}
 
 	};
+	//Drupal.behaviors.move_the_sort = {
+
+	//attach: function (context, settings) {
+	//$('.block--islandora-facets .block__title', context).once(function() {
+	//$(this).after($('#block-islandora-solr-sort'));	
+	////$('#myDiv1>p').appendTo( $('#myDiv2') ); 
+	//});
+	//}
+
+	//};
 
 	Drupal.behaviors.mobile_facets = {
 
@@ -200,20 +214,20 @@
 				$("#block-islandora-solr-basic-facets .block__content").toggleClass("show_me", 500);
 				$("#block-islandora-solr-sort").toggleClass("show_me", 500);
 
-
 			} );
 		}
 
 	};
 
 
-	
+
 	Drupal.behaviors.showme = {
 
 		attach: function (context, settings) {
 			$('.block--islandora-facets .block__title').click(function() {
-			
+
 				$('.block--islandora-facets .block__content').toggleClass("show_me");
+				$('.block--islandora-solr-current-query').toggleClass("show_me");
 				$("#block-islandora-solr-sort").toggleClass("show_me");
 
 
