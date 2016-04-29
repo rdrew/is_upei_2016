@@ -2,8 +2,12 @@
 	border: $base-border;
 	padding: $base-spacing;
 	position: relative;
+	border-top: 0;
 }
 
+.tabs--primary {
+border-bottom: $base-border;
+}
 .scholar-page .l-content {
 	background: #fff  !important;
 	position: relative;
@@ -82,4 +86,13 @@
 /*---------------------*/
 .fellow_scholars {
 	column-count: 3;
+}
+
+.rss div {
+	display: flex;
+	img {
+		margin-right: $small-spacing;
+		
+	}
+	
 }

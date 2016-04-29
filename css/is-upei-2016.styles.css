@@ -3202,6 +3202,10 @@ div.box {
   border: 0;
   background: none; }
 
+.export-pages .l-content {
+  margin: 0;
+  padding: 0; }
+
 .l-footer-wrapper {
   background: #333; }
 
@@ -4053,7 +4057,11 @@ footer, .l-page:after {
 .l-content {
   border: 1px solid #ccc;
   padding: 1.5em;
-  position: relative; }
+  position: relative;
+  border-top: 0; }
+
+.tabs--primary {
+  border-bottom: 1px solid #ccc; }
 
 .scholar-page .l-content {
   background: #fff  !important;
@@ -4116,6 +4124,13 @@ footer, .l-page:after {
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3; }
+
+.rss div {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .rss div img {
+    margin-right: 0.75em; }
 
 .search-bar form {
   position: relative;
@@ -4439,7 +4454,9 @@ ul.islandora-solr-facet .count {
   font-size: .9em;
   background: #e7ede0;
   border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc; }
+  border-top: 1px solid #ccc;
+  margin-bottom: 2px;
+  padding: 0 4px; }
 
 .block--islandora-solr-current-query i {
   color: #8c2004 !important; }
