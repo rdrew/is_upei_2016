@@ -1,6 +1,15 @@
 (function ($) {
 
 	//this is a bit of a hack that removes the default selectlist, making the remaing one selected 
+	//Drupal.behaviors.metadata_links = {
+		//attach: function (context, settings) {
+			//var twitter_handle = $('dt:contains("Twitter")').next().text().trim();
+			//$('dt:contains("Twitter")').next().replaceWith( '<dd><a href="https://twitter.com/' + twitter_handle + '">' + twitter_handle + '</a></dd>' );
+
+		//}
+	//};
+
+
 	Drupal.behaviors.selectlist_defaults = {
 		attach: function (context, settings) {
 

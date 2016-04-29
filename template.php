@@ -25,6 +25,3 @@ function IS_UPEI_2016_form_alter(&$form, &$form_state, $form_id) {
   //drupal_add_library('system','ui.button');
   //drupal_add_js(path_to_theme().'/ls/is-upei-2016.behaviors.js','file');
 }
-function IS_UPEI_2016_islandora_bookmark_object_markup() {
-		 dpm( get_defined_vars() );
-}

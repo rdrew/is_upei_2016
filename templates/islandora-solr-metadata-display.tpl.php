@@ -19,49 +19,88 @@
  */
 ?>
 
+<?php
+/*****************************
+ *  metadata external links  *
+ *****************************/
+
+$webservice_links = array(
+	'googlescholar' => array(
+		'field_name' => 'MADS_googlescholar_ms',
+		'url'        => 'scholar.google.ca/citations?user=',
+	),
+	'mendeley' => array(
+		'field_name' => 'MADS_mendeley_ms',
+		'url'        => 'mendeley.com/profiles/',
+	),
+	'twitter' => array(
+		'field_name' => 'MADS_twitter_ms',
+		'url'        => 'twitter.com/',
+	),
+	'orcid' => array(
+		'field_name' => 'MADS_orcid_ms',
+		'url'        => 'orcid.org/',
+	),
+);
+
+foreach ( $webservice_links as $webservice_links ) {
+	//get the id
+	$id = $solr_fields[$webservice_links['field_name']]['value'][0];
+	//check to see if it is empty
+	if (!empty($id)){ 	
+		//make the new link
+		$new_link =  '<a href="http://' .  $webservice_links['url'] .  $id .  '">' .  $id .  '</a>';
+		//reset the target var
+		$solr_fields[$webservice_links['field_name']]['value'][0] = $new_link;
+	}
+}
+?>
+
+
 <?php if ($found):
-  if (!(empty($solr_fields) && variable_get('islandora_solr_metadata_omit_empty_values', FALSE))):?>
+if (!(empty($solr_fields) && variable_get('islandora_solr_metadata_omit_empty_values', FALSE))):?>
 <fieldset <?php $print ? print('class="islandora islandora-metadata"') : print('class="islandora islandora-metadata collapsible collapsed"');?>>
   <legend><span class="fieldset-legend"><?php print t('Details'); ?></span></legend>
   <div class="fieldset-wrapper">
-    <dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
-      <?php $row_field = 0; ?>
-      <?php foreach($solr_fields as $value): ?>
-        <dt class="<?php print $row_field == 0 ? ' first' : ''; ?>">
-          <?php print $value['display_label']; ?>
-        </dt>
-        <dd class="<?php print $row_field == 0 ? ' first' : ''; ?>">
-          <?php print check_markup(implode("\n", $value['value']), 'islandora_solr_metadata_filtered_html'); ?>
-        </dd>
-        <?php $row_field++; ?>
-      <?php endforeach; ?>
-      <?php if (!empty($coins_url)) :?>
-      <dt class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-coins">
-          Check at UPEI
-        </dt>
-        <dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-coins-value">
-          <?php print $coins_url; ?>
-        </dd>
-      <?php endif; ?>
-      <?php if (!empty($upei_scholar_views)) :?>
-      <dt class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats">
-          Statistics
-        </dt>
-        <dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats-value">
-          <?php print 'views: ' . $upei_scholar_views ; ?>
-          <?php if(!empty($upei_scholar_downloads)) print ', downloads: ' . $upei_scholar_downloads; ?>
-        </dd>
-      <?php endif; ?>
-    </dl>
+	<dl xmlns:dcterms="http://purl.org/dc/terms/" class="islandora-inline-metadata islandora-metadata-fields">
+	  <?php $row_field = 0; ?>
+	  <?php foreach($solr_fields as $value): ?>
+		<dt class="<?php print $row_field == 0 ? ' first' : ''; ?>">
+		  <?php print $value['display_label']; ?>
+		</dt>
+		<dd class="<?php print $row_field == 0 ? ' first' : ''; ?>">
+		  <?php print check_markup(implode("\n", $value['value']), 'islandora_solr_metadata_filtered_html'); ?>
+		</dd>
+		<?php $row_field++; ?>
+	  <?php endforeach; ?>
+	  <?php if (!empty($coins_url)) :?>
+	  <dt class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-coins">
+		  Check at UPEI
+		</dt>
+		<dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-coins-value">
+		  <?php print $coins_url; ?>
+		</dd>
+	  <?php endif; ?>
+	  <?php if (!empty($upei_scholar_views)) :?>
+	  <dt class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats">
+		  Statistics
+		</dt>
+		<dd class="<?php print $row_field == 0 ? ' first' : ''; ?> scholar-stats-value">
+		  <?php print 'views: ' . $upei_scholar_views ; ?>
+		  <?php if(!empty($upei_scholar_downloads)) print ', downloads: ' . $upei_scholar_downloads; ?>
+		</dd>
+	  <?php endif; ?>
+	</dl>
   </div>
 </fieldset>
 <?php endif; ?>
 <?php else: ?>
   <fieldset <?php $print ? print('class="islandora islandora-metadata"') : print('class="islandora islandora-metadata collapsible collapsed"');?>>
-    <legend><span class="fieldset-legend"><?php print t('Details'); ?></span></legend>
-    <?php //XXX: Hack in markup for message. ?>
-    <div class="messages--warning messages warning">
-      <?php print $not_found_message; ?>
-    </div>
+	<legend><span class="fieldset-legend"><?php print t('Details'); ?></span></legend>
+	<?php //XXX: Hack in markup for message. ?>
+	<div class="messages--warning messages warning">
+	  <?php print $not_found_message; ?>
+	</div>
   </fieldset>
 <?php endif; ?>
+
