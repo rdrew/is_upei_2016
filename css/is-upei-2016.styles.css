@@ -3435,22 +3435,6 @@ dl.islandora-metadata-fields {
   padding-bottom: 4px;
   margin: 0; }
 
-/*
-		  *scholar-page
-		  */
-.scholar-page legend {
-  display: none; }
-
-.scholar-page fieldset.islandora-metadata {
-  border: 0px;
-  padding: 0;
-  background-color: none;
-  background: none;
-  margin-bottom: 0px; }
-
-.scholar-page p {
-  margin: 0; }
-
 @CHARSET "UTF-8";
 .sbHolder {
   /*background-color: #2d2d2d;*/
@@ -4062,6 +4046,10 @@ footer, .l-page:after {
 
 .tabs--primary {
   border-bottom: 1px solid #ccc; }
+  .tabs--primary a {
+    border-bottom: 1px solid #ccc; }
+  .tabs--primary a.active {
+    border-bottom: 1px solid #fff; }
 
 .scholar-page .l-content {
   background: #fff  !important;
@@ -4084,6 +4072,19 @@ footer, .l-page:after {
   @media screen and (min-width: 600px) {
     .block--share-links {
       top: initial; } }
+
+/*
+		  *scholar-page
+		  */
+.scholar-page legend {
+  display: none; }
+
+.scholar-page fieldset.islandora-metadata {
+  border: 0px;
+  padding: 0;
+  background-color: none;
+  background: none;
+  margin-bottom: 0px; }
 
 .scholar .scholar-image {
   width: 170px; }
