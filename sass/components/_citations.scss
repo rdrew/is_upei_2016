@@ -19,7 +19,10 @@
 	margin-bottom: $base-spacing / 2;
 }
 
-.block--recent-citations--more {
+.block--recent-citations--more,
+.more-link a {
+	text-align: initial;
+
 	@extend input[type="button"];
 
 	margin-top: $base-spacing / 2;

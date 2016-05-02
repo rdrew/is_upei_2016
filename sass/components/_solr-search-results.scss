@@ -647,7 +647,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a {
 	font-family: $roboto_condensed;
 	font-size: .9em;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: $small-spacing/2;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
 	line-height: 1;
