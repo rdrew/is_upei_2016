@@ -2526,6 +2526,12 @@ edit-bookmarks-fieldset-remove-remove-all {
   text-align: initial;
   margin-top: 0.75em; }
 
+.page-citations .l-content {
+  background: none;
+  border: 0px;
+  margin: 0;
+  padding: 0; }
+
 .csl-bib-body {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   padding-right: 0.75em; }

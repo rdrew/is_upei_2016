@@ -29,7 +29,11 @@
 }
 
 //=======================
-
+.page-citations .l-content {
+    background: none;
+    border: 0px;
+	@include clean;
+}
 .csl-bib-body {
 	font-family: $georgia;
 	padding-right: $base-spacing / 2;
