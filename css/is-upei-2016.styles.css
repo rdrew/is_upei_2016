@@ -2521,6 +2521,9 @@ edit-bookmarks-fieldset-remove-remove-all {
     -moz-osx-font-smoothing: grayscale;
     margin-right: 4px; }
 
+.view-recent-citations .more-link {
+  text-align: initial; }
+
 .block--recent-citations--more,
 .more-link a {
   text-align: initial;
