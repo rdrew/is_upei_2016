@@ -3228,12 +3228,29 @@ div.box {
   border: 0;
   background: none; }
 
-.export-pages .l-content {
+.export-page .l-content {
   margin: 0;
   padding: 0; }
+  .export-page .l-content table {
+    margin: 0; }
+  .export-page .l-content .block--share-links {
+    display: none; }
+
+table th {
+  padding-left: 1em !important; }
+
+/*citations export form*/
+.islandora-entities-citation-form .select-all {
+  width: 4em  !important; }
+
+.islandora-entities-citation-form th:last-child {
+  width: 200px !important; }
 
 .l-footer-wrapper {
   background: #333; }
+
+.l-main .messages--error {
+  display: none; }
 
 .l-content {
   background: white; }
