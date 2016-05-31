@@ -23,19 +23,19 @@
 		  <p><?php print $variables['biography']; ?></p>
 		<?php endif; ?>
 	</div>
-		<div class="activities islandora-object-activities">
+	<div class="view--citations">
+		<h3>
+		Recent Publications
+	</h3>
+	<?php print views_embed_view('recent_citations', 'citations', $identifier); ?>
+	</div>
+	<div class="activities islandora-object-activities">
 	  <?php if (isset($variables['activities'])): ?>
 		<?php print $variables['activities']; ?>
 	  <?php endif; ?>
 	</div>
 
 
-	<div class="view--citations">
-<h3>
-	Recent Citations
-</h3>
-<?php print views_embed_view('recent_citations', 'citations', $identifier); ?>
-	</div>
 
 
 	<div class="other-scholars islandora-object-scholars">
