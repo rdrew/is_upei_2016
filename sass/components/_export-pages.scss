@@ -1,6 +1,28 @@
-.export-pages {
+.export-page {
 	.l-content {
-	@include clean;
+		@include clean;
+
+		table {
+			margin: 0;
+		}
+
+		.block--share-links {
+			display: none;
+		}
 	}
+}
+table th {
+	padding-left: 1em !important;
+
 	
+}
+/*citations export form*/
+.islandora-entities-citation-form {
+	.select-all {
+		width: 4em  !important;
+	}
+
+	th:last-child {
+		width: 200px !important;
+	}
 }

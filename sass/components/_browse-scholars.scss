@@ -1,4 +1,4 @@
-.page-browse-scholars .l-content,
+.page-scholars .l-content,
 .page-browse-scholars-dt .l-content {
 	border: 0;
 	background: none;
@@ -8,7 +8,7 @@
 /*
  *search widgets
  */
-.page-browse-scholars .views-exposed-widgets,{
+.page-scholars .views-exposed-widgets,{
 	background: white;
 	padding: $base-spacing;
 
@@ -36,10 +36,10 @@
 /*
  *Table stuff
  */
-//.page-browse-scholars table * {
+//.page-scholars table * {
 //background: none !important;
 //}
-.page-browse-scholars table {
+.page-scholars table {
 	@include small-shadow;
 
 	th {
@@ -71,18 +71,38 @@
 	td:first-child, th:first-child {
 		padding-left: 10px;
 	}
-
-	th.views-field.views-field-MADS-organization-mt {
-		width: 25%;
+   td.active {
+	   background: initial;
+		
 	}
+	/*th.views-field.views-field-MADS-fullname-s {*/
+		/*width: 25%;*/
+	/*}*/
+	/*th.views-field.views-field-MADS-organization-mt {*/
+		/*width: 25%;*/
+	/*}*/
 
-	th.views-field.views-field-MADS-status-mt, th.views-field.views-field-MADS-given-s {
-		width: 8%;
+	/*th.views-field.views-field-MADS-status-mt, th.views-field.views-field-MADS-given-s {*/
+		/*width: 8%;*/
+	/*}*/
+
+	/*th.views-field.views-field-MADS-fullname-s {}*/
+
+	/*th.views-field.views-field-MADS-family-s {*/
+		/*width: 15%;*/
+	/*}*/
+}
+.more-link.publications_button a {
+    width: 100%;
+    text-align: center;
+	margin-bottom: $small-spacing;
+	padding: 0.5em 0.75em;
+	i {
+		margin-right: 5px;
+		
 	}
+}
 
-	th.views-field.views-field-MADS-fullname-s {}
-
-	th.views-field.views-field-MADS-family-s {
-		width: 15%;
-	}
+div#islandora-bookmark #edit-lists {
+    margin-bottom: 0;
 }
