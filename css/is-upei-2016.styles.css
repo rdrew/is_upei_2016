@@ -229,7 +229,8 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-  .scholar .activities ul {
+  .scholar .activities ul,
+  .scholar .view--classification ul {
     list-style-type: disc;
     margin-bottom: 0.75em;
     padding-left: 1.5em; }
@@ -2508,17 +2509,6 @@ edit-bookmarks-fieldset-remove-remove-all {
   .page-scholars table td.active {
     background: initial; }
 
-.more-link.publications_button a {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0.75em;
-  padding: 0.5em 0.75em; }
-  .more-link.publications_button a i {
-    margin-right: 5px; }
-
-div#islandora-bookmark #edit-lists {
-  margin-bottom: 0; }
-
 .block--recent-citations--title {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
@@ -4174,6 +4164,7 @@ footer, .l-page:after {
   .scholar .bio br {
     display: none; }
 
+.scholar .view--classification,
 .scholar .activities,
 .scholar .citations,
 .scholar .other-scholars {
@@ -4195,6 +4186,17 @@ footer, .l-page:after {
   display: flex; }
   .rss div img {
     margin-right: 0.75em; }
+
+.more-link.publications_button a {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.75em; }
+  .more-link.publications_button a i {
+    margin-right: 3px; }
+
+div#islandora-bookmark #edit-lists {
+  margin-bottom: 0; }
 
 .search-bar form {
   position: relative;
