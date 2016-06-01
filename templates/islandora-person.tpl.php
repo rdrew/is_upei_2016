@@ -3,6 +3,7 @@
  * @file
  * This is the template file for the object page for person objects.
  */
+$identifier = $variables['u1'];
 ?>
 <div class="scholar islandora-object islandora">
 
@@ -29,6 +30,12 @@
 	</h3>
 	<?php print views_embed_view('recent_citations', 'citations', $identifier); ?>
 	</div>
+	<div class="view--classification">
+		<h3>
+Research Classification
+	</h3>
+	<?php print views_embed_view('classification', 'block', $identifier); ?>
+	</div>
 	<div class="activities islandora-object-activities">
 	  <?php if (isset($variables['activities'])): ?>
 		<?php print $variables['activities']; ?>
@@ -51,3 +58,4 @@
 		<?php endif; ?>
 	</div>
 </div>
+
