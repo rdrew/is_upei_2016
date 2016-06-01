@@ -100,10 +100,12 @@
 		}
 	}
 
-	.activities ul {
+	.activities ul,
+	.view--classification ul {
 		@extend %default-ul;
 	}
 
+.view--classification,
 	.activities,
 	.citations,
 	.other-scholars {
@@ -124,4 +126,19 @@
 	img {
 		margin-right: $small-spacing;
 	}
+}
+
+.more-link.publications_button a {
+    width: 100%;
+    text-align: center;
+	margin-bottom: $small-spacing;
+	padding: 0.5em 0.75em;
+	i {
+		margin-right: 3px;
+		
+	}
+}
+
+div#islandora-bookmark #edit-lists {
+    margin-bottom: 0;
 }
