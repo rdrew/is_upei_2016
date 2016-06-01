@@ -2,6 +2,12 @@
 
 
 
+	Drupal.behaviors.citation_link = {
+		attach: function (context, settings) {
+			$('.scholar-page .more-link').clone().appendTo('#islandora-bookmark').addClass("publications_button");
+			$('.publications_button a').contents().replaceWith('<i class="fa fa-book" aria-hidden="true"></i> View Publications');
+		}
+	};
 	Drupal.behaviors.button_icons = {
 		attach: function (context, settings) {
 
