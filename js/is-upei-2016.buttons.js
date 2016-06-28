@@ -4,8 +4,14 @@
 
 	Drupal.behaviors.citation_link = {
 		attach: function (context, settings) {
-			$('.scholar-page .more-link').clone().appendTo('#islandora-bookmark').addClass("publications_button");
-			$('.publications_button a').contents().replaceWith('<i class="fa fa-book" aria-hidden="true"></i> View Publications');
+			$(".scholar-page .more-link", context).once(function() {
+				$(this).clone().appendTo('.scholar-image').addClass("publications_button");
+			});
+			
+			$('.publications_button a', context).once(function() {
+				$(this).contents().replaceWith('<i class="fa fa-book" aria-hidden="true"></i>View Publications');
+			});
+
 		}
 	};
 	Drupal.behaviors.button_icons = {
@@ -39,17 +45,17 @@
 			//details tab
 			var target = '.tabs--primary li:nth-child(1) a[href^="/islandora/object/"]';
 			var replacement = ' <i class="fa fa-user" aria-hidden="true"></i> Scholar Details'
-			$(target).empty();
+				$(target).empty();
 			$(target).append(replacement);
 			//citations tab
 			var target = '.tabs--primary a[href$="citations"]';
 			var replacement = ' <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Export Citations '
-			$(target).empty();
+				$(target).empty();
 			$(target).append(replacement);
 			//theses tab
 			var target = '.tabs--primary a[href$="theses"]';
 			var replacement = ' <i class="fa fa-book" aria-hidden="true"></i> Export Theses '
-			$(target).empty();
+				$(target).empty();
 			$(target).append(replacement);
 
 		}
@@ -194,6 +200,11 @@
 	}
 
 
+	Drupal.behaviors.move_bookmark_on_cit_page = {
+		attach: function (context, settings) {
+			$('.citation-page .fulltext .form-item').after($( '#block-islandora-bookmark-islandora-bookmark' ));
+		}
+	}
 
 
 
