@@ -1,7 +1,7 @@
 .l-main .messages--error {
 	display: none;
-	
 }
+
 .l-content {
 	background: white;
 }
@@ -33,8 +33,9 @@
 }
 
 tr:hover {
-	background-color: $light-green  !important;
+	background-color: $light-green !important;
 }
+
 th {
 	border-right: 1px solid black;
 }
@@ -52,15 +53,20 @@ td {
 	padding: 1em;
 }
 
-
 .csl-bib-body {
 	font-family: $georgia;
 	font-size: 1.1em;
-	margin-right:2em;
+	margin-right: 2em;
 }
+
 tr:hover {
-
-	background:rgb(229, 235, 222) !important;
-
+	background: rgb(229, 235, 222) !important;
 }
 
+.not-logged-in {
+	.l-content {
+		border-top: $base-border;
+	}
+
+	.section-publish {}
+}

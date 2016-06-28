@@ -2546,7 +2546,7 @@ edit-bookmarks-fieldset-remove-remove-all {
   padding: 0;
   border-top: 1px solid #ccc; }
 
-.citation-page .l-content {
+.not-logged-in .citation-page .l-content {
   border-top: 1px solid #ccc; }
 
 .csl-bib-body {
@@ -3306,6 +3306,9 @@ td {
 
 tr:hover {
   background: #e5ebde !important; }
+
+.not-logged-in .l-content {
+  border-top: 1px solid #ccc; }
 
 .nav-wrapper {
   background: #333; }
@@ -4205,6 +4208,8 @@ div#islandora-bookmark #edit-lists {
 .search-bar form {
   position: relative;
   margin-top: 1em; }
+  .search-bar form label {
+    display: none; }
 
 .search-bar input[type="text"] {
   -webkit-appearance: none;
