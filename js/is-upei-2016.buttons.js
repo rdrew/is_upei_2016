@@ -43,7 +43,7 @@
 		attach: function (context, settings) {
 
 			//details tab
-			var target = '.tabs--primary li:nth-child(1) a[href^="/islandora/object/"]';
+			var target = '.tabs--primary li:nth-child(1) a[href^="/people/"]';
 			var replacement = ' <i class="fa fa-user" aria-hidden="true"></i> Scholar Details'
 				$(target).empty();
 			$(target).append(replacement);
