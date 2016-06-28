@@ -58,4 +58,3 @@ Research Classification
 		<?php endif; ?>
 	</div>
 </div>
-

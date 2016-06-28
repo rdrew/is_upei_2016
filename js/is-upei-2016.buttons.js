@@ -200,6 +200,11 @@
 	}
 
 
+	Drupal.behaviors.move_bookmark_on_cit_page = {
+		attach: function (context, settings) {
+			$('.citation-page .fulltext .form-item').after($( '#block-islandora-bookmark-islandora-bookmark' ));
+		}
+	}
 
 
 
