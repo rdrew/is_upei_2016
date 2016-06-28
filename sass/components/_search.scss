@@ -4,6 +4,10 @@
 .search-bar form {
 	position: relative;
 	margin-top: 1em;
+   label {
+	   display: none;
+		
+	}
 }
 
 .search-bar input[type="text"] {
