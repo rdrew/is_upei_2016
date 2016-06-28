@@ -2543,7 +2543,11 @@ edit-bookmarks-fieldset-remove-remove-all {
   background: none;
   border: 0px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border-top: 1px solid #ccc; }
+
+.citation-page .l-content {
+  border-top: 1px solid #ccc; }
 
 .csl-bib-body {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
@@ -2708,7 +2712,7 @@ fieldset#edit-bookmarks-fieldset td a {
           -ms-flex-pack: center;
               justify-content: center; }
   .citation-page .l-content #block-islandora-bookmark-islandora-bookmark #islandora-bookmark {
-    width: 140px; }
+    /*width: 140px;*/ }
   .citation-page .l-content .ir_thesisCModel.fedora_system_FedoraObject_3_0,
   .citation-page .l-content .ir_citationCModel.fedora_system_FedoraObject_3_0 {
     clear: both; } }

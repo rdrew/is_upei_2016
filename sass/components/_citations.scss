@@ -22,6 +22,7 @@
 .view-recent-citations .more-link {
 	text-align: initial;
 }
+
 .block--recent-citations--more,
 .more-link a {
 	text-align: initial;
@@ -33,10 +34,18 @@
 
 //=======================
 .page-citations .l-content {
-    background: none;
-    border: 0px;
+	background: none;
+	border: 0px;
+
 	@include clean;
+
+	border-top: $base-border;
 }
+
+.citation-page .l-content {
+	border-top: $base-border;
+}
+
 .csl-bib-body {
 	font-family: $georgia;
 	padding-right: $base-spacing / 2;
@@ -76,10 +85,8 @@ fieldset#edit-bookmarks-fieldset td a {
 #islandora-scholar-citation-select-form .description {
 	font-size: .9em;
 	font-family: $roboto_condensed;
-
 	text-transform: uppercase;
 }
-
 
 .citation-page h1 {
 	font-size: 1.6em;
@@ -160,7 +167,6 @@ fieldset#edit-bookmarks-fieldset td a {
 	//-----------------
 
 	.csl-entry {
-
 		word-break: break-word;
 	}
 
@@ -175,20 +181,18 @@ fieldset#edit-bookmarks-fieldset td a {
 			margin: 0 auto;
 			display: block;
 			width: 200px;
-
-	
 		}
 
 		#block-islandora-solr-search-navigation {
 			order: 1;
-
 			margin: 0 auto;
-
 			margin-bottom: $small-spacing;
-				margin-top: $small-spacing;
+			margin-top: $small-spacing;
+
 			@include media($medium-screen) {
 				margin-top: 0;
 			}
+
 
 			.block__content {
 				line-height: 0;
@@ -196,7 +200,6 @@ fieldset#edit-bookmarks-fieldset td a {
 
 			ul.block--search-navigation--list {
 				margin: 0 auto;
-
 				display: inline-flex;
 			}
 		}
@@ -204,7 +207,6 @@ fieldset#edit-bookmarks-fieldset td a {
 		#block-islandora-bookmark-islandora-bookmark {
 			width: 100%;
 			order: 2;
-
 			margin-bottom: 1em;
 
 			.form-item {
@@ -260,10 +262,11 @@ fieldset#edit-bookmarks-fieldset td a {
 			//@include omega;
 
 			#islandora-bookmark {
-				width: 140px;
+				/*width: 140px;*/
 			}
 
 			//float: right;
+	
 		}
 
 		.ir_thesisCModel.fedora_system_FedoraObject_3_0,
@@ -276,13 +279,14 @@ fieldset#edit-bookmarks-fieldset td a {
 }
 
 .block--islandora-altmetrics {
-	float:right;
-	
+	float: right;
 }
+
 .share-links {
-	@include horizontal-list();
-	float:right;
+	@include horizontal-list;
+
+	float: right;
 	margin-right: $small-spacing;
-	
 }
+
 //==============
