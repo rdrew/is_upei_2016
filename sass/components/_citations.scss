@@ -165,6 +165,9 @@ fieldset#edit-bookmarks-fieldset td a {
 	//-----------------
 	//-  flex layout  -
 	//-----------------
+	div#block-islandora-bookmark-islandora-bookmark {
+		display: inline-block;
+	}
 
 	.csl-entry {
 		word-break: break-word;
@@ -205,7 +208,7 @@ fieldset#edit-bookmarks-fieldset td a {
 		}
 
 		#block-islandora-bookmark-islandora-bookmark {
-			width: 100%;
+			//width: 100%;
 			order: 2;
 			margin-bottom: 1em;
 
