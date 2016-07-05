@@ -4,6 +4,7 @@
  * This is the template file for the object page for person objects.
  */
 $identifier = $variables['u1'];
+$affiliation = $variables['u2'];
 ?>
 <div class="scholar islandora-object islandora">
 
@@ -45,16 +46,20 @@ Research Classification
 
 
 
-	<div class="other-scholars islandora-object-scholars">
-	  <?php if (isset($variables['fellow_scholars'])): ?>
-		<?php foreach ($variables['fellow_scholars'] as $dept): ?>
-		  <?php print $dept; ?>
-		<?php endforeach; ?>
-	  <?php endif; ?>
-	</div>
-	<div class="rss">
-		<?php if (isset($variables['rss_feed'])): ?>
-		  <?php print $variables['rss_feed']; ?>
-		<?php endif; ?>
-	</div>
+<?php foreach ($affiliation as $dept): ?>
+<div class="other-scholars islandora-object-scholars">
+	  <h3>
+		  Current Scholars in <?php print $dept; ?>
+	  </h3>
+
+<?php print views_embed_view('other_scholars_in_dept_', 'block_1', $dept); ?>
 </div>
+	<?php endforeach; ?>
+
+<div class="rss">
+	<?php if (isset($variables['rss_feed'])): ?>
+	  <?php print $variables['rss_feed']; ?>
+	<?php endif; ?>
+</div>
+</div>
+

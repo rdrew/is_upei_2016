@@ -52,11 +52,13 @@
 			var replacement = ' <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Export Citations '
 				$(target).empty();
 			$(target).append(replacement);
+			$(".not-logged-in "+target).remove();
 			//theses tab
 			var target = '.tabs--primary a[href$="theses"]';
 			var replacement = ' <i class="fa fa-book" aria-hidden="true"></i> Export Theses '
 				$(target).empty();
 			$(target).append(replacement);
+			$(".not-logged-in "+target).remove();
 
 		}
 	};
