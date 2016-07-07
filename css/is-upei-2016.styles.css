@@ -5205,6 +5205,54 @@ td.active {
 body {
   /*background:blue;*/ }
 
+.tooltip-item {
+  position: relative;
+  font-size: 0.9em;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center; }
+  .tooltip-item:focus,
+  .tooltip-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  .tooltip-item .tooltip {
+    position: absolute;
+    right: 0;
+    bottom: 3em;
+    left: 0;
+    background-color: #e7ede0;
+    /*background: #fff;*/
+    border-radius: 2px;
+    box-shadow: 0 2px 2px silver;
+    color: #333;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    /*max-width: $tooltip-max-width;*/
+    font-family: "Roboto Condensed", sans-serif;
+    width: 12em;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 10; }
+    .tooltip-item .tooltip p {
+      color: #333;
+      line-height: 1.5;
+      margin: 0; }
+    .tooltip-item .tooltip::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      border: 8px solid transparent;
+      bottom: -1.3em;
+      color: #e7ede0;
+      content: "▼";
+      font-size: 1.4em;
+      margin-left: -8px;
+      text-align: center;
+      text-shadow: 0 2px 2px silver; }
+
 body {
   -webkit-font-smoothing: antialiased;
   /*background:blue;*/ }
