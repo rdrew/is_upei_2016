@@ -18,7 +18,7 @@
  *********************************************************************/
 $var = explode("/", $more_url);
 $id = $var[2];
-$new_link = "/islandora/search/mods_identifier_u1_ms:(" . $id . ")?sort=mods_canonical_date_issued_dt%20desc";
+$new_link = "/islandora/search/mods_identifier_u1_mt:(" . $id . ")?sort=mods_canonical_date_issued_dt%20desc";
 ?>
 
 <div class="more-link">
