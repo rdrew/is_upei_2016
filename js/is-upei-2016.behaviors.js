@@ -265,6 +265,17 @@
 		}
 
 	};
+	Drupal.behaviors.pubstatus_tooltips = {
+
+		attach: function (context, settings) {
+			//find and remove the publication status display
+			$("dt:contains('mods_physicalDescription')").next().remove();
+			$("dt:contains('mods_physicalDescription')").remove();
+			$(".fulltext .form-item a").before( $(".tooltip-item") );
+
+		}
+
+	};
 
 	//$('.ir_citationCModel > a').each(function(){
 	//$(this).next('.ir_citationCModel .form-item').andSelf().wrapAll('<div class="test"/>');
