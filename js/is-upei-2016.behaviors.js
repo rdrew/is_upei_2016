@@ -269,8 +269,8 @@
 
 		attach: function (context, settings) {
 			//find and remove the publication status display
-			$("dt:contains('mods_physicalDescription')").next().remove();
-			$("dt:contains('mods_physicalDescription')").remove();
+			//$("dt:contains('mods_physicalDescription')").next().remove();
+			//$("dt:contains('mods_physicalDescription')").remove();
 			$(".fulltext .form-item a").before( $(".tooltip-item") );
 
 		}
