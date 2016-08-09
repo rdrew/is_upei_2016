@@ -2625,7 +2625,7 @@ fieldset#edit-bookmarks-fieldset td a {
   .citation-page h1 {
     font-size: 1.3em; } }
 
-.citation-page .l-content div#block-islandora-bookmark-islandora-bookmark {
+.citation-page .l-content > div#block-islandora-bookmark-islandora-bookmark {
   display: inline-block; }
 
 .citation-page .l-content .csl-entry {

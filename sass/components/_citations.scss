@@ -165,7 +165,7 @@ fieldset#edit-bookmarks-fieldset td a {
 	//-----------------
 	//-  flex layout  -
 	//-----------------
-	div#block-islandora-bookmark-islandora-bookmark {
+	&> div#block-islandora-bookmark-islandora-bookmark {
 		display: inline-block;
 	}
 
