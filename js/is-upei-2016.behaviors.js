@@ -277,6 +277,24 @@
 
 	};
 
+	/*
+	 *this deals witht the expandable webform on the user page
+	 */
+	Drupal.behaviors.expander = {
+
+		attach: function (context, settings) {
+			$('.expander-trigger').click(function() {
+
+				$(this).toggleClass("expander-hidden");
+				//$('.block--islandora-facets .block__content').toggleClass("show_me");
+				//$('.block--islandora-solr-current-query').toggleClass("show_me");
+				//$("#block-islandora-solr-sort").toggleClass("show_me");
+
+
+			});
+		}
+
+	};
 	//$('.ir_citationCModel > a').each(function(){
 	//$(this).next('.ir_citationCModel .form-item').andSelf().wrapAll('<div class="test"/>');
 	//});
