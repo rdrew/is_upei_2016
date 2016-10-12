@@ -19,16 +19,16 @@ var sass_config = {
 };
 
 gulp.task('browser-sync', function() {
-	browserSync.init({
-		injectChanges: true,
-		proxy: "http://data.researchspaces.ca/"
-		//proxy: "drupal.local"
-	});
+	//browserSync.init({
+		//injectChanges: true,
+		//proxy: "http://data.researchspaces.ca/"
+		////proxy: "drupal.local"
+	//});
 	//gulp.watch("./sass/**/*.scss", ['sass']).on('change', browserSync.reload);
 	gulp.watch("./sass/**/*.scss", ['sass']);
-	gulp.watch("./css/**/*.css").on('change', browserSync.reload);
+	//gulp.watch("./css/**/*.css").on('change', browserSync.reload);
 	//gulp.watch("./js/**/*.js", ['uglify']).on('change', browserSync.reload);
-	gulp.watch("./js/**/*.js").on('change', browserSync.reload);
+	//gulp.watch("./js/**/*.js").on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {

@@ -40,10 +40,10 @@ $horizontal-bar-mode: new-breakpoint(min-width em(950px, $font-size) $grid-colum
 // Import grid to be used (Bourbon Neat) now that we've set our overrides.
 //@import "libraries/neat/neat";
 
-@import "./sass/variables/**/*.scss";
-@import "./sass/abstractions/**/*.scss";
-@import "./sass/base/base";
-@import "./sass/components/**/*.scss";
+@import "variables/**/*.scss";
+@import "abstractions/**/*.scss";
+@import "base/base";
+@import "components/**/*.scss";
 //@import "libraries/neat/neat";
 //@import "./sass/libraries/okayNav/**/*.scss";
 // Import variables, abstractions, base styles and components.
@@ -54,5 +54,5 @@ $horizontal-bar-mode: new-breakpoint(min-width em(950px, $font-size) $grid-colum
 //@import "components/{YOUR FILE NAME HERE}";
 body {
 	-webkit-font-smoothing: antialiased;
-	/*background:blue;*/
+	/*background:$blah;*/
 }
