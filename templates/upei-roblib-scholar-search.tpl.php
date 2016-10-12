@@ -10,10 +10,6 @@
  */
 
 ?>
-<h2>
-	hi
-</h2>
-<?php dpm(get_defined_vars()); ?>
 <?php if (empty($results)): ?>
   <p class="no-results"><?php print t('Sorry, but your search returned no results.'); ?></p>
 <?php else: ?>
