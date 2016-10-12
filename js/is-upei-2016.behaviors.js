@@ -269,14 +269,32 @@
 
 		attach: function (context, settings) {
 			//find and remove the publication status display
-			$("dt:contains('mods_physicalDescription')").next().remove();
-			$("dt:contains('mods_physicalDescription')").remove();
+			//$("dt:contains('mods_physicalDescription')").next().remove();
+			//$("dt:contains('mods_physicalDescription')").remove();
 			$(".fulltext .form-item a").before( $(".tooltip-item") );
 
 		}
 
 	};
 
+	/*
+	 *this deals witht the expandable webform on the user page
+	 */
+	Drupal.behaviors.expander = {
+
+		attach: function (context, settings) {
+			$('.expander-trigger').click(function() {
+
+				$(this).toggleClass("expander-hidden");
+				//$('.block--islandora-facets .block__content').toggleClass("show_me");
+				//$('.block--islandora-solr-current-query').toggleClass("show_me");
+				//$("#block-islandora-solr-sort").toggleClass("show_me");
+
+
+			});
+		}
+
+	};
 	//$('.ir_citationCModel > a').each(function(){
 	//$(this).next('.ir_citationCModel .form-item').andSelf().wrapAll('<div class="test"/>');
 	//});
