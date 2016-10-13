@@ -73,14 +73,14 @@
    <hr>
    <div class="view--citations">
       <h3>
-         Recent Publications
+         Your Recent Publications
       </h3>
-      <button class="green">
-      <i class="fa fa-gear" aria-hidden="true"></i>
-      <a style="color: #fff;" href="/update-publications">
-      Submit new publications
-      </a>
-      </button>
+      <!--<button class="green">-->
+      <!--<i class="fa fa-gear" aria-hidden="true"></i>-->
+      <!--<a style="color: #fff;" href="/update-publications">-->
+      <!--Submit new publications-->
+      <!--</a>-->
+      <!--</button>-->
       <?php print views_embed_view('recent_citations', 'citations', $identifier); ?>
    </div>
 </article>
