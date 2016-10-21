@@ -3519,22 +3519,6 @@ dl.islandora-metadata-fields {
  */
 /* Component containers
 ----------------------------------*/
-.ui-widget {
-  font-family: Verdana,Arial,sans-serif;
-  font-size: 1em; }
-
-.ui-widget .ui-widget {
-  font-size: 1em; }
-
-.ui-widget input,
-.ui-widget select,
-.ui-widget textarea,
-.ui-widget button,
-.ui-widget .block--search-navigation--list-item a, .block--search-navigation--list-item
-.ui-widget a {
-  font-family: Verdana,Arial,sans-serif;
-  font-size: 1em; }
-
 .ui-widget.ui-widget-content {
   border: 1px solid #d3d3d3; }
 
@@ -5981,8 +5965,20 @@ body {
       text-shadow: 0 2px 2px silver; }
 
 /*
- *scholar profile edit form on the user page
+ *preview tab
  */
+#tabs .l-content {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+#tabs .more-link,
+#tabs #edit-lists {
+  display: none; }
+
+/*
+*scholar profile edit form on the user page
+*/
 .block--profile_admin .webform-component--your-citations,
 .block--profile_admin .webform-component--your-email,
 .block--profile_admin .webform-component--your-name {

@@ -1,6 +1,21 @@
 /*
- *scholar profile edit form on the user page
+ *preview tab
  */
+#tabs {
+	.l-content {
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+	.more-link,
+	#edit-lists {
+display: none;	
+	}
+}
+
+/*
+*scholar profile edit form on the user page
+*/
 
 .block--profile_admin {
 	.webform-component--your-citations,
@@ -8,50 +23,53 @@
 	.webform-component--your-name {
 		display: none;
 	}
+
 	input[type="file"] {
-			//@extend input[type="submit"];
+		//@extend input[type="submit"];
+
 	}
 
-.file-widget input[type="submit"] {
+	.file-widget input[type="submit"] {
 		@extend button.green;
+
 		//@include icon(f093);
 		margin-left: 0;
 	}
+
 	.expander-content {
 		padding-top: $base-spacing;
-		
 	}
-
 }
+
 .user_upload input[type="submit"] {
 	//@extend button.green;
 }
-::-webkit-file-upload-button {
 
-		border: 0;
-		border-radius: 2px;
-		color: #fff;
-		cursor: pointer;
-		display: inline-block;
-		font-family: "Roboto Condensed", sans-serif;
-		font-size: 0.9em;
-		text-transform: uppercase;
-		-webkit-font-smoothing: antialiased;
-		font-weight: 400;
-		line-height: 1;
-		padding: 0.5em 0.75em 0.4em;
-		text-decoration: none;
-		transition: background-color 150ms ease;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		vertical-align: middle;
-		white-space: nowrap;
-		box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+::-webkit-file-upload-button {
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	line-height: 1;
+	padding: 0.5em 0.75em 0.4em;
+	text-decoration: none;
+	transition: background-color 150ms ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
 
 	@extend button.gray;
-  }
+}
 
 //expander code is from refills.bourbon.io
 .expander {
@@ -132,11 +150,38 @@
 /*
  *vertical tabs
  */
-.ui-tabs-vertical { width: 55em; }
-  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
-  .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-  .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
-  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
-// Based on code by Jett Miller jettmiller.net
+.ui-tabs-vertical {
+	width: 55em;
+}
 
+.ui-tabs-vertical .ui-tabs-nav {
+	padding: .2em .1em .2em .2em;
+	float: left;
+	width: 12em;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li {
+	clear: left;
+	width: 100%;
+	border-bottom-width: 1px !important;
+	border-right-width: 0 !important;
+	margin: 0 -1px .2em 0;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li a {
+	display: block;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+	padding-bottom: 0;
+	padding-right: .1em;
+	border-right-width: 1px;
+}
+
+.ui-tabs-vertical .ui-tabs-panel {
+	padding: 1em;
+	float: right;
+	width: 40em;
+}
+
+// Based on code by Jett Miller jettmiller.net
