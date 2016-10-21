@@ -295,8 +295,9 @@
 		}
 
 	};
-	//$('.ir_citationCModel > a').each(function(){
-	//$(this).next('.ir_citationCModel .form-item').andSelf().wrapAll('<div class="test"/>');
-	//});
+/*
+ *vertical tabs from refills.io
+ */
+
 
 })(jQuery);
