@@ -31,9 +31,9 @@ function IS_UPEI_2016_form_alter(&$form, &$form_state, $form_id) {
 function IS_UPEI_2016_preprocess_user_picture(&$variables) {
 
 	//get the mods user id from the user name as they should be the same
-	$identifier = $variables['user']->name;
+	//$identifier = $variables['user']->name;
 
 	//swap out the user_picture var pre template and rewrite
-	$variables['user_picture'] = '<a href="/people/' . $identifier . '" title="View scholar profile." class="active"><img typeof="foaf:Image" src="/islandora/object/ir:' . $identifier . '/datastream/TN/view" alt="' . $identifier . '&#039;s picture" title="' . $identifier . '&#039;s picture" /></a>';
+	//$variables['user_picture'] = '<a href="/people/' . $identifier . '" title="View scholar profile." class="active"><img typeof="foaf:Image" src="/islandora/object/ir:' . $identifier . '/datastream/TN/view" alt="' . $identifier . '&#039;s picture" title="' . $identifier . '&#039;s picture" /></a>';
 
 }
