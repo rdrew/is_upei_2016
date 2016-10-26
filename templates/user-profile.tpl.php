@@ -1,29 +1,49 @@
 <?php
 //using the username as contextual filter as it is the same as the pid
 
-   //$variables['user']->name should equal the mods u1. cleaning it up for use as contextual filter
-   //$identifier = $variables['user']->name;
-   $identifier = 'abdelaziz';
-   
-   //print $identifier;
+//$variables['user']->name should equal the mods u1. cleaning it up for use as contextual filter
+$identifier = $variables['user']->name;
+//$identifier = 'abdelaziz';
+
+//print $identifier;
+
+/*
+ * initiate jQuery tabs plugin
+ */
 drupal_add_library ( 'system' , 'ui.tabs' );
+/*
+ * make the id available to the js
+ */
+drupal_add_js (
+	array(
+		'scholarsVars' => array(
+			'identifier' => $identifier,
+		),
+	),
+	array('type' => 'setting')
+);
+
 drupal_add_js ( 'jQuery(document).ready(function(){
+
+	//init tabs
 	jQuery("#tabs").tabs();
-	var identifier = jQuery("#identifier").text();
-	var url = "/people/" + identifier + " " + ".l-content";
-	jQuery("#tabs-1").load(url);
-	
+
+	//build url for ajax loading into tab1 & only bring in div.l-content
+	var url = "/people/" + Drupal.settings.scholarsVars.identifier + " " + ".l-content";
+	jQuery("#tabs-1 .container").load(url);
+	jQuery("#tabs-1").prepend("<h3> Preview Your Profile </h3>");
+	//jQuery("#tabs-1").append("hello");
+	jQuery(".block--share-links").remove();
+	jQuery("#block-block-3").hide();
+
    });
    ' , 'inline' );
-   ?>
+?>
 
-   <span id="identifier" style="display: none;" ><?php print render($identifier); ?></span>
 <article<?php print $attributes; ?>>
-   <?php print render($user_profile); ?>
-   <hr>
-   <h3>
-      Manage Your Scholar Profile
-   </h3>
+   <h2>
+	  Manage Your Scholar Profile
+   </h2>
    <div class="block--profile_admin">
    </div>
 <div id="tabs">
@@ -38,11 +58,22 @@ drupal_add_js ( 'jQuery(document).ready(function(){
    -->
 
    <div id="tabs-1">
+<div class="container">
+You do not have a Scholar Profile!
+</div>
+<!--this is filled in by the ajax function above-->
    </div>
 <!--
    -tab 2
    -->
    <div id="tabs-2">
+<h3>
+	Request Changes to Your Profile
+</h3>
+<?php
+   $block = module_invoke('entityform_block', 'block_view', 'edit_scholar_profile');
+   print render($block['content']);
+?>
    </div>
 <!--
    -tab 3
@@ -65,10 +96,10 @@ drupal_add_js ( 'jQuery(document).ready(function(){
    -tab 4
    -->
    <div id="tabs-4">
-	  
-	  <h2>
+
+	  <h3>
 		 Submit New Publications
-	  </h2>
+	  </h3>
 <?php
    $block = module_invoke('entityform_block', 'block_view', 'add_publications');
    print render($block['content']);
@@ -79,4 +110,7 @@ drupal_add_js ( 'jQuery(document).ready(function(){
    -end of tabs
    -->
 </div>
+
+   <hr>
+   <?php print render($user_profile); ?>
 </article>
