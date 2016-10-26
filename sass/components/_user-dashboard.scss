@@ -1,3 +1,7 @@
+//form submission confirmatin
+.page-eform-edit-scholar-profile-confirm .l-content {
+	border-top: $base-border;
+}
 /*
  *preview tab
  */
@@ -10,6 +14,14 @@
 	.more-link,
 	#edit-lists {
 display: none;	
+	}
+   input + input	{
+	   margin: 0;
+		
+	}
+	.field-name-field-needs-embargo- input {
+		max-width: 200px;
+		
 	}
 }
 

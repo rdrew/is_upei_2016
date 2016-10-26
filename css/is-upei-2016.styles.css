@@ -5964,6 +5964,9 @@ body {
       text-align: center;
       text-shadow: 0 2px 2px silver; }
 
+.page-eform-edit-scholar-profile-confirm .l-content {
+  border-top: 1px solid #ccc; }
+
 /*
  *preview tab
  */
@@ -5975,6 +5978,12 @@ body {
 #tabs .more-link,
 #tabs #edit-lists {
   display: none; }
+
+#tabs input + input {
+  margin: 0; }
+
+#tabs .field-name-field-needs-embargo- input {
+  max-width: 200px; }
 
 /*
 *scholar profile edit form on the user page
