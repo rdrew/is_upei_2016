@@ -5964,7 +5964,7 @@ body {
       text-align: center;
       text-shadow: 0 2px 2px silver; }
 
-.page-eform-edit-scholar-profile-confirm .l-content {
+.not-logged-in .l-content {
   border-top: 1px solid #ccc; }
 
 /*
