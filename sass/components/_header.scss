@@ -1,114 +1,94 @@
 .nav-wrapper {
-	background: #333;
+  background: #333;
 }
 
-.l-region--navigation .menu {
-	/*background:#ccc;*/
-	@include horizontal-list(1em);
-
-	/*padding-top: 8px;*/
-	/*padding-bottom: 8px;*/
-
-	i {
-		padding-right: 5px;
-
-		/*display:none;*/
-	}
-
-	li {
-		border-bottom: 4px solid $dark-gray;
-		border-right: 1px solid #151515;
-
-		&:hover {
-			background: #424242;
-			border-bottom: 4px solid $green;
-
-			@include transition;
-
-			i {
-				color: $green;
-
-				@include transition;
-			}
-
-			.last.leaf {
-				float: right;
-			}
-		}
-
-		padding-bottom: 4px;
-		padding-top: 8px;
-
-		&:first-child {
-			/*border-left:$medium-gray;*/
-		}
-	}
-
-	a {
-		color: #fff;
-		font-size: .9em;
-		font-family: $roboto_condensed;
-	}
-
-	/*padding: 8px 5px;*/
+.top-nav.scholar-menu {
+  float:left;
+}
+.block--system-user-menu {
+  float:right;
 }
 
-.l-region--navigation .menu li span {
+.top-nav.scholar-menu .menu {
+  $menu-padding: 10px;
+  @include horizontal-list($menu-padding);
+  li:first-child,
+  li.first,
+  li:last-child,
+  li.last {
+    padding-left: $menu-padding;
+    padding-right: $menu-padding;
+  }
+  i {
+    padding-right: 5px;
 
-	/*display:none;*/
-	/*@include media(480px){*/
-	/*display: inline;*/
-	/*}*/
+  }
+
+  li {
+    border-bottom: 4px solid $dark-gray;
+    border-right: 1px solid #151515;
+
+    &:hover {
+      background: #424242;
+      border-bottom: 4px solid $green;
+
+      @include transition;
+
+      i {
+        color: $green;
+
+        @include transition;
+      }
+    }
+
+    padding-bottom: 4px;
+    padding-top: 8px;
+
+  }
+
+  a {
+    color: #fff;
+    font-size: .9em;
+    font-family: $roboto_condensed;
+  }
 
 }
-.l-region--navigation .scholar-menu li.last {
-	/* display: none; */
-	padding-right: 1em;
 
-	float: right !important;
-	border-left: 1px solid #151515;
 
-	a {
-		color: rgb(255, 210, 154);
-	}
-}
-
-.l-region--navigation .scholar-menu li.first {
-	/* display: none; */
-	padding-left: 1em;
-	border-left: 1px solid #151515;
+.top-nav.scholar-menu li.first {
+  padding-left: 1em;
+  border-left: 1px solid #151515;
 }
 
 .site-branding__name {
-	font-size: 1.6em;
+  font-size: 1.6em;
 
-	@include media(400px) {
-		font-size: 2em;
-	}
+  @include media(400px) {
+    font-size: 2em;
+  }
 
 
-	font-family: $heading-font-family;
-	margin-top: 8px;
-	display: block;
-	line-height: 1;
+  font-family: $heading-font-family;
+  margin-top: 8px;
+  display: block;
+  line-height: 1;
 }
 
 .site-branding__slogan {
-	margin: 0;
-	font-size: 1.2em;
+  margin: 0;
+  font-size: 1.2em;
 
-	@include media(400px) {
-		font-size: 1.5em;
-	}
+  @include media(400px) {
+    font-size: 1.5em;
+  }
 
 
-	display: inline-block;
-	line-height: 1;
+  display: inline-block;
+  line-height: 1;
 }
 
 header.l-header {
-	/*@include small-shadow;*/
-	border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 //-------------------------------
 //-  responsive menu behaviors  -
@@ -116,32 +96,32 @@ header.l-header {
 $menu-bp: 1068px;
 
 .l-region--navigation .menu li {
-		padding-left: .6em;
-		padding-right: .6em;
-	@include media($menu-bp) {
-   /*     padding-left: inherit;*/
-		/*padding-right: inherit;*/
-	}
+  padding-left: .6em;
+  padding-right: .6em;
+  @include media($menu-bp) {
+    /*     padding-left: inherit;*/
+    /*padding-right: inherit;*/
+  }
 
 
 }
 .l-region--navigation .menu i {
-	display: block;
-	text-align: center;
-	font-size: 1.5em;
-	@include media($menu-bp) {
-		display: inherit;
-		font-size: inherit;
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  @include media($menu-bp) {
+    display: inherit;
+    font-size: inherit;
 
 
-	}
+  }
 }
 
 .l-region--navigation .menu .title {
-	font-size: .8em;
-	@include media($menu-bp) {
+  font-size: .8em;
+  @include media($menu-bp) {
 
-		font-size: inherit;
+    font-size: inherit;
 
-	}
+  }
 }
