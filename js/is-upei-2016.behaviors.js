@@ -296,13 +296,14 @@
 
     };
 
+
     Drupal.behaviors.userMenu = {
 
       attach: function (context, settings) {
-        $(".dropdown-button").click(function() {
+        $(".dropdown .block__title").click(function() {
           var $button, $menu;
           $button = $(this);
-          $menu = $button.siblings(".dropdown-menu");
+          $menu = $button.siblings(".menu");
           $menu.toggleClass("show-menu");
           $menu.children("li").click(function() {
             $menu.removeClass("show-menu");

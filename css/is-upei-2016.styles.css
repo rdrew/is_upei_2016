@@ -6196,4 +6196,10 @@ body {
   -webkit-font-smoothing: antialiased;
   /*background:$blah;*/ }
 
+  .not-logged-in .l-content {
+         border-top: 1px solid #ccc;
+   }
 /*# sourceMappingURL=is-upei-2016.styles.css.map */
+   .footerlogo {
+       width: 158px;
+   }
