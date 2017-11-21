@@ -10,6 +10,7 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = css/is-upei-2016.reset.css
 stylesheets[all][] = css/is-upei-2016.styles.css
+stylesheets[all][] = css/is-upei-2016.hacks.css
 
 ; ========================================
 ; Scripts
