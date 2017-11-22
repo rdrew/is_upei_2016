@@ -51,7 +51,9 @@ foreach ( $webservice_links as $webservice_link ) {
         }
 }
 $orcid_id = $solr_fields['MADS_orcid_ms']['value'][0];
-$solr_fields['MADS_orcid_ms']['value'][0] = '<a href="https://orcid.org/' . $orcid_id . '">'  . "https://orcid.org/$orcid_id" . '</a>';
+if(!empty($orcid_id)) {
+  $solr_fields['MADS_orcid_ms']['value'][0] = '<a href="https://orcid.org/' . $orcid_id . '">'  . "https://orcid.org/$orcid_id" . '</a>';
+}
 ?>
 
 
