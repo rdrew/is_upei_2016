@@ -37,23 +37,21 @@ $webservice_links = array(
 		'field_name' => 'MADS_twitter_ms',
 		'url'        => 'twitter.com/',
 	),
-	'orcid' => array(
-		'field_name' => 'MADS_orcid_ms',
-		'url'        => 'orcid.org/',
-	),
 );
 
-foreach ( $webservice_links as $webservice_links ) {
-	//get the id
-	$id = $solr_fields[$webservice_links['field_name']]['value'][0];
-	//check to see if it is empty
-	if (!empty($id)){ 	
-		//make the new link
-		$new_link =  '<a href="http://' .  $webservice_links['url'] .  $id .  '">' .  $id .  '</a>';
-		//reset the target var
-		$solr_fields[$webservice_links['field_name']]['value'][0] = $new_link;
-	}
+foreach ( $webservice_links as $webservice_link ) {
+        //get the id
+        $id = $solr_fields[$webservice_link['field_name']]['value'][0];
+        //check to see if it is empty
+        if (!empty($id)){
+                //make the new link
+                $new_link =  '<a href="http://' .  $webservice_link['url'] .  $id .  '">' .  $id .  '</a>';
+                //reset the target var
+                $solr_fields[$webservice_link['field_name']]['value'][0] = $new_link;
+        }
 }
+$orcid_id = $solr_fields['MADS_orcid_ms']['value'][0];
+$solr_fields['MADS_orcid_ms']['value'][0] = '<a href="https://orcid.org/' . $orcid_id . '">'  . "https://orcid.org/$orcid_id" . '</a>';
 ?>
 
 

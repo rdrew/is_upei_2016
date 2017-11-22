@@ -285,12 +285,11 @@
     };
 
     Drupal.behaviors.orcid_icon = {
+           attach: function (context, settings) {
+                        $('a[href^="https://orcid.org/"]').prepend('<img src="https://orcid.org/sites/default/files/images/orcid_24x24.png" style=" width: 18px; margin-right: 5px; ">');
+                        //$('a[href^="http://orcid.org"]').remove();
 
-        attach: function (context, settings) {
-            $('a[href^="http://orcid.org"]').prepend('<img src="https://orcid.org/sites/default/files/images/orcid_24x24.png" style=" width: 18px; margin-right: 5px; ">orcid.org/');
-            //$('a[href^="http://orcid.org"]').remove();
-
-        }
+                }
     };
 
 
