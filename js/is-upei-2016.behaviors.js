@@ -1,6 +1,19 @@
 (function ($) {
 
 
+
+
+
+	Drupal.behaviors.doi_link = {
+		attach: function (context, settings) {
+			$('a[href*="doi.org"]', context).once('doi_url_tidy', function() {
+				var doiUrl = $(this).attr('href');
+				$(this).empty().append(doiUrl);
+			} );
+
+		}
+	};
+
     Drupal.behaviors.login_form = {
         attach: function (context, settings) {
             $(".user-login .form-item-name .description").replaceWith('Enter your UPEI username');

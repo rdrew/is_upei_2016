@@ -32,7 +32,9 @@ $profile_name = user_load($profile_uid)->name;
 		jQuery("#block-block-3").hide();
 	   });
 	   ' , 'inline' );
-	?>
+
+
+?>
 
 <article<?php print $attributes; ?>>
   <h2>Manage Your Scholar Profile</h2>
@@ -43,37 +45,53 @@ $profile_name = user_load($profile_uid)->name;
         <a href="#tabs-1"><i aria-hidden="true" class="fa fa-eye"></i>&nbsp;Preview</a>
       </li>
       <li>
-        <a href="#tabs-2"><i aria-hidden="true" class="fa fa-edit"></i>&nbsp;Edit</a>
+        <a href="#tabs-2"><i aria-hidden="true" class="fa fa-list"></i>&nbsp;Your Publications</a>
       </li>
       <li>
-        <a href="#tabs-3"><i aria-hidden="true" class="fa fa-list"></i>&nbsp;List Publications</a>
+        <a href="#tabs-3"><i aria-hidden="true" class="fa fa-edit"></i>&nbsp;Edit Profile</a>
       </li>
       <li>
-        <a href="#tabs-4"><i aria-hidden="true" class="fa fa-plus"></i>&nbsp;Add scholarly work(s)</a>
+        <a href="#tabs-4"><i aria-hidden="true" class="fa fa-plus"></i>&nbsp;Add Scholarly Works</a>
+      </li>
+      <li>
+        <a href="#tabs-5"><i aria-hidden="true" class="fa fa-plus"></i>&nbsp;Deposit Full Text</a>
       </li>
     </ul><!-- -tab 1 -->
+<?php
+$tab2 = views_embed_view('recent_citations', 'user_block', $identifier);
+$tab3 = module_invoke('entityform_block', 'block_view', 'edit_scholar_profile');
+$tab4 = module_invoke('entityform_block', 'block_view', 'add_publications');
+$tab5 = module_invoke('entityform_block', 'block_view', 'deposit_full_text');
+?>
     <div id="tabs-1">
       <div class="container">
         You do not have a Scholar Profile!
       </div><!--this is filled in by the ajax function above-->
-    </div><!-- -tab 2 -->
-    <div id="tabs-2">
-      <h3>Request Changes to Your Profile</h3><?php
-         $block = module_invoke('entityform_block', 'block_view', 'edit_scholar_profile');
-         print render($block['content']);
-      ?>
-    </div><!-- -tab 3 -->
-    <div id="tabs-3">
-      <div class="view--citations">
-        <h3>Your Recent Publications</h3><?php print views_embed_view('recent_citations', 'user_block', $identifier); ?>
-      </div>
-    </div><!-- -tab 4 -->
-    <div id="tabs-4">
-      <h3>Add scholarly works</h3><?php
-         $block = module_invoke('entityform_block', 'block_view', 'add_publications');
-         print render($block['content']);
-      ?>
     </div>
+
+    <div id="tabs-2">
+      <div class="view--citations">
+		<h3>Your Scholarly Works</h3>
+		<?php print $tab2; ?>
+      </div>
+    </div>
+
+    <div id="tabs-3">
+	<h3>Request Changes to Your Profile</h3>
+		<?php print render($tab3['content']); ?>
+    </div>
+
+    <div id="tabs-4">
+	<h3>Add scholarly works to your profile</h3>
+		<?php print render($tab4['content']); ?>
+    </div>
+
+
+    <div id="tabs-5">
+	<h3>Deposit Full Text</h3>
+		<?php print render($tab5['content']); ?>
+    </div>
+
   </div>
   <hr>
   <?php print render($user_profile); ?>

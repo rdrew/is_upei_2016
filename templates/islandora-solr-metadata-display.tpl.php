@@ -17,6 +17,7 @@
  * @see template_preprocess_islandora_solr_metadata_display()
  * @see template_process_islandora_solr_metadata_display()
  */
+//dpm( get_defined_vars() );
 ?>
 
 <?php
@@ -103,7 +104,6 @@ if (!(empty($solr_fields) && variable_get('islandora_solr_metadata_omit_empty_va
 	</div>
   </fieldset>
 <?php endif; ?>
-
 <?php //pre/post-print tooltips 
 
 //convert to lowercase
