@@ -4,6 +4,7 @@
 
 
 
+
 	Drupal.behaviors.doi_link = {
 		attach: function (context, settings) {
 			$('a[href*="doi.org"]', context).once('doi_url_tidy', function() {
@@ -296,6 +297,18 @@
             });
         }
     };
+
+	Drupal.behaviors.remove_blank_field = {
+		attach: function (context, settings) {
+			$('.view--classification', context).once('remove_blank', function() {
+				var el = $(".view--classification ul li.first").text().trim();
+				if (el == "no classification") {
+				$(this).remove();
+				}
+			} );
+
+		}
+	};
 
     Drupal.behaviors.orcid_icon = {
            attach: function (context, settings) {
